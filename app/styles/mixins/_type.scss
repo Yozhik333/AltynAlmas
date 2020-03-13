@@ -1,0 +1,49 @@
+@mixin reset-text() {
+	font-family: $font-family-base;
+	// We deliberately do NOT reset font-size.
+	font-style: normal;
+	font-weight: normal;
+	letter-spacing: normal;
+	line-break: auto;
+	line-height: $line-height-base;
+	text-align: left; // Fallback for where `start` is not supported
+	text-align: start;
+	text-decoration: none;
+	text-shadow: none;
+	text-transform: none;
+	white-space: normal;
+	word-break: normal;
+	word-spacing: normal;
+	word-wrap: normal;
+}
+
+@mixin text-overflow() {
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+@mixin hide-text() {
+	font: 0/0 a;
+	color: transparent;
+	text-shadow: none;
+	background-color: transparent;
+	border: 0;
+}
+
+@mixin text-hide() {
+	@include hide-text;
+}
+
+@mixin list-unstyled {
+	padding-left: 0;
+	list-style: none;
+}
+
+@mixin link-underline($colour: $link-color, $size: 2px, $offset: 0){
+	background-image: linear-gradient(to bottom,rgba(0,0,0,0) 50%,$colour 50%);
+	background-repeat: repeat-x;
+	background-size: 1PX #{$size*2};
+	background-position: 0 100%;
+	padding-bottom: $offset;
+}

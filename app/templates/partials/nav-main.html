@@ -1,0 +1,12 @@
+<!-- nav-main -->
+<nav class="nav-main">
+	<div class="container">
+	  <ul class="list-inline">
+				{% import "data/nav-main.html" as menuList %}
+				{% import "partials/mixins.html" as mixins %}
+				{% for item in menuList.list %}
+				{{ mixins.menuItem(item, namespace, loop.index) }}
+				{% endfor %}
+	  </ul>
+	</div>
+</nav><!-- end nav-main -->

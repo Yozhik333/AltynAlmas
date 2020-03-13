@@ -1,0 +1,32 @@
+<!-- Главная страница -->
+{% set title = "Главная" %}
+{% set namespace = "main" %}
+{% set page = "index" %}
+{% extends "layouts/default.html" %}
+<!-- ********************************************************************* -->
+{% block content %}
+<div class="container">
+	<p>
+		data file <br>
+		{% import "data/data.html" as tests %}
+		{% for test in tests.list %}
+		<li>{{test.title}}</li>
+		{% endfor %}
+	</p>
+
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col">
+				{% include "modules/profile/profile.html" %}
+			</div>
+			<div class="col">
+				{% include "modules/profile/profile.html" %}2
+			</div>
+			<div class="col">
+				{% include "modules/profile/profile.html" %}3
+			</div>
+		</div>
+	</div>
+
+</div>
+{% endblock %}

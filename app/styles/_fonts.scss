@@ -1,0 +1,15 @@
+// Using @font-face
+// Just only three file formats required
+// no need to include files with svg or eot extensions
+// With these three formats we have pretty good browsers support e.g.
+// Chrome 3.5+, Safari 3+, Firefox 3.5+, Opera 10.1+, IE9+, Android 2.2+, iOS 4.3+
+
+// @font-face {
+//   font-family: "PT Sans";
+//   src:
+//     inline("#{$path-fonts}/pt_sans-web-regular-webfont.woff2") format("woff2"),
+//     inline("#{$path-fonts}/pt_sans-web-regular-webfont.woff") format("woff");
+//     // inline("#{$path-fonts}/pt_sans-web-regular-webfont.ttf")  format("truetype");
+//   font-style: normal;
+//   font-weight: normal;
+// }

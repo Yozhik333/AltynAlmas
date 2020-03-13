@@ -1,0 +1,76 @@
+html {
+	font-size: 16PX;
+}
+
+body {
+	font-family: $font-family-base;
+	font-size: $font-size-base;
+	line-height: $line-height-base;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0;
+	font-weight: bold;
+}
+
+p {
+	margin: 0 0 16px;
+}
+
+ul,
+ol {
+	margin-top: 0;
+	margin-bottom: 16px;
+	ul,
+	ol {
+		margin-bottom: 0;
+	}
+}
+
+a {
+	color: $link-color;
+	text-decoration: none;
+	outline: none !important;
+	transition: .2s color;
+
+	&:hover,
+	&:focus {
+		color: $link-hover-color;
+		text-decoration: none;
+	}
+
+}
+
+.list-unstyled {
+	@include list-unstyled;
+}
+
+.list-inline {
+	@include list-unstyled;
+	> li {
+		display: inline-block;
+	}
+}
+
+.list-justify {
+	@include list-unstyled;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	text-align: justify;
+	> li {
+		display: inline-block;
+	}
+	&::after {
+		content: '';
+		display: inline-block;
+		width: 100%;
+		height: 0;
+	}
+}
+
+abbr[title],
+abbr[data-original-title] {
+	cursor: help;
+	border-bottom: 1px dotted;
+}

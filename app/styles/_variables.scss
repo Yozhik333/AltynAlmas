@@ -1,0 +1,42 @@
+// переменные проекта
+
+$font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+
+$path-fonts:    "../fonts"; // путь к директории со шрифтами
+
+$font-size-base: 16px !default;
+$line-height-base: 1.2 !default;
+
+$footer-height: 100px;
+
+
+// переменные Цвета
+// *************************************************************************
+$blue: blue;
+$green: greeb;
+$orange: orange;
+$red: red;
+$pink: pink;
+$cyan: cyan;
+$purple: purple;
+$yellow: yellow;
+$gray: gray;
+
+$brand-primary: $purple;
+$brand-secondary: $green;
+
+// --------------------------------------------------
+$body-bg: white !default;
+$text-color: black !default;
+
+$link-color: $brand-primary !default;
+$link-hover-color: $brand-secondary !default;
+
+// --------------------------------------------------
+$input-border: $cyan !default;
+$input-bg: transparent !default;
+$input-bg-disabled: $gray !default;
+$input-color: black !default;
+$input-border-focus: $blue !default;
+$input-color-placeholder: $red !default;
+
