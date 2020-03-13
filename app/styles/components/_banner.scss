@@ -1,0 +1,16 @@
+.banner{
+	height: 557px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	&__block{
+		max-width: 647px;
+		width: 100%;
+		height: 190px;
+		margin: 278px 0 89px -20px;
+		background: linear-gradient(334.63deg, #FFFFFF 21.09%, rgba(196, 196, 196, 0) 94.03%);
+		.banner__headline{
+			text-align: right;
+		}
+	}
+}

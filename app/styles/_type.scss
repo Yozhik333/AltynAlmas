@@ -21,9 +21,11 @@ ul,
 ol {
 	margin-top: 0;
 	margin-bottom: 16px;
+	list-style: none;
 	ul,
 	ol {
 		margin-bottom: 0;
+		list-style: none;
 	}
 }
 

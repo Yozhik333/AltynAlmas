@@ -13,7 +13,7 @@ $footer-height: 210px;
 // переменные Цвета
 // *************************************************************************
 $blue: blue;
-$green: greeb;
+$green: green;
 $orange: orange;
 $red: red;
 $pink: pink;
@@ -24,12 +24,18 @@ $gray: gray;
 $white: #fff;
 $black: #000;
 
+$brown: #D0B37B;
+$beige: #F4D7AB;
+$dark-blue: #002C4D;
+$gray-bg: #f4f4f4;
+
 $brand-primary: $purple;
 $brand-secondary: $green;
 
 // --------------------------------------------------
 $body-bg: white !default;
 $text-color: black !default;
+$text-blue: #002C4D;
 
 $link-color: #fff !default;
 $link-hover-color: $brand-secondary !default;
