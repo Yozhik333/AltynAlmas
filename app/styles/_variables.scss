@@ -12,15 +12,10 @@ $footer-height: 100px;
 
 // переменные Цвета
 // *************************************************************************
-$blue: blue;
-$green: greeb;
-$orange: orange;
-$red: red;
-$pink: pink;
-$cyan: cyan;
-$purple: purple;
-$yellow: yellow;
-$gray: gray;
+$brown: #D0B37B;
+$beige: #F4D7AB;
+$gray: #F4F4F4;
+$dark-blue: #002C4D;
 
 $brand-primary: $purple;
 $brand-secondary: $green;
@@ -28,9 +23,8 @@ $brand-secondary: $green;
 // --------------------------------------------------
 $body-bg: white !default;
 $text-color: black !default;
+$text-dark-blue: #002C4D;
 
-$link-color: $brand-primary !default;
-$link-hover-color: $brand-secondary !default;
 
 // --------------------------------------------------
 $input-border: $cyan !default;
