@@ -21,3 +21,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+
+.icon-logo::before {
+	content: "\ea01";
+}

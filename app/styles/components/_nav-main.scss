@@ -1,7 +1,13 @@
 .nav-main {
-	//background: pink;
+	
   
   ul{
+    li{
+      &:not(:last-child){
+        margin-right: 15px;
+      }
+    }
+    
     a{
       color: #000000;
       font-family: Roboto;

@@ -1,3 +1,14 @@
 .header {
   border-bottom: solid 6px #d0b37b;
+  padding: 6px 0;
+}
+
+.logo{
+  color: #002c4d;
+  font-size: 76px;
+  
+  &_right-offset{
+    @extend .logo;
+    margin-right: 30px;
+  }
 }
