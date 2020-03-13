@@ -1,3 +1,13 @@
 .nav-main {
-	background: pink;
+	//background: pink;
+  
+  ul{
+    a{
+      color: #000000;
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+  }
 }
