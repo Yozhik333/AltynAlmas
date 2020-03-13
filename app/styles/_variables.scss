@@ -1,21 +1,28 @@
 // переменные проекта
 
-$font-family-base: "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family-base: "Graublau Slab", Arial, sans-serif !default;
 
 $path-fonts:    "../fonts"; // путь к директории со шрифтами
 
 $font-size-base: 16px !default;
 $line-height-base: 1.2 !default;
 
-$footer-height: 100px;
+$footer-height: 210px;
 
 
 // переменные Цвета
 // *************************************************************************
-$brown: #D0B37B;
-$beige: #F4D7AB;
-$gray: #F4F4F4;
-$dark-blue: #002C4D;
+$blue: blue;
+$green: greeb;
+$orange: orange;
+$red: red;
+$pink: pink;
+$cyan: cyan;
+$purple: purple;
+$yellow: yellow;
+$gray: gray;
+$white: #fff;
+$black: #000;
 
 $brand-primary: $purple;
 $brand-secondary: $green;
@@ -23,14 +30,94 @@ $brand-secondary: $green;
 // --------------------------------------------------
 $body-bg: white !default;
 $text-color: black !default;
-$text-dark-blue: #002C4D;
 
+$link-color: #fff !default;
+$link-hover-color: $brand-secondary !default;
 
 // --------------------------------------------------
+
+.text_white{
+  color: #fff;
+}
 $input-border: $cyan !default;
 $input-bg: transparent !default;
 $input-bg-disabled: $gray !default;
 $input-color: black !default;
 $input-border-focus: $blue !default;
-$input-color-placeholder: $red !default;
+$input-color-placeholder: #fff !default;
 
+// --------------------------------------------------
+$input-border: #e5e6e7 !default;
+$input-bg: transparent !default;
+$input-bg-disabled: $gray !default;
+$input-color: black !default;
+$input-border-focus: #1ab394 !default;
+$input-color-placeholder: #9b9b9b !default;
+$gray-200: #e9ecef !default;
+
+// цвета текстов
+$text-color-green: #1ab394;
+
+
+// Progress bars
+$enable-transitions:                          true !default;
+$border-radius: .25rem !default;
+$progress-height: 1rem !default;
+
+//$progress-font-size: $font-size-base * .75 !default;
+$progress-bg: $gray-200 !default;
+$progress-border-radius: $border-radius !default;
+$progress-box-shadow: inset 0 .1rem .1rem rgba($black, .1) !default;
+$progress-bar-color: $white !default;
+$progress-bar-bg: theme-color("primary") !default;
+$progress-bar-animation-timing: 1s linear infinite !default;
+$progress-bar-transition: width .6s ease !default;
+
+// Modals
+
+// Padding applied to the modal body
+$modal-inner-padding:               55px 0 100px!default;
+
+// Margin between elements in footer, must be lower than or equal to 2 * $modal-inner-padding
+$modal-footer-margin-between:       .5rem !default;
+
+$enable-prefers-reduced-motion-media-query:   true !default;
+$enable-rounded:                              true !default;
+$enable-shadows:                              false !default;
+
+$modal-dialog-margin:               25% !default;
+$modal-dialog-margin-y-sm-up:       1.75rem !default;
+
+$modal-title-line-height:           $line-height-base !default;
+
+$modal-content-color:               #4a4a4a !default;
+$modal-content-bg:                  $white !default;
+$modal-content-border-color:        rgba($black, .2) !default;
+$modal-content-border-width:        1px !default;
+$modal-content-border-radius:       3px !default;
+$modal-content-inner-border-radius: subtract($modal-content-border-radius, $modal-content-border-width) !default;
+$modal-content-box-shadow-xs:       0 .25rem .5rem rgba($black, .5) !default;
+$modal-content-box-shadow-sm-up:    0 .5rem 1rem rgba($black, .5) !default;
+
+$modal-backdrop-bg:                 $black !default;
+$modal-backdrop-opacity:            .6 !default;
+$modal-header-border-color:         #f1f1f1 !default;
+$modal-footer-border-color:         $modal-header-border-color !default;
+$modal-header-border-width:         $modal-content-border-width !default;
+$modal-footer-border-width:         $modal-header-border-width !default;
+$modal-header-padding-y:            1rem !default;
+$modal-header-padding-x:            1rem !default;
+$modal-header-padding:              $modal-header-padding-y $modal-header-padding-x !default; // Keep this for backwards compatibility
+
+$modal-xl:                          1140px !default;
+$modal-lg:                          800px !default;
+$modal-md:                          500px !default;
+$modal-sm:                          300px !default;
+
+$modal-fade-transform:              translate(0, -50px) !default;
+$modal-show-transform:              none !default;
+$modal-transition:                  transform .3s ease-out !default;
+$modal-scale-transform:             scale(1.02) !default;
+
+$zindex-modal-backdrop:             1040 !default;
+$zindex-modal:                      1050 !default;
