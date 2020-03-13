@@ -1,0 +1,17 @@
+{
+  "name": "project",
+  "description": "",
+  "main": "",
+  "authors": [
+    "viktor <sneik_11@mail.ru>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

@@ -1,0 +1,115 @@
+ //Using @font-face
+ //Just only three file formats required
+ //no need to include files with svg or eot extensions
+ //With these three formats we have pretty good browsers support e.g.
+ //Chrome 3.5+, Safari 3+, Firefox 3.5+, Opera 10.1+, IE9+, Android 2.2+, iOS 4.3+
+
+ //@font-face {
+ //  font-family: "PT Sans";
+ //  src:
+ //    inline("#{$path-fonts}/pt_sans-web-regular-webfont.woff2") format("woff2"),
+ //    inline("#{$path-fonts}/pt_sans-web-regular-webfont.woff") format("woff");
+ //    // inline("#{$path-fonts}/pt_sans-web-regular-webfont.ttf")  format("truetype");
+ //  font-style: normal;
+ //  font-weight: normal;
+ //}
+
+ @font-face {
+   font-family: 'HelveticaNeueCyr';
+   src: url('#{$path-fonts}/HelveticaNeueCyr-Medium.eot');
+   src: url('#{$path-fonts}/HelveticaNeueCyr-Medium.eot?#iefix') format('embedded-opentype'),
+   url('#{$path-fonts}/HelveticaNeueCyr-Medium.woff2') format('woff2'),
+   url('#{$path-fonts}/HelveticaNeueCyr-Medium.woff') format('woff'),
+   url('#{$path-fonts}/HelveticaNeueCyr-Medium.ttf') format('truetype'),
+   url('#{$path-fonts}/HelveticaNeueCyr-Medium.svg#HelveticaNeueCyr-Medium') format('svg');
+   font-weight: 500;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'HelveticaNeueCyr';
+   src: url('#{$path-fonts}/HelveticaNeueCyr-UltraLight.eot');
+   src: url('#{$path-fonts}/HelveticaNeueCyr-UltraLight.eot?#iefix') format('embedded-opentype'),
+   url('#{$path-fonts}/HelveticaNeueCyr-UltraLight.woff2') format('woff2'),
+   url('#{$path-fonts}/HelveticaNeueCyr-UltraLight.woff') format('woff'),
+   url('#{$path-fonts}/HelveticaNeueCyr-UltraLight.ttf') format('truetype'),
+   url('#{$path-fonts}/HelveticaNeueCyr-UltraLight.svg#HelveticaNeueCyr-UltraLight') format('svg');
+   font-weight: 200;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'HelveticaNeueCyr';
+   src: url('#{$path-fonts}/HelveticaNeueCyr-Roman.eot');
+   src: url('#{$path-fonts}/HelveticaNeueCyr-Roman.eot?#iefix') format('embedded-opentype'),
+   url('#{$path-fonts}/HelveticaNeueCyr-Roman.woff2') format('woff2'),
+   url('#{$path-fonts}/HelveticaNeueCyr-Roman.woff') format('woff'),
+   url('#{$path-fonts}/HelveticaNeueCyr-Roman.ttf') format('truetype'),
+   url('#{$path-fonts}/HelveticaNeueCyr-Roman.svg#HelveticaNeueCyr-Roman') format('svg');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'HelveticaNeueCyr';
+   src: url('#{$path-fonts}/HelveticaNeueCyr-Light.eot');
+   src: url('#{$path-fonts}/HelveticaNeueCyr-Light.eot?#iefix') format('embedded-opentype'),
+   url('#{$path-fonts}/HelveticaNeueCyr-Light.woff2') format('woff2'),
+   url('#{$path-fonts}/HelveticaNeueCyr-Light.woff') format('woff'),
+   url('#{$path-fonts}/HelveticaNeueCyr-Light.ttf') format('truetype'),
+   url('#{$path-fonts}/HelveticaNeueCyr-Light.svg#HelveticaNeueCyr-Light') format('svg');
+   font-weight: 300;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'HelveticaNeueCyr';
+   src: url('#{$path-fonts}/HelveticaNeueCyr-Bold.eot');
+   src: url('#{$path-fonts}/HelveticaNeueCyr-Bold.eot?#iefix') format('embedded-opentype'),
+   url('#{$path-fonts}/HelveticaNeueCyr-Bold.woff2') format('woff2'),
+   url('#{$path-fonts}/HelveticaNeueCyr-Bold.woff') format('woff'),
+   url('#{$path-fonts}/HelveticaNeueCyr-Bold.ttf') format('truetype'),
+   url('#{$path-fonts}/HelveticaNeueCyr-Bold.svg#HelveticaNeueCyr-Bold') format('svg');
+   font-weight: bold;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'HelveticaNeueCyr';
+   src: url('#{$path-fonts}/HelveticaNeueCyr-Thin.eot');
+   src: url('#{$path-fonts}/HelveticaNeueCyr-Thin.eot?#iefix') format('embedded-opentype'),
+   url('#{$path-fonts}/HelveticaNeueCyr-Thin.woff2') format('woff2'),
+   url('#{$path-fonts}/HelveticaNeueCyr-Thin.woff') format('woff'),
+   url('#{$path-fonts}/HelveticaNeueCyr-Thin.ttf') format('truetype'),
+   url('#{$path-fonts}/HelveticaNeueCyr-Thin.svg#HelveticaNeueCyr-Thin') format('svg');
+   font-weight: 100;
+   font-style: normal;
+ }
+
+
+ @font-face {
+   font-family: 'Simeiz';
+   src: url('#{$path-fonts}/Simeiz.eot');
+   src: url('#{$path-fonts}/Simeiz.eot?#iefix') format('embedded-opentype'),
+   url('#{$path-fonts}/Simeiz.woff2') format('woff2'),
+   url('#{$path-fonts}/Simeiz.woff') format('woff'),
+   url('#{$path-fonts}/Simeiz.ttf') format('truetype'),
+   url('#{$path-fonts}/Simeiz.svg#Simeiz') format('svg');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+ @font-face {
+   font-family: 'SimeizDemiC';
+   src: url('#{$path-fonts}/SimeizDemiC.eot');
+   src: url('#{$path-fonts}/SimeizDemiC.eot?#iefix') format('embedded-opentype'),
+   url('#{$path-fonts}/SimeizDemiC.woff2') format('woff2'),
+   url('#{$path-fonts}/SimeizDemiC.woff') format('woff'),
+   url('#{$path-fonts}/SimeizDemiC.ttf') format('truetype'),
+   url('#{$path-fonts}/SimeizDemiC.svg#SimeizDemiC') format('svg');
+   font-weight: normal;
+   font-style: normal;
+ }
+
+
+

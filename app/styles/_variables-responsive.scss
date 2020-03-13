@@ -1,0 +1,64 @@
+// Variables grid
+
+// Breakpoints
+//
+// Определите минимальные размеры, при которых ваш макет будет меняться
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px
+) !default;
+
+@include _assert-ascending($grid-breakpoints, "$grid-breakpoints");
+@include _assert-starts-at-zero($grid-breakpoints);
+
+
+// Grid containers
+//
+// Определите максимальную ширину контейнера для разных размеров экрана
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 1360px,
+  xl: 1552px
+) !default;
+
+@include _assert-ascending($container-max-widths, "$container-max-widths");
+
+
+// Columns
+//
+// Установите количество ваших столбцов и укажите отступ между колонками
+$grid-columns:                			12 !default;
+$gutter-width:           				30px !default;
+
+// Masonry
+$masonry-columns-count-sm:				1 !default;
+$masonry-columns-count-md:				2 !default;
+$masonry-columns-count-lg:				3 !default;
+$masonry-columns-count-xl:				4 !default;
+
+
+// Breakpoints mixins example
+//
+// Пример как использовать точки адаптации
+
+// @include breakpoint-up(xs) { ... }
+// @include breakpoint-up(sm) { ... }
+// @include breakpoint-up(md) { ... }
+// @include breakpoint-up(lg) { ... }
+// @include breakpoint-up(xl) { ... }
+
+// @include breakpoint-down(xs) { ... }
+// @include breakpoint-down(sm) { ... }
+// @include breakpoint-down(md) { ... }
+// @include breakpoint-down(lg) { ... }
+// @include breakpoint-down(xl) { ... }
+
+// @include breakpoint-range(xs) { ... }
+// @include breakpoint-range(sm) { ... }
+// @include breakpoint-range(md) { ... }
+// @include breakpoint-range(lg) { ... }
+// @include breakpoint-range(xl) { ... }

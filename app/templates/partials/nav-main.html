@@ -1,0 +1,7 @@
+<ul class="list-inline nav-main">
+    {% import "data/nav-main.html" as menuList %}
+    {% import "partials/mixins.html" as mixins %}
+    {% for item in menuList.list %}
+    {{ mixins.menuItem(item, namespace, loop.index) }}
+    {% endfor %}
+</ul>

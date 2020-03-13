@@ -1,0 +1,209 @@
+@function parseInt($n) { /* 2 */
+	@return $n / ($n * 0 + 1);
+}
+
+@function ratio($width, $max-value:$max){
+	@return (parseInt($width)*100%/parseInt($max-value));
+}
+
+@function fluid($width, $max-value:$max){
+	@return (parseInt($width)*100%/parseInt($max-value));
+}
+
+@mixin respond-to($media){
+	@media #{$media} {
+		@content;
+	}
+}
+
+@mixin stretch($top: 0, $right: 0, $bottom: 0, $left: 0) {
+	position: absolute;
+	left: $left;
+	right: $right;
+	top: $top;
+	bottom: $bottom;
+}
+
+@mixin stretch-x($left: 0, $right: 0) {
+	position: absolute;
+	left: $left;
+	right: $right;
+}
+
+@mixin stretch-y($top: 0, $bottom: 0) {
+	position: absolute;
+	top: $top;
+	bottom: $bottom;
+}
+
+/// Returns the opposite direction of each direction in a list
+/// @author Hugo Giraudel
+/// @param {List} $directions - List of initial directions
+/// @return {List} - List of opposite directions
+@function opposite-direction($directions) {
+	$opposite-directions: ();
+	$direction-map: (
+		'top':    'bottom',
+		'right':  'left',
+		'bottom': 'top',
+		'left':   'right',
+		'center': 'center',
+		'ltr':    'rtl',
+		'rtl':    'ltr'
+	);
+
+	@each $direction in $directions {
+		$direction: to-lower-case($direction);
+
+		@if map-has-key($direction-map, $direction) {
+			$opposite-directions: append($opposite-directions, unquote(map-get($direction-map, $direction)));
+		} @else {
+			@warn "No opposite direction can be found for `#{$direction}`. Direction omitted.";
+		}
+	}
+
+	@return $opposite-directions;
+}
+
+@mixin triangle-mod($direction, $height, $width, $color){
+	$opp: opposite-direction($direction);
+	border-#{$direction}-width: $height;
+	border-#{$direction}-color: $color;
+	border-#{$opp}-width: 0;
+	@if( $direction == 'top' or $direction == 'bottom' ){
+		border-left-width: $width/2;
+		border-right-width: $width/2;
+	}
+	@if( $direction == 'left' or $direction == 'right' ){
+		border-top-width: $width/2;
+		border-bottom-width: $width/2;
+	}
+}
+
+@mixin triangle($direction, $height, $width, $color: inherit){
+	@if not index(top right bottom left, $direction) {
+		@warn "Direction must be one of `top`, `right`, `bottom` or `left`; currently `#{$direction}`.";
+	} @else {
+		content: '';
+		display: inline-block;
+		vertical-align: middle;
+		width: 0;
+		height: 0;
+		border-style: solid;
+		border-color: transparent;
+		@include triangle-mod($direction, $height, $width ,$color);
+	}
+}
+
+// Clearfix
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+//
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+
+@mixin clearfix() {
+	&::before,
+	&::after {
+		content: " "; // 1
+		display: table; // 2
+	}
+	&::after {
+		clear: both;
+	}
+}
+
+/// Создает значок меню с заданной шириной, высотой, количеством полос и цветом. Mixin использует высоту иконки и толщину полос, чтобы определить расстояние. <div class="docs-example-burger"></div>
+///
+/// @param {Color} $color [#000] - Цвет.
+/// @param {Color} $color-hover [#6b6b6b] - Цвет при наведение.
+/// @param {Number} $width [20px] - Ширина иконки.
+/// @param {Number} $height [16px] - Высота иконки.
+/// @param {Number} $weight [2px] - Высота полоски.
+/// @param {Number} $bars [3] - Количество полосок.
+@mixin hamburger(
+  $color: #000,
+  $color-hover: #6b6b6b,
+  $width: 20px,
+  $height: 16px,
+  $weight: 2px,
+  $bars: 3
+) {
+  // box-shadow CSS output
+  $shadow: ();
+  $hover-shadow: ();
+
+  // Spacing between bars is calculated based on the total height of the icon and the weight of each bar
+  $spacing: ($height - ($weight * $bars)) / ($bars - 1);
+
+  @if unit($spacing) == 'px' {
+    $spacing: floor($spacing);
+  }
+
+  @for $i from 2 through $bars {
+    $offset: ($weight + $spacing) * ($i - 1);
+    $shadow: append($shadow, 0 $offset 0 $color, comma);
+  }
+
+  // Icon container
+  position: relative;
+  display: inline-block;
+  vertical-align: middle;
+  width: $width;
+  height: $height;
+  cursor: pointer;
+
+  // Icon bars
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    display: block;
+    width: 100%;
+    height: $weight;
+
+    background: $color;
+    box-shadow: $shadow;
+
+    content: '';
+  }
+
+  // Hover state
+  @if $color-hover {
+    // Generate CSS
+    @for $i from 2 through $bars {
+      $offset: ($weight + $spacing) * ($i - 1);
+      $hover-shadow: append($hover-shadow, 0 $offset 0 $color-hover, comma);
+    }
+
+    &:hover::after {
+      background: $color-hover;
+      box-shadow: $hover-shadow;
+    }
+  }
+}
+
+@mixin vertical-center {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+  }
+  
+  @mixin horizontal-center {
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  
+  @mixin absolute-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+  }
