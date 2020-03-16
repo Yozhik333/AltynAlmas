@@ -23,14 +23,38 @@
 }
 
 
-.icon-left::before {
+.icon-btn-details::before {
 	content: "\ea01";
 }
 
-.icon-logo::before {
+.icon-left::before {
 	content: "\ea02";
 }
 
-.icon-right::before {
+.icon-logo::before {
 	content: "\ea03";
+}
+
+.icon-network::before {
+	content: "\ea04";
+}
+
+.icon-right::before {
+	content: "\ea05";
+}
+
+.icon-safety::before {
+	content: "\ea06";
+}
+
+.icon-schedule::before {
+	content: "\ea07";
+}
+
+.icon-star::before {
+	content: "\ea08";
+}
+
+.icon-users::before {
+	content: "\ea09";
 }
