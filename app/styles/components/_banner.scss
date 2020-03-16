@@ -1,13 +1,43 @@
 .banner{
-	height: 557px;
+	height: 560px;
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;
 	padding: 278px 0 89px 0;
-	&__block{
-		max-width: 647px;
-		width: 100%;
-		height: 190px;
-		background: linear-gradient(334.63deg, #FFFFFF 21.09%, rgba(196, 196, 196, 0) 94.03%);
-	}
+}
+
+.title-wrapper{
+  position: relative;
+  
+  &::after{
+    content: '';
+    z-index: -1;
+    position: absolute;
+    background: linear-gradient(334.63deg, #FFFFFF 21.09%, rgba(196, 196, 196, 0) 94.03%);
+    top: -40px;
+    bottom: -75px;
+    left: -100%;
+    right: -55px;
+  }
+}
+
+.h1-wrap{
+  h1{
+    position: relative;
+    
+    
+    &::after{
+      content: '';
+      position: absolute;
+      background: #000;
+      bottom: -16px ;
+      height: 5px;
+      left: -100%;
+      right: 0;
+    }
+    
+    .big-font{
+      font-size: 60px;
+    }
+  }
 }

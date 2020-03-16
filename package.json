@@ -49,5 +49,8 @@
     "underscore": "^1.9.1",
     "webpack": "^4.30.0",
     "webpack-stream": "^5.2.1"
+  },
+  "dependencies": {
+    "swiper": "^5.3.6"
   }
 }
