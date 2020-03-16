@@ -37,7 +37,14 @@ $btn-border-width: 1px !default;
 		opacity: $btn-disabled-opacity;
 		box-shadow: none;
 	}
-
+  
+  &-detail{
+    background: #002c4d;
+    font-size: 12px;
+    font-weight: 400;
+    border-radius: 20px;
+    padding: 10px 25px;
+  }
 }
 
 a.btn {

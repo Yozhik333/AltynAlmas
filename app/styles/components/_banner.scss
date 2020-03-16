@@ -38,7 +38,7 @@
     }
     
     .big-font{
-      font-size: 60px;
+      @include fluidFontSize(38px,60px,1024px,1680px);
     }
   }
 }

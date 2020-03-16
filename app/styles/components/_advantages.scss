@@ -2,7 +2,9 @@
   margin-bottom: 100px;
   
   &__banner-wrap{
-    width: 495px;
+    //w370
+    //width: 495px;
+    //@include fluidWidth(370px,495px,1024px,1680px);
     height: 510px;
     border: 5px solid #000000;
     position: relative;
@@ -22,35 +24,39 @@
     
     .title{
       color: #000000;
-      font-size: 48px;
       font-weight: 400;
+      @include fluidFontSize(32px,48px,1024px,1680px);
       padding: 45px 5px 5px 15px;
       
       &-small{
-        font-size: 30px;
-        margin-top: 40px;
+        @include fluidFontSize(22px,30px,1024px,1680px);
+        @include fluidMarginTop(16px,40px,1024px,1680px);
       }
     }
   }
   
   &__article{
-    padding: 20px 0 0 35px;
+    padding: 20px;
+    @include fluidPaddingLeft(25px,35px,1024px,1680px);
     width: calc(100% - 31.5%);
     display: flex;
     flex-wrap: wrap;
     
     article{
       width: 50%;
-      padding: 27px 20px;
+      @include fluidPaddingTop(8px,27px,1024px,1680px);
+      @include fluidPaddingRight(8px,27px,1024px,1680px);
+      @include fluidPaddingBottom(8px,27px,1024px,1680px);
+      @include fluidPaddingLeft(8px,27px,1024px,1680px);
     }
     
     .icon-article{
-      font-size: 80px;
       margin-right: 8px;
       color: #f4d7ab;
+      @include fluidFontSize(50px,80px,1024px,1680px);
     }
     
-    h4{
+    h5{
       display: flex;
       align-items: center;
       justify-content: space-between;

@@ -18,7 +18,7 @@ h1{
   text-transform: uppercase;
   
   &.small{
-    font-size: 48px;
+    @include fluidFontSize(25px,48px,1024px,1680px);
   }
 }
 
