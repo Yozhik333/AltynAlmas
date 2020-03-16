@@ -1,5 +1,6 @@
 import sayHello from './lib/sayHello';
 import {mainTopSlider} from './lib/mainTopSlider';
+import {mainNewsSlider} from './lib/mainNewsSlider';
 
 sayHello();
 

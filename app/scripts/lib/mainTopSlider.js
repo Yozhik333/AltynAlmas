@@ -12,7 +12,6 @@ let mainTopSlider = new Swiper('.mainTopSlider .swiper-container', {
       let data = document.querySelector('.swiper-slide-active').getAttribute('data-title');
       let activeTitle = document.querySelector('.slide-title');
       activeTitle.innerText = data;
-      // console.log(titleWrapWidth)
     },
   },
 });
