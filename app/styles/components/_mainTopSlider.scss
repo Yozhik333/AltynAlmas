@@ -6,7 +6,7 @@
     &-container {
       @include stretch();
     }
-  
+    
     &-slide {
       width: 93%;
       background-position: center;
@@ -20,7 +20,7 @@
     height: 100%;
   }
   
-  .flex{
+  .flex {
     height: 100%;
   }
   
@@ -28,7 +28,7 @@
     margin-bottom: 2px;
   }
   
-  .text-normal{
+  .text-normal {
     width: 500px;
     line-height: 36px;
     margin-bottom: 15px;
@@ -39,5 +39,14 @@
     top: 50%;
     right: 25px;
     transform: translate(0, -50%);
+  }
+  
+  .slide-title {
+    color: #012d49;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 30px;
+    margin-top: 60px;
+    transition: opacity .7s ease-in;
   }
 }
