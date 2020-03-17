@@ -1,0 +1,34 @@
+.dropdown-level-1{
+  position: absolute;
+  padding: 15px 0 15px 172px;
+  top: 110%;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  
+  &::before{
+    content: '';
+    @include stretch(0, -20%, 0, -20%);
+    background: #D0B37B;
+    z-index: -1;
+  }
+  
+  li:not(:last-child){
+    margin-right: 65px;
+  }
+}
+
+.dropdown-level-{
+  li{
+    margin-top: 10px;
+    
+    .menu-title{
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 16px;
+      text-transform: capitalize;
+      color: #000;
+    }
+  }
+}

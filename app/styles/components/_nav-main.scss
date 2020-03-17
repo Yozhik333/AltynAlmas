@@ -1,14 +1,14 @@
 .nav-main {
-	
   
-  ul{
-    li{
-      &:not(:last-child){
+  
+  & > ul {
+    & > li {
+      &:not(:last-child) {
         margin-right: 15px;
       }
     }
     
-    a{
+    a {
       color: #000000;
       font-family: Roboto;
       font-size: 14px;
