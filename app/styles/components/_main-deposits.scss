@@ -1,0 +1,38 @@
+.main-deposits{
+  .swiper {
+    &-slide {
+      width: 100%;
+    }
+  }
+  
+  .arrow-wrapper{
+    top: auto;
+    bottom: 20px;
+    transform: initial;
+    display: none;
+  }
+  
+  &__items{
+    margin-bottom: 90px;
+  }
+  
+  &__item{
+    width: calc(100% / 5);
+    padding: 0 10px;
+  }
+  
+  &__item-photo{
+    padding-top: 100%;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+  }
+  
+  &__item-title{
+    color: #000000;
+    font-size: 16px;
+    @include fluidFontSize(14px,16px,1024px,1680px);
+    font-weight: 400;
+    text-align: center;
+  }
+}

@@ -1,6 +1,7 @@
 import sayHello from './lib/sayHello';
 import {mainTopSlider} from './lib/mainTopSlider';
 import {mainNewsSlider} from './lib/mainNewsSlider';
+import {mainDeposits} from './lib/mainDeposits';
 import {dropdown} from './lib/dropdown';
 
 sayHello();
