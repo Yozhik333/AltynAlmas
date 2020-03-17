@@ -1,14 +1,19 @@
 {% macro menuItem(item, namespace, level) %}
-<li{%if item.namespace == namespace %} class="active"{% endif %}>
-    <a href="{{item.url}}">
-        {{ item.name }}
-        {% if item.items %}
-        <ul class="dropdown-menu dropdown-level-{{level}}">
-            {% for item in item.items %}
-            {{ menuItem(item) }}
-            {% endfor %}
-        </ul>
-        {% endif %}
+<li class="{%if item.namespace == namespace %}active{% endif %} {%if item.items %}dropdownWrap{% endif %}">
+    <a class="link {{item.class }}" href="{{item.url}}">
+        <div class="menu-title">
+            {{ item.name }}
+        </div>
+        <div class="menu-icon">
+            <i class="{{item.icon }}"></i>
+        </div>
     </a>
+    {% if item.items %}
+    <ul class="dropdown-menu dropdown-level-{{level}}">
+        {% for item in item.items %}
+        {{ menuItem(item) }}
+        {% endfor %}
+    </ul>
+    {% endif %}
 </li>
 {% endmacro %}

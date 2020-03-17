@@ -1,6 +1,10 @@
 .header {
   border-bottom: solid 6px #d0b37b;
   padding: 6px 0;
+  
+  .container-fluid{
+    position: relative;
+  }
 }
 
 .logo{
