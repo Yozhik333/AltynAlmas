@@ -1,11 +1,11 @@
 {% macro menuItem(item, namespace, level) %}
 <li class="{%if item.namespace == namespace %}active{% endif %} {%if item.items %}dropdownWrap{% endif %}">
     <a class="link {{item.class }}" href="{{item.url}}">
-        <div class="menu-icon">
-            <i class="{{item.icon }}"></i>
-        </div>
         <div class="menu-title">
             {{ item.name }}
+        </div>
+        <div class="menu-icon">
+            <i class="{{item.icon }}"></i>
         </div>
     </a>
     {% if item.items %}
