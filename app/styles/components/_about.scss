@@ -1,22 +1,33 @@
 .article-title-wrap {
-	display: flex;
+	color: #000000;
+    @include fluidFontSize(26px,36px,1024px,1680px);
+    font-weight: 400;
+    text-transform: uppercase;
 	.article-title{
-		font-size: 36px;
-		font-weight: normal;
-		line-height: 42px;
-		padding: 0 50px 7px 0;
 		position: relative;
+      	display: inline-block;
 		&-after{
 			content: '';
 			position: absolute;
-			width: 100%;
 			height: 3px;
-			background-color: #000;
+			background: #000;
+			@include fluidPaddingLeft(460px,660px,1024px,1680px);
+			bottom: -12px;
 			left: 0;
-			bottom: 0;
 		}
 	}
 }
+
+// -block__title{
+    
+    
+//     .line_bottom{
+      
+      
+//       &::before{
+        
+//       }
+//     }
 
 .about-gold{
 	padding: 30px 0 73px 0;
@@ -42,4 +53,109 @@
 		flex-flow: column;
 		justify-content: flex-end;
 	}
+}
+
+
+.about-items{
+	padding: 0 0 32px 0;
+	&__title{
+		font-size: 20px;
+		font-weight: bold;
+		color: $dark-blue;
+	}
+}
+
+.about-items__contain{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	padding: 21px 0 0 0;
+	.about-items__item-wrap{
+		margin: 0 88px 0 0;
+		max-width: 352px;
+		.about-items__item{
+			display: flex;;
+			justify-content: space-between;
+			flex-flow: column;
+			&-title{
+				font-size: 14px;
+				color: $dark-blue;
+				line-height: 24px;
+				font-weight: bold;
+				padding: 0 0 5px 0;
+			}
+			&-img{
+				width: 352px;
+				img{
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+
+.about-mission{
+	padding: 33px 0;
+	.advantages__banner-wrap{
+		margin: 55px 0 0 26px;
+		height: 797px;
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-end;
+		.advantages__banner{
+			transform: translate(-30px, -45px);
+			bottom: 308px;
+			.text-uppercase{
+				font-size: 24px;
+			}
+		}
+	}
+}
+
+.advantages-description{
+	padding: 27px 33px 12px 35px;
+	.under-title{
+		text-transform: uppercase;
+		font-size: 36px;
+	}
+	.under-text{
+		line-height: 26px;
+	}
+}
+
+.values{
+	padding: 7px 15px 15px 0;
+	@include fluidPaddingLeft(15px,45px,1024px,1680px);
+	width: calc(100% - 31.5%);
+	&__head{
+		font-size: 36px;
+		text-transform: uppercase;
+	}
+	&__body{
+		padding: 33px 0;
+		display: flex;
+		flex-flow: wrap;
+		justify-content: flex-end;
+		&-title{
+			font-size: 18px;
+			color: $dark-blue;
+			font-weight: bold;
+		}
+		&-points{
+			ul{
+				@include fluidPaddingRight(40px,120px,1024px,1680px);
+				li{
+					list-style-type: disc;
+					text-indent: 20px;
+					margin: 0 0 20px 0;
+				}
+			}
+		}
+	}
+}
+
+.values-article{
+	width: 50%;
+	padding: 0 40px 0 0;
 }
