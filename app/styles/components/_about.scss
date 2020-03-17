@@ -2,7 +2,6 @@
 	color: #000000;
     @include fluidFontSize(26px,36px,1024px,1680px);
     font-weight: 400;
-	text-transform: uppercase;
 	padding-bottom: 12px;
 	.article-title{
 		position: relative;
@@ -20,34 +19,7 @@
 	}
 }
 
-.advantages-description{
-	padding: 27px 33px 12px 35px;
-	.under-title{
-		text-transform: uppercase;
-		font-size: 36px;
-	}
-	.under-text{
-		line-height: 26px;
-	}
-}
 
-.advantages-buttons{
-	padding: 15px 47px 7px 9px;
-	@include fluidPaddingRight(3px,47px,1024px,1680px);
-	&__title{
-		@include fluidFontSize(16px, 20px, 1024px, 1680px);
-		font-weight: bold;
-		margin-bottom: 28px;
-	}
-	&__btn-wrap{
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 12px;
-		p{
-			margin-bottom: 0;
-		}
-	}
-}
 
 
 
@@ -74,6 +46,7 @@
 		display: flex;
 		flex-flow: column;
 		justify-content: flex-end;
+		line-height: 24px;
 	}
 }
 
@@ -215,6 +188,61 @@
 			bottom: 236px;
 			@media (min-width: 1024px) and (max-width: 1680px) {
 				bottom: fs(350, 236, 1024, 1680);
+			}
+		}
+	}
+}
+
+
+.governance{
+	padding: 31px 0 45px;
+	&-soviet{
+		&__points{
+			&-block{
+				width: 50%;
+				&:first-child{
+					padding: 0 38px 0 0;
+				}
+				ul{
+					li{
+						margin: 0 0 25px 0;
+						position: relative;
+						text-indent: 20px;
+						line-height: 26px;
+						&::before{
+							content: '►';
+							position: absolute;
+							left: -20px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.persons-wrap{
+	padding: 30px 0;
+}
+
+.rule{
+	padding: 70px 0 47px 0;
+}
+
+.rule-persons-wrap{
+	.advantages__banner-wrap-outside--persons{
+		width: 32%;
+		.advantages__banner--photo{
+			right: 50%;
+			bottom: 0;
+			top: 0;
+		}
+		.advantages__banner-wrap--margin{
+			display: flex;
+			padding: 0;
+			@include fluidPaddingLeft(100px,200px,1024px,1680px);
+			.advantages-description{
+				justify-content: space-evenly;
 			}
 		}
 	}

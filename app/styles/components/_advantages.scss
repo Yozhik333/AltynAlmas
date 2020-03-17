@@ -69,3 +69,70 @@
     }
   }
 }
+
+
+.advantages-description{
+	padding: 27px 33px 12px 35px;
+	.under-title{
+		text-transform: uppercase;
+		font-size: 36px;
+	}
+	.under-text{
+		line-height: 26px;
+  }
+  .under-title-dark{
+    @include fluidFontSize(18px, 24px, 1024px, 1680px);
+    font-weight: bold;
+    line-height: 26px;
+    color: $dark-blue;
+    @include fluidMarginBottom(10px,30px,1024px,1680px);
+  }
+}
+
+.advantages-buttons{
+	padding: 15px 47px 7px 9px;
+	@include fluidPaddingRight(3px,47px,1024px,1680px);
+	&__title{
+		@include fluidFontSize(16px, 20px, 1024px, 1680px);
+		font-weight: bold;
+		margin-bottom: 28px;
+	}
+	&__btn-wrap{
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 12px;
+		p{
+			margin-bottom: 0;
+		}
+	}
+}
+
+.advantages__banner--photo{
+  background-size: contain;
+  background-repeat: no-repeat;
+  transform: translate(-37px, -31px);
+  background-color: $gray-bg;
+  bottom: 50%;
+}
+
+.advantages__banner-wrap--margin{
+  margin: 37px 0 0 31px;
+  padding: 200px 0 0 0;
+  min-height: 322px;
+  height: 100%;
+  .advantages-description{
+    padding: 27px 7px 35px 15px;
+    @include fluidPaddingBottom(20px,35px,1024px,1680px);
+    height: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+}
+
+.advantages__banner-wrap-outside--persons{
+  width: 25%;
+  &:not(:last-child){
+    margin: 0 34px 0 0;
+  }
+}

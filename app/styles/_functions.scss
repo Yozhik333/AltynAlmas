@@ -195,6 +195,23 @@
   }
 }
 
+// mixin
+@mixin fluidMarginBottom($f-min, $f-max, $w-min, $w-max, $fallback: false) {
+  
+  margin-bottom: $f-min;
+  
+  @media (min-width: $w-min) {
+    @if ($fallback) {
+      margin: $fallback;
+    }
+    margin-bottom: fs($f-min, $f-max, $w-min, $w-max, px);
+  }
+  @media (min-width: $w-max) {
+    margin-bottom: $f-max;
+  }
+}
+
+
 
 .fluid-font-size {
   @include fluidFontSize(16px, 24px, 480px, 1280px, 18px);
