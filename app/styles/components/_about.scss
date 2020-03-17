@@ -2,21 +2,54 @@
 	color: #000000;
     @include fluidFontSize(26px,36px,1024px,1680px);
     font-weight: 400;
-    text-transform: uppercase;
+	text-transform: uppercase;
+	padding-bottom: 12px;
 	.article-title{
 		position: relative;
-      	display: inline-block;
+		display: inline-block;
+		padding-bottom: 12px;
 		&-after{
 			content: '';
 			position: absolute;
 			height: 3px;
 			background: #000;
 			@include fluidPaddingLeft(460px,660px,1024px,1680px);
-			bottom: -12px;
+			bottom: 0;
 			left: 0;
 		}
 	}
 }
+
+.advantages-description{
+	padding: 27px 33px 12px 35px;
+	.under-title{
+		text-transform: uppercase;
+		font-size: 36px;
+	}
+	.under-text{
+		line-height: 26px;
+	}
+}
+
+.advantages-buttons{
+	padding: 15px 47px 7px 9px;
+	@include fluidPaddingRight(3px,47px,1024px,1680px);
+	&__title{
+		@include fluidFontSize(16px, 20px, 1024px, 1680px);
+		font-weight: bold;
+		margin-bottom: 28px;
+	}
+	&__btn-wrap{
+		justify-content: space-between;
+		align-items: center;
+		margin-bottom: 12px;
+		p{
+			margin-bottom: 0;
+		}
+	}
+}
+
+
 
 .about-gold{
 	padding: 30px 0 73px 0;
@@ -49,7 +82,6 @@
 	padding: 0 0 32px 0;
 	&__title{
 		font-size: 20px;
-		font-weight: bold;
 		color: $dark-blue;
 	}
 }
@@ -95,26 +127,27 @@
 		.advantages__banner{
 			transform: translate(-30px, -45px);
 			bottom: 308px;
+			@media (min-width: 1024px) and (max-width: 1680px) {
+				bottom: fs(460, 308, 1024, 1680);
+			}
+			.title{
+				padding: 23px 11px 7px 11px;
+			}
 			.text-uppercase{
-				font-size: 24px;
+				@include fluidFontSize(18px,24px,1024px,1680px);
+				text-transform: capitalize;
+			}
+			.title-small{
+				margin-top: 0;
+				@include fluidFontSize(26px,36px,1024px,1680px);
 			}
 		}
 	}
 }
 
-.advantages-description{
-	padding: 27px 33px 12px 35px;
-	.under-title{
-		text-transform: uppercase;
-		font-size: 36px;
-	}
-	.under-text{
-		line-height: 26px;
-	}
-}
 
 .values{
-	padding: 7px 15px 15px 0;
+	padding: 7px 0 15px 0;
 	@include fluidPaddingLeft(15px,45px,1024px,1680px);
 	width: calc(100% - 31.5%);
 	&__head{
@@ -133,7 +166,7 @@
 		}
 		&-points{
 			ul{
-				@include fluidPaddingRight(40px,120px,1024px,1680px);
+				@include fluidPaddingRight(20px,120px,1024px,1680px);
 				li{
 					list-style-type: disc;
 					text-indent: 20px;
@@ -144,7 +177,45 @@
 	}
 }
 
+
 .values-article{
 	width: 50%;
-	padding: 0 40px 0 0;
+	padding: 0 20px 0 0;
+}
+
+
+.corporate{
+	padding: 40px 0 60px;
+	&__codex{
+		width: calc(100% - 31.5%);
+		padding-top: 20px;
+		@include fluidPaddingRight(15px, 41px, 1024px, 1680px);
+		&-description{
+			p{
+				font-family: "HelveticaNeueCyr", sans-serif;
+				line-height: 26px;
+			}
+			ul{
+				list-style-type: disc;
+				text-indent: 20px;
+				li:not(:last-child){
+					margin: 0 0 30px 0;
+				}
+			}
+		}
+	}
+	.advantages__banner-wrap{
+		margin: 0 0 0 26px;
+		height: 647px;
+		display: flex;
+		flex-flow: column;
+		justify-content: flex-end;
+		.advantages__banner{
+			transform: translate(-30px, 9px);
+			bottom: 236px;
+			@media (min-width: 1024px) and (max-width: 1680px) {
+				bottom: fs(350, 236, 1024, 1680);
+			}
+		}
+	}
 }
