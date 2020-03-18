@@ -1,0 +1,161 @@
+<!-- Главная страница -->
+{% set title = "Основные направления" %}
+{% set namespace = "activity-detail" %}
+{% set page = "activity-detail" %}
+{% extends "layouts/default.html" %}
+<!-- ********************************************************************* -->
+{% block content %}
+<div class="activity-detail">
+    <div class="mainTopSlider mainDepositsSlider">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"
+                     style="background-image: url('images/samples/activity-detail.jpg');">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="flex align-items-center">
+                <div class="title-wrapper">
+                    <div class="h1-wrap">
+                        <h1>
+                            Акбакай
+                        </h1>
+                    </div>
+                </div>
+                <div class="arrow-wrapper">
+                    <!-- Add Arrows -->
+                    <div class="btn-slide-prev">
+                        <i class="icon-left"></i>
+                    </div>
+                    <div class="btn-slide-next">
+                        <i class="icon-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="activity-detail-content">
+            <div class="flex flex-wrap">
+                <div class="article-wrap">
+                    <article>
+                        <h2>
+                            Группа золотосодержащих месторождений Акбакайского кластера
+                        </h2>
+                        <div class="description">
+                            <p>
+                                Акбакайское рудное поле находится в пределах Чу-Илийского рудного пояса в
+                                Жалаир-Найманской
+                                палеорифтовой синклинорной структуре, протягивающейся в северо-западном направлении
+                                более, чем
+                                на
+                                600
+                                км. Рудное поле вытянуто в том же направлении на 15 км, ширина его 3,5 - 4,0 км.
+                            </p>
+                            <p>
+                                Золотоизвлекательная
+                                фабрика Акбакайского филиала предназначена для переработки руд месторождений «Акбакай»,
+                                «Бескемпир»,
+                                «Карьерное», «Аксакал», «Светинское», «Кенжем» и лежалых флотационных хвостов
+                                Акбакайской
+                                обогатительной
+                                фабрики.
+                            </p>
+                            <p>
+                                На предприятии осуществлён перевод подземных горных работ на механизированный способ
+                                отработки.
+                                На ЗИФ ведется переработка золотосодержащих руд и извлекается металл с выпуском готового
+                                продукта
+                                сплава
+                                Доре.
+                            </p>
+                        </div>
+                    </article>
+
+                    <a href=""
+                       class="btn btn-detail">
+                        Посмотреть схему работы
+                    </a>
+                </div>
+
+                <div class="activity-detail__info-wrap">
+                    <div class="activity-detail__info">
+                        <div class="activity-detail__item flex">
+                            <div>
+                                <i class="icon-check"></i>
+                            </div>
+                            <div>
+                                <div class="activity-detail__item-title">
+                                    Способ добычи
+                                </div>
+                                <div class="activity-detail__item-desc">
+                                    подземный и открытый
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activity-detail__item flex">
+                            <div>
+                                <i class="icon-check"></i>
+                            </div>
+                            <div>
+                                <div class="activity-detail__item-title">
+                                    Содержание золота в товарном сырье
+                                </div>
+                                <div class="activity-detail__item-desc">
+                                    2,79 г/т
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-detail__item flex">
+                            <div>
+                                <i class="icon-check"></i>
+                            </div>
+                            <div>
+                                <div class="activity-detail__item-title">
+                                    Производительность
+                                </div>
+                                <div class="activity-detail__item-desc">
+                                    825 тыс. тонн руды в год
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-detail__item flex">
+                            <div>
+                                <i class="icon-check"></i>
+                            </div>
+                            <div>
+                                <div class="activity-detail__item-title">
+                                    Технология обработки
+                                </div>
+                                <div class="activity-detail__item-desc">
+                                    интенсивное цианидное выщелачивание и прямое выщелачивание
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-detail__item flex">
+                            <div>
+                                <i class="icon-check"></i>
+                            </div>
+                            <div>
+                                <div class="activity-detail__item-title">
+                                    Конечный продукт
+                                </div>
+                                <div class="activity-detail__item-desc">
+                                    золотосодержащий насыщенный раствор гравиоконцентрата, насыщенный активированный
+                                    уголь
+                                    cip, сплав доре
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
