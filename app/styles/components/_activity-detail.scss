@@ -36,9 +36,7 @@
     @include fluidPaddingRight(5px,20px,1024px,1680px);
     @include fluidPaddingLeft(5px,20px,1024px,1680px);
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
-    height: 512px;
   }
   
   &__item{

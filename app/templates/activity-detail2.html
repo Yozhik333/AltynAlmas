@@ -1,0 +1,157 @@
+<!-- Главная страница -->
+{% set title = "Основные направления" %}
+{% set namespace = "activity-detail" %}
+{% set page = "activity-detail" %}
+{% extends "layouts/default.html" %}
+<!-- ********************************************************************* -->
+{% block content %}
+<div class="activity-detail">
+    <div class="mainTopSlider mainDepositsSlider">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"
+                     style="background-image: url('images/samples/actogai.jpg');background-position-y: -160px;">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="flex align-items-center">
+                <div class="title-wrapper">
+                    <div class="h1-wrap">
+                        <h1>
+                            Актогай
+                        </h1>
+                    </div>
+                </div>
+                <div class="arrow-wrapper">
+                    <!-- Add Arrows -->
+                    <div class="btn-slide-prev">
+                        <i class="icon-left"></i>
+                    </div>
+                    <div class="btn-slide-next">
+                        <i class="icon-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="activity-detail-content">
+            <div class="flex flex-wrap">
+                <div class="article-wrap">
+                    <article>
+                        <h2>
+                            Группа золотосодержащих месторождений Актогайского кластера
+                        </h2>
+                        <div class="description">
+                            <p>
+                                Месторождение золота «Пустынное» расположено в Актогайском районе Карагандинской области
+                                в 100 км восточнее г. Балхаш, в 25 км к северу от железнодорожной станции Акжайдак. В 3 км
+                                восточнее находится разведуемое месторождение с аналогичными рудами «Карьерное», которое
+                                является резервом для восполнения сырьевой базы горно-металлургического предприятия
+                                «Пустынное». В 12 км к востоку расположено кварцево-жильное золоторудное месторождение
+                                «Долинное». Права на недропользование данного месторождения принадлежат дочернему
+                                предприятию АО «АК Алтыналмас» ТОО «Актогай мыс»
+                            </p>
+                            <p>
+                                Месторождение «Пустынное» включает в себя рудник открытых горных работ (карьер),
+                                золотоизвлекательную фабрику (ЗИФ), а также всю необходимую социальную и
+                                производственную инфраструктуру на основании которых было осуществлено строительство и
+                                запущено современное горно-металлургическое предприятие, включающее весь цикл переработки
+                                золотосодержащей руды от добычи до получения конечного продукта в виде сплава «Доре». Часть
+                                процесса изготовления слитка Доре, такие как ультратонкое измельчение, CIL (процесс
+                                выщелачивания золота цианистыми растворами, с одновременной абсорбцией металла из пульпы
+                                активированным углем), элюирование, электролиз и плавка производятся в ТОО «Алтыналмас
+                                Technology» (дочернее предприятие АО «АК Алтыналмас»)
+                            </p>
+                        </div>
+                    </article>
+
+                    <a href="images/samples/actogaisheme.jpg"
+                       data-fancybox
+                       class="btn btn-detail">
+                        Посмотреть схему работы
+                    </a>
+                </div>
+
+                <div class="activity-detail__info-wrap">
+                    <div class="activity-detail__info">
+                        <div class="activity-detail__item flex">
+                            <div>
+                                <i class="icon-check"></i>
+                            </div>
+                            <div>
+                                <div class="activity-detail__item-title">
+                                    СПОСОБ РАЗРАБОТКИ МЕСТОРОЖДЕНИЯ
+                                </div>
+                                <div class="activity-detail__item-desc">
+                                    Открытый способ
+                                </div>
+                            </div>
+                        </div>
+                        <div class="activity-detail__item flex">
+                            <div>
+                                <i class="icon-check"></i>
+                            </div>
+                            <div>
+                                <div class="activity-detail__item-title">
+                                    ТЕХНОЛОГИЯ ОБОГАЩЕНИЯ РУД
+                                </div>
+                                <div class="activity-detail__item-desc">
+                                    Гравитационно-флотационно - цианистая
+                                    технология
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-detail__item flex">
+                            <div>
+                                <i class="icon-check"></i>
+                            </div>
+                            <div>
+                                <div class="activity-detail__item-title">
+                                    МЕСТОРОЖДЕНИЕ ДОЛИННОЕ, ПРОИЗВОДИТЕЛЬНОСТЬ
+                                </div>
+                                <div class="activity-detail__item-desc">
+                                    2,5 млн. тонн руды в
+                                    год, среднее содержание золота в товарном сырье – 1,13 г/т
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-detail__item flex">
+                            <div>
+                                <i class="icon-check"></i>
+                            </div>
+                            <div>
+                                <div class="activity-detail__item-title">
+                                    МЕСТОРОЖДЕНИЕ ПУСТЫННОЕ, ПРОИЗВОДИТЕЛЬНОСТЬ
+                                </div>
+                                <div class="activity-detail__item-desc">
+                                    2,5 млн. тонн
+                                    руды в год, среднее содержание золота в товарном сырье – 1,57 г/т
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="activity-detail__item flex">
+                            <div>
+                                <i class="icon-check"></i>
+                            </div>
+                            <div>
+                                <div class="activity-detail__item-title">
+                                    Конечный продукт
+                                </div>
+                                <div class="activity-detail__item-desc">
+                                    Cплав «Доре»
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

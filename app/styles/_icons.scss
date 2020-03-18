@@ -31,34 +31,42 @@
 	content: "\ea02";
 }
 
-.icon-left::before {
+.icon-history-next::before {
 	content: "\ea03";
 }
 
-.icon-logo::before {
+.icon-history-prev::before {
 	content: "\ea04";
 }
 
-.icon-network::before {
+.icon-left::before {
 	content: "\ea05";
 }
 
-.icon-right::before {
+.icon-logo::before {
 	content: "\ea06";
 }
 
-.icon-safety::before {
+.icon-network::before {
 	content: "\ea07";
 }
 
-.icon-schedule::before {
+.icon-right::before {
 	content: "\ea08";
 }
 
-.icon-star::before {
+.icon-safety::before {
 	content: "\ea09";
 }
 
-.icon-users::before {
+.icon-schedule::before {
 	content: "\ea0a";
-}
+}
+
+.icon-star::before {
+	content: "\ea0b";
+}
+
+.icon-users::before {
+	content: "\ea0c";
+}
