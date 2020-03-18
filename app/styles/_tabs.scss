@@ -14,18 +14,33 @@
 }
 
 .tabs-active{
+	.tab_item{
+		height: 100%;
+	}
 	.tab_point{
 		background-color: $gray-bg;
+		&-icon{
+			transform: rotate(90deg) translateY(6px);
+		}
 	}
 }
 
 .tab_point{
 	font-size: 24px;
 	background-color: $beige;
-	padding: 25px 0 25px 33px;
+	padding: 25px 40px 25px 33px;
 	margin: 0 0 14px 0;
+	display: flex;
+	justify-content: space-between;
+	cursor: pointer;
+	transition: background-color .7s ease;
+	&-icon{
+		transform: rotate(-90deg);
+		transition: transform .7s ease;
+	}
 }
 
 .tab_item{
-	padding: 0 73px 20px 33px;
+	padding: 0 133px 20px 33px;
+	height: 0;
 }
