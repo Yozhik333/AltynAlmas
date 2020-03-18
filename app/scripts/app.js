@@ -24,6 +24,9 @@ sayHello();
   
 }());
 
+
+// Tabs
+
 $(".tab_item").not(":first").hide();
 $(".tabs-wrapper .tab").click(function() {
 	$(".tabs-wrapper .tab").removeClass("tabs-active").eq($(this).index()).addClass("tabs-active");
