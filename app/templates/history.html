@@ -1,0 +1,292 @@
+<!-- Главная страница -->
+{% set title = "История" %}
+{% set namespace = "history" %}
+{% set page = "history" %}
+{% extends "layouts/default.html" %}
+<!-- ********************************************************************* -->
+{% block content %}
+<div class="history">
+    <div class="mainTopSlider">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"
+                     style="background-image: url('images/samples/history-slide.jpg');">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="flex align-items-center">
+                <div class="title-wrapper">
+                    <div class="h1-wrap">
+                        <h1>
+                            История
+                        </h1>
+                    </div>
+                </div>
+                <div class="arrow-wrapper">
+                    <!-- Add Arrows -->
+                    <div class="btn-slide-prev">
+                        <i class="icon-left"></i>
+                    </div>
+                    <div class="btn-slide-next">
+                        <i class="icon-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="data-years flex"></div>
+        <div class="flex flex-wrap">
+            <div class="historySlider">
+                <!-- Swiper -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"
+                             data-year="1993">
+                            <div class="historySlider__slide">
+                                <div class="historySlider__slide-title">
+                                    <div class="historySlider__slide-title-underline">
+                                        1993 год
+                                    </div>
+                                </div>
+                                <div class="historySlider__slide-description">
+                                    Компания приобрела права на разработку месторождения Светинское.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             data-year="1994">
+                            <div class="historySlider__slide">
+                                <div class="historySlider__slide-title">
+                                    <div class="historySlider__slide-title-underline">
+                                        1994 год
+                                    </div>
+                                </div>
+                                <div class="historySlider__slide-description">
+                                    Компания получила права на разработку месторождения Кенжем.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             data-year="1995">
+                            <div class="historySlider__slide">
+                                <div class="historySlider__slide-title">
+                                    <div class="historySlider__slide-title-underline">
+                                        1995 год
+                                    </div>
+                                </div>
+                                <div class="historySlider__slide-description">
+                                    В управление переведено горное месторождение Акбакайской группы с
+                                    производительностью золотоизвлекающей фабрики 230 тыс тонн руды в год.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             data-year="1996">
+                            <div class="historySlider__slide">
+                                <div class="historySlider__slide-title">
+                                    <div class="historySlider__slide-title-underline">
+                                        1996 год
+                                    </div>
+                                </div>
+                                <div class="historySlider__slide-description">
+                                    Введение в эксплуатацию модернизированной обогатительной фабрики Акбакайской группы
+                                    и внедрение высокоэффективной технологии добычи руды c производительностью 1 млн
+                                    тонн в год на основе мобильного оборудования.
+                                    Получение прав на разработку месторожения Пустынное и участка Карьерный.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             data-year="1997">
+                            <div class="historySlider__slide">
+                                <div class="historySlider__slide-title">
+                                    <div class="historySlider__slide-title-underline">
+                                        1997 год
+                                    </div>
+                                </div>
+                                <div class="historySlider__slide-description">
+                                    Компания приобрела права на разработку месторождения Светинское.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             data-year="2002">
+                            <div class="historySlider__slide">
+                                <div class="historySlider__slide-title">
+                                    <div class="historySlider__slide-title-underline">
+                                        2002 год
+                                    </div>
+                                </div>
+                                <div class="historySlider__slide-description">
+                                    Введение в эксплуатацию модернизированной обогатительной фабрики Акбакайской группы
+                                    и внедрение высокоэффективной технологии добычи руды c производительностью 1 млн
+                                    тонн в год на основе мобильного оборудования.
+                                    Получение прав на разработку месторожения Пустынное и участка Карьерный.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             data-year="2007">
+                            <div class="historySlider__slide">
+                                <div class="historySlider__slide-title">
+                                    <div class="historySlider__slide-title-underline">
+                                        2007 год
+                                    </div>
+                                </div>
+                                <div class="historySlider__slide-description">
+                                    Введение в эксплуатацию модернизированной обогатительной фабрики Акбакайской группы
+                                    и внедрение высокоэффективной технологии добычи руды c производительностью 1 млн
+                                    тонн в год на основе мобильного оборудования.
+                                    Получение прав на разработку месторожения Пустынное и участка Карьерный.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             data-year="2008">
+                            <div class="historySlider__slide">
+                                <div class="historySlider__slide-title">
+                                    <div class="historySlider__slide-title-underline">
+                                        2008 год
+                                    </div>
+                                </div>
+                                <div class="historySlider__slide-description">
+                                    В управление переведено горное месторождение Акбакайской группы с
+                                    производительностью золотоизвлекающей фабрики 230 тыс тонн руды в год.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             data-year="2010">
+                            <div class="historySlider__slide">
+                                <div class="historySlider__slide-title">
+                                    <div class="historySlider__slide-title-underline">
+                                        2010 год
+                                    </div>
+                                </div>
+                                <div class="historySlider__slide-description">
+                                    В управление переведено горное месторождение Акбакайской группы с
+                                    производительностью золотоизвлекающей фабрики 230 тыс тонн руды в год.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             data-year="2011">
+                            <div class="historySlider__slide">
+                                <div class="historySlider__slide-title">
+                                    <div class="historySlider__slide-title-underline">
+                                        2011 год
+                                    </div>
+                                </div>
+                                <div class="historySlider__slide-description">
+                                    Компания получила права на разработку месторождения Кенжем.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             data-year="2014">
+                            <div class="historySlider__slide">
+                                <div class="historySlider__slide-title">
+                                    <div class="historySlider__slide-title-underline">
+                                        2014 год
+                                    </div>
+                                </div>
+                                <div class="historySlider__slide-description">
+                                    В управление переведено горное месторождение Акбакайской группы с
+                                    производительностью золотоизвлекающей фабрики 230 тыс тонн руды в год.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             data-year="2017">
+                            <div class="historySlider__slide">
+                                <div class="historySlider__slide-title">
+                                    <div class="historySlider__slide-title-underline">
+                                        2017 год
+                                    </div>
+                                </div>
+                                <div class="historySlider__slide-description">
+                                    В управление переведено горное месторождение Акбакайской группы с
+                                    производительностью золотоизвлекающей фабрики 230 тыс тонн руды в год.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             data-year="2018">
+                            <div class="historySlider__slide">
+                                <div class="historySlider__slide-title">
+                                    <div class="historySlider__slide-title-underline">
+                                        2018 год
+                                    </div>
+                                </div>
+                                <div class="historySlider__slide-description">
+                                    В управление переведено горное месторождение Акбакайской группы с
+                                    производительностью золотоизвлекающей фабрики 230 тыс тонн руды в год.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             data-year="2019">
+                            <div class="historySlider__slide">
+                                <div class="historySlider__slide-title">
+                                    <div class="historySlider__slide-title-underline">
+                                        2019 год
+                                    </div>
+                                </div>
+                                <div class="historySlider__slide-description">
+                                    Компания получила права на разработку месторождения Кенжем.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide"
+                             data-year="2020">
+                            <div class="historySlider__slide">
+                                <div class="historySlider__slide-title">
+                                    <div class="historySlider__slide-title-underline">
+                                        2020 год
+                                    </div>
+                                </div>
+                                <div class="historySlider__slide-description">
+                                    Компания получила права на разработку месторождения Кенжем.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="arrow-wrap">
+                    <!-- Add Arrows -->
+                    <div class="historySlider-button-prev">
+                        <i class="icon-history-prev"></i>
+                    </div>
+                    <div class="historySlider-button-next">
+                        <i class="icon-history-next"></i>
+                    </div>
+                </div>
+            </div>
+
+            <div class="active-slide-info-wrap">
+                <div class="active-slide-info-wrap-inside">
+                    <div class="active-slide-info-fon"
+                         style="background-image: url('images/samples/active-slide-info-fon.jpg')"></div>
+                    <div class="active-slide-info">
+                        <div class="active-slide__title">
+                            1993
+                        </div>
+                        <div class="active-slide__description">
+                            Введение в эксплуатацию модернизированной обогатительной фабрики Акбакайской группы и
+                            внедрение
+                            высокоэффективной технологии добычи руды c производительностью 1 млн тонн в год на основе
+                            мобильного
+                            оборудования.
+                            Получение прав на разработку месторожения Пустынное и участка Карьерный.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
