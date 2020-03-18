@@ -26,6 +26,6 @@ sayHello();
 
 $(".tab_item").not(":first").hide();
 $(".tabs-wrapper .tab").click(function() {
-	$(".tabs-wrapper .tab").removeClass("active").eq($(this).index()).addClass("active");
+	$(".tabs-wrapper .tab").removeClass("tabs-active").eq($(this).index()).addClass("tabs-active");
 	$(".tab_item").hide().eq($(this).index()).fadeIn()
-}).eq(0).addClass("active");
+}).eq(0).addClass("tabs-active");

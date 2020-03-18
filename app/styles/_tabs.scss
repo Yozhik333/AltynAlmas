@@ -4,3 +4,28 @@
 		display: block;
 	}
 }
+
+.tabs-wrapper{
+	.tabs_head{
+		display: flex;
+		flex-flow: column;
+		
+	}
+}
+
+.tabs-active{
+	.tab_point{
+		background-color: $gray-bg;
+	}
+}
+
+.tab_point{
+	font-size: 24px;
+	background-color: $beige;
+	padding: 25px 0 25px 33px;
+	margin: 0 0 14px 0;
+}
+
+.tab_item{
+	padding: 0 73px 20px 33px;
+}
