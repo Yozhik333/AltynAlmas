@@ -25,19 +25,15 @@
                 namespace: 'main-deposits'
             },
             {
-                name: 'Бизнес-модель',
-                url: '/non-page.html',
-                namespace: 'main'
-            },
-            {
                 name: 'Корпоративное управление',
                 url: '/corporate.html',
+                class: block,
                 namespace: 'main',
                 items: [
                 {
                     name: 'Корпоративное управление ',
                     url: 'corporate.html',
-                    class: "active-dropdown"
+                    namespace: 'main'
                 },
                 {
                     name: 'Руководство компании',
@@ -51,7 +47,7 @@
                 },
                 {
                     name: 'Раскрытие информации',
-                    url: '/non-page.html',
+                    url: 'https://kase.kz/ru/issuers/ALMS/',
                     namespace: 'main'
                 }
                 ]
@@ -61,7 +57,58 @@
     {
         name: 'Активы',
         url: 'assets.html',
-        namespace: 'assets'
+        namespace: 'assets',
+        items: [
+            {
+            name: 'Операционная деятельность',
+            url: '',
+            icon: 'icon-right',
+            items: [
+                {
+                    name: 'Акбакай',
+                    url: 'corporate.html',
+                    namespace: 'main'
+                },
+                {
+                    name: 'Актогай',
+                    url: '/governance.html',
+                    namespace: 'main'
+                }
+            ]
+            },
+            {
+            name: 'Проекты роста',
+            icon: 'icon-construction',
+            url: 'about-mission.html'
+            },
+            {
+            name: 'Месторождения',
+            url: 'history.html',
+            namespace: 'history'
+            },
+            {
+            name: 'Проекты',
+            url: '/main-deposits.html',
+            namespace: 'main-deposits',
+            items: [
+                {
+                    name: 'Цифровой рудник',
+                    url: 'corporate.html',
+                    namespace: 'main'
+                },
+                {
+                    name: 'Mine to mill',
+                    url: '/governance.html',
+                    namespace: 'main'
+                },
+                {
+                    name: 'Sana Safety',
+                    url: '',
+                    namespace: ''
+                }
+            ]
+            }
+        ]
     },
     {
         name: 'Устойчивое развитие',
