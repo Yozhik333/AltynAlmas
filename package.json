@@ -51,7 +51,7 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
-    "fancybox": "^3.0.1",
+    "@fancyapps/fancybox": "^3.5.7",
     "jquery": "^3.4.1",
     "swiper": "^5.3.6"
   }

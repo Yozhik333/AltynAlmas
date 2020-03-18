@@ -23,7 +23,7 @@ h1{
 }
 
 h2{
-  font-size: 36px;
+  @include fluidFontSize(22px,36px,1024px,1680px);
   font-weight: normal;
 }
 
