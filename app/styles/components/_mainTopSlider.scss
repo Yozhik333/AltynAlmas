@@ -51,3 +51,17 @@
     transition: opacity .7s ease-in;
   }
 }
+
+[data-template="history"],
+[data-template="main-deposits"]{
+  .swiper {
+    &-slide {
+      width: 100%;
+    }
+  }
+  
+  .arrow-wrapper{
+    display: none;
+  }
+  
+}
