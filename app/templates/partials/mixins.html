@@ -9,7 +9,7 @@
         </div>
     </a>
     {% if item.items %}
-    <ul class="dropdown-menu dropdown-level-{{level}}">
+    <ul class="dropdown-menu dropdown-level-{{level}} {{item.class}}">
         {% for item in item.items %}
         {{ menuItem(item) }}
         {% endfor %}

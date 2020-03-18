@@ -53,7 +53,8 @@
 }
 
 [data-template="history"],
-[data-template="main-deposits"]{
+[data-template="main-deposits"],
+[data-template="activity-detail"]{
   .swiper {
     &-slide {
       width: 100%;
