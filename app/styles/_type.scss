@@ -25,6 +25,23 @@ h1{
 h2{
   @include fluidFontSize(22px,36px,1024px,1680px);
   font-weight: normal;
+  
+  &.underline_bottom-offset{
+    @extend h2;
+    margin-bottom: 26px;
+    position: relative;
+    display: inline-block;
+    
+    &::after{
+      content: '';
+      position: absolute;
+      height: 3px;
+      background-color: #000;
+      bottom: -4px;
+      right: 0;
+      left: 0;
+    }
+  }
 }
 
 h4{
