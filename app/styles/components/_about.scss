@@ -28,25 +28,39 @@
 	&__description{
 		display: flex;
 		justify-content: space-between;
-		&-left{
-			width: 49%;
-		}
-		&-right{
-			width: 49%;
+		overflow: hidden;
+		&-block{
+			width: 50%;
+			display: flex;
+			flex-flow: column;
+			justify-content: flex-end;
+			&:not(:last-child){
+				margin: 0 28px 0 0;
+			}
 		}
 	}
 	&__img{
-		height: 343px;
+		width: 811px;
+		// max-height: 375px;
+		max-width: 100%;
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
+		img{
+			width: 100%;
+			display: block;
+		}
 	}
 	&__words{
-		min-height: 200px;
 		display: flex;
 		flex-flow: column;
 		justify-content: flex-end;
 		line-height: 24px;
+		padding: 0 33px 0 0;
+		margin: 0 0 1rem;
+		p:last-child{
+			margin-bottom: 0;
+		}
 	}
 }
 
@@ -61,25 +75,27 @@
 
 .about-items__contain{
 	display: flex;
-	justify-content: space-between;
-	align-items: flex-end;
 	padding: 21px 0 0 0;
 	.about-items__item-wrap{
-		margin: 0 88px 0 0;
-		max-width: 352px;
+		@include fluidPaddingRight(100px, 189px,1024px,1680px);
+		width: 33%;
 		.about-items__item{
 			display: flex;;
 			justify-content: space-between;
 			flex-flow: column;
+			height: 100%;
+			width: 100%;
 			&-title{
 				font-size: 14px;
 				color: $dark-blue;
 				line-height: 24px;
 				font-weight: bold;
 				padding: 0 0 5px 0;
+				height: 100%;
 			}
 			&-img{
 				width: 352px;
+				max-width: 100%;
 				img{
 					width: 100%;
 				}
@@ -136,14 +152,22 @@
 			font-size: 18px;
 			color: $dark-blue;
 			font-weight: bold;
+			margin: 0 0 7px;
 		}
 		&-points{
 			ul{
 				@include fluidPaddingRight(20px,120px,1024px,1680px);
 				li{
-					list-style-type: disc;
-					text-indent: 20px;
-					margin: 0 0 20px 0;
+					text-indent: 25px;
+					position: relative;
+					&::before{
+						content: '►';
+						position: absolute;
+						left: -25px;
+					}
+					&:not(:last-child){
+						margin: 0 0 20px 0;
+					}
 				}
 			}
 		}
@@ -153,7 +177,8 @@
 
 .values-article{
 	width: 50%;
-	padding: 0 20px 0 0;
+	padding: 0 20px 50px 0;
+	height: 100%;
 }
 
 
@@ -169,10 +194,17 @@
 				line-height: 26px;
 			}
 			ul{
-				list-style-type: disc;
-				text-indent: 20px;
 				li:not(:last-child){
 					margin: 0 0 30px 0;
+				}
+				li{
+					text-indent: 25px;
+					position: relative;
+					&::before{
+						content: '►';
+						position: absolute;
+						left: -25px;
+					}
 				}
 			}
 		}
@@ -207,12 +239,12 @@
 					li{
 						margin: 0 0 25px 0;
 						position: relative;
-						text-indent: 20px;
+						text-indent: 25px;
 						line-height: 26px;
 						&::before{
 							content: '►';
 							position: absolute;
-							left: -20px;
+							left: -25px;
 						}
 					}
 				}

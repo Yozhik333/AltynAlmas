@@ -52,12 +52,12 @@
 	li{
 		margin: 0 0 25px 0;
 		position: relative;
-		text-indent: 20px;
+		text-indent: 25px;
 		line-height: 26px;
 		&::before{
 			content: '►';
 			position: absolute;
-			left: -20px;
+			left: -25px;
 		}
 	}
 }
