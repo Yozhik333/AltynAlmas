@@ -32,3 +32,11 @@ $(".tabs-wrapper .tab").click(function() {
 	$(".tabs-wrapper .tab").removeClass("tabs-active").eq($(this).index()).addClass("tabs-active");
 	$(".tab_item").hide().eq($(this).index()).fadeIn()
 }).eq(0).addClass("tabs-active");
+
+// Не учел, что на ОДНОЙ странице может быть только ОДИН tabs-wrapper
+
+$(".tab_item-security").not(":first").hide();
+$(".tabs-wrapper-environment .tab-security").click(function() {
+	$(".tabs-wrapper-environment .tab-security").removeClass("tabs-active").eq($(this).index()).addClass("tabs-active");
+	$(".tab_item-security").hide().eq($(this).index()).fadeIn()
+}).eq(0).addClass("tabs-active");

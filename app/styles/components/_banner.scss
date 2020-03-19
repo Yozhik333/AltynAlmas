@@ -12,6 +12,12 @@
     z-index: 1;
     position: relative;
   }
+  .title-wrapper{
+    &::after{
+      top: -60px;
+      bottom: -80px;
+    }
+  }
 }
 
 .title-wrapper{
