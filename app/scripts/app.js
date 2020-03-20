@@ -3,6 +3,7 @@ import {mainTopSlider} from './lib/mainTopSlider';
 import {mainNewsSlider} from './lib/mainNewsSlider';
 import {historySlider} from './lib/historySlider';
 import {mainDeposits} from './lib/mainDeposits';
+import {numberDaySlider} from './lib/numberDaySlider';
 import {dropdown} from './lib/dropdown';
 
 sayHello();

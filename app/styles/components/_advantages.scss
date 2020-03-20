@@ -23,7 +23,7 @@
     transform: translate(30px, 45px);
     
     .title{
-      color: #000000;
+      color: #fff;
       font-weight: 400;
       @include fluidFontSize(32px,48px,1024px,1680px);
       padding: 45px 5px 5px 15px;
