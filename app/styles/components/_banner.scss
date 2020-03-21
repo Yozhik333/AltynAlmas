@@ -28,7 +28,7 @@
     content: '';
     z-index: -1;
     position: absolute;
-    background: linear-gradient(334.63deg, #FFFFFF 21.09%, rgba(196, 196, 196, 0) 94.03%);
+    background: linear-gradient(327.14deg, #D0B37B 21.09%, rgba(196, 196, 196, 0) 94.03%);
     top: -40px;
     bottom: -45px;
     left: -100%;
@@ -39,12 +39,12 @@
 .h1-wrap{
   h1{
     position: relative;
-    
+    color: #fff;
     
     &::after{
       content: '';
       position: absolute;
-      background: #000;
+      background: #fff;
       bottom: -16px ;
       height: 5px;
       left: -100%;

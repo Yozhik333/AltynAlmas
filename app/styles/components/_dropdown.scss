@@ -61,7 +61,16 @@
         text-transform: capitalize;
         color: #000;
         display: inline-block;
+        transition: color .3s ease-in-out;
+        
+        &:hover{
+          color: #fff !important;
+        }
       }
+    }
+    
+    a:hover{
+      color: #fff !important;
     }
   }
 }
@@ -70,6 +79,10 @@
   opacity: 0;
   visibility: hidden;
   transition: opacity .3s ease-in-out;
+  
+  a:hover {
+    color: #fff !important;
+  }
 }
 
 .dropdownShow {

@@ -1,6 +1,12 @@
 .header {
   border-bottom: solid 6px #d0b37b;
   padding: 6px 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 6;
+  background-color: #fff;
   
   .container-fluid{
     position: relative;
@@ -14,5 +20,9 @@
   &_right-offset{
     @extend .logo;
     margin-right: 30px;
+  }
+  
+  &:hover{
+    color: #d0b37b;
   }
 }

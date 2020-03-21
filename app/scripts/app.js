@@ -3,6 +3,7 @@ import { mainTopSlider } from './lib/mainTopSlider';
 import { mainNewsSlider } from './lib/mainNewsSlider';
 import { historySlider } from './lib/historySlider';
 import { mainDeposits } from './lib/mainDeposits';
+import { numberDaySlider } from './lib/numberDaySlider';
 import { dropdown } from './lib/dropdown';
 
 sayHello();
@@ -40,12 +41,3 @@ $(".tabs-wrapper-environment .tab-security").click(function () {
 	$(".tabs-wrapper-environment .tab-security").removeClass("tabs-active").eq($(this).index()).addClass("tabs-active");
 	$(".tab_item-security").hide().eq($(this).index()).fadeIn()
 }).eq(0).addClass("tabs-active");
-
-
-
-
-if (DeadInside === false) {
-	console.log('Hallelujah!')
-} else {
-	console.log('Save me, pls...')
-}
