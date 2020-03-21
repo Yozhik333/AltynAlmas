@@ -1,165 +1,179 @@
 {% set list = [
-    {
-        name: 'О компании',
-        url: 'about.html',
-        namespace: 'about',
-        items: [
-            {
-                name: 'О компании',
-                url: 'about.html',
-                icon: 'icon-right'
-            },
-            {
-                name: 'Миссия',
-                url: 'about-mission.html'
-            },
-            {
-                name: 'История',
-                url: 'history.html',
-                namespace: 'history'
-            },
-            {
-                name: 'Основные направления деятельности',
-                url: '/main-deposits.html',
-                namespace: 'main-deposits'
-            },
-            {
-                name: 'Корпоративное управление',
-                url: '/corporate.html',
-                namespace: 'main',
-                items: [
-                {
-                    name: 'Корпоративное управление ',
-                    url: 'corporate.html',
-                    namespace: 'main'
-                },
-                {
-                    name: 'Руководство компании',
-                    url: '/governance.html',
-                    namespace: 'main'
-                },
-                {
-                    name: 'Комитеты Совета Директоров',
-                    url: '/committee.html',
-                    namespace: 'main'
-                },
-                {
-                    name: 'Раскрытие информации',
-                    url: 'https://kase.kz/ru/issuers/ALMS/',
-                    namespace: 'main'
-                }
-                ]
-            }
-        ]
-    },
-    {
-        name: 'Активы',
-        url: 'assets.html',
-        namespace: 'assets',
-        items: [
-            {
-            name: 'Операционная деятельность',
-            url: 'activity-detail.html',
-            icon: 'icon-right',
-            items: [
-                {
-                    name: 'Акбакай',
-                    url: 'activity-detail.html',
-                    namespace: 'activity-detail'
-                },
-                {
-                    name: 'Актогай',
-                    url: '/activity-detail2.html',
-                    namespace: 'main'
-                }
-            ]
-            },
-            {
-            name: 'Проекты роста',
-            url: 'growth-projects.html'
-            },
-            {
-            name: 'Месторождения',
-            url: 'history.html',
-            namespace: 'history'
-            },
-            {
-            name: 'Проекты',
-            url: '/main-deposits.html',
-            namespace: 'main-deposits',
-            items: [
-                {
-                    name: 'Цифровой рудник',
-                    url: 'corporate.html',
-                    namespace: 'main'
-                },
-                {
-                    name: 'Mine to mill',
-                    url: '/governance.html',
-                    namespace: 'main'
-                },
-                {
-                    name: 'Sana Safety',
-                    url: '',
-                    namespace: ''
-                }
-            ]
-            }
-        ]
-    },
-    {
-        name: 'Устойчивое развитие',
-        url: 'development.html',
-        namespace: 'development',
-        items: [
-            {
-                name: 'Безопасность',
-                url: 'development.html',
-                namespace: 'development',
-                icon: 'icon-right'
-            },
-            {
-                name: 'Экология',
-                url: 'development-environment.html',
-                namespace: 'development-environment'
-            },
-            {
-                name: 'Сотрудники',
-                url: 'development-staff.html',
-                namespace: 'staff'
-            },
-            {
-                name: 'Местные сообщества',
-                url: 'development-estate.html',
-                namespace: 'estate'
-            },
-            {
-                name: 'Отчет об устойчивом развитии',
-                url: ''
-            }
-        ]
-    },
-    {
-        name: 'Карьера',
-        url: 'career.html',
-        namespace: 'career'
-    },
-    {
-        name: 'Поставщикам',
-        url: 'suppliers.html',
-        namespace: 'suppliers',
-        items: [
-            {
-                name: 'Стать поставщиком',
-                url: 'suppliers.html',
-                namespace: 'suppliers',
-                icon: 'icon-right'
-            }
-        ]
-    },
-    {
-        name: 'ИНВЕСТОРЫ И СМИ',
-        url: 'investors-and-media.html',
-        namespace: 'investors-and-media'
-    }
+		{
+				name: 'О компании',
+				url: 'about.html',
+				namespace: 'about',
+				items: [
+						{
+								name: 'О компании',
+								url: 'about.html',
+								icon: 'icon-right'
+						},
+						{
+								name: 'Миссия',
+								url: 'about-mission.html'
+						},
+						{
+								name: 'История',
+								url: 'history.html',
+								namespace: 'history'
+						},
+						{
+								name: 'Основные направления деятельности',
+								url: '/main-deposits.html',
+								namespace: 'main-deposits'
+						},
+						{
+								name: 'Корпоративное управление',
+								url: '/corporate.html',
+								namespace: 'main',
+								items: [
+								{
+										name: 'Корпоративное управление ',
+										url: 'corporate.html',
+										namespace: 'main'
+								},
+								{
+										name: 'Руководство компании',
+										url: '/governance.html',
+										namespace: 'main'
+								},
+								{
+										name: 'Комитеты Совета Директоров',
+										url: '/committee.html',
+										namespace: 'main'
+								},
+								{
+										name: 'Раскрытие информации',
+										url: 'https://kase.kz/ru/issuers/ALMS/',
+										namespace: 'main'
+								}
+								]
+						}
+				]
+		},
+		{
+				name: 'Активы',
+				url: 'assets.html',
+				namespace: 'assets',
+				items: [
+						{
+						name: 'Операционная деятельность',
+						url: 'activity-detail.html',
+						icon: 'icon-right',
+						items: [
+								{
+										name: 'Акбакай',
+										url: 'activity-detail.html',
+										namespace: 'activity-detail'
+								},
+								{
+										name: 'Актогай',
+										url: '/activity-detail2.html',
+										namespace: 'main'
+								}
+						]
+						},
+						{
+						name: 'Проекты роста',
+						url: 'growth-projects.html'
+						},
+						{
+						name: 'Месторождения',
+						url: 'history.html',
+						namespace: 'history'
+						},
+						{
+						name: 'Проекты',
+						url: '/main-deposits.html',
+						namespace: 'main-deposits',
+						items: [
+								{
+										name: 'Цифровой рудник',
+										url: 'corporate.html',
+										namespace: 'main'
+								},
+								{
+										name: 'Mine to mill',
+										url: '/governance.html',
+										namespace: 'main'
+								},
+								{
+										name: 'Sana Safety',
+										url: '',
+										namespace: ''
+								}
+						]
+						}
+				]
+		},
+		{
+				name: 'Устойчивое развитие',
+				url: 'development.html',
+				namespace: 'development',
+				items: [
+						{
+								name: 'Безопасность',
+								url: 'development.html',
+								namespace: 'development',
+								icon: 'icon-right'
+						},
+						{
+								name: 'Экология',
+								url: 'development-environment.html',
+								namespace: 'development-environment'
+						},
+						{
+								name: 'Сотрудники',
+								url: 'development-staff.html',
+								namespace: 'staff'
+						},
+						{
+								name: 'Местные сообщества',
+								url: 'development-estate.html',
+								namespace: 'estate'
+						},
+						{
+								name: 'Отчет об устойчивом развитии',
+								url: ''
+						}
+				]
+		},
+		{
+				name: 'Карьера',
+				url: 'career.html',
+				namespace: 'career'
+		},
+		{
+				name: 'Поставщикам',
+				url: 'suppliers.html',
+				namespace: 'suppliers',
+				items: [
+						{
+								name: 'Стать поставщиком',
+								url: 'suppliers.html',
+								namespace: 'suppliers',
+								icon: 'icon-right'
+						},
+						{
+								name: 'Принципы закупочной политики',
+								url: 'suppliers-principles.html',
+								namespace: 'principles'
+						},
+						{
+								name: 'Электронные закупки',
+								url: '',
+								icon: 'icon-right'
+						},
+						{
+								name: 'Контакты для поставщиков',
+								url: ''
+						}
+				]
+		},
+		{
+				name: 'ИНВЕСТОРЫ И СМИ',
+				url: 'investors-and-media.html',
+				namespace: 'investors-and-media'
+		}
 ] %}

@@ -1,81 +1,110 @@
-.suppliers{
-    padding: 30px 0 70px;
-    .article-title-wrap{
-        padding: 0 0 30px 0;
-        .article-title-after{
-            padding-left: 570px;
-            @include fluidPaddingLeft(400px,570px,1024px,1680px);
-        }
-    }
+.suppliers {
+	padding: 30px 0 70px;
+	.article-title-wrap {
+		padding: 0 0 30px 0;
+		.article-title-after {
+			padding-left: 570px;
+			@include fluidPaddingLeft(400px, 570px, 1024px, 1680px);
+		}
+	}
 }
 
-.to-suppliers{
-    width: 50%;
-    @include fluidPaddingRight(40px,76px,1024px,1680px);
-    .to-suppliers__description{
-        ul{
-            li{
-                margin: 0 0 25px 0;
-                position: relative;
-                text-indent: 25px;
-                line-height: 26px;
-                &::before{
-                    content: '►';
-                    position: absolute;
-                    left: -25px;
-                }
-            }
-        }
-    }
+.to-suppliers {
+	width: 50%;
+	@include fluidPaddingRight(40px, 76px, 1024px, 1680px);
+	.to-suppliers__description {
+		ul {
+			li {
+				margin: 0 0 25px 0;
+				position: relative;
+				text-indent: 25px;
+				line-height: 26px;
+				&::before {
+					content: "►";
+					position: absolute;
+					left: -25px;
+				}
+			}
+		}
+	}
 }
 
-.suppliers__form{
-    width: calc(100% - 50%);
-    padding: 27px 0 0;
-    @include fluidPaddingLeft(0,76px,1024px,1680px);
-    &-headline{
-        color: $dark-blue;
-        font-weight: bold;
-        font-size: 20px;
-        line-height: 30px;
-    }
-    &-body{
-        display: flex;
-        flex-flow: wrap;
-        border: 5px solid #000000;
-        padding: 65px 35px 34px 32px;
-        .suppliers__block{
-            width: 50%;
-            display: flex;
-            flex-flow: column;
-            a:not(.btn){
-                display: block;
-                color: $dark-blue;
-                margin: 7px 0 0;
-                &:hover{
-                    color: $brown;
-                }
-            }
-            &:not(:last-child){
-                padding: 0 40px 0 0;
-            }
-            &-head{
-                font-size: 36px;
-                color: $dark-blue;
-                font-weight: 300;
-                text-transform: uppercase;
-                padding: 0 0 28px;
-            }
-            &-body{
-                line-height: 20px;
-                padding: 0 0 33px;
-            }
-            &-footer{
-                height: 100%;
-                .btn-detail{
-                    margin: 20px 0 0;
-                }
-            }
-        }
-    }
+.suppliers__form {
+	width: calc(100% - 50%);
+	padding: 27px 0 0;
+	@include fluidPaddingLeft(0, 76px, 1024px, 1680px);
+	&-headline {
+		color: $dark-blue;
+		font-weight: bold;
+		font-size: 20px;
+		line-height: 30px;
+	}
+	&-body {
+		display: flex;
+		flex-flow: wrap;
+		border: 5px solid #000000;
+		padding: 65px 35px 34px 32px;
+		.suppliers__block {
+			width: 50%;
+			display: flex;
+			flex-flow: column;
+			a:not(.btn) {
+				display: block;
+				color: $dark-blue;
+				margin: 7px 0 0;
+				&:hover {
+					color: $brown;
+				}
+			}
+			&:not(:last-child) {
+				padding: 0 40px 0 0;
+			}
+			&-head {
+				font-size: 36px;
+				color: $dark-blue;
+				font-weight: 300;
+				text-transform: uppercase;
+				padding: 0 0 28px;
+			}
+			&-body {
+				line-height: 20px;
+				padding: 0 0 33px;
+			}
+			&-footer {
+				height: 100%;
+				.btn-detail {
+					margin: 20px 0 0;
+				}
+			}
+		}
+	}
+}
+
+.principles {
+	padding: 81px 0 0;
+	&__lists {
+		width: 30%;
+	}
+
+	&__lists-head {
+		font-size: 18px;
+		font-weight: bold;
+		color: $dark-blue;
+		margin: 0 0 10px;
+	}
+	&__lists-body {
+		ul {
+			li {
+				margin: 0 0 25px 0;
+				position: relative;
+				text-indent: 25px;
+				line-height: 26px;
+				&::before {
+					content: "►";
+					position: absolute;
+					left: -25px;
+				}
+			}
+		}
+	}
 }
