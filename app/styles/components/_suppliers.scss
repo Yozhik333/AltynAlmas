@@ -126,5 +126,13 @@
 		.btn-detail {
 			margin: 33px 0 0;
 		}
+		p {
+			a {
+				color: #000;
+				&:hover {
+					color: lighten($dark-blue, 20%);
+				}
+			}
+		}
 	}
 }
