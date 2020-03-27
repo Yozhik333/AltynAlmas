@@ -1,0 +1,74 @@
+<!-- Месторождения -->
+{% set title = "Месторождения" %}
+{% set namespace = "place-of-birth" %}
+{% set page = "place-of-birth" %}
+{% extends "layouts/default.html" %}
+<!-- ********************************************************************* -->
+{% block content %}
+<div class="place-of-birth">
+    <div class="mainTopSlider mainDepositsSlider">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"
+                     style="background-image: url('images/samples/place-of-birth.jpg')">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="flex align-items-center">
+                <div class="title-wrapper">
+                    <div class="h1-wrap">
+                        <h1>
+                            Месторождения
+                        </h1>
+                    </div>
+                </div>
+                <div class="arrow-wrapper">
+                    <!-- Add Arrows -->
+                    <div class="btn-slide-prev">
+                        <i class="icon-left"></i>
+                    </div>
+                    <div class="btn-slide-next">
+                        <i class="icon-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="place-of-birth-content">
+            <div class="flex">
+                <div class="place-of-birth__mapImg">
+                    <div class="ratio">
+                        <img src="images/samples/mapPlace.svg" alt="">
+                    </div>
+                </div>
+
+                <div class="place-of-birth__info">
+                    <div class="place-of-birth__item">
+                        <div class="place-of-birth__info-title">
+                            3 месторождения Казахалтын
+                        </div>
+
+                        <div class="place-of-birth__info-description">
+                            Аксу Бестобе Жолымбет
+                        </div>
+                    </div>
+
+                    <div class="place-of-birth__item">
+                        <div class="place-of-birth__info-title">
+                            15 месторождений АО «АК Алтыналмас»
+                        </div>
+
+                        <div class="place-of-birth__info-description">
+                            Бактай Карьерное Пустынное ДолинноеСветинское Акбакай Кенжем КарьерноеБескемпир Аксакал
+                            Мизек пл.Долинное Иткудук Ортасай Пустынно-Бактай
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
