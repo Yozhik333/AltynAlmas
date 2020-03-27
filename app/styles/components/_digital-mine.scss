@@ -1,0 +1,65 @@
+.digital-mine {
+  &-content {
+    article {
+      padding-right: 70px;
+    }
+    
+    .description {
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+      color: #000;
+    }
+    
+    .bottom-offset{
+      margin-bottom: 88px;
+    }
+    
+    .h2-small-width{
+      width: 860px;
+      margin-bottom: 74px;
+    }
+  }
+  
+  .video-block {
+    width: 40%;
+  }
+  
+  .video-poster {
+    width: 355px;
+    height: 200px;
+    margin-right: 35px;
+    
+    &.not-offset {
+      margin-right: 0;
+    }
+    
+    img {
+      max-width: 100%;
+    }
+    
+    &:hover{
+      .link-img{
+        transform: translate(0, -4px);
+        box-shadow: 9px 3px 15px rgba(0, 0, 0, 0.2);
+      }
+    }
+  }
+  
+  .link-img {
+    padding-top: 200px;
+    background-size: cover;
+    background-position: 50% 50%;
+    box-shadow: 9px 3px 15px rgba(0, 0, 0, 0);
+    transition: all .3s ease-in-out;
+  }
+  
+  .link-title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 26px;
+    text-decoration-line: underline;
+    margin-top: 12px;
+    color: #002C4D;
+  }
+}

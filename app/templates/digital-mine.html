@@ -1,0 +1,109 @@
+<!-- Цифровой рудник -->
+{% set title = "Цифровой рудник" %}
+{% set namespace = "digital-mine" %}
+{% set page = "digital-mine" %}
+{% extends "layouts/default.html" %}
+<!-- ********************************************************************* -->
+{% block content %}
+<div class="digital-mine">
+    <div class="mainTopSlider mainDepositsSlider">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"
+                     style="background-image: url('images/samples/digital-mine.jpg')">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="flex align-items-center">
+                <div class="title-wrapper">
+                    <div class="h1-wrap">
+                        <h1>
+                            Цифровой рудник
+                        </h1>
+                    </div>
+                </div>
+                <div class="arrow-wrapper">
+                    <!-- Add Arrows -->
+                    <div class="btn-slide-prev">
+                        <i class="icon-left"></i>
+                    </div>
+                    <div class="btn-slide-next">
+                        <i class="icon-right"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="digital-mine-content">
+            <div class="flex bottom-offset">
+                <article>
+                    <h2 class="underline_bottom-offset">
+                        Программа «Цифровой рудник»
+                    </h2>
+                    <div class="description">
+                        <p>
+                            В 2017 году в Компании утверждена Программа «Цифровой рудник» по автоматизации и
+                            цифровизации бизнес-процессов. Программа направлена на повышение операционной эффективности,
+                            снижение производственных издержек, улучшение результативности персонала путем использования
+                            передовых практик и инновационных подходов с применением новых информационных технологий и
+                            инструментов.
+                        </p>
+                        <p>«Цифровой рудник» реализуется в рамках внедрения цифровых технологий и
+                           элементов Индустрии 4.0 и имеет важное значение как в масштабах горно-металлургической
+                           отрасли, так и в масштабах всего государства.
+                        </p>
+                    </div>
+                </article>
+
+                <div class="flex video-block">
+                    <a data-fancybox
+                       class="video-poster link-block"
+                       href="#myVideo1">
+                        <div style="background-image: url('images/samples/poster1.jpg')"
+                             class="link-img">
+                        </div>
+                        <div class="link-title">
+                            Цифровой рудник
+                        </div>
+                    </a>
+
+                    <video class="video"
+                           controls
+                           id="myVideo2"
+                           style="display:none;">
+                        <source src="images/samples/geovia.mp4" type="video/mp4">
+                        Your browser doesn't support HTML5 video tag.
+                    </video>
+
+                    <a data-fancybox
+                       class="video-poster link-block not-offset"
+                       href="#myVideo2">
+                        <div style="background-image: url('images/samples/poster2.jpg')"
+                             class="link-img">
+                        </div>
+
+                        <div class="link-title">
+                            Geovia InSite
+                        </div>
+                    </a>
+
+                    <video class="video"
+                           controls
+                           id="myVideo1"
+                           style="display:none;">
+                        <source src="images/samples/cifrovoi.mp4" type="video/mp4">
+                        Your browser doesn't support HTML5 video tag.
+                    </video>
+                </div>
+            </div>
+
+            <h2 class="underline_bottom-offset small h2-small-width">
+                Программа «Цифровой рудник» включает в себя реализацию более 20-ти проектов в течение 3-х лет.
+            </h2>
+        </div>
+    </div>
+</div>
+{% endblock %}
