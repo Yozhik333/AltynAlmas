@@ -108,3 +108,31 @@
 		}
 	}
 }
+
+.realization {
+	padding: 68px 0 80px;
+	&__block {
+		width: 40%;
+	}
+
+	&__block-title {
+		color: $dark-blue;
+		font-size: 18px;
+		font-weight: bold;
+		height: 80px;
+	}
+
+	&__block-body {
+		.btn-detail {
+			margin: 33px 0 0;
+		}
+		p {
+			a {
+				color: #000;
+				&:hover {
+					color: lighten($dark-blue, 20%);
+				}
+			}
+		}
+	}
+}
