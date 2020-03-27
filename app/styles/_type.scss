@@ -26,6 +26,11 @@ h2{
   @include fluidFontSize(22px,36px,1024px,1680px);
   font-weight: normal;
   
+  &.small{
+    @include fluidFontSize(18px,30px,1024px,1680px);
+    font-weight: normal;
+  }
+  
   &.underline_bottom-offset{
     @extend h2;
     margin-bottom: 26px;
