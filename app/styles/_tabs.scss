@@ -5,27 +5,27 @@
 	}
 }
 
-.tabs-wrapper{
-	.tabs_head{
+.tabs-wrapper {
+	.tabs_head {
 		display: flex;
 		flex-flow: column;
-		
 	}
 }
 
-.tabs-active{
-	.tab_item, .tab_item-security{
+.tabs-active {
+	.tab_item,
+	.tab_item-security {
 		height: 100%;
 	}
-	.tab_point{
+	.tab_point {
 		background-color: $gray-bg;
-		&-icon{
+		&-icon {
 			transform: rotate(90deg) translateY(6px);
 		}
 	}
 }
 
-.tab_point{
+.tab_point {
 	font-size: 24px;
 	background-color: $beige;
 	padding: 25px 40px 25px 33px;
@@ -33,31 +33,59 @@
 	display: flex;
 	justify-content: space-between;
 	cursor: pointer;
-	transition: background-color .7s ease;
-	&-icon{
+	transition: background-color 0.7s ease;
+	&-icon {
 		transform: rotate(-90deg);
-		transition: transform .7s ease;
+		transition: transform 0.7s ease;
 	}
 }
 
-.tab_item, .tab_item-security{
+.tab_item,
+.tab_item-security {
 	padding: 0 133px 20px 33px;
 	height: 0;
-	p{
+	p {
 		line-height: 25px;
 	}
 }
 
-.tabs-lists{
-	li{
+.tabs-lists {
+	li {
 		margin: 0 0 25px 0;
 		position: relative;
 		text-indent: 25px;
 		line-height: 26px;
-		&::before{
-			content: '►';
+		&::before {
+			content: "►";
 			position: absolute;
 			left: -25px;
+		}
+	}
+	&-title {
+		margin: 0 0 7px;
+	}
+}
+
+.tabs-lists-vacancy {
+	margin: 33px 0 0;
+	li {
+		margin: 0 0 7px;
+	}
+}
+
+.tab_links {
+	margin: 70px 0 0;
+	.btn-detail {
+		margin: 0 25px 0 0;
+	}
+	.headhunter {
+		font-style: italic;
+		font-size: 18px;
+		font-weight: 500;
+		text-decoration-line: underline;
+		color: $dark-blue;
+		&:hover {
+			color: $brown;
 		}
 	}
 }
