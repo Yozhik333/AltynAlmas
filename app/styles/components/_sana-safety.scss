@@ -1,0 +1,23 @@
+.sana-safety-content {
+  padding-bottom: 30px;
+  .advantages__banner-wrap-outside {
+    @include fluidWidth(460px,760px,1024px,1680px);
+  }
+  
+  .advantages__banner{
+    transform: translate(-30px, -45px);
+  }
+  
+  .advantages__banner-wrap{
+    height: 380px;
+    margin-bottom: 0;
+  }
+  
+  .article{
+    width: 50%;
+  }
+  
+  .right-side{
+    padding-top: 70px;
+  }
+}
