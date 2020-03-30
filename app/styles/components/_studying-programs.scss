@@ -1,0 +1,58 @@
+.studying-programs-content{
+  padding-bottom: 30px;
+}
+
+.studying-programs__items{
+  margin: 0 -15px;
+}
+
+.studying-programs__item{
+  width: 33.33333%;
+  padding: 0 15px;
+  
+  .title{
+    font-weight: bold;
+    @include fluidFontSize(22px,24px,1024px,1680px);
+    line-height: 28px;
+    margin-bottom: 28px;
+    color: #002C4D;
+  }
+  
+  .img{
+    padding-top: 224px;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 20px;
+  }
+  
+  .description p{
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #000;
+  }
+  
+  .description__list{
+    li{
+      line-height: 18px;
+      position: relative;
+      &:not(:last-child){
+        margin-bottom: 26px;
+      }
+  
+      &::before{
+        content: '';
+        position: relative;
+        width: 4px;
+        height: 4px;
+        background-color: #000;
+        border-radius: 50%;
+        top: 50%;
+        display: inline-block;
+        transform: translate(0, -50%);
+      }
+    }
+  }
+}
+
+
