@@ -1,0 +1,70 @@
+.mine-to-mill-content {
+  margin-bottom: 30px;
+  
+  article{
+    width: 34%;
+  }
+  
+  .border-wrapper {
+    padding: 32px 40px;
+    width: 45%;
+    margin-right: 30px;
+    
+    &:last-child{
+      margin-right: 0;
+    }
+  }
+  
+  .title {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 18px;
+    color: #002C4D;
+    margin-bottom: 26px;
+  }
+  
+  .desc{
+    padding-left: 14px;
+    position: relative;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 25px;
+    color: #000;
+    margin-top: 26px;
+  }
+  
+  .list-mine-to-mill{
+    li{
+      padding-left: 14px;
+      position: relative;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 25px;
+      color: #000;
+      
+      &:not(:last-child){
+        margin-bottom: 26px;
+      }
+      
+      &::before{
+        content: '';
+        position: relative;
+        width: 4px;
+        height: 4px;
+        background-color: #000;
+        border-radius: 50%;
+        top: 50%;
+        display: inline-block;
+        transform: translate(0, -50%);
+      }
+    }
+  }
+  
+  .right-side{
+    width: 63%;
+  }
+}
+
+.border-wrapper {
+  border: 3px solid #000000;
+}
