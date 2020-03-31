@@ -1,5 +1,7 @@
 .digital-mine {
   &-content {
+    padding-bottom: 40px;
+    
     article {
       padding-right: 70px;
     }
@@ -9,6 +11,37 @@
       font-size: 18px;
       line-height: 25px;
       color: #000;
+      
+      .subtitle{
+        font-size: 22px;
+        color: #000;
+        font-weight: 500;
+        margin-bottom: 20px;
+      }
+  
+      ul{
+        margin-bottom: 16px;
+      }
+      
+      li{
+        &:not(:last-child){
+          margin-bottom: 14px;
+        }
+  
+  
+        &::before{
+          content: '';
+          position: relative;
+          width: 4px;
+          height: 4px;
+          background-color: #000;
+          border-radius: 50%;
+          top: 50%;
+          display: inline-block;
+          transform: translate(0, -50%);
+          margin-right: 20px;
+        }
+      }
     }
     
     .bottom-offset{
@@ -17,7 +50,7 @@
     
     .h2-small-width{
       width: 860px;
-      margin-bottom: 74px;
+      //margin-bottom: 74px;
     }
   }
   
