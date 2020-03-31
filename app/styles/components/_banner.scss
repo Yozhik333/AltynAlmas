@@ -1,5 +1,5 @@
 .banner{
-	height: 730px;
+  @include fluidHeight(430px,730px,1024px,1680px);
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-position: center;

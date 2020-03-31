@@ -1,168 +1,201 @@
 .career {
-	padding: 63px 0 44px;
-	&__people {
-		&-headline {
-			margin: 0 0 33px;
-			h2 {
-				margin: 0 0 20px;
-			}
-		}
-	}
-
-	&__people-body {
-		display: flex;
-		border: 5px solid #000;
-	}
-
-	&__people-block {
-		width: 33.4%;
-		padding: 50px 57px 40px 65px;
-		background-color: $beige;
-		&:nth-child(2) {
-			color: $beige;
-			background-color: $dark-blue;
-			span {
-				border: 2px solid #fff;
-			}
-			.people-block-description {
-				color: #fff;
-			}
-		}
-		&:nth-child(3) {
-			padding: 50px 90px 40px 95px;
-			@media (max-width: 1680px) {
-				padding: 50px 57px 40px 65px;
-			}
-		}
-	}
-	&__hr-policy {
-		margin: 65px 0 0;
-		&-block {
-			width: 50%;
-			h2 {
-				margin: 0 0 20px;
-			}
-			&:first-child {
-				padding: 0 40px 0 0;
-			}
-			li {
-				margin: 0 0 25px 0;
-				position: relative;
-				text-indent: 25px;
-				line-height: 26px;
-				&::before {
-					content: "►";
-					position: absolute;
-					left: -25px;
-				}
-			}
-		}
-	}
+  padding: 63px 0 44px;
+  
+  &__people {
+    &-headline {
+      margin: 0 0 33px;
+      
+      h2 {
+        margin: 0 0 20px;
+      }
+    }
+  }
+  
+  &__people-body {
+    display: flex;
+    border: 5px solid #000;
+  }
+  
+  &__people-block {
+    width: 33.4%;
+    padding: 50px 57px 40px 65px;
+    background-color: $beige;
+    
+    &:nth-child(2) {
+      color: $beige;
+      background-color: $dark-blue;
+      
+      span {
+        border: 2px solid #fff;
+      }
+      
+      .people-block-description {
+        color: #fff;
+      }
+    }
+    
+    &:nth-child(3) {
+      padding: 50px 90px 40px 95px;
+      @media (max-width: 1680px) {
+        padding: 50px 57px 40px 65px;
+      }
+    }
+  }
+  
+  &__hr-policy {
+    margin: 65px 0 0;
+    
+    &-block {
+      width: 50%;
+      
+      h2 {
+        margin: 0 0 20px;
+      }
+      
+      &:first-child {
+        padding: 0 40px 0 0;
+      }
+      
+      li {
+        margin: 0 0 25px 0;
+        position: relative;
+        text-indent: 25px;
+        line-height: 26px;
+        
+        &::before {
+          content: "►";
+          position: absolute;
+          left: -25px;
+        }
+      }
+    }
+  }
 }
 
 .people-block-title {
-	@include fluidFontSize(42px, 72px, 1024px, 1680px);
-	display: flex;
-	flex-flow: column;
-	@include fluidPaddingRight(100px, 180px, 1024px, 1680px);
-	margin: 0 0 13px;
-	span {
-		border: 2px solid #000;
-		@include fluidMarginTop(0px, -13px, 1024px, 1680px);
-	}
+  @include fluidFontSize(42px, 72px, 1024px, 1680px);
+  display: flex;
+  flex-flow: column;
+  @include fluidPaddingRight(100px, 180px, 1024px, 1680px);
+  margin: 0 0 13px;
+  
+  span {
+    border: 2px solid #000;
+    @include fluidMarginTop(0px, -13px, 1024px, 1680px);
+  }
 }
+
 .people-block-description {
-	@include fluidFontSize(13px, 16px, 1024px, 1680px);
+  @include fluidFontSize(13px, 16px, 1024px, 1680px);
 }
 
 .hr-policy-frame {
-	padding: 40px 120px 65px 100px;
-	border: 5px solid #000;
-	height: 383px;
-	display: flex;
-	flex-flow: column;
-	justify-content: space-between;
-	&-item {
-		font-size: 24px;
-		&:not(:last-child) {
-			margin: 0 0 40px;
-		}
-	}
+  padding: 40px 120px 65px 100px;
+  border: 5px solid #000;
+  height: 383px;
+  display: flex;
+  flex-flow: column;
+  justify-content: space-between;
+  
+  &-item {
+    @include fluidFontSize(19px, 24px, 1024px, 1680px);
+    display: flex;
+    align-items: center;
+    
+    &:not(:last-child) {
+      margin: 0 0 40px;
+    }
+    
+    i {
+      color: #D0B37B;
+      @include fluidFontSize(40px, 60px, 1024px, 1680px);
+    }
+  }
+}
+
+.ic-wrap {
+  margin-right: 36px;
+  width: 55px;
 }
 
 .vacancy {
-	padding: 43px 0 59px;
+  padding: 43px 0 59px;
 }
 
 .jastar {
-	padding: 43px 0 47px;
-	.underline_bottom-offset {
-		font-size: 30px;
-	}
-	&__description {
-		line-height: 25px;
-		margin: 0 0 41px;
-	}
-
-	&__structure {
-	}
-
-	&__structure-title {
-		font-size: 30px;
-		margin: 0 0 10px;
-	}
-
-	&__structure-left {
-		width: 58%;
-		border: 5px solid #000000;
-		display: flex;
-		@include fluidPadding(70px, 100px, 1024px, 1680px);
-		padding: 90px 76px 100px 90px;
-		justify-content: space-between;
-		margin: 0 32px 0 0;
-	}
-
-	&__structure-item {
-		div {
-			&:nth-child(1) {
-				@include fluidFontSize(38px, 64px, 1024px, 1680px);
-				color: $brown;
-				font-weight: 300;
-				margin: 0 0 10px;
-			}
-			&:nth-child(2) {
-				@include fluidFontSize(18px, 24px, 1024px, 1680px);
-			}
-		}
-	}
-
-	&__structure-right {
-		width: 38%;
-		display: flex;
-		flex-flow: column;
-		justify-content: space-between;
-	}
-
-	&__structure-lists {
-		li {
-			margin: 0 0 25px 0;
-			position: relative;
-			text-indent: 25px;
-			line-height: 26px;
-			&::before {
-				content: "►";
-				position: absolute;
-				left: -25px;
-			}
-		}
-	}
-	.structure-lists-title {
-		margin: 0 0 20px;
-	}
-
-	&__structure-footer {
-		font-weight: 300;
-		font-size: 18px;
-		text-transform: uppercase;
-	}
+  padding: 43px 0 47px;
+  
+  .underline_bottom-offset {
+    font-size: 30px;
+  }
+  
+  &__description {
+    line-height: 25px;
+    margin: 0 0 41px;
+  }
+  
+  &__structure {
+  }
+  
+  &__structure-title {
+    font-size: 30px;
+    margin: 0 0 10px;
+  }
+  
+  &__structure-left {
+    width: 58%;
+    border: 5px solid #000000;
+    display: flex;
+    @include fluidPadding(70px, 100px, 1024px, 1680px);
+    padding: 90px 76px 100px 90px;
+    justify-content: space-between;
+    margin: 0 32px 0 0;
+  }
+  
+  &__structure-item {
+    div {
+      &:nth-child(1) {
+        @include fluidFontSize(38px, 64px, 1024px, 1680px);
+        color: $brown;
+        font-weight: 300;
+        margin: 0 0 10px;
+      }
+      
+      &:nth-child(2) {
+        @include fluidFontSize(18px, 24px, 1024px, 1680px);
+      }
+    }
+  }
+  
+  &__structure-right {
+    width: 38%;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+  
+  &__structure-lists {
+    li {
+      margin: 0 0 25px 0;
+      position: relative;
+      text-indent: 25px;
+      line-height: 26px;
+      
+      &::before {
+        content: "►";
+        position: absolute;
+        left: -25px;
+      }
+    }
+  }
+  
+  .structure-lists-title {
+    margin: 0 0 20px;
+  }
+  
+  &__structure-footer {
+    font-weight: 300;
+    font-size: 18px;
+    text-transform: uppercase;
+  }
 }

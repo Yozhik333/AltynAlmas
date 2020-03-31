@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 @font-face {
   font-family: 'iconfont';
   src: 	url('#{$path-fonts}/iconfont.ttf') format('truetype'),
@@ -73,4 +74,98 @@
 
 .icon-users::before {
 	content: "\ea0d";
-}
+}
+=======
+@font-face {
+  font-family: 'iconfont';
+  src: 	url('#{$path-fonts}/iconfont.ttf') format('truetype'),
+    url('#{$path-fonts}/iconfont.woff') format('woff'),
+    url('#{$path-fonts}/iconfont.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'iconfont' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+.icon-btn-details::before {
+	content: "\ea01";
+}
+
+.icon-check::before {
+	content: "\ea02";
+}
+
+.icon-close::before {
+	content: "\ea03";
+}
+
+.icon-head::before {
+	content: "\ea04";
+}
+
+.icon-history-next::before {
+	content: "\ea05";
+}
+
+.icon-history-prev::before {
+	content: "\ea06";
+}
+
+.icon-left::before {
+	content: "\ea07";
+}
+
+.icon-logo::before {
+	content: "\ea08";
+}
+
+.icon-network::before {
+	content: "\ea09";
+}
+
+.icon-right::before {
+	content: "\ea0a";
+}
+
+.icon-safety::before {
+	content: "\ea0b";
+}
+
+.icon-schedule::before {
+	content: "\ea0c";
+}
+
+.icon-schedule2::before {
+	content: "\ea0d";
+}
+
+.icon-search::before {
+	content: "\ea0e";
+}
+
+.icon-star::before {
+	content: "\ea0f";
+}
+
+.icon-users::before {
+	content: "\ea10";
+}
+
+.icon-wallet::before {
+	content: "\ea11";
+}
+>>>>>>> e346e25d45361e2af663908c7dc44097ace476cf

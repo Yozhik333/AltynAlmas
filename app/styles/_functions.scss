@@ -81,21 +81,6 @@
 	}
 }
 
-// миксин для отзывчивых height
-@mixin fluidHeight($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-	height: $f-min;
-
-	@media (min-width: $w-min) {
-		@if ($fallback) {
-			height: $fallback;
-		}
-		height: fs($f-min, $f-max, $w-min, $w-max, px);
-	}
-	@media (min-width: $w-max) {
-		height: $f-max;
-	}
-}
-
 // миксин для отзывчивых padding
 @mixin fluidPadding($f-min, $f-max, $w-min, $w-max, $fallback: false) {
 	padding: $f-min;
@@ -213,6 +198,21 @@
 	}
 	@media (min-width: $w-max) {
 		margin-bottom: $f-max;
+	}
+}
+
+// mixin
+@mixin fluidHeight($f-min, $f-max, $w-min, $w-max, $fallback: false) {
+	height: $f-min;
+
+	@media (min-width: $w-min) {
+		@if ($fallback) {
+			margin: $fallback;
+		}
+		height: fs($f-min, $f-max, $w-min, $w-max, px);
+	}
+	@media (min-width: $w-max) {
+		height: $f-max;
 	}
 }
 
