@@ -63,12 +63,13 @@
 	&__info-description {
 		display: flex;
 		justify-content: space-between;
+		flex-flow: wrap;
 	}
 }
 
 .info__block {
 	width: 47%;
-
+	margin: 0 0 40px;
 	&-head {
 		font-weight: bold;
 		margin: 0 0 20px;
