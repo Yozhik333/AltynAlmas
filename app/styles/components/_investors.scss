@@ -15,7 +15,7 @@
 	margin-bottom: 50px;
 }
 .investors_news {
-	width: 338px;
+	width: 22%;
 	border: 5px solid #000000;
 	padding: 20px 20px 50px;
 	margin-bottom: 100px;
@@ -25,8 +25,8 @@
 .investors_news-img {
 	margin-left: -43px;
 	margin-top: -48px;
-	width: 305px;
-	height: 281px;
+	@include fluidWidth(220px, 305px, 1024px, 1680px);
+	@include fluidHeight(200px, 280px, 1024px, 1680px);
 	margin-bottom: 15px;
 }
 .investors_news img {

@@ -6,229 +6,216 @@
 //
 // Used to evaluate Sass maps like the grid breakpoints
 @mixin _assert-ascending($map, $map-name) {
-    $prev-key: null;
-    $prev-num: null;
-    
-    @each $key, $num in $map {
-      @if $prev-num == null {
-        // Do nothing :)
-      }
-      
-      $prev-key: $key;
-      $prev-num: $num;
-    }
-  }
-  
-  // Starts at 0
-  @mixin _assert-starts-at-zero($map) {
-    $values: map-values($map);
-    $first-value: nth($values, 1);
-    
-    @if $first-value != 0 {
-      @warn "First breakpoint in `$grid-breakpoints` must start at 0, but starts at #{$first-value}.";
-    }
-  }
+	$prev-key: null;
+	$prev-num: null;
+
+	@each $key, $num in $map {
+		@if $prev-num == null {
+			// Do nothing :)
+		}
+
+		$prev-key: $key;
+		$prev-num: $num;
+	}
+}
+
+// Starts at 0
+@mixin _assert-starts-at-zero($map) {
+	$values: map-values($map);
+	$first-value: nth($values, 1);
+
+	@if $first-value != 0 {
+		@warn "First breakpoint in `$grid-breakpoints` must start at 0, but starts at #{$first-value}.";
+	}
+}
 
 @function strip-unit($number) {
-  @if type-of($number) == 'number' and not unitless($number) {
-    @return $number / ($number * 0 + 1);
-  }
-  
-  @return $number;
+	@if type-of($number) == "number" and not unitless($number) {
+		@return $number / ($number * 0 + 1);
+	}
+
+	@return $number;
 }
 
 @function fs($f-min, $f-max, $w-min, $w-max, $units: px) {
-  $f-min: strip-unit($f-min);
-  $f-max: strip-unit($f-max);
-  $w-min: strip-unit($w-min);
-  $w-max: strip-unit($w-max);
-  
-  $k: ($f-max - $f-min)/($w-max - $w-min);
-  $b: $f-min - $k * $w-min;
-  
-  $b: $b + $units;
-  
-  @return calc( #{$k} * 100vw + #{$b} );
+	$f-min: strip-unit($f-min);
+	$f-max: strip-unit($f-max);
+	$w-min: strip-unit($w-min);
+	$w-max: strip-unit($w-max);
+
+	$k: ($f-max - $f-min)/ ($w-max - $w-min);
+	$b: $f-min - $k * $w-min;
+
+	$b: $b + $units;
+
+	@return calc(#{$k} * 100vw + #{$b});
 }
 
 // миксин для отзывчивых размеров, нужно создать разных отсьупов
 @mixin fluidFontSize($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-  
-  font-size: $f-min;
-  
-  @media (min-width: $w-min) {
-    @if ($fallback) {
-      font-size: $fallback;
-    }
-    font-size: fs($f-min, $f-max, $w-min, $w-max, px);
-  }
-  @media (min-width: $w-max) {
-    font-size: $f-max;
-  }
+	font-size: $f-min;
+
+	@media (min-width: $w-min) {
+		@if ($fallback) {
+			font-size: $fallback;
+		}
+		font-size: fs($f-min, $f-max, $w-min, $w-max, px);
+	}
+	@media (min-width: $w-max) {
+		font-size: $f-max;
+	}
 }
 
 // миксин для отзывчивых width
 @mixin fluidWidth($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-  
-  width: $f-min;
-  
-  @media (min-width: $w-min) {
-    @if ($fallback) {
-      width: $fallback;
-    }
-    width: fs($f-min, $f-max, $w-min, $w-max, px);
-  }
-  @media (min-width: $w-max) {
-    width: $f-max;
-  }
+	width: $f-min;
+
+	@media (min-width: $w-min) {
+		@if ($fallback) {
+			width: $fallback;
+		}
+		width: fs($f-min, $f-max, $w-min, $w-max, px);
+	}
+	@media (min-width: $w-max) {
+		width: $f-max;
+	}
 }
 
 // миксин для отзывчивых padding
 @mixin fluidPadding($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-  
-  padding: $f-min;
-  
-  @media (min-width: $w-min) {
-    @if ($fallback) {
-      padding: $fallback;
-    }
-    padding: fs($f-min, $f-max, $w-min, $w-max, px);
-  }
-  @media (min-width: $w-max) {
-    padding: $f-max;
-  }
+	padding: $f-min;
+
+	@media (min-width: $w-min) {
+		@if ($fallback) {
+			padding: $fallback;
+		}
+		padding: fs($f-min, $f-max, $w-min, $w-max, px);
+	}
+	@media (min-width: $w-max) {
+		padding: $f-max;
+	}
 }
 
 // миксин для отзывчивых paddingTop
 @mixin fluidPaddingTop($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-  
-  padding-top: $f-min;
-  
-  @media (min-width: $w-min) {
-    @if ($fallback) {
-      padding: $fallback;
-    }
-    padding-top: fs($f-min, $f-max, $w-min, $w-max, px);
-  }
-  @media (min-width: $w-max) {
-    padding-top: $f-max;
-  }
+	padding-top: $f-min;
+
+	@media (min-width: $w-min) {
+		@if ($fallback) {
+			padding: $fallback;
+		}
+		padding-top: fs($f-min, $f-max, $w-min, $w-max, px);
+	}
+	@media (min-width: $w-max) {
+		padding-top: $f-max;
+	}
 }
 
 // миксин для отзывчивых paddingLeft
 @mixin fluidPaddingLeft($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-  
-  padding-left: $f-min;
-  
-  @media (min-width: $w-min) {
-    @if ($fallback) {
-      padding: $fallback;
-    }
-    padding-left: fs($f-min, $f-max, $w-min, $w-max, px);
-  }
-  @media (min-width: $w-max) {
-    padding-left: $f-max;
-  }
+	padding-left: $f-min;
+
+	@media (min-width: $w-min) {
+		@if ($fallback) {
+			padding: $fallback;
+		}
+		padding-left: fs($f-min, $f-max, $w-min, $w-max, px);
+	}
+	@media (min-width: $w-max) {
+		padding-left: $f-max;
+	}
 }
 
 // миксин для отзывчивых paddingRight
 @mixin fluidPaddingRight($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-  
-  padding-right: $f-min;
-  
-  @media (min-width: $w-min) {
-    @if ($fallback) {
-      padding: $fallback;
-    }
-    padding-right: fs($f-min, $f-max, $w-min, $w-max, px);
-  }
-  @media (min-width: $w-max) {
-    padding-right: $f-max;
-  }
+	padding-right: $f-min;
+
+	@media (min-width: $w-min) {
+		@if ($fallback) {
+			padding: $fallback;
+		}
+		padding-right: fs($f-min, $f-max, $w-min, $w-max, px);
+	}
+	@media (min-width: $w-max) {
+		padding-right: $f-max;
+	}
 }
 
 // миксин для отзывчивых paddingRight
 @mixin fluidPaddingBottom($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-  
-  padding-bottom: $f-min;
-  
-  @media (min-width: $w-min) {
-    @if ($fallback) {
-      padding: $fallback;
-    }
-    padding-bottom: fs($f-min, $f-max, $w-min, $w-max, px);
-  }
-  @media (min-width: $w-max) {
-    padding-bottom: $f-max;
-  }
+	padding-bottom: $f-min;
+
+	@media (min-width: $w-min) {
+		@if ($fallback) {
+			padding: $fallback;
+		}
+		padding-bottom: fs($f-min, $f-max, $w-min, $w-max, px);
+	}
+	@media (min-width: $w-max) {
+		padding-bottom: $f-max;
+	}
 }
 
 // миксин для отзывчивых paddingRight
 @mixin fluidMarginRight($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-  
-  margin-right: $f-min;
-  
-  @media (min-width: $w-min) {
-    @if ($fallback) {
-      padding: $fallback;
-    }
-    margin-right: fs($f-min, $f-max, $w-min, $w-max, px);
-  }
-  @media (min-width: $w-max) {
-    margin-right: $f-max;
-  }
+	margin-right: $f-min;
+
+	@media (min-width: $w-min) {
+		@if ($fallback) {
+			padding: $fallback;
+		}
+		margin-right: fs($f-min, $f-max, $w-min, $w-max, px);
+	}
+	@media (min-width: $w-max) {
+		margin-right: $f-max;
+	}
 }
 
 // миксин для отзывчивых paddingRight
 @mixin fluidMarginTop($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-  
-  margin-top: $f-min;
-  
-  @media (min-width: $w-min) {
-    @if ($fallback) {
-      margin: $fallback;
-    }
-    margin-top: fs($f-min, $f-max, $w-min, $w-max, px);
-  }
-  @media (min-width: $w-max) {
-    margin-top: $f-max;
-  }
+	margin-top: $f-min;
+
+	@media (min-width: $w-min) {
+		@if ($fallback) {
+			margin: $fallback;
+		}
+		margin-top: fs($f-min, $f-max, $w-min, $w-max, px);
+	}
+	@media (min-width: $w-max) {
+		margin-top: $f-max;
+	}
 }
 
 // mixin
 @mixin fluidMarginBottom($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-  
-  margin-bottom: $f-min;
-  
-  @media (min-width: $w-min) {
-    @if ($fallback) {
-      margin: $fallback;
-    }
-    margin-bottom: fs($f-min, $f-max, $w-min, $w-max, px);
-  }
-  @media (min-width: $w-max) {
-    margin-bottom: $f-max;
-  }
-}
+	margin-bottom: $f-min;
 
+	@media (min-width: $w-min) {
+		@if ($fallback) {
+			margin: $fallback;
+		}
+		margin-bottom: fs($f-min, $f-max, $w-min, $w-max, px);
+	}
+	@media (min-width: $w-max) {
+		margin-bottom: $f-max;
+	}
+}
 
 // mixin
 @mixin fluidHeight($f-min, $f-max, $w-min, $w-max, $fallback: false) {
-  
-  height: $f-min;
-  
-  @media (min-width: $w-min) {
-    @if ($fallback) {
-      margin: $fallback;
-    }
-    height: fs($f-min, $f-max, $w-min, $w-max, px);
-  }
-  @media (min-width: $w-max) {
-    height: $f-max;
-  }
+	height: $f-min;
+
+	@media (min-width: $w-min) {
+		@if ($fallback) {
+			margin: $fallback;
+		}
+		height: fs($f-min, $f-max, $w-min, $w-max, px);
+	}
+	@media (min-width: $w-max) {
+		height: $f-max;
+	}
 }
 
-
 .fluid-font-size {
-  @include fluidFontSize(16px, 24px, 480px, 1280px, 18px);
+	@include fluidFontSize(16px, 24px, 480px, 1280px, 18px);
 }
