@@ -1,0 +1,76 @@
+<!-- Инвесторы и СМИ -->
+{% set title = "Контакты" %}
+{% set namespace = "investors-contacts" %}
+{% set page = "investors-contacts" %}
+
+{% extends "layouts/default.html" %}
+<!-- ********************************************************************* -->
+{% block content %}
+
+
+<div class="banner" style="background-image: url('images/samples/newspage1.jpg');">
+	<div class="container-fluid">
+		<div class="flex align-items-center">
+			<div class="title-wrapper">
+				<div class="h1-wrap">
+					<h1 class="small">
+						Контакты
+					</h1>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+<div class="contacts">
+	<div class="container-fluid">
+		<div class="flex flex-wrap">
+			<div class="contacts__address">
+				<div class="contacts__address-frame">
+					<div class="contacts__address-banner" style="background-image: url('images/samples/contacts-item.jpg');">
+					</div>
+					<div class="contacts__address-description">
+						<div class="contacts__address-head">
+							головной офис:
+						</div>
+						<div class="contacts__address-body">
+							<p>Республика Казахстан, г. Алматы, Площадь Республики 15, 050013 (A15X3C7)</p>
+							<a href="tel:+77273500200">+7 (7273) 500-200</a>
+							<a href="mailto:info@altynalmas.kz">info@altynalmas.kz</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="contacts__info">
+				<div class="contacts__info-title">
+					По всем возникшим вопросам обращайтесь по следующим контактам:
+				</div>
+				<div class="contacts__info-description">
+					<div class="info__block">
+						<div class="info__block-head">
+							СМИ:
+						</div>
+						<div class="info__block-body">
+							<a href="mailto:Azhar.Nurmukhanbet@altynalmas.kz">Azhar.Nurmukhanbet@altynalmas.kz</a>
+						</div>
+					</div>
+					<div class="info__block">
+						<div class="info__block-head">
+							Инвесторам:
+						</div>
+						<div class="info__block-body">
+							<a href="mailto:Ruslan.Serikbay@altynalmas.kz">Ruslan.Serikbay@altynalmas.kz</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- /.container-fluid -->
+</div>
+<!-- /.contacts -->
+
+
+{% endblock %}
