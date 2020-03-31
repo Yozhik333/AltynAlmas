@@ -9,11 +9,9 @@ dropdownLink.forEach(item => {
     // backToMainMenu.addEventListener('click', function () {
     //   this.classList.remove('dropdownShow')
     // })
-    console.log(1);
   }, false);
   item.addEventListener("mouseleave", function (event) {
     this.classList.remove('dropdownShow')
     // backToMainMenu.style.display = "none";
-    console.log(-1);
   }, false);
 })

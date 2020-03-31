@@ -212,6 +212,22 @@
 }
 
 
+// mixin
+@mixin fluidHeight($f-min, $f-max, $w-min, $w-max, $fallback: false) {
+  
+  height: $f-min;
+  
+  @media (min-width: $w-min) {
+    @if ($fallback) {
+      margin: $fallback;
+    }
+    height: fs($f-min, $f-max, $w-min, $w-max, px);
+  }
+  @media (min-width: $w-max) {
+    height: $f-max;
+  }
+}
+
 
 .fluid-font-size {
   @include fluidFontSize(16px, 24px, 480px, 1280px, 18px);

@@ -1,12 +1,55 @@
 <!-- .header -->
 <header class="header">
     <div class="container-fluid">
-        <div class="flex align-items-center">
-            <a class="logo_right-offset flex"
-               href="/">
-                <i class="icon-logo"></i>
-            </a>
-            {% include "partials/nav-main.html" %}
+        <div class="flex align-items-center justify-content-between">
+            <div class="flex align-items-center">
+                <a class="logo_right-offset flex"
+                   href="/">
+                    <i class="icon-logo"></i>
+                </a>
+                {% include "partials/nav-main.html" %}
+            </div>
+
+            <div class="flex align-items-center">
+                <div class="search">
+                    <div class="search-header-icon">
+                        <i class="icon-search"
+                           onclick="this.className = (this.className == 'icon-search' ? 'icon-close' : 'icon-search')"></i>
+                    </div>
+                </div>
+
+                <div class="lang-switch">
+                    <div class="lang">
+                        RU
+                    </div>
+                </div>
+
+                <div class="cost-wrap">
+                    <div class="cost">
+                        USD: 678,30
+                    </div>
+
+                    <div class="cost">
+                        GOLD: $ 1 282,50 -0,09%
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="search-wrapper">
+        <div class="container-fluid">
+            <form action=""
+                  class="search-form__panel">
+                <input type="text" name="q"
+                       value=""
+                       class="search-form__input"
+                       autocomplete="off">
+                <button type="submit"
+                        class="search-form__button">
+                    <i class="icon-search"></i>
+                </button>
+            </form>
         </div>
     </div>
 </header><!-- end .header -->
