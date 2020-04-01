@@ -6,6 +6,7 @@ import { mainDeposits } from './lib/mainDeposits';
 import { numberDaySlider } from './lib/numberDaySlider';
 import { dropdown } from './lib/dropdown';
 import { search } from './lib/search';
+import { teamoftrainers } from './lib/teamoftrainers';
 
 sayHello();
 
