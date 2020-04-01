@@ -75,7 +75,7 @@ a {
 	color: $link-color;
 	text-decoration: none;
 	outline: none !important;
-	transition: .2s color;
+	transition: color .2s ease-in-out;
 
 	&:hover,
 	&:focus {
@@ -83,6 +83,12 @@ a {
 		text-decoration: none;
 	}
 
+  &.btn{
+    &:hover{
+      color: #d0b37b;
+      transition: color .2s ease-in-out;
+    }
+  }
 }
 
 .list-unstyled {

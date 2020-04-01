@@ -41,7 +41,6 @@ if (historySliderActive) {
       activeInfo.classList.add('red');
       activeDataYear.innerHTML = changeData;
       activeInfo.innerHTML = changeInfo;
-      // console.log(changeInfo)
     })
   })
   
