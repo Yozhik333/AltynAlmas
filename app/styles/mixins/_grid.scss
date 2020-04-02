@@ -1,8 +1,10 @@
 // Grid
 @mixin create-container() {
 	width: 100%;
-	padding-right: ($gutter-width / 2);
-	padding-left: ($gutter-width / 2);
+	//padding-right: ($gutter-width / 2);
+	//padding-left: ($gutter-width / 2);
+  @include fluidPaddingRight(36px,15px,1024px,1680px,);
+  @include fluidPaddingLeft(36px,15px,1024px,1680px,);
 	margin-right: auto;
 	margin-left: auto;
   }

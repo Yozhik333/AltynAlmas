@@ -1,15 +1,22 @@
 let indexPage = document.querySelector('.indexSlider');
 
-if(indexPage){
+let mainTopSlider = new Swiper('.mainTopSlider .swiper-container', {
+  slidesPerView: 'auto',
+  spaceBetween: 2,
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
+  navigation: {
+    nextEl: '.mainTopSlider .btn-slide-next',
+    prevEl: '.mainTopSlider .btn-slide-prev',
+  },
+  loop: true,
+  speed: 2100,
+});
+
+if (indexPage) {
   let mainTopSlider = new Swiper('.mainTopSlider .swiper-container', {
-    slidesPerView: 'auto',
-    spaceBetween: 2,
-    navigation: {
-      nextEl: '.mainTopSlider .btn-slide-next',
-      prevEl: '.mainTopSlider .btn-slide-prev',
-    },
-    loop: true,
-    speed: 400,
     on: {
       init: function () {
         let data = document.querySelector('.swiper-slide-active').getAttribute('data-title');
@@ -17,8 +24,19 @@ if(indexPage){
         activeTitle.innerText = data;
       },
     },
-  });
-  
+    slidesPerView: 'auto',
+    spaceBetween: 2,
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
+    navigation: {
+      nextEl: '.mainTopSlider .btn-slide-next',
+      prevEl: '.mainTopSlider .btn-slide-prev',
+    },
+    loop: true,
+    speed: 2100,
+  })
   
   mainTopSlider.on('slideChangeTransitionStart', function () {
     let activeTitle = document.querySelector('.slide-title');

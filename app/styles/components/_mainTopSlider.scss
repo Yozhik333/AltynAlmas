@@ -49,12 +49,13 @@
     margin-top: 60px;
     @include fluidFontSize(18px,30px,1024px,1680px);
     transition: opacity .7s ease-in;
+    width: 584px;
+    height: 60px;
   }
 }
 
 [data-template="history"],
 [data-template="main-deposits"],
-[data-template="activity-detail"],
 [data-template="place-of-birth"],
 [data-template="mine-to-mill"],
 [data-template="sana-safety"],
