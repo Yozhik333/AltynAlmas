@@ -7,6 +7,24 @@
   left: 0;
   z-index: 6;
   background-color: #fff;
+  @include breakpoint-down(md){
+    padding: 10px 0;
+    
+    &::after{
+      content: '';
+      position: absolute;
+      width: 140px;
+      height: 86px;
+      background-color: #fff;
+      border: solid 6px #d0b37b;
+      border-radius: 50%;
+      margin: 0 auto;
+      top: 0;
+      right: 0;
+      left: 0;
+      clip-path: polygon(0% 100%, 100% 100%, 100% 60.5%, 0% 60.5%);
+    }
+  }
   
   .container-fluid{
     position: relative;
@@ -17,9 +35,22 @@
   color: #002c4d;
   font-size: 76px;
   
+  @include breakpoint-down(md){
+    font-size: 66px;
+    position: absolute;
+    top: 0;
+    left: auto;
+    right: auto;
+    z-index: 2;
+  }
+  
   &_right-offset{
     @extend .logo;
     margin-right: 30px;
+    
+    @include breakpoint-down(md){
+      margin: 0 auto;
+    }
   }
   
   &:hover{
@@ -28,6 +59,8 @@
 }
 
 .search{
+  position: relative;
+  z-index: 3;
   i{
     cursor: pointer;
     transition: color .3s ease-in-out;
@@ -43,6 +76,9 @@
 
 .cost-wrap{
   @include fluidPaddingLeft(20px,86px,1024px,1680px);
+  @include breakpoint-down(md){
+    display: none;
+  }
   
   .cost{
     font-weight: bold;
@@ -77,5 +113,28 @@
     line-height: 21px;
     color: #000;
     cursor: pointer;
+  }
+}
+
+.logo-wrap{
+  @include breakpoint-down(md){
+    position: absolute;
+    left: 0;
+    right: 0;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+  }
+}
+
+.mobile-menu-icon{
+  display: none;
+  
+  @include breakpoint-down(md){
+    display: block;
+    position: relative;
+    z-index: 3;
+    margin-right: 20px;
+    font-size: 22px;
   }
 }

@@ -1,76 +1,78 @@
-.dropdown-menu {
-  position: absolute;
-  padding: 15px 0 15px 172px;
-  top: 110%;
-  left: 0;
-  right: 0;
-  z-index: 2;
-  display: flex;
-  
-  &::before {
-    content: '';
-    @include stretch(0, -20%, 0, -20%);
-    background: #D0B37B;
-    z-index: -1;
-  }
-  
-  &::after{
-    content: '';
-    @include stretch(-40px, -20%, 0, -20%);
-    z-index: -1;
-  }
-  
-  li:not(:last-child) {
-    margin-right: 65px;
-  }
-  
-  .menu-title {
-    display: inline-block;
-    padding-right: 23px;
-  }
-  
-  .menu-icon {
-    font-size: 20px;
+@include breakpoint-up(md){
+  .dropdown-menu {
     position: absolute;
-    top: -2px;
+    padding: 15px 0 15px 172px;
+    top: 110%;
+    left: 0;
     right: 0;
+    z-index: 2;
+    display: flex;
+    
+    &::before {
+      content: '';
+      @include stretch(0, -20%, 0, -20%);
+      background: #D0B37B;
+      z-index: -1;
+    }
+    
+    &::after{
+      content: '';
+      @include stretch(-40px, -20%, 0, -20%);
+      z-index: -1;
+    }
+    
+    li:not(:last-child) {
+      margin-right: 65px;
+    }
+    
+    .menu-title {
+      display: inline-block;
+      padding-right: 23px;
+    }
+    
+    .menu-icon {
+      font-size: 20px;
+      position: absolute;
+      top: -2px;
+      right: 0;
+    }
+    
+    
   }
   
-  
-}
-
-.dropdown-menu {
-  &.dropdown-level-{
-    position: inherit;
-    display: block;
-    padding: 0;
-    
-    &::before,
-    &::after
-    {
-      display: none;
-    }
-  
-    li {
-      margin-top: 10px;
-    
-      .menu-title {
-        font-weight: normal;
-        font-size: 14px;
-        line-height: 16px;
-        text-transform: capitalize;
-        color: #000;
-        display: inline-block;
-        transition: color .3s ease-in-out;
+  .dropdown-menu {
+    &.dropdown-level-{
+      position: inherit;
+      display: block;
+      padding: 0;
+      
+      &::before,
+      &::after
+      {
+        display: none;
+      }
+      
+      li {
+        margin-top: 10px;
         
-        &:hover{
-          color: #fff !important;
+        .menu-title {
+          font-weight: normal;
+          font-size: 14px;
+          line-height: 16px;
+          text-transform: capitalize;
+          color: #000;
+          display: inline-block;
+          transition: color .3s ease-in-out;
+          
+          &:hover{
+            color: #fff !important;
+          }
         }
       }
-    }
-    
-    a:hover{
-      color: #fff !important;
+      
+      a:hover{
+        color: #fff !important;
+      }
     }
   }
 }
@@ -89,5 +91,13 @@
   .dropdown-menu{
     opacity: 1;
     visibility: visible;
+  }
+}
+
+@include breakpoint-down(md){
+  .dropdownWrap{
+    & > .link{
+      color: red !important;
+    }
   }
 }
