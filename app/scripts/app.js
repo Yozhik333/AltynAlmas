@@ -7,6 +7,7 @@ import { numberDaySlider } from './lib/numberDaySlider';
 import { dropdown } from './lib/dropdown';
 import { search } from './lib/search';
 import { teamoftrainers } from './lib/teamoftrainers';
+import { mobile } from './lib/mobile';
 import { map } from './lib/map';
 
 sayHello();
