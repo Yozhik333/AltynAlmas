@@ -2,6 +2,9 @@
   
   .data-years {
     @include fluidPaddingBottom(50px,30px,1024px,1680px);
+    @include breakpoint-down(md){
+      display: none;
+    }
   }
   
   .year-item {
@@ -24,6 +27,10 @@
   width: 65%;
   margin-bottom: 70px;
   @include fluidMarginRight(50px,75px,1024px,1680px);
+  @include breakpoint-down(md){
+    width: 100%;
+    margin-right: 0;
+  }
   
   .arrow-wrap{
     display: flex;
@@ -93,6 +100,9 @@
   
   &-wrap {
     width: 30%;
+    @include breakpoint-down(md){
+      display: none;
+    }
   }
   
   &-fon{
