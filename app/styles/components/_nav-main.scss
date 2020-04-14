@@ -46,6 +46,12 @@
     background-color: #fff;
     padding: 50px 0 20px 15px;
     overflow-y: auto;
+    transform: translate(-100%, 0);
+    transition:  all .4s ease-in-out;
+
+    &.show{
+      transform: translate(0);
+    }
 
     .nav-main{
       display: block;
