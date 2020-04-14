@@ -2,22 +2,38 @@
   padding-bottom: 30px;
   .advantages__banner-wrap-outside {
     @include fluidWidth(460px,760px,1024px,1680px);
+    @include breakpoint-down(md){
+      width: 100%;
+    }
   }
   
   .advantages__banner{
     transform: translate(-30px, -45px);
+    @include breakpoint-down(md){
+      transform: translate(-15px, -30px);
+    }
   }
   
   .advantages__banner-wrap{
     height: 380px;
     margin-bottom: 0;
+    @include breakpoint-down(md){
+      height: 200px;
+      margin-right: 0;
+    }
   }
   
   article{
     width: 50%;
+    @include breakpoint-down(md){
+      width: 100%;
+    }
   }
   
   .right-side{
     padding-top: 70px;
+    @include breakpoint-down(md){
+      width: 100%;
+    }
   }
 }
