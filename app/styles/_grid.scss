@@ -8,6 +8,11 @@
   width: 100%;
   @include create-container();
   max-width: 1680px;
+
+  @include breakpoint-down(md){
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 // Row

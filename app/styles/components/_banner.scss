@@ -34,6 +34,14 @@
     bottom: -45px;
     left: -100%;
     right: -55px;
+    @include breakpoint-down(md){
+      bottom: -2px;
+    }
+  }
+
+  @include breakpoint-down(md){
+    margin-top: 20px;
+    width: 100%;
   }
 }
 
@@ -50,10 +58,19 @@
       height: 5px;
       left: -100%;
       right: 0;
+
+      @include breakpoint-down(md){
+        height: 2px;
+        bottom: -8px;
+      }
     }
     
     .big-font{
       @include fluidFontSize(38px,60px,1024px,1680px);
+
+      @include breakpoint-down(md){
+        font-size: 20px;
+      }
     }
   }
 }

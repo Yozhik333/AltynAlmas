@@ -1,29 +1,33 @@
 html,
 body,
 .wrapper {
-	height: 100%;
+  height: 100%;
 }
 
 body {
-	color: $text-color;
-	background-color: $body-bg;
-	max-width: 100%;
+  color: $text-color;
+  background-color: $body-bg;
+  max-width: 100%;
 }
 
 .wrapper-in { // wrapper
-	position: relative;
-	display: flex;
-	min-height: 100vh;
-	flex-direction: column;
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
   //overflow-x: hidden;
   padding-top: 94px;
+
+  @include breakpoint-down(md) {
+	  padding-top: 58px;
+  }
 }
 
 .content {
-	overflow: hidden;
-	flex: 1;
+  overflow: hidden;
+  flex: 1;
 }
 
 .flex {
-	display: flex;
+  display: flex;
 }

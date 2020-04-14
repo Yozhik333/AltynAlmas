@@ -196,3 +196,16 @@ img {
 .blue-fon{
   background: #002C4D;
 }
+
+.desktop{
+	@include breakpoint-down(md){
+		display: none;
+	}
+}
+
+.mobile{
+	display: none;
+	@include breakpoint-down(md){
+		display: block;
+	}
+}

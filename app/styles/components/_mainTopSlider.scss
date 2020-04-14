@@ -33,6 +33,10 @@
     width: 500px;
     line-height: 36px;
     margin-bottom: 15px;
+    @include breakpoint-down(md){
+      margin-bottom: 2px;
+      width: 100%;
+    }
   }
   
   .arrow-wrapper {
@@ -40,6 +44,19 @@
     top: 50%;
     right: 25px;
     transform: translate(0, -50%);
+
+    @include breakpoint-down(md){
+      top: auto;
+      bottom: 10px;
+      right: auto;
+      left: 50%;
+      transform: translate(-50%, 0);
+      display: flex;
+
+      [class*="btn-slide-"]{
+        margin: 10px;
+    }
+    }
   }
   
   .slide-title {
@@ -51,6 +68,13 @@
     transition: opacity .7s ease-in;
     width: 584px;
     height: 60px;
+
+    @include breakpoint-down(md){
+      margin-top: 20px;
+      font-size: 16px;
+      width: 320px;
+      line-height: 17px;
+    }
   }
 }
 

@@ -1,64 +1,112 @@
-.advantages{
+.advantages {
   margin-bottom: 100px;
-  
-  &__banner-wrap{
+  @include breakpoint-down(md) {
+    margin-top: 120px;
+
+    & > .flex.flex-wrap.align-items-start {
+      flex-direction: column;
+    }
+  }
+
+  &__banner-wrap {
     height: 510px;
     border: 5px solid #000000;
     position: relative;
     margin: 0 26px 55px 0;
+    @include breakpoint-down(md) {
+      height: 150px;
+    }
   }
-  
-  &__banner-wrap-outside{
+
+  &__banner-wrap-outside {
     width: 31.5%;
+    @include breakpoint-down(md) {
+      width: 100%;
+    }
   }
-  
-  
-  &__banner{
+
+
+  &__banner {
     @include stretch(-15px, 0, -15px, 0);
     background-position: center;
     background-size: cover;
     transform: translate(30px, 45px);
-    
-    .title{
+    @include breakpoint-down(md) {
+      transform: translate(15px, 25px);
+    }
+
+    .title {
       color: #fff;
       font-weight: 400;
-      @include fluidFontSize(32px,40px,1024px,1680px);
+      @include fluidFontSize(32px, 40px, 1024px, 1680px);
       padding: 45px 5px 5px 15px;
-      
-      &-small{
-        @include fluidFontSize(22px,30px,1024px,1680px);
-        @include fluidMarginTop(16px,26px,1024px,1680px);
+      @include breakpoint-down(md) {
+        color: #000;
+        padding: 0;
+        top: -90px;
+        position: absolute;
+        font-size: 20px;
+        right: 0;
+        left: 0;
+      }
+
+      &-small {
+        @include fluidFontSize(22px, 30px, 1024px, 1680px);
+        @include fluidMarginTop(16px, 26px, 1024px, 1680px);
+        @include breakpoint-down(md) {
+          margin-top: 8px;
+        }
       }
     }
   }
-  
-  &__article{
+
+  &__article {
     padding: 20px;
-    @include fluidPaddingLeft(25px,35px,1024px,1680px);
+    @include fluidPaddingLeft(25px, 35px, 1024px, 1680px);
     width: calc(100% - 31.5%);
     display: flex;
     flex-wrap: wrap;
-    
-    article{
-      width: 50%;
-      @include fluidPaddingTop(8px,27px,1024px,1680px);
-      @include fluidPaddingRight(8px,27px,1024px,1680px);
-      @include fluidPaddingBottom(8px,27px,1024px,1680px);
-      @include fluidPaddingLeft(8px,27px,1024px,1680px);
+    @include breakpoint-down(md) {
+      width: 100%;
+      flex-direction: column;
+      padding: 0;
+      margin-top: 40px;
     }
-    
-    .icon-article{
+
+    article {
+      width: 50%;
+      @include fluidPaddingTop(8px, 27px, 1024px, 1680px);
+      @include fluidPaddingRight(8px, 27px, 1024px, 1680px);
+      @include fluidPaddingBottom(8px, 27px, 1024px, 1680px);
+      @include fluidPaddingLeft(8px, 27px, 1024px, 1680px);
+      @include breakpoint-down(md) {
+        width: 100%;
+        position: relative;
+        padding-bottom: 28px;
+        &:last-child{
+          padding-bottom: 10px;
+        }
+      }
+    }
+
+    .icon-article {
       margin-right: 8px;
       color: #f4d7ab;
-      @include fluidFontSize(50px,80px,1024px,1680px);
+      @include fluidFontSize(50px, 80px, 1024px, 1680px);
+      @include breakpoint-down(md){
+        font-size: 36px;
+        position: absolute;
+        left: 0;
+        top: 0;
+      }
     }
-    
-    h5{
+
+    h5 {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      
-      a{
+
+      a {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -68,43 +116,49 @@
 }
 
 
-.advantages-description{
-	padding: 27px 33px 12px 35px;
-	.under-title{
-		text-transform: uppercase;
-		font-size: 36px;
-	}
-	.under-text{
-		line-height: 26px;
+.advantages-description {
+  padding: 27px 33px 12px 35px;
+
+  .under-title {
+    text-transform: uppercase;
+    font-size: 36px;
   }
-  .under-title-dark{
+
+  .under-text {
+    line-height: 26px;
+  }
+
+  .under-title-dark {
     @include fluidFontSize(18px, 24px, 1024px, 1680px);
     font-weight: bold;
     line-height: 26px;
     color: $dark-blue;
-    @include fluidMarginBottom(10px,30px,1024px,1680px);
+    @include fluidMarginBottom(10px, 30px, 1024px, 1680px);
   }
 }
 
-.advantages-buttons{
-	padding: 15px 47px 7px 9px;
-	@include fluidPaddingRight(3px,47px,1024px,1680px);
-	&__title{
-		@include fluidFontSize(16px, 20px, 1024px, 1680px);
-		font-weight: bold;
-		margin-bottom: 28px;
-	}
-	&__btn-wrap{
-		justify-content: space-between;
-		align-items: center;
-		margin-bottom: 12px;
-		p{
-			margin-bottom: 0;
-		}
-	}
+.advantages-buttons {
+  padding: 15px 47px 7px 9px;
+  @include fluidPaddingRight(3px, 47px, 1024px, 1680px);
+
+  &__title {
+    @include fluidFontSize(16px, 20px, 1024px, 1680px);
+    font-weight: bold;
+    margin-bottom: 28px;
+  }
+
+  &__btn-wrap {
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 12px;
+
+    p {
+      margin-bottom: 0;
+    }
+  }
 }
 
-.advantages__banner--photo{
+.advantages__banner--photo {
   background-size: contain;
   background-repeat: no-repeat;
   transform: translate(-37px, -31px);
@@ -112,14 +166,15 @@
   bottom: 50%;
 }
 
-.advantages__banner-wrap--margin{
+.advantages__banner-wrap--margin {
   margin: 37px 0 0 31px;
   padding: 200px 0 0 0;
   min-height: 322px;
   height: 100%;
-  .advantages-description{
+
+  .advantages-description {
     padding: 27px 7px 35px 15px;
-    @include fluidPaddingBottom(20px,35px,1024px,1680px);
+    @include fluidPaddingBottom(20px, 35px, 1024px, 1680px);
     height: 100%;
     display: flex;
     flex-flow: column;
@@ -127,9 +182,10 @@
   }
 }
 
-.advantages__banner-wrap-outside--persons{
+.advantages__banner-wrap-outside--persons {
   width: 25%;
-  &:not(:last-child){
+
+  &:not(:last-child) {
     margin: 0 34px 0 0;
   }
 }
