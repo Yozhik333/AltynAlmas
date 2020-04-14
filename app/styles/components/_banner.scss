@@ -20,6 +20,13 @@
   }
 }
 
+.activity-detail-content,
+.growth-projects-content{
+  @include breakpoint-down(md){
+    margin-top: -50px;
+  }
+}
+
 .title-wrapper{
   margin-top: 90px;
   position: relative;

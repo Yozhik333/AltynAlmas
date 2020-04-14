@@ -4,10 +4,6 @@
   
   &-content{
     padding-bottom: 30px;
-
-    @include breakpoint-down(md){
-      margin-top: -50px;
-    }
   }
   
   h2 {

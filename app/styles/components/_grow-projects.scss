@@ -7,24 +7,42 @@
     color: #000;
     margin-bottom: 70px;
     max-width: 1360px;
+    @include breakpoint-down(md){
+      margin-bottom: 30px;
+    }
   }
-  
-  &-content{
+
+  &-content {
     margin-bottom: 36px;
+
+    & > .flex {
+      flex-direction: column;
+    }
   }
 }
 
 .growth-projects-item {
   width: 33%;
-  &:not(:last-child){
-    margin-right: 50px;
+  @include breakpoint-down(md){
+    width: 100%;
   }
-  
+
+  &:not(:last-child) {
+    margin-right: 50px;
+    @include breakpoint-down(md){
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  }
+
   &__title {
     color: #002C4D;
     margin-bottom: 28px;
+    @include breakpoint-down(md){
+      margin-bottom: 15px;
+    }
   }
-  
+
   &__description {
     font-weight: normal;
     font-size: 16px;
@@ -32,60 +50,60 @@
     color: #000;
     margin-bottom: 20px;
   }
-  
+
   &__numbers {
     padding: 40px 10px;
     position: relative;
     margin-bottom: 22px;
-    
-    &::after{
+
+    &::after {
       content: '';
       position: absolute;
-      @include stretch(0,-10px,0,-10px);
+      @include stretch(0, -10px, 0, -10px);
       background: #002C4D;
       z-index: -1;
     }
-    
+
     .number {
       font-weight: normal;
-      @include fluidFontSize(18px,48px,1024px,1680px);
+      @include fluidFontSize(18px, 48px, 1024px, 1680px);
       color: #F4D7AB;
       margin-right: 26px;
       position: relative;
-      
-      &::before{
+
+      &::before {
         content: '';
         position: absolute;
         bottom: -8px;
         left: 0;
         width: 120px;
-        @include fluidWidth(60px,120px,1024px,1680px);
+        @include fluidWidth(60px, 120px, 1024px, 1680px);
         height: 3px;
         background: #FFFFFF;
       }
-      
-      &.nonline{
-        &::before{
+
+      &.nonline {
+        &::before {
           display: none;
         }
       }
     }
-    
+
     .number-description {
       font-weight: normal;
-      @include fluidFontSize(14px,20px,1024px,1680px);
+      @include fluidFontSize(14px, 20px, 1024px, 1680px);
       color: #FFFFFF;
     }
   }
-  
-  &__bottom-offset{
+
+  &__bottom-offset {
     margin-bottom: 50px;
-    
-    &_small{
+
+    &_small {
       margin-bottom: 10px;
     }
   }
-  
+
   &__subtitle {
     font-weight: bold;
     font-size: 18px;
@@ -93,5 +111,9 @@
     color: #002C4D;
     margin-bottom: 24px;
     margin-top: 32px;
+    @include breakpoint-down(md){
+      margin-top: 18px;
+      margin-bottom: 8px;
+    }
   }
 }
