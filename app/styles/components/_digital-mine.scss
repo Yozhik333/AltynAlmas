@@ -1,11 +1,19 @@
 .digital-mine {
   &-content {
     padding-bottom: 40px;
+    @include breakpoint-down(md) {
+      & > .flex {
+        flex-direction: column;
+      }
+    }
 
     article {
       padding-right: 70px;
+      @include breakpoint-down(md) {
+        padding-right: 0;
+      }
     }
-    
+
     .description {
       font-weight: normal;
       font-size: 18px;
@@ -14,25 +22,28 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      
-      .subtitle{
+      @include breakpoint-down(md){
+        flex-direction: column;
+      }
+
+      .subtitle {
         font-size: 22px;
         color: #002C4D;
         font-weight: 500;
         margin-bottom: 20px;
       }
-  
-      ul{
+
+      ul {
         margin-bottom: 16px;
       }
-      
-      li{
-        &:not(:last-child){
+
+      li {
+        &:not(:last-child) {
           margin-bottom: 14px;
         }
-  
-  
-        &::before{
+
+
+        &::before {
           content: '';
           position: relative;
           width: 4px;
@@ -45,50 +56,76 @@
           margin-right: 20px;
         }
       }
-      
-      &__item{
+
+      &__item {
         background: #FFFFFF;
         border: 3px solid #000000;
         width: 32%;
         padding: 32px 40px;
+        @include breakpoint-down(md){
+          width: 100%;
+          padding: 15px 20px;
+          &:not(:last-child){
+            margin-bottom: 15px;
+          }
+        }
       }
     }
-    
-    .bottom-offset{
+
+    .bottom-offset {
       margin-bottom: 88px;
+      @include breakpoint-down(md){
+        margin-bottom: 20px;
+      }
     }
-    
-    .h2-small-width{
+
+    .h2-small-width {
       max-width: 740px;
       margin-bottom: 74px;
+      @include breakpoint-down(md){
+        margin-bottom: 18px;
+      }
     }
   }
-  
+
   .video-block {
     width: 40%;
+    @include breakpoint-down(md){
+      width: 100%;
+
+      &.flex{
+        flex-direction: column;
+      }
+    }
   }
-  
+
   .video-poster {
     width: 355px;
     height: 200px;
     margin-right: 35px;
-    
+    @include breakpoint-down(md){
+      width: 100%;
+      margin-right: 0;
+      margin-bottom: 20px;
+      height: auto;
+    }
+
     &.not-offset {
       margin-right: 0;
     }
-    
+
     img {
       max-width: 100%;
     }
-    
-    &:hover{
-      .link-img{
+
+    &:hover {
+      .link-img {
         transform: translate(0, -4px);
         box-shadow: 9px 3px 15px rgba(0, 0, 0, 0.2);
       }
     }
   }
-  
+
   .link-img {
     padding-top: 200px;
     background-size: cover;
@@ -96,7 +133,7 @@
     box-shadow: 9px 3px 15px rgba(0, 0, 0, 0);
     transition: all .3s ease-in-out;
   }
-  
+
   .link-title {
     font-weight: bold;
     font-size: 18px;
