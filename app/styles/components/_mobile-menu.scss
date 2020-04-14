@@ -1,0 +1,50 @@
+.mobile-menu {
+  display: none;
+
+  @include breakpoint-down(md) {
+    display: block;
+
+    .mobile-menu {
+      &__drop {
+        padding: 10px 20px 10px 0;
+        font-size: 22px;
+        border-bottom: solid 1px #000;
+        overflow: hidden;
+
+        &:first-child {
+          border-top: solid 1px #000;
+        }
+      }
+
+      &__dropdown {
+        padding-left: 18px;
+        display: none;
+      }
+
+      &__drop-content{
+        padding-left: 18px;
+      }
+
+      &__title-wrap {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+
+      &__link {
+        color: #000;
+        font-size: 20px;
+
+        &_small {
+          color: #000;
+          font-size: 16px;
+        }
+      }
+    }
+  }
+}
+
+.active + .mobile-menu__dropdown {
+  display: block;
+}

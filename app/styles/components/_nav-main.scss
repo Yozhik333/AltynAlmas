@@ -27,16 +27,16 @@
   .nav-main{
     display: none;
   }
-  
+
   .mobile-display-block{
     display: block !important;
   }
-  
+
   .search-lang-wrap{
     width: 100%;
     justify-content: space-between;
   }
-  
+
   .mobile-menu-wrap{
     position: fixed;
     top: 58px;
@@ -46,19 +46,26 @@
     background-color: #fff;
     padding: 50px 0 20px 15px;
     overflow-y: auto;
-  
+
     .nav-main{
       display: block;
-      
+
       .mobile-display-block{
         &>li{
           border-bottom: solid 1px #8b8b8b;
+          position: relative;
           padding: 10px 0;
+          max-height: 50px;
+
+          &.dropdownShow{
+            max-height: 400px;
+          }
         }
       }
-      
+
       a{
         color: #000;
+        display: block;
       }
     }
   }
