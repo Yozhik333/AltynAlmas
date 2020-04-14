@@ -159,14 +159,25 @@
 		display: flex;
 		flex-flow: column;
 		justify-content: flex-end;
+		@include breakpoint-down(md){
+			height: 610px;
+			margin-top: 140px;
+		}
+
 		.advantages__banner{
 			transform: translate(-30px, -45px);
 			bottom: 308px;
 			@media (min-width: 1024px) and (max-width: 1680px) {
 				bottom: fs(460, 308, 1024, 1680);
 			}
+			@include breakpoint-down(md){
+				bottom: 360px;
+			}
 			.title{
 				padding: 23px 11px 7px 11px;
+				@include breakpoint-down(md){
+					top: -110px;
+				}
 			}
 			.text-uppercase{
 				@include fluidFontSize(18px,24px,1024px,1680px);
@@ -177,6 +188,16 @@
 				@include fluidFontSize(26px,36px,1024px,1680px);
 			}
 		}
+
+		.advantages-description{
+			@include breakpoint-down(md){
+				padding: 20px 8px 10px 8px;
+
+				&:first-child{
+					margin-top: 40px;
+				}
+			}
+		}
 	}
 }
 
@@ -185,15 +206,26 @@
 	padding: 7px 0 15px 0;
 	@include fluidPaddingLeft(15px,45px,1024px,1680px);
 	width: calc(100% - 31.5%);
+	@include breakpoint-down(md){
+		width: 100%;
+		padding-top: 30px;
+		padding-left: 0;
+	}
 	&__head{
 		font-size: 36px;
 		text-transform: uppercase;
+		@include breakpoint-down(md){
+			text-align: center;
+		}
 	}
 	&__body{
 		padding: 33px 0;
 		display: flex;
 		flex-flow: wrap;
 		justify-content: flex-end;
+		@include breakpoint-down(md){
+			padding-top: 18px;
+		}
 		&-title{
 			font-size: 18px;
 			color: $dark-blue;
@@ -225,6 +257,11 @@
 	width: 50%;
 	padding: 0 20px 50px 0;
 	height: 100%;
+	@include breakpoint-down(md){
+		width: 100%;
+		padding-left: 20px;
+		padding-bottom: 18px;
+	}
 }
 
 
