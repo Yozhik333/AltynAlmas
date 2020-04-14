@@ -1,369 +1,414 @@
 .article-title-wrap {
-	color: #000000;
-    @include fluidFontSize(26px,36px,1024px,1680px);
-    font-weight: 400;
-	padding-bottom: 12px;
-	@include breakpoint-down(md){
-		text-align: center;
-	}
+  color: #000000;
+  @include fluidFontSize(26px, 36px, 1024px, 1680px);
+  font-weight: 400;
+  padding-bottom: 12px;
+  @include breakpoint-down(md) {
+    text-align: center;
+  }
 
-	.article-title{
-		position: relative;
-		display: inline-block;
-		padding-bottom: 12px;
+  .article-title {
+    position: relative;
+    display: inline-block;
+    padding-bottom: 12px;
 
-		&-after{
-			content: '';
-			position: absolute;
-			height: 3px;
-			background: #000;
-			@include fluidPaddingLeft(460px,660px,1024px,1680px);
-			bottom: 0;
-			left: 0;
-			@include breakpoint-down(md){
-				padding: initial;
-				right: 0;
-			}
-		}
-	}
+    &-after {
+      content: '';
+      position: absolute;
+      height: 3px;
+      background: #000;
+      @include fluidPaddingLeft(460px, 660px, 1024px, 1680px);
+      bottom: 0;
+      left: 0;
+      @include breakpoint-down(md) {
+        padding: initial;
+        right: 0;
+      }
+    }
+  }
 }
 
-.about-gold{
-	padding: 30px 0 73px 0;
-	@include breakpoint-down(md){
-		padding-bottom: 30px;
-	}
+.about-gold {
+  padding: 30px 0 73px 0;
+  @include breakpoint-down(md) {
+    padding-bottom: 30px;
+  }
 
-	&__description{
-		display: flex;
-		justify-content: space-between;
-		overflow: hidden;
-		@include breakpoint-down(md){
-			display: block;
-		}
-		&-block{
-			width: 50%;
-			display: flex;
-			flex-flow: column;
-			justify-content: flex-end;
-			&:not(:last-child){
-				margin: 0 28px 0 0;
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+    @include breakpoint-down(md) {
+      display: block;
+    }
 
-			}
-			@include breakpoint-down(md){
-				width: 100%;
-			}
-		}
-	}
-	&__img{
-		width: 811px;
-		// max-height: 375px;
-		max-width: 100%;
-		background-position: center;
-		background-size: cover;
-		background-repeat: no-repeat;
-		@include breakpoint-down(md){
-			width: 100%;
-			margin-bottom: 30px;
-		}
+    &-block {
+      width: 50%;
+      display: flex;
+      flex-flow: column;
+      justify-content: flex-end;
 
-		img{
-			width: 100%;
-			display: block;
-		}
-	}
-	&__words{
-		display: flex;
-		flex-flow: column;
-		justify-content: flex-end;
-		line-height: 24px;
-		padding: 0 33px 0 0;
-		margin: 0 0 1rem;
-		@include breakpoint-down(md){
-			padding: 0;
-		}
-		p:last-child{
-			margin-bottom: 0;
-		}
-	}
-}
+      &:not(:last-child) {
+        margin: 0 28px 0 0;
 
+      }
 
-.about-items{
-	padding: 0 0 32px 0;
-	&__title{
-		font-size: 20px;
-		color: $dark-blue;
-	}
-}
+      @include breakpoint-down(md) {
+        width: 100%;
+      }
+    }
+  }
 
-.about-items__contain{
-	display: flex;
-	padding: 21px 0 0 0;
-	@include breakpoint-down(md){
-		flex-wrap: wrap;
-	}
-	.about-items__item-wrap{
-		@include fluidPaddingRight(100px, 189px,1024px,1680px);
-		width: 33%;
-		@include breakpoint-down(md){
-			width: 48%;
-			padding: 10px;
-		}
-		.about-items__item{
-			display: flex;;
-			justify-content: space-between;
-			flex-flow: column;
-			height: 100%;
-			width: 100%;
-			&-title{
-				font-size: 14px;
-				color: $dark-blue;
-				line-height: 24px;
-				font-weight: bold;
-				padding: 0 0 5px 0;
-				height: 100%;
-			}
-			&-img{
-				width: 352px;
-				max-width: 100%;
-				@include breakpoint-down(md){
-					position: relative;
+  &__img {
+    width: 811px;
+    // max-height: 375px;
+    max-width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    @include breakpoint-down(md) {
+      width: 100%;
+      margin-bottom: 30px;
+    }
 
-					&::before{
-						content: "";
-						position: absolute;
-						background: url("/images/samples/search.svg");
-						height: 30px;
-						width: 30px;
-						background-repeat: no-repeat;
-						top: 50%;
-						left: 50%;
-						transform: translate(-50%);
-					}
-				}
-				img{
-					width: 100%;
-				}
-			}
-		}
-	}
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__words {
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    line-height: 24px;
+    padding: 0 33px 0 0;
+    margin: 0 0 1rem;
+    @include breakpoint-down(md) {
+      padding: 0;
+    }
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
 }
 
 
-.about-mission{
-	padding: 33px 0;
-	.advantages__banner-wrap{
-		margin: 55px 0 0 26px;
-		height: 797px;
-		display: flex;
-		flex-flow: column;
-		justify-content: flex-end;
-		@include breakpoint-down(md){
-			height: 610px;
-			margin-top: 140px;
-		}
+.about-items {
+  padding: 0 0 32px 0;
 
-		.advantages__banner{
-			transform: translate(-30px, -45px);
-			bottom: 308px;
-			@media (min-width: 1024px) and (max-width: 1680px) {
-				bottom: fs(460, 308, 1024, 1680);
-			}
-			@include breakpoint-down(md){
-				bottom: 360px;
-			}
-			.title{
-				padding: 23px 11px 7px 11px;
-				@include breakpoint-down(md){
-					top: -110px;
-				}
-			}
-			.text-uppercase{
-				@include fluidFontSize(18px,24px,1024px,1680px);
-				text-transform: capitalize;
-			}
-			.title-small{
-				margin-top: 0;
-				@include fluidFontSize(26px,36px,1024px,1680px);
-			}
-		}
+  &__title {
+    font-size: 20px;
+    color: $dark-blue;
+  }
+}
 
-		.advantages-description{
-			@include breakpoint-down(md){
-				padding: 20px 8px 10px 8px;
+.about-items__contain {
+  display: flex;
+  padding: 21px 0 0 0;
+  @include breakpoint-down(md) {
+    flex-wrap: wrap;
+  }
 
-				&:first-child{
-					margin-top: 40px;
-				}
-			}
-		}
-	}
+  .about-items__item-wrap {
+    @include fluidPaddingRight(100px, 189px, 1024px, 1680px);
+    width: 33%;
+    @include breakpoint-down(md) {
+      width: 48%;
+      padding: 10px;
+    }
+
+    .about-items__item {
+      display: flex;;
+      justify-content: space-between;
+      flex-flow: column;
+      height: 100%;
+      width: 100%;
+
+      &-title {
+        font-size: 14px;
+        color: $dark-blue;
+        line-height: 24px;
+        font-weight: bold;
+        padding: 0 0 5px 0;
+        height: 100%;
+      }
+
+      &-img {
+        width: 352px;
+        max-width: 100%;
+        @include breakpoint-down(md) {
+          position: relative;
+
+          &::before {
+            content: "";
+            position: absolute;
+            background: url("/images/samples/search.svg");
+            height: 30px;
+            width: 30px;
+            background-repeat: no-repeat;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%);
+          }
+        }
+
+        img {
+          width: 100%;
+        }
+      }
+    }
+  }
 }
 
 
-.values{
-	padding: 7px 0 15px 0;
-	@include fluidPaddingLeft(15px,45px,1024px,1680px);
-	width: calc(100% - 31.5%);
-	@include breakpoint-down(md){
-		width: 100%;
-		padding-top: 30px;
-		padding-left: 0;
-	}
-	&__head{
-		font-size: 36px;
-		text-transform: uppercase;
-		@include breakpoint-down(md){
-			text-align: center;
-		}
-	}
-	&__body{
-		padding: 33px 0;
-		display: flex;
-		flex-flow: wrap;
-		justify-content: flex-end;
-		@include breakpoint-down(md){
-			padding-top: 18px;
-		}
-		&-title{
-			font-size: 18px;
-			color: $dark-blue;
-			font-weight: bold;
-			margin: 0 0 7px;
-		}
-		&-points{
-			ul{
-				@include fluidPaddingRight(20px,120px,1024px,1680px);
-				li{
-					text-indent: 25px;
-					position: relative;
-					&::before{
-						content: '►';
-						position: absolute;
-						left: -25px;
-					}
-					&:not(:last-child){
-						margin: 0 0 20px 0;
-					}
-				}
-			}
-		}
-	}
+.about-mission {
+  padding: 33px 0;
+
+  .advantages__banner-wrap {
+    margin: 55px 0 0 26px;
+    height: 797px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+    @include breakpoint-down(md) {
+      height: 610px;
+      margin-top: 140px;
+    }
+
+    .advantages__banner {
+      transform: translate(-30px, -45px);
+      bottom: 308px;
+      @media (min-width: 1024px) and (max-width: 1680px) {
+        bottom: fs(460, 308, 1024, 1680);
+      }
+      @include breakpoint-down(md) {
+        bottom: 360px;
+      }
+
+      .title {
+        padding: 23px 11px 7px 11px;
+        @include breakpoint-down(md) {
+          top: -110px;
+        }
+      }
+
+      .text-uppercase {
+        @include fluidFontSize(18px, 24px, 1024px, 1680px);
+        text-transform: capitalize;
+      }
+
+      .title-small {
+        margin-top: 0;
+        @include fluidFontSize(26px, 36px, 1024px, 1680px);
+      }
+    }
+
+    .advantages-description {
+      @include breakpoint-down(md) {
+        padding: 20px 8px 10px 8px;
+
+        &:first-child {
+          margin-top: 40px;
+        }
+      }
+    }
+  }
 }
 
 
-.values-article{
-	width: 50%;
-	padding: 0 20px 50px 0;
-	height: 100%;
-	@include breakpoint-down(md){
-		width: 100%;
-		padding-left: 20px;
-		padding-bottom: 18px;
-	}
+.values {
+  padding: 7px 0 15px 0;
+  @include fluidPaddingLeft(15px, 45px, 1024px, 1680px);
+  width: calc(100% - 31.5%);
+  @include breakpoint-down(md) {
+    width: 100%;
+    padding-top: 30px;
+    padding-left: 0;
+  }
+
+  &__head {
+    font-size: 36px;
+    text-transform: uppercase;
+    @include breakpoint-down(md) {
+      text-align: center;
+    }
+  }
+
+  &__body {
+    padding: 33px 0;
+    display: flex;
+    flex-flow: wrap;
+    justify-content: flex-end;
+    @include breakpoint-down(md) {
+      padding-top: 18px;
+    }
+
+    &-title {
+      font-size: 18px;
+      color: $dark-blue;
+      font-weight: bold;
+      margin: 0 0 7px;
+    }
+
+    &-points {
+      ul {
+        @include fluidPaddingRight(20px, 120px, 1024px, 1680px);
+
+        li {
+          text-indent: 25px;
+          position: relative;
+
+          &::before {
+            content: '►';
+            position: absolute;
+            left: -25px;
+          }
+
+          &:not(:last-child) {
+            margin: 0 0 20px 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 
-.corporate{
-	padding: 40px 0 60px;
-	&__codex{
-		width: calc(100% - 31.5%);
-		padding-top: 20px;
-		@include fluidPaddingRight(15px, 41px, 1024px, 1680px);
-		&-description{
-			p{
-				font-family: "HelveticaNeueCyr", sans-serif;
-				line-height: 26px;
-			}
-			ul{
-				li:not(:last-child){
-					margin: 0 0 30px 0;
-				}
-				li{
-					text-indent: 25px;
-					position: relative;
-					&::before{
-						content: '►';
-						position: absolute;
-						left: -25px;
-					}
-				}
-			}
-		}
-	}
-	.advantages__banner-wrap{
-		margin: 0 0 0 26px;
-		height: 647px;
-		display: flex;
-		flex-flow: column;
-		justify-content: flex-end;
-		.advantages__banner{
-			transform: translate(-30px, 9px);
-			bottom: 236px;
-			@media (min-width: 1024px) and (max-width: 1680px) {
-				bottom: fs(350, 236, 1024, 1680);
-			}
-		}
-	}
+.values-article {
+  width: 50%;
+  padding: 0 20px 50px 0;
+  height: 100%;
+  @include breakpoint-down(md) {
+    width: 100%;
+    padding-left: 20px;
+    padding-bottom: 18px;
+  }
 }
 
 
-.governance{
-	padding: 31px 0 45px;
-	&-soviet{
-		&__points{
-			&-block{
-				width: 50%;
-				&:first-child{
-					padding: 0 38px 0 0;
-				}
-				ul{
-					li{
-						margin: 0 0 25px 0;
-						position: relative;
-						text-indent: 25px;
-						line-height: 26px;
-						&::before{
-							content: '►';
-							position: absolute;
-							left: -25px;
-						}
-					}
-				}
-			}
-		}
-	}
+.corporate {
+  padding: 40px 0 60px;
+  @include breakpoint-down(md) {
+    & .container-fluid > .flex.flex-wrap {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__codex {
+    width: calc(100% - 31.5%);
+    padding-top: 20px;
+    @include fluidPaddingRight(15px, 41px, 1024px, 1680px);
+    @include breakpoint-down(md) {
+      width: 100%;
+    }
+
+    &-description {
+      p {
+        font-family: "HelveticaNeueCyr", sans-serif;
+        line-height: 26px;
+      }
+
+      ul {
+        li:not(:last-child) {
+          margin: 0 0 30px 0;
+        }
+
+        li {
+          text-indent: 25px;
+          position: relative;
+
+          &::before {
+            content: '►';
+            position: absolute;
+            left: -25px;
+          }
+        }
+      }
+    }
+  }
+
+  .advantages__banner-wrap {
+    margin: 0 0 0 26px;
+    height: 647px;
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-end;
+
+    .advantages__banner {
+      transform: translate(-30px, 9px);
+      bottom: 236px;
+      @media (min-width: 1024px) and (max-width: 1680px) {
+        bottom: fs(350, 236, 1024, 1680);
+      }
+    }
+  }
 }
 
-.persons-wrap{
-	padding: 30px 0;
+
+.governance {
+  padding: 31px 0 45px;
+
+  &-soviet {
+    &__points {
+      &-block {
+        width: 50%;
+
+        &:first-child {
+          padding: 0 38px 0 0;
+        }
+
+        ul {
+          li {
+            margin: 0 0 25px 0;
+            position: relative;
+            text-indent: 25px;
+            line-height: 26px;
+
+            &::before {
+              content: '►';
+              position: absolute;
+              left: -25px;
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
-.rule{
-	padding: 70px 0 47px 0;
+.persons-wrap {
+  padding: 30px 0;
 }
 
-.rule-persons-wrap{
-	.advantages__banner-wrap-outside--persons{
-		width: 32%;
-		.advantages__banner--photo{
-			right: 50%;
-			bottom: 0;
-			top: 0;
-		}
-		.advantages__banner-wrap--margin{
-			display: flex;
-			padding: 0;
-			@include fluidPaddingLeft(100px,200px,1024px,1680px);
-			.advantages-description{
-				justify-content: space-evenly;
-			}
-		}
-	}
+.rule {
+  padding: 70px 0 47px 0;
+}
+
+.rule-persons-wrap {
+  .advantages__banner-wrap-outside--persons {
+    width: 32%;
+
+    .advantages__banner--photo {
+      right: 50%;
+      bottom: 0;
+      top: 0;
+    }
+
+    .advantages__banner-wrap--margin {
+      display: flex;
+      padding: 0;
+      @include fluidPaddingLeft(100px, 200px, 1024px, 1680px);
+
+      .advantages-description {
+        justify-content: space-evenly;
+      }
+    }
+  }
 }
 
 
-.committee{
-	padding: 30px 0;
+.committee {
+  padding: 30px 0;
 }
