@@ -6,6 +6,12 @@
   &__item{
     width: calc(100% / 5);
     padding: 0 10px;
+    @include breakpoint-down(md){
+      width: 100%;
+      padding: 0;
+      display: flex;
+      flex-direction: column-reverse;
+    }
   }
   
   &__item-photo{
@@ -13,6 +19,10 @@
     margin-bottom: 20px;
     background-size: cover;
     background-position: center;
+    @include breakpoint-down(md){
+      padding-top: 50%;
+      margin-bottom: 28px;
+    }
   }
   
   &__item-title{
@@ -21,5 +31,10 @@
     @include fluidFontSize(14px,16px,1024px,1680px);
     font-weight: 400;
     text-align: center;
+    @include breakpoint-down(md){
+      font-size: 20px;
+      margin-bottom: 12px;
+      text-align: left;
+    }
   }
 }

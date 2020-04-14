@@ -15,7 +15,9 @@ h1, h2, h3, h4, h5, h6 {
 h1 {
   @include fluidFontSize(48px, 60px, 1024px, 1680px);
   font-weight: 400;
-  //text-transform: uppercase;
+  @include breakpoint-down(md){
+    font-size: 30px;
+  }
 
   &.small {
     @include fluidFontSize(25px, 48px, 1024px, 1680px);
