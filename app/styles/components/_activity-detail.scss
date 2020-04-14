@@ -4,10 +4,17 @@
   
   &-content{
     padding-bottom: 30px;
+
+    @include breakpoint-down(md){
+      margin-top: -50px;
+    }
   }
   
   h2 {
     color: #000;
+    @include breakpoint-down(md){
+      text-align: center;
+    }
   }
   
   .description {
@@ -21,10 +28,18 @@
   .article-wrap{
     width: 50%;
     @include fluidPaddingRight(60px,128px,1024px,1680px);
+    @include breakpoint-down(md){
+      width: 100%;
+      padding-right: 0;
+    }
   }
   
   &__info-wrap{
     width: 50%;
+    @include breakpoint-down(md){
+      width: 100%;
+      margin-top: 40px;
+    }
   }
   
   &__info{
@@ -42,6 +57,10 @@
     margin-bottom: 40px;
     width: 50%;
     padding: 0 15px;
+    @include breakpoint-down(md){
+      width: 100%;
+      margin-bottom: 18px;
+    }
     
     i{
       color: #F4D7AB;
