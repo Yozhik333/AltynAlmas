@@ -1,32 +1,45 @@
 .place-of-birth {
+
   &-content {
     margin-bottom: 40px;
+    @include breakpoint-down(md) {
+      & > .flex {
+        flex-direction: column;
+      }
+    }
   }
-  
+
   &__mapImg {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
     width: 75%;
-    
+    @include breakpoint-down(md){
+      width: 100%;
+    }
+
     .ratio {
       padding-top: ratio(683px, 1114);
     }
   }
-  
+
   &__info {
     width: 25%;
     padding-left: 20px;
-    
-    
+    @include breakpoint-down(md){
+      width: 100%;
+      padding-left: 0;
+    }
+
+
     &-title {
       font-weight: normal;
-      @include fluidFontSize(20px,36px,1024px,1680px);
+      @include fluidFontSize(20px, 36px, 1024px, 1680px);
       line-height: 30px;
       color: #000;
       position: relative;
       margin-bottom: 24px;
-      
+
       &::after {
         content: '';
         position: absolute;
@@ -35,9 +48,12 @@
         right: 0;
         bottom: -12px;
         left: -131%;
+        @include breakpoint-down(md){
+          left: 0;
+        }
       }
     }
-    
+
     &-description {
       font-weight: normal;
       font-size: 16px;
@@ -45,14 +61,20 @@
       color: #000;
     }
   }
-  
-  &__item{
-    &:first-child{
-      @include fluidMarginTop(50px,125px,1024px,1680px);
+
+  &__item {
+    &:first-child {
+      @include fluidMarginTop(50px, 125px, 1024px, 1680px);
+      @include breakpoint-down(md){
+        margin-top: 20px;
+      }
     }
-    
-    &:nth-child(2){
-      @include fluidMarginTop(105px,250px,1024px,1680px);
+
+    &:nth-child(2) {
+      @include fluidMarginTop(105px, 250px, 1024px, 1680px);
+      @include breakpoint-down(md){
+        margin-top: 30px;
+      }
     }
   }
 }
