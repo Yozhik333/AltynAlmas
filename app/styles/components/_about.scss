@@ -3,10 +3,15 @@
     @include fluidFontSize(26px,36px,1024px,1680px);
     font-weight: 400;
 	padding-bottom: 12px;
+	@include breakpoint-down(md){
+		text-align: center;
+	}
+
 	.article-title{
 		position: relative;
 		display: inline-block;
 		padding-bottom: 12px;
+
 		&-after{
 			content: '';
 			position: absolute;
@@ -15,20 +20,27 @@
 			@include fluidPaddingLeft(460px,660px,1024px,1680px);
 			bottom: 0;
 			left: 0;
+			@include breakpoint-down(md){
+				padding: initial;
+				right: 0;
+			}
 		}
 	}
 }
 
-
-
-
-
 .about-gold{
 	padding: 30px 0 73px 0;
+	@include breakpoint-down(md){
+		padding-bottom: 30px;
+	}
+
 	&__description{
 		display: flex;
 		justify-content: space-between;
 		overflow: hidden;
+		@include breakpoint-down(md){
+			display: block;
+		}
 		&-block{
 			width: 50%;
 			display: flex;
@@ -36,6 +48,10 @@
 			justify-content: flex-end;
 			&:not(:last-child){
 				margin: 0 28px 0 0;
+
+			}
+			@include breakpoint-down(md){
+				width: 100%;
 			}
 		}
 	}
@@ -46,6 +62,11 @@
 		background-position: center;
 		background-size: cover;
 		background-repeat: no-repeat;
+		@include breakpoint-down(md){
+			width: 100%;
+			margin-bottom: 30px;
+		}
+
 		img{
 			width: 100%;
 			display: block;
@@ -58,6 +79,9 @@
 		line-height: 24px;
 		padding: 0 33px 0 0;
 		margin: 0 0 1rem;
+		@include breakpoint-down(md){
+			padding: 0;
+		}
 		p:last-child{
 			margin-bottom: 0;
 		}
@@ -76,9 +100,16 @@
 .about-items__contain{
 	display: flex;
 	padding: 21px 0 0 0;
+	@include breakpoint-down(md){
+		flex-wrap: wrap;
+	}
 	.about-items__item-wrap{
 		@include fluidPaddingRight(100px, 189px,1024px,1680px);
 		width: 33%;
+		@include breakpoint-down(md){
+			width: 48%;
+			padding: 10px;
+		}
 		.about-items__item{
 			display: flex;;
 			justify-content: space-between;
@@ -96,6 +127,21 @@
 			&-img{
 				width: 352px;
 				max-width: 100%;
+				@include breakpoint-down(md){
+					position: relative;
+
+					&::before{
+						content: "";
+						position: absolute;
+						background: url("/images/samples/search.svg");
+						height: 30px;
+						width: 30px;
+						background-repeat: no-repeat;
+						top: 50%;
+						left: 50%;
+						transform: translate(-50%);
+					}
+				}
 				img{
 					width: 100%;
 				}
