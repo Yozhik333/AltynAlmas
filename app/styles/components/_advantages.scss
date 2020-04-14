@@ -171,6 +171,10 @@
   padding: 200px 0 0 0;
   min-height: 322px;
   height: 100%;
+  @include breakpoint-down(md){
+    padding-top: 110px;
+    height: auto;
+  }
 
   .advantages-description {
     padding: 27px 7px 35px 15px;
@@ -184,8 +188,14 @@
 
 .advantages__banner-wrap-outside--persons {
   width: 25%;
+  @include breakpoint-down(md){
+    width: 100%;
+  }
 
   &:not(:last-child) {
     margin: 0 34px 0 0;
+    @include breakpoint-down(md){
+      margin: 0 0 30px;
+    }
   }
 }
