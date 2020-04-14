@@ -1,29 +1,52 @@
 .mine-to-mill-content {
   margin-bottom: 30px;
-  
-  article{
-    width: 34%;
+  @include breakpoint-down(md) {
+    & > .flex {
+      flex-direction: column;
+    }
   }
-  
+
+  article {
+    width: 34%;
+    @include breakpoint-down(md) {
+      width: 100%;
+
+      h2 {
+
+      }
+    }
+  }
+
   .border-wrapper {
     padding: 32px 40px;
     width: 45%;
     margin-right: 30px;
-    
-    &:last-child{
+    @include breakpoint-down(md) {
+      width: 100%;
+      margin-right: 0;
+      padding: 15px 20px;
+      &:not(:last-child) {
+        margin-bottom: 18px;
+      }
+    }
+
+    &:last-child {
       margin-right: 0;
     }
   }
-  
+
   .title {
     font-weight: bold;
     font-size: 18px;
     line-height: 18px;
     color: #002C4D;
     margin-bottom: 26px;
+    @include breakpoint-down(md){
+      margin-bottom: 10px;
+    }
   }
-  
-  .desc{
+
+  .desc {
     padding-left: 14px;
     position: relative;
     font-weight: normal;
@@ -32,21 +55,24 @@
     color: #000;
     margin-top: 26px;
   }
-  
-  .list-mine-to-mill{
-    li{
+
+  .list-mine-to-mill {
+    li {
       padding-left: 14px;
       position: relative;
       font-weight: normal;
       font-size: 16px;
       line-height: 25px;
       color: #000;
-      
-      &:not(:last-child){
+
+      &:not(:last-child) {
         margin-bottom: 26px;
+        @include breakpoint-down(md){
+          margin-bottom: 10px;
+        }
       }
-      
-      &::before{
+
+      &::before {
         content: '';
         position: relative;
         width: 4px;
@@ -59,9 +85,13 @@
       }
     }
   }
-  
-  .right-side{
+
+  .right-side {
     width: 63%;
+    @include breakpoint-down(md) {
+      width: 100%;
+      flex-direction: column;
+    }
   }
 }
 
