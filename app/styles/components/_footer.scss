@@ -1,6 +1,10 @@
 .footer {
 	background: $gray-bg;
 	height: 82px;
+
+	&>.flex.justify-content-between{
+		flex-direction: column;
+	}
 }
 
 [data-template="index"]{
@@ -15,8 +19,15 @@
 		display: flex;
 		margin-bottom: 0;
 		padding-inline-start: 0;
+		@include breakpoint-down(md){
+			justify-content: space-between;
+		}
+
 		li:not(:last-child){
 			margin: 0 23px 0 0;
+			@include breakpoint-down(md){
+				margin: 0;
+			}
 		}
 		li{
 			a{
@@ -32,4 +43,12 @@
 .maint {
 	display: block;
 	line-height: 61px;
+	@include breakpoint-down(md){
+		width: 130px;
+		margin: 0 auto;
+
+		img{
+			max-width: 100%;
+		}
+	}
 }
