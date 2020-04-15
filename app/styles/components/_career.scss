@@ -14,12 +14,19 @@
   &__people-body {
     display: flex;
     border: 5px solid #000;
+    @include breakpoint-down(md){
+      flex-direction: column;
+    }
   }
   
   &__people-block {
     width: 33.4%;
     padding: 50px 57px 40px 65px;
     background-color: $beige;
+    @include breakpoint-down(md){
+      width: 100%;
+      padding: 20px 15px;
+    }
     
     &:nth-child(2) {
       color: $beige;
@@ -39,14 +46,23 @@
       @media (max-width: 1680px) {
         padding: 50px 57px 40px 65px;
       }
+      @include breakpoint-down(md){
+        padding: 20px 15px;
+      }
     }
   }
   
   &__hr-policy {
     margin: 65px 0 0;
+    @include breakpoint-down(md){
+      flex-direction: column;
+    }
     
     &-block {
       width: 50%;
+      @include breakpoint-down(md){
+        width: 100%;
+      }
       
       h2 {
         margin: 0 0 20px;
@@ -96,6 +112,10 @@
   display: flex;
   flex-flow: column;
   justify-content: space-between;
+  @include breakpoint-down(md){
+    padding: 28px 20px;
+    height: auto;
+  }
   
   &-item {
     @include fluidFontSize(19px, 24px, 1024px, 1680px);
