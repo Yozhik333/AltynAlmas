@@ -82,6 +82,9 @@
 
 .tab_links {
 	margin: 70px 0 0;
+	@include breakpoint-down(md){
+		margin: 25px 0 35px;
+	}
 	.btn-detail {
 		margin: 0 25px 0 0;
 	}
@@ -93,6 +96,9 @@
 		color: $dark-blue;
 		&:hover {
 			color: $brown;
+		}
+		@include breakpoint-down(md){
+			font-size: 12px;
 		}
 	}
 }
