@@ -57,8 +57,17 @@
     margin: 0 0 70px;
     @include breakpoint-down(md) {
       width: 100%;
-        padding: 0;
-        margin-bottom: 30px;
+      padding: 0;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.estate-development{
+  .title-wrapper.title-wrapper {
+    @include fluidMarginTop(270px, 500px, 1024px, 1680px);
+    @include breakpoint-down(md) {
+      margin-top: 2.5rem;
     }
   }
 }
