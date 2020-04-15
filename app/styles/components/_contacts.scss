@@ -1,86 +1,112 @@
 .contacts {
-	padding: 80px 0 70px;
-	&__address {
-		width: 49%;
-		padding: 0 0 0 30px;
-	}
+  padding: 80px 0 70px;
+  @include breakpoint-down(md){
+    padding: 30px 0;
+  }
 
-	&__address-frame {
-		border: 5px solid #000000;
-		padding: 60px 75px;
-		@include fluidPaddingLeft(280px, 380px, 1024px, 1680px);
-		@include fluidPaddingRight(10px, 75px, 1024px, 1680px);
-		display: flex;
-		position: relative;
-		height: 320px;
-	}
+  &__address {
+    width: 49%;
+    padding: 0 0 0 30px;
+    @include breakpoint-down(md) {
+      display: none;
+    }
+  }
 
-	&__address-banner {
-		@include fluidWidth(300px, 354px, 1024px, 1680px);
-		height: 322px;
-		position: absolute;
-		left: -30px;
-		top: -35px;
-	}
+  &__address-frame {
+    border: 5px solid #000000;
+    padding: 60px 75px;
+    @include fluidPaddingLeft(280px, 380px, 1024px, 1680px);
+    @include fluidPaddingRight(10px, 75px, 1024px, 1680px);
+    display: flex;
+    position: relative;
+    height: 320px;
+  }
 
-	&__address-description {
-		display: flex;
-		flex-flow: column;
-	}
+  &__address-banner {
+    @include fluidWidth(300px, 354px, 1024px, 1680px);
+    height: 322px;
+    position: absolute;
+    left: -30px;
+    top: -35px;
+  }
 
-	&__address-head {
-		@include fluidFontSize(20px, 30px, 1024px, 1680px);
-		text-transform: uppercase;
-		margin: 0 0 32px;
-	}
+  &__address-description {
+    display: flex;
+    flex-flow: column;
+  }
 
-	&__address-body {
-		display: flex;
-		flex-flow: column;
-		justify-content: space-between;
-		a {
-			color: #000;
-			margin-bottom: 20px;
-			&:hover {
-				color: $brown;
-			}
-		}
-	}
+  &__address-head {
+    @include fluidFontSize(20px, 30px, 1024px, 1680px);
+    text-transform: uppercase;
+    margin: 0 0 32px;
+  }
 
-	&__info {
-		width: calc(100% - 53%);
-		margin: 0 0 0 35px;
-		padding: 50px 0 0;
-	}
+  &__address-body {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
 
-	&__info-title {
-		font-size: 18px;
-		font-weight: bold;
-		color: $dark-blue;
-		margin: 0 0 45px;
-	}
+    a {
+      color: #000;
+      margin-bottom: 20px;
 
-	&__info-description {
-		display: flex;
-		justify-content: space-between;
-		flex-flow: wrap;
-	}
+      &:hover {
+        color: $brown;
+      }
+    }
+  }
+
+  &__info {
+    width: calc(100% - 53%);
+    margin: 0 0 0 35px;
+    padding: 50px 0 0;
+    @include breakpoint-down(md) {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+  }
+
+      &__info-title {
+        font-size: 18px;
+        font-weight: bold;
+        color: $dark-blue;
+        margin: 0 0 45px;
+        @include breakpoint-down(md){
+          margin-bottom: 20px;
+          font-size: 16px;
+    }
+  }
+
+  &__info-description {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+  }
 }
 
 .info__block {
-	width: 47%;
-	margin: 0 0 40px;
-	&-head {
-		font-weight: bold;
-		margin: 0 0 20px;
-	}
+  width: 47%;
+  margin: 0 0 40px;
+  @include breakpoint-down(md){
+    width: 100%;
+  }
 
-	&-body {
-		a {
-			color: #000;
-			&:hover {
-				color: $brown;
-			}
-		}
-	}
+  &-head {
+    font-weight: bold;
+    margin: 0 0 20px;
+    @include breakpoint-down(md){
+      margin-bottom: 10px;
+    }
+  }
+
+  &-body {
+    a {
+      color: #000;
+
+      &:hover {
+        color: $brown;
+      }
+    }
+  }
 }

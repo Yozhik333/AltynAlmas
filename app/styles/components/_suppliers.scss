@@ -5,6 +5,9 @@
 		.article-title-after {
 			padding-left: 570px;
 			@include fluidPaddingLeft(400px, 570px, 1024px, 1680px);
+			@include breakpoint-down(md){
+				padding: 0;
+			}
 		}
 	}
 }
@@ -12,6 +15,10 @@
 .to-suppliers {
 	width: 50%;
 	@include fluidPaddingRight(40px, 76px, 1024px, 1680px);
+	@include breakpoint-down(md){
+		width: 100%;
+		padding: 0;
+	}
 	.to-suppliers__description {
 		ul {
 			li {
@@ -24,6 +31,9 @@
 					position: absolute;
 					left: -25px;
 				}
+				@include breakpoint-down(md){
+					margin-bottom: 10px;
+				}
 			}
 		}
 	}
@@ -33,21 +43,37 @@
 	width: calc(100% - 50%);
 	padding: 27px 0 0;
 	@include fluidPaddingLeft(0, 76px, 1024px, 1680px);
+	@include breakpoint-down(md){
+		width: 100%;
+	}
 	&-headline {
 		color: $dark-blue;
 		font-weight: bold;
 		font-size: 20px;
 		line-height: 30px;
+		@include breakpoint-down(md){
+			padding-bottom: 16px;
+		}
 	}
 	&-body {
 		display: flex;
 		flex-flow: wrap;
 		border: 5px solid #000000;
 		padding: 65px 35px 34px 32px;
+		@include breakpoint-down(md){
+			padding: 20px 15px;
+			flex-direction: column;
+		}
+
 		.suppliers__block {
 			width: 50%;
 			display: flex;
 			flex-flow: column;
+			@include breakpoint-down(md){
+				width: 100%;
+				padding: 0;
+			}
+
 			a:not(.btn) {
 				display: block;
 				color: $dark-blue;
@@ -58,6 +84,9 @@
 			}
 			&:not(:last-child) {
 				padding: 0 40px 0 0;
+				@include breakpoint-down(md){
+					padding: 0;
+				}
 			}
 			&-head {
 				font-size: 36px;
@@ -65,15 +94,25 @@
 				font-weight: 300;
 				text-transform: uppercase;
 				padding: 0 0 28px;
+				@include breakpoint-down(md){
+					padding-bottom: 10px;
+					font-size: 24px;
+				}
 			}
 			&-body {
 				line-height: 20px;
 				padding: 0 0 33px;
+				@include breakpoint-down(md){
+					padding-bottom: 10px;
+				}
 			}
 			&-footer {
 				height: 100%;
 				.btn-detail {
 					margin: 20px 0 0;
+					@include breakpoint-down(md){
+						margin: 0 0 35px;
+					}
 				}
 			}
 		}
