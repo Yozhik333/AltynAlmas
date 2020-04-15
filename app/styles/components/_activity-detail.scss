@@ -1,4 +1,9 @@
 .activity-detail {
+  @include breakpoint-down(md){
+    .title-wrapper::after {
+      bottom: -40px;
+    }
+  }
   .swiper-slide{
   }
   
