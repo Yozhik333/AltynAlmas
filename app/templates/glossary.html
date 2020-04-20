@@ -1,0 +1,280 @@
+<!-- Глассарий -->
+{% set title = "Глассарий" %}
+{% set namespace = "glossary" %}
+{% set page = "glossary" %}
+
+{% extends "layouts/default.html" %}
+<!-- ********************************************************************* -->
+{% block content %}
+
+<section class="glossary">
+    <div class="container-fluid">
+        <ul class="nav nav-tabs glossary__header" id="myTab" role="tablist">
+            <li class="nav-item">
+                <a class="nav-link"
+                   id="profile-tab"
+                   data-toggle="tab"
+                   href="#profile"
+                   role="tab"
+                   aria-controls="profile"
+                   aria-selected="false">
+                    A — B
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link"
+                   id="G-E"
+                   data-toggle="tab"
+                   href="#ge"
+                   role="tab"
+                   aria-controls="profile"
+                   aria-selected="false">
+                    Ж — И
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active"
+                   id="home-tab"
+                   data-toggle="tab"
+                   href="#home"
+                   role="tab"
+                   aria-controls="home"
+                   aria-selected="true">
+                    К — М
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active"
+                   id="km"
+                   data-toggle="tab"
+                   href="#home"
+                   role="tab"
+                   aria-controls="home"
+                   aria-selected="true">
+                    о — р
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active"
+                   id="pn"
+                   data-toggle="tab"
+                   href="#home"
+                   role="tab"
+                   aria-controls="home"
+                   aria-selected="true">
+                    с — у
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active"
+                   id="fc"
+                   data-toggle="tab"
+                   href="#home"
+                   role="tab"
+                   aria-controls="home"
+                   aria-selected="true">
+                    ф — ц
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active"
+                   id="csh"
+                   data-toggle="tab"
+                   href="#home"
+                   role="tab"
+                   aria-controls="home"
+                   aria-selected="true">
+                    ч — щ
+                </a>
+            </li>
+
+            <li class="nav-item">
+                <a class="nav-link active"
+                   id="y-ya"
+                   data-toggle="tab"
+                   href="#home"
+                   role="tab"
+                   aria-controls="home"
+                   aria-selected="true">
+                    э — я
+                </a>
+            </li>
+        </ul>
+
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active"
+                 id="home"
+                 role="tabpanel"
+                 aria-labelledby="home-tab">
+
+            </div>
+            <div class="tab-pane fade"
+                 id="profile"
+                 role="tabpanel"
+                 aria-labelledby="profile-tab">
+                <div class="flex">
+                    <div class="glossary__item">
+                        <div class="glossary__item-header">
+                            а
+                        </div>
+                        <div class="glossary__item-header-title">
+                            Жила
+                        </div>
+                        <div class="glossary__item-description">
+                            Минеральное тело, заполняющее трещину в горной породе. Характеризуется существенной
+                            глубиной, протяженностью и резко очерченными границами.
+                        </div>
+                    </div>
+
+                    <div class="glossary__item">
+                        <div class="glossary__item-header">
+                            б
+                        </div>
+                        <div class="glossary__item-header-title">
+                            Жила
+                        </div>
+                        <div class="glossary__item-description">
+                            Минеральное тело, заполняющее трещину в горной породе. Характеризуется существенной
+                            глубиной, протяженностью и резко очерченными границами.
+                        </div>
+                    </div>
+
+                    <div class="glossary__item">
+                        <div class="glossary__item-header">
+                            в
+                        </div>
+                        <div class="glossary__item-header-title">
+                            Измельчение
+                        </div>
+                        <div class="glossary__item-description">
+                            Технологический процесс, при котором за счет ударной нагрузки, давления и истирания
+                            уменьшается размер рудных частиц для высвобождения ценных минералов с целью их дальнейшей
+                            переработки.
+                        </div>
+                        <div class="glossary__item-header-title">
+                            Инконель
+                        </div>
+                        <div class="glossary__item-description">
+                            Сплав никеля, хрома и железа, высокоустойчивый к высоким температурам и коррозии.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade"
+                 id="ge"
+                 role="tabpanel"
+                 aria-labelledby="profile-tab">
+                <div class="flex">
+                    <div class="glossary__item">
+                        <div class="glossary__item-header">
+                            Ж
+                        </div>
+                        <div class="glossary__item-header-title">
+                            Жила
+                        </div>
+                        <div class="glossary__item-description">
+                            Минеральное тело, заполняющее трещину в горной породе. Характеризуется существенной
+                            глубиной, протяженностью и резко очерченными границами.
+                        </div>
+                    </div>
+
+                    <div class="glossary__item">
+                        <div class="glossary__item-header">
+                            З
+                        </div>
+                        <div class="glossary__item-header-title">
+                            Жила
+                        </div>
+                        <div class="glossary__item-description">
+                            Минеральное тело, заполняющее трещину в горной породе. Характеризуется существенной
+                            глубиной, протяженностью и резко очерченными границами.
+                        </div>
+                    </div>
+
+                    <div class="glossary__item">
+                        <div class="glossary__item-header">
+                            и
+                        </div>
+                        <div class="glossary__item-header-title">
+                            Измельчение
+                        </div>
+                        <div class="glossary__item-description">
+                            Технологический процесс, при котором за счет ударной нагрузки, давления и истирания
+                            уменьшается размер рудных частиц для высвобождения ценных минералов с целью их дальнейшей
+                            переработки.
+                        </div>
+                        <div class="glossary__item-header-title">
+                            Инконель
+                        </div>
+                        <div class="glossary__item-description">
+                            Сплав никеля, хрома и железа, высокоустойчивый к высоким температурам и коррозии.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-pane fade"
+                 id="km-desc"
+                 role="tabpanel"
+                 aria-labelledby="profile-tab">
+                <div class="flex">
+                    <div class="glossary__item">
+                        <div class="glossary__item-header">
+                            к
+                        </div>
+                        <div class="glossary__item-header-title">
+                            Жила
+                        </div>
+                        <div class="glossary__item-description">
+                            Минеральное тело, заполняющее трещину в горной породе. Характеризуется существенной
+                            глубиной, протяженностью и резко очерченными границами.
+                        </div>
+                    </div>
+
+                    <div class="glossary__item">
+                        <div class="glossary__item-header">
+                            л
+                        </div>
+                        <div class="glossary__item-header-title">
+                            Жила
+                        </div>
+                        <div class="glossary__item-description">
+                            Минеральное тело, заполняющее трещину в горной породе. Характеризуется существенной
+                            глубиной, протяженностью и резко очерченными границами.
+                        </div>
+                    </div>
+
+                    <div class="glossary__item">
+                        <div class="glossary__item-header">
+                            м
+                        </div>
+                        <div class="glossary__item-header-title">
+                            Измельчение
+                        </div>
+                        <div class="glossary__item-description">
+                            Технологический процесс, при котором за счет ударной нагрузки, давления и истирания
+                            уменьшается размер рудных частиц для высвобождения ценных минералов с целью их дальнейшей
+                            переработки.
+                        </div>
+                        <div class="glossary__item-header-title">
+                            Инконель
+                        </div>
+                        <div class="glossary__item-description">
+                            Сплав никеля, хрома и железа, высокоустойчивый к высоким температурам и коррозии.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /.corporate -->
+
+
+{% endblock %}

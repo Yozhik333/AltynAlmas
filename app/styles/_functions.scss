@@ -215,7 +215,3 @@
 		height: $f-max;
 	}
 }
-
-.fluid-font-size {
-	@include fluidFontSize(16px, 24px, 480px, 1280px, 18px);
-}
