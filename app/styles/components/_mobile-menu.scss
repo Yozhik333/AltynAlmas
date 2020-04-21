@@ -7,7 +7,7 @@
     .mobile-menu {
       &__drop {
         padding: 10px 20px 10px 0;
-        font-size: 22px;
+        font-size: 19px;
         border-bottom: solid 1px #000;
         overflow: hidden;
 
@@ -18,10 +18,11 @@
 
       &__dropdown {
         padding-left: 18px;
+        padding-top: 10px;
         display: none;
       }
 
-      &__drop-content{
+      &__drop-content {
         padding-left: 18px;
       }
 
@@ -29,16 +30,29 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+        i{
+          transform: rotate(0);
+          transition: transform .3s ease-in-out;
+        }
+
+        &.active{
+          i{
+            transform: rotate(90deg);
+          }
+        }
       }
 
 
       &__link {
         color: #000;
-        font-size: 20px;
+        font-size: 16px;
+        line-height: 28px;
 
         &_small {
           color: #000;
           font-size: 16px;
+          line-height: 28px;
         }
       }
     }
@@ -47,4 +61,8 @@
 
 .active + .mobile-menu__dropdown {
   display: block;
+}
+
+.stop-scroll{
+  overflow: hidden;
 }

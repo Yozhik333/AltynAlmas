@@ -1,9 +1,17 @@
-.news{
+.news {
   padding-bottom: 95px;
   background: #f4f4f4;
   position: relative;
-  
-  &::before{
+
+  &-wrap {
+    @include breakpoint-down(md) {
+      & > .flex {
+        flex-direction: column;
+      }
+    }
+  }
+
+  &::before {
     content: '';
     position: absolute;
     top: 0;
@@ -12,31 +20,31 @@
     height: 110px;
     background: #fff;
   }
-  
-  &-block__title{
+
+  &-block__title {
     color: #000000;
-    @include fluidFontSize(38px,48px,1024px,1680px);
+    @include fluidFontSize(38px, 48px, 1024px, 1680px);
     font-weight: 400;
     text-transform: uppercase;
-    @include breakpoint-down(md){
+    @include breakpoint-down(md) {
       font-size: 28px;
       margin-bottom: 40px;
-      text-align: center ;
+      text-align: center;
     }
-    
-    .line_bottom{
+
+    .line_bottom {
       position: relative;
       display: inline-block;
-      
-      &::before{
+
+      &::before {
         content: '';
         position: absolute;
         height: 5px;
         background: #000;
-        @include fluidPaddingLeft(460px,660px,1024px,1680px);
+        @include fluidPaddingLeft(460px, 660px, 1024px, 1680px);
         bottom: -15px;
         left: 0;
-        @include breakpoint-down(md){
+        @include breakpoint-down(md) {
           left: 0;
           right: 0;
           padding: initial;
@@ -44,8 +52,8 @@
       }
     }
   }
-  
-  .publication-date{
+
+  .publication-date {
     color: #002c4d;
     font-family: "HelveticaNeueCyr";
     font-size: 16px;
@@ -53,22 +61,22 @@
     text-transform: uppercase;
     display: inline-block;
     margin-top: 30px;
-    @include breakpoint-down(md){
+    @include breakpoint-down(md) {
       font-size: 12px;
       margin-top: 13px;
     }
   }
-  
-  article{
+
+  article {
     width: 40vw;
     padding-top: 20px;
     margin-bottom: 48px;
-    @include breakpoint-down(md){
+    @include breakpoint-down(md) {
       width: 100%;
       margin-bottom: 15px;
     }
-    
-    .article-description{
+
+    .article-description {
       color: #000;
       font-size: 16px;
       font-weight: 400;
@@ -77,7 +85,7 @@
       -webkit-line-clamp: 10;
       overflow: hidden;
       display: -webkit-box;
-      @include breakpoint-down(md){
+      @include breakpoint-down(md) {
         -webkit-line-clamp: 3;
         overflow: hidden;
         height: 90px;
@@ -85,63 +93,63 @@
       }
     }
   }
-  
-  h4{
+
+  h4 {
     color: #002c4d;
     margin-bottom: 30px;
-    @include breakpoint-down(md){
+    @include breakpoint-down(md) {
       margin-bottom: 10px;
     }
   }
-  
-  .news-article-wrap{
+
+  .news-article-wrap {
     transition: opacity .4s ease-in-out;
   }
-  
-//  for slider
-  .mainNewsSlider{
+
+  //  for slider
+  .mainNewsSlider {
     height: 568px;
     position: relative;
-    @include breakpoint-down(md){
-      height:  auto;
+    @include breakpoint-down(md) {
+      height: auto;
     }
   }
-  
-  .container-fluid{
+
+  .container-fluid {
     height: 100%;
     position: relative;
   }
-  
-  .arrow-wrapper{
+
+  .arrow-wrapper {
     position: absolute;
     display: flex;
     right: 15px;
     top: 500px;
     z-index: 1;
-    @include breakpoint-down(md){
+    @include breakpoint-down(md) {
       top: auto;
       bottom: -80px;
       left: 50%;
       transform: translate(-50%, 0);
       right: auto;
     }
-    
-    .btn-slide-prev{
+
+    .btn-slide-prev {
       margin-right: 10px;
     }
   }
-  
+
   .swiper {
     &-container {
       width: 50vw;
-      @include stretch(0,0,0,auto);
-      @include breakpoint-down(md){
+      @include stretch(0, 0, 0, auto);
+      @include breakpoint-down(md) {
         width: 100%;
         height: 220px;
         position: relative;
       }
     }
-    
+
     &-slide {
       width: 100%;
       background-position: center;

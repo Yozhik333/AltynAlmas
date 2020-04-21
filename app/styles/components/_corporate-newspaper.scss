@@ -8,12 +8,19 @@
 
 .corporate-newspaper__items{
   margin: -50px -15px -35px;
+  @include breakpoint-down(md){
+    margin: -50px -7.5px -35px;
+  }
 }
 
 .corporate-newspaper__item{
   width: 25%;
   padding: 0 15px 35px;
   text-align: center;
+  @include breakpoint-down(md){
+    width: 50%;
+    padding: 0 7.5px 30px;
+  }
   
   .img{
     //height: 512px;
@@ -22,5 +29,8 @@
     background-position: center;
     margin-bottom: 16px;
     box-shadow: 0px 2px 15px rgba(0,0,0, 0.3);
+    @include breakpoint-down(md){
+      padding-top: 240px;
+    }
   }
 }

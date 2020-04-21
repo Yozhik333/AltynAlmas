@@ -1,0 +1,60 @@
+.glossary{
+  &__header{
+    display: flex;
+    padding-top: 46px;
+    margin-bottom: 120px;
+
+    .nav-item{
+      padding: 0 30px;
+    }
+
+    a{
+      font-size: 24px;
+      line-height: 26px;
+      color: #002C4D;
+      transition: color .2s ease-in;
+      text-transform: uppercase;
+
+      &.active{
+        color: #D0B37B;
+      }
+    }
+  }
+
+  &__item{
+    width: 33.333333%;
+    padding: 0 30px;
+  }
+
+  &__item-header{
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 42px;
+    color: #000;
+    margin-bottom: 30px;
+    position: relative;
+
+    &::after{
+      content: '';
+      position: absolute;
+      right: 0;
+      bottom: -10px;
+      left: 0;
+      height: 3px;
+      background: #000;
+    }
+  }
+
+  &__item-header-title{
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 16px;
+    color: #000;
+    margin-bottom: 16px;
+  }
+
+  &__item-description{
+    margin-bottom: 26px;
+    font-size: 16px;
+  }
+}

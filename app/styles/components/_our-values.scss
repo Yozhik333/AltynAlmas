@@ -5,11 +5,18 @@
 .our-values__items {
   flex-wrap: wrap;
   margin: 0 -20px -60px;
+  @include breakpoint-down(md){
+    flex-direction: column;
+  }
 }
 
 .our-values__item {
   width: 33.333%;
   padding: 0 20px 60px;
+  @include breakpoint-down(md){
+    width: 100%;
+    padding: 0 25px 25px;
+  }
   
   .title {
     font-weight: normal;
@@ -19,6 +26,9 @@
     position: relative;
     display: inline-block;
     margin-bottom: 35px;
+    @include breakpoint-down(md){
+      margin-bottom: 18px;
+    }
     
     &::after {
       content: '';
@@ -46,6 +56,9 @@
       line-height: 18px;
       color: #000;
       position: relative;
+      @include breakpoint-down(md){
+        line-height: normal;
+      }
       
       &:not(:last-child) {
         margin-bottom: 18px;
@@ -62,6 +75,9 @@
         margin-right: 20px;
         display: inline-block;
         transform: translate(0, -50%);
+        @include breakpoint-down(md){
+          margin-right: 4px;
+        }
       }
     }
   }
