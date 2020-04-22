@@ -45,7 +45,7 @@
                 <div class="photo-item-wrap">
                 <div class="photo-item">
                     <div class="img-wrap">
-                    <a href="/img/photo-img.jpg" class="img ratio link-block" data-fancybox="gallery" data-caption="Caption #22">
+                    <a href="/img/photo-img.jpg" class="img ratio link-block" data-fancybox="gallery" data-caption="Caption #21">
                         <img src="/img/photo-img.jpg">
                     </a>
                     </div>
