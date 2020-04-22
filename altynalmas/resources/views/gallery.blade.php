@@ -32,139 +32,38 @@
         </div>
         <div class="container-fluid">
             <div class="photo-gallery-content">
-            <ul class="nav nav-tabs hidden" id="myTab" role="tablist">
-                <li class="nav-item">
-                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"> Фотогалерея </a>
-                </li>
-            </ul>
-            <div class="tab-content" id="myTabContent">
-                <h2 class="underline_bottom-offset"> Акбакай </h2>
-                <div class="tab-pane fade show active flex-tab flex-wrap" id="home" role="tabpanel" aria-labelledby="home-tab">
-                <div class="photo-item-wrap">
-                    <div class="photo-item">
-                    <div class="img-wrap">
-                        <a href="img/photo-img.jpg" class="img ratio link-block" data-fancybox="gallery" data-caption="Caption #22">
-                            <img src="img/photo-img.jpg">
-                        </a>
-                    </div>
-                    <div class="info">
-                        <div class="date"> 03.12.2019 </div>
-                        <div class="title"> Снабжение питьевой водой жителей поселка Акбакай </div>
-                    </div>
-                    </div>
+                <ul class="nav nav-tabs hidden" id="myTab" role="tablist">
+                    <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"> Фотогалерея </a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    @if ($categories != null)
+                        @foreach ($categories as $category)
+                            @if ($category->galleries == null)
+                                @continue
+                            @endif
+                            <h2 class="underline_bottom-offset"> {{$category->name_ru}} </h2>
+                            <div class="tab-pane fade show active flex-tab flex-wrap" id="{{$category->name_ru}}" role="tabpanel" aria-labelledby="home-tab">                        
+                                @foreach ($category->galleries as $gallery)
+                                    <div class="photo-item-wrap">
+                                        <div class="photo-item">
+                                        <div class="img-wrap">
+                                            <a href="{{asset('storage/').'/'.$gallery->images}}" class="img ratio link-block" data-fancybox="gallery" data-caption="{{$category->name_ru}} - {{$gallery->text_ru}}">
+                                                <img src="{{asset('storage/').'/'.$gallery->images}}">
+                                            </a>
+                                        </div>
+                                        <div class="info">
+                                            <div class="date"> {{ date("d.m.Y", strtotime($gallery->date)) }}</div>
+                                            <div class="title"> {{$gallery->text_ru}} </div>
+                                        </div>
+                                        </div>
+                                    </div>
+                                @endforeach
+                            </div>
+                        @endforeach
+                    @endif                
                 </div>
-                <div class="photo-item-wrap">
-                    <div class="photo-item">
-                    <div class="img-wrap">
-                        <a href="img/photo-img.jpg" class="img ratio link-block" data-fancybox="gallery" data-caption="Caption #22">
-                        <img src="img/photo-img.jpg">
-                        </a>
-                    </div>
-                    <div class="info">
-                        <div class="date"> 03.12.2019 </div>
-                        <div class="title"> Снабжение питьевой водой жителей поселка Акбакай </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="photo-item-wrap">
-                    <div class="photo-item">
-                    <div class="img-wrap">
-                        <a href="img/photo-img.jpg" class="img ratio link-block" data-fancybox="gallery" data-caption="Caption #22">
-                        <img src="img/photo-img.jpg">
-                        </a>
-                    </div>
-                    <div class="info">
-                        <div class="date"> 03.12.2019 </div>
-                        <div class="title"> Снабжение питьевой водой жителей поселка Акбакай </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-                <h2 class="underline_bottom-offset"> Актогай </h2>
-                <div class="tab-pane fade show active flex-tab flex-wrap" id="sec" role="tabpanel" aria-labelledby="home-tab">
-                <div class="photo-item-wrap">
-                    <div class="photo-item">
-                    <div class="img-wrap">
-                        <a href="img/newpaper.jpg" class="img ratio link-block" data-fancybox="gallery" data-caption="Caption #22">
-                        <img src="img/newpaper.jpg">
-                        </a>
-                    </div>
-                    <div class="info">
-                        <div class="date"> 03.12.2019 </div>
-                        <div class="title"> Снабжение питьевой водой жителей поселка Акбакай </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="photo-item-wrap">
-                    <div class="photo-item">
-                    <div class="img-wrap">
-                        <a href="img/newpaper.jpg" class="img ratio link-block" data-fancybox="gallery" data-caption="Caption #22">
-                        <img src="img/newpaper.jpg">
-                        </a>
-                    </div>
-                    <div class="info">
-                        <div class="date"> 03.12.2019 </div>
-                        <div class="title"> Снабжение питьевой водой жителей поселка Акбакай </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="photo-item-wrap">
-                    <div class="photo-item">
-                    <div class="img-wrap">
-                        <a href="img/newpaper.jpg" class="img ratio link-block" data-fancybox="gallery" data-caption="Caption #22">
-                        <img src="img/newpaper.jpg">
-                        </a>
-                    </div>
-                    <div class="info">
-                        <div class="date"> 03.12.2019 </div>
-                        <div class="title"> Снабжение питьевой водой жителей поселка Акбакай </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-                <h2 class="underline_bottom-offset"> Третий заголовок </h2>
-                <div class="tab-pane fade show active flex-tab flex-wrap" id="tri" role="tabpanel" aria-labelledby="home-tab">
-                <div class="photo-item-wrap">
-                    <div class="photo-item">
-                    <div class="img-wrap">
-                        <a href="img/newspaper-img.jpg" class="img ratio link-block" data-fancybox="gallery" data-caption="Caption #22">
-                        <img src="img/newspaper-img.jpg">
-                        </a>
-                    </div>
-                    <div class="info">
-                        <div class="date"> 03.12.2019 </div>
-                        <div class="title"> Снабжение питьевой водой жителей поселка Акбакай </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="photo-item-wrap">
-                    <div class="photo-item">
-                    <div class="img-wrap">
-                        <a href="img/newspaper-img.jpg" class="img ratio link-block" data-fancybox="gallery" data-caption="Caption #22">
-                        <img src="img/newspaper-img.jpg">
-                        </a>
-                    </div>
-                    <div class="info">
-                        <div class="date"> 03.12.2019 </div>
-                        <div class="title"> Снабжение питьевой водой жителей поселка Акбакай </div>
-                    </div>
-                    </div>
-                </div>
-                <div class="photo-item-wrap">
-                    <div class="photo-item">
-                    <div class="img-wrap">
-                        <a href="img/newspaper-img.jpg" class="img ratio link-block" data-fancybox="gallery" data-caption="Caption #22">
-                        <img src="img/newspaper-img.jpg">
-                        </a>
-                    </div>
-                    <div class="info">
-                        <div class="date"> 03.12.2019 </div>
-                        <div class="title"> Снабжение питьевой водой жителей поселка Акбакай </div>
-                    </div>
-                    </div>
-                </div>
-                </div>
-            </div>
             </div>
         </div>
     </div>

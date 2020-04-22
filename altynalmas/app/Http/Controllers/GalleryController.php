@@ -3,8 +3,10 @@
 namespace App\Http\Controllers;
 
 use App\Gallery;
+use App\Category;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Storage;
+use Illuminate\Support\Facades\Session;
 
 class GalleryController extends Controller
 {
@@ -16,7 +18,8 @@ class GalleryController extends Controller
     public function index()
     {
         $gallery = Gallery::all()->reverse();
-        return view('admin-gallery', compact('gallery'));
+        $category = Category::all();
+        return view('admin-gallery', compact('gallery', 'category'));
     }
 
     /**
@@ -38,14 +41,14 @@ class GalleryController extends Controller
     public function store(Request $request)
     {
         $this->validate($request,[
-            'title_kz'=>'required|string|max:191|min:1',
-            'title_ru'=>'required|string|max:191|min:1',
-            'title_en'=>'required|string|max:191|min:1',
+            'image' => 'required|image|max:50000',
+            'category_id' => 'required|integer|exists:category,id',
+            'date' => 'required|date',
             'text_kz'=>'required|string|max:60000|min:1',
             'text_ru'=>'required|string|max:60000|min:1',
             'text_en'=>'required|string|max:60000|min:1',
-        ]);        
-        $photo = $request->file('images')->hashName();
+        ]);
+        $photo = $request->file('image')->hashName();
         Storage::disk('public')->put('', $request->file('image'));
 
         $gallery = new Gallery;
@@ -56,6 +59,9 @@ class GalleryController extends Controller
         $gallery->text_ru=$request->text_ru;
         $gallery->text_en=$request->text_en;
         $gallery->is_active=$request->is_active;
+        $gallery->images = $photo;
+        $gallery->category_id = $request->category_id;
+        $gallery->date = $request->date;
 
         $gallery->save();
 
@@ -80,10 +86,11 @@ class GalleryController extends Controller
      * @param  \App\Gallery  $gallery
      * @return \Illuminate\Http\Response
      */
-    public function edit(Gallery $gallery)
+    public function edit(Gallery $gallery, $id)
     {
         $gallery = Gallery::find($id);
-        return view('admin-gallery-edit', compact('gallery'));
+        $category = Category::all();
+        return view('admin-gallery-edit', compact('gallery', 'category'));
     }
 
     /**
@@ -96,21 +103,28 @@ class GalleryController extends Controller
     public function update(Request $request, Gallery $gallery)
     {
         $this->validate($request,[
-            'title_kz'=>'required|string|max:191|min:1',
-            'title_ru'=>'required|string|max:191|min:1',
-            'title_en'=>'required|string|max:191|min:1',
+            'image' => 'nullable|image|max:50000',
+            'category_id' => 'required|integer|exists:category,id',
+            'date' => 'required|date',
             'text_kz'=>'required|string|max:60000|min:1',
             'text_ru'=>'required|string|max:60000|min:1',
             'text_en'=>'required|string|max:60000|min:1',
         ]);
 
-
         $gallery = Gallery::find($id);
+        if ($request->file('image')) {
+            $photo = $request->file('image')->hashName();
+            Storage::disk('public')->put('', $request->file('image'));
+            $gallery->images = $photo;
+        }
+
         $gallery->text_kz=$request->text_kz;
         $gallery->text_ru=$request->text_ru;
         $gallery->text_en=$request->text_en;
         $gallery->is_active=$request->is_active;
-
+        $gallery->category_id = $request->category_id;
+        $gallery->date = $request->date;
+        
         $gallery->save();
 
         Session::flash('success','Информация успешно отредактирована.');

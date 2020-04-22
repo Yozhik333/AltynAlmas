@@ -9,13 +9,11 @@
         <div class="swiper-wrapper">
         <div class="swiper-slide" data-title="Инвестиции в вечные ценности..." style="background-image: url('img/slide1.jpeg');">
         </div>
-        <div class="swiper-slide" data-title="Создаем золотые возможности для общества с 1993 года" style="background-image: url('img/slide2.jpeg');">
+        <div class="swiper-slide" data-title="166 169 унций золота в год" style="background-image: url('img/slide3.jpeg');">
         </div>
-        <div class="swiper-slide" data-title="2055 сотрудников в штате" style="background-image: url('img/slide3.jpeg');">
-        </div>
-        <div class="swiper-slide" data-title="166 169 унций золота в год" style="background-image: url('img/slide4.jpeg');">
-        </div>
-        <div class="swiper-slide" data-title="15 месторождений по добыче золота" style="background-image: url('img/slide5.jpg');">
+        <div class="swiper-slide" data-title="2055 сотрудников в штате" style="background-image: url('img/slide4.jpeg');">
+        </div>        
+        <div class="swiper-slide" data-title="Создаем золотые возможности для общества с 1993 года" style="background-image: url('img/slide5.jpg');">
         </div>
         </div>
     </div>

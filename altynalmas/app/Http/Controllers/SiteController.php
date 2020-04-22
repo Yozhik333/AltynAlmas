@@ -20,6 +20,8 @@ use App\SupplierForm;
 use App\Vacancy;
 use App\Year;
 use App\Glossary;
+use App\Category;
+use App\Gallery;
 
 use Illuminate\Http\Request;
 
@@ -125,8 +127,14 @@ class SiteController extends Controller
 
     public function gallery()
     {
-        // $photoGallery = Newspaper::all()->reverse();
-        return view('gallery');
+        $categories = Category::all();        
+        if ($categories != null) {
+            foreach ($categories as $category) {
+                $category->galleries = Gallery::where('category_id', $category->id)->get()->reverse();                
+            }
+        }        
+        return view('gallery', 
+        ['categories' => $categories]);
     }
 
     public function teamOfTrainers()
