@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Gallery;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class GalleryController extends Controller
 {
@@ -43,12 +44,14 @@ class GalleryController extends Controller
             'text_kz'=>'required|string|max:60000|min:1',
             'text_ru'=>'required|string|max:60000|min:1',
             'text_en'=>'required|string|max:60000|min:1',
-        ]);
+        ]);        
+        $photo = $request->file('images')->hashName();
+        Storage::disk('public')->put('', $request->file('image'));
 
         $gallery = new Gallery;
-        $gallery->title_kz=$request->title_kz;
-        $gallery->title_ru=$request->title_ru;
-        $gallery->title_en=$request->title_en;
+        $gallery->title_kz = 'kz';
+        $gallery->title_ru = 'ru';
+        $gallery->title_en = 'en';
         $gallery->text_kz=$request->text_kz;
         $gallery->text_ru=$request->text_ru;
         $gallery->text_en=$request->text_en;
@@ -103,9 +106,6 @@ class GalleryController extends Controller
 
 
         $gallery = Gallery::find($id);
-        $gallery->title_kz=$request->title_kz;
-        $gallery->title_ru=$request->title_ru;
-        $gallery->title_en=$request->title_en;
         $gallery->text_kz=$request->text_kz;
         $gallery->text_ru=$request->text_ru;
         $gallery->text_en=$request->text_en;
