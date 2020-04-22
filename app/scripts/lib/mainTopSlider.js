@@ -3,10 +3,10 @@ let indexPage = document.querySelector('.indexSlider');
 let mainTopSlider = new Swiper('.mainTopSlider-active .swiper-container', {
   slidesPerView: 'auto',
   spaceBetween: 2,
-  autoplay: {
-    delay: 2500,
-    disableOnInteraction: false,
-  },
+  // autoplay: {
+  //   delay: 2500,
+  //   disableOnInteraction: false,
+  // },
   navigation: {
     nextEl: '.mainTopSlider-active .btn-slide-next',
     prevEl: '.mainTopSlider-active .btn-slide-prev',
@@ -26,10 +26,10 @@ if (indexPage) {
     },
     slidesPerView: 'auto',
     spaceBetween: 2,
-    autoplay: {
-      delay: 2500,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 2500,
+    //   disableOnInteraction: false,
+    // },
     navigation: {
       nextEl: '.mainTopSlider-active .btn-slide-next',
       prevEl: '.mainTopSlider-active .btn-slide-prev',
