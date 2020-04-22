@@ -1,0 +1,43 @@
+@extends('header-footer.header-footer')
+
+@section('main-content')
+
+    <div class="banner" style="background-image: url('img/banner-realization.jpg');">
+        <div class="container-fluid">
+        <div class="flex align-items-baseline">
+            <div class="title-wrapper">
+            <div class="h1-wrap">
+                <h1 class="small"> Реализация неликвидов </h1>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <section class="realization">
+        <div class="container-fluid">
+        <div class="flex">
+            <div class="realization__block">
+            <div class="realization__block-title"> По вопросу продажи обращаться: </div>
+            <div class="realization__block-body">
+                <p>Егизбаева Арайлым </p>
+                <p>Старший специалист по реализации</p>
+                <p>Отдел снабжения</p>
+                <p>Телефон: <a href="tel:87273503019">8 727 35 03 019</a></p>
+                <p>Почта: <a href="mailto:Arailym.Yegizbayeva@altynalmas.kz">Arailym.Yegizbayeva@altynalmas.kz</a></p>
+            </div>
+            </div>
+            <div class="realization__block">
+            <div class="realization__block-title"> По вопросу предпродажного осмотра товара и получения<br> технической информации обращаться: </div>
+            <div class="realization__block-body">
+                <p>Абдуллаева Мархабо Абдукахаровна</p>
+                <p>Начальник отдела снабжения</p>
+                <p>Телефон: <a href="tel:87775551423">8 777 555 14 23</a></p>
+                <p>Почта: <a href="mailto:Markhabo.Abdullayeva@altynalmas.kz">Markhabo.Abdullayeva@altynalmas.kz</a></p>
+                <a href="#" class="btn btn-detail">Список неликвидов</a>
+            </div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+@endsection

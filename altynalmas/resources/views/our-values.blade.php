@@ -1,0 +1,92 @@
+@extends('header-footer.header-footer')
+
+@section('main-content')
+
+    <div class="our-values">
+        <div class="mainTopSlider mainDepositsSlider">
+        <!-- Swiper -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+            <div class="swiper-slide" style="background-image: url('/img/akbakai1.jpg')">
+            </div>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="flex align-items-baseline">
+            <div class="title-wrapper">
+                <div class="h1-wrap">
+                <h1> Наши ценности </h1>
+                </div>
+            </div>
+            <div class="arrow-wrapper">
+                <!-- Add Arrows -->
+                <div class="btn-slide-prev">
+                <i class="icon-left"></i>
+                </div>
+                <div class="btn-slide-next">
+                <i class="icon-right"></i>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+        <div class="container-fluid">
+        <div class="our-values-content">
+            <div class="flex our-values__items">
+            <div class="our-values__item">
+                <div class="title"> Наши люди </div>
+                <div class="subtitle"> Ценим, развиваем и заботимся о сотрудниках. </div>
+                <ul class="list">
+                <li> Создаем равные возможности для профессионального развития и роста. </li>
+                <li> Поддерживаем дружественную рабочую атмосферу. </li>
+                <li> Обеспечиваем благоприятные условия труда. </li>
+                <li> Стремимся стать лучшим работодателем. </li>
+                </ul>
+            </div>
+            <div class="our-values__item">
+                <div class="title"> Одна команда </div>
+                <div class="subtitle"> Мы помогаем друг другу и берем на себя ответственность за командный результат. </div>
+                <ul class="list">
+                <li> Разделяем Миссию, Видение и Ценности Компании. </li>
+                <li> Доверяем коллегам, ценим открытые и честные взаимоотношения. </li>
+                <li> Работаем на командный результат и верим, что только в команде достигнем поставленных целей. </li>
+                </ul>
+            </div>
+            <div class="our-values__item">
+                <div class="title"> Бережное отношение к окружающей среде </div>
+                <div class="subtitle"> Рационально используем природные ресурсы и стремимся минимизировать неблагоприятное воздействие нашей деятельности на окружающую среду. </div>
+                <ul class="list">
+                <li> Выявляем риски потенциального воздействия на окружающую среду и управляем ими. </li>
+                <li> Соблюдаем требования по охране окружающей среды. </li>
+                </ul>
+            </div>
+            <div class="our-values__item">
+                <div class="title"> Устойчивое развитие </div>
+                <div class="subtitle"> В своих подходах мы ориентируемся на долгосрочное и стабильное развитие. </div>
+                <ul class="list">
+                <li> Стремимся применять лучшие стандарты ведения бизнеса. </li>
+                <li> Ищем и внедряем инновационные решения. </li>
+                <li> Постоянно повышаем операционную эффективность. </li>
+                <li> Инвестируем в человеческий капитал, как важный фактор устойчивого развития. </li>
+                </ul>
+            </div>
+            <div class="our-values__item">
+                <div class="title"> Безопасность труда </div>
+                <div class="subtitle"> Безопасность и здоровье сотрудников является нашим приоритетом. </div>
+                <ul class="list">
+                <li> Стремимся к нулевому уровню травматизма и проф. заболеваний. </li>
+                <li> Создаем безопасные условия труда и развиваем культуру безопасного поведения. </li>
+                <li> Выявляем и управляем рисками по промышленной безопасности и охране труда. </li>
+                </ul>
+            </div>
+            <div class="our-values__item">
+                <div class="our-values-img-wrap">
+                <div class="our-values-img" style="background-image: url('/img/our-values-img.jpg')"></div>
+                </div>
+            </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+@endsection
