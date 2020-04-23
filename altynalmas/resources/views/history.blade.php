@@ -15,7 +15,7 @@
             <div class="flex align-items-baseline">
             <div class="title-wrapper">
                 <div class="h1-wrap">
-                <h1> История </h1>
+                <h1> @lang('messages.История') </h1>
                 </div>
             </div>
             <div class="arrow-wrapper">
@@ -43,7 +43,7 @@
                             <div class="swiper-slide" data-year="{{ $year->year }}">
                                 <div class="historySlider__slide">
                                 <div class="historySlider__slide-title">
-                                    <div class="historySlider__slide-title-underline"> {{ $year->year }} год </div>
+                                    <div class="historySlider__slide-title-underline"> {{ $year->year }} @lang('messages.год') </div>
                                 </div>
                                 <div class="historySlider__slide-description"> {{ $year->text_ru }} </div>
                                 </div>
@@ -68,7 +68,7 @@
                 <div class="active-slide-info-fon" style="background-image: url('img/active-slide-info-fon.jpg')"></div>
                 <div class="active-slide-info">
                 <div class="active-slide__title"> 1993 </div>
-                <div class="active-slide__description"> Компания приобрела права на разработку месторождения Светинское. </div>
+                <div class="active-slide__description"> @lang('messages.Компания приобрела права на разработку месторождения Светинское.') </div>
                 </div>
             </div>
             </div>

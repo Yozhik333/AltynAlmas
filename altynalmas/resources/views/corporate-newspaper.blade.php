@@ -15,7 +15,7 @@
             <div class="flex align-items-baseline">
             <div class="title-wrapper">
                 <div class="h1-wrap">
-                <h1> Корпоративная газета </h1>
+                <h1> @lang('messages.Корпоративная газета') </h1>
                 </div>
             </div>
             <div class="arrow-wrapper">
@@ -40,7 +40,7 @@
                                 <div class="img ratio">
                                 <img src="/storage/{{$newspaper->img_ru}}">
                                 </div>
-                                <a href="/storage/{{$newspaper->file_ru}}" class="btn btn-detail"> Смотреть </a>
+                                <a href="/storage/{{$newspaper->file_ru}}" class="btn btn-detail"> @lang('messages.Смотреть') </a>
                             </div>
                         @endif
                     @endforeach

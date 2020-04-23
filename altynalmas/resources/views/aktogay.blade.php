@@ -25,7 +25,7 @@
             <div class="flex align-items-baseline">
             <div class="title-wrapper">
                 <div class="h1-wrap">
-                <h1> Актогай </h1>
+                <h1> @lang('messages.Актогай') </h1>
                 </div>
             </div>
             <div class="arrow-wrapper">
@@ -50,7 +50,7 @@
                     {!!$aktogay[0]->text_ru!!}
                 </div>
                 </article>
-                <a href="/storage/{{$aktogay[0]->img_url}}" data-fancybox class="btn btn-detail"> Посмотреть схему работы </a>
+                <a href="/storage/{{$aktogay[0]->img_url}}" data-fancybox class="btn btn-detail"> @lang('messages.Посмотреть схему работы') </a>
             </div>
             <div class="activity-detail__info-wrap">
                 <div class="activity-detail__info">
@@ -59,8 +59,8 @@
                     <i class="icon-check"></i>
                     </div>
                     <div>
-                    <div class="activity-detail__item-title"> СПОСОБ РАЗРАБОТКИ МЕСТОРОЖДЕНИЯ </div>
-                    <div class="activity-detail__item-desc"> Открытый способ </div>
+                    <div class="activity-detail__item-title"> @lang('messages.СПОСОБ РАЗРАБОТКИ МЕСТОРОЖДЕНИЯ') </div>
+                    <div class="activity-detail__item-desc"> @lang('messages.Открытый способ') </div>
                     </div>
                 </div>
                 <div class="activity-detail__item flex">
@@ -68,8 +68,8 @@
                     <i class="icon-check"></i>
                     </div>
                     <div>
-                    <div class="activity-detail__item-title"> ТЕХНОЛОГИЯ ОБОГАЩЕНИЯ РУД </div>
-                    <div class="activity-detail__item-desc"> Гравитационно-флотационно - цианистая технология </div>
+                    <div class="activity-detail__item-title"> @lang('messages.ТЕХНОЛОГИЯ ОБОГАЩЕНИЯ РУД') </div>
+                    <div class="activity-detail__item-desc"> @lang('messages.Гравитационно-флотационно - цианистая технология') </div>
                     </div>
                 </div>
                 <div class="activity-detail__item flex">
@@ -77,8 +77,8 @@
                     <i class="icon-check"></i>
                     </div>
                     <div>
-                    <div class="activity-detail__item-title"> МЕСТОРОЖДЕНИЕ ДОЛИННОЕ, ПРОИЗВОДИТЕЛЬНОСТЬ </div>
-                    <div class="activity-detail__item-desc"> 2,5 млн. тонн руды в год, среднее содержание золота в товарном сырье – 1,13 г/т </div>
+                    <div class="activity-detail__item-title"> @lang('messages.МЕСТОРОЖДЕНИЕ ДОЛИННОЕ, ПРОИЗВОДИТЕЛЬНОСТЬ ')</div>
+                    <div class="activity-detail__item-desc"> @lang('messages.2,5 млн. тонн руды в год, среднее содержание золота в товарном сырье – 1,13 г/т') </div>
                     </div>
                 </div>
                 <div class="activity-detail__item flex">
@@ -86,8 +86,8 @@
                     <i class="icon-check"></i>
                     </div>
                     <div>
-                    <div class="activity-detail__item-title"> МЕСТОРОЖДЕНИЕ ПУСТЫННОЕ, ПРОИЗВОДИТЕЛЬНОСТЬ </div>
-                    <div class="activity-detail__item-desc"> 2,5 млн. тонн руды в год, среднее содержание золота в товарном сырье – 1,57 г/т </div>
+                    <div class="activity-detail__item-title"> @lang('messages.МЕСТОРОЖДЕНИЕ ПУСТЫННОЕ, ПРОИЗВОДИТЕЛЬНОСТЬ') </div>
+                    <div class="activity-detail__item-desc"> @lang('messages.2,5 млн. тонн руды в год, среднее содержание золота в товарном сырье – 1,57 г/т') </div>
                     </div>
                 </div>
                 <div class="activity-detail__item flex">
@@ -95,8 +95,8 @@
                     <i class="icon-check"></i>
                     </div>
                     <div>
-                    <div class="activity-detail__item-title"> Конечный продукт </div>
-                    <div class="activity-detail__item-desc"> Cплав «Доре» </div>
+                    <div class="activity-detail__item-title"> @lang('messages.Конечный продукт') </div>
+                    <div class="activity-detail__item-desc"> @lang('messages.Cплав «Доре»') </div>
                     </div>
                 </div>
                 </div>

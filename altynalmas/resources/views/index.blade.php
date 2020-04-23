@@ -7,9 +7,9 @@
     <!-- Swiper -->
     <div class="swiper-container">
         <div class="swiper-wrapper">
-        <div class="swiper-slide" data-title="Инвестиции в вечные ценности..." style="background-image: url('img/slide1.jpeg');">
+        <div class="swiper-slide" data-title="@lang('messages.Инвестиции в вечные ценности...')" style="background-image: url('img/slide1.jpeg');">
         </div>
-        <div class="swiper-slide" data-title="166 169 унций золота в год" style="background-image: url('img/slide3.jpeg');">
+        <div class="swiper-slide" data-title="166 169 унций золота в год" style="background-image: url('img/slide3.jpg');">
         </div>
         <div class="swiper-slide" data-title="2055 сотрудников в штате" style="background-image: url('img/slide4.jpeg');">
         </div>        
@@ -24,7 +24,7 @@
             <h1 class="small">
                 <div class="text-normal"> Золотодобывающая компания </div> АО <span class="big-font">«АК Алтыналмас»</span>
             </h1>
-            <div class="slide-title"> Инвестиции в вечные ценности... </div>
+            <div class="slide-title"> @lang('messages.Инвестиции в вечные ценности...') </div>
             </div>
         </div>
         <div class="arrow-wrapper">
@@ -203,7 +203,7 @@
                     @if ($eachNews->is_active == 1)
                         @if ($eachNews->show_on_main == 1)
                             <div class="swiper-slide" data-publication="{{ $eachNews->date }}" data-title="{{ $eachNews->title_ru }}"
-                                data-description='{{ $eachNews->text_ru }}' data-href="{{ route('openNews', $eachNews->id )}}" style="background-image: url('/storage/{{ $eachNews->img_url }}');">
+                                data-description='{{ $eachNews->text_ru }}' data-href="{{ route('openNews', $eachNews->id ) }}" style="background-image: url('/storage/{{ $eachNews->img_url }}');">
                             </div>
                         @endif
 
@@ -227,10 +227,10 @@
         <div class="news-article-wrap">
             <div class="publication-date"> !24.01.2020 </div>
             <article>
-            <div>
-                <h4 class="article-title"> !АО «АК Алтыналмас» приобрело контрольный пакет акций АО «ГМК КАЗАХАЛТЫН» </h4>
-                <div class="article-description" style="-webkit-box-orient: vertical;"> !Дорогие коллеги! Рады сообщить вам о том, что в рамках инициатив по устойчивому развитию бизнеса наша компания приобрела контрольный пакет акций АО «ГМК КАЗАХАЛТЫН» в размере 54,24%. Приобретение контрольного пакета акций АО «ГМК КАЗАХАЛТЫН» является частью бизнес-стратегии АО «АК Алтыналмас», основанной на расширении базы активов через приобретения и органический рост. «АО «ГМК КАЗАХАЛТЫН» является перспективным предприятием, производство которого нуждается в модернизации. АО «АК Алтыналмас», имея опыт строительства и эксплуатации современных предприятий, намерено привнести в развитие АО «ГМК КАЗАХАЛТЫН» эту экспертизу, создав, тем самым, для его работников более безопасные условия. </div>
-            </div>
+                <div>
+                    <h4 class="article-title"> !АО «АК Алтыналмас» приобрело контрольный пакет акций АО «ГМК КАЗАХАЛТЫН» </h4>
+                    <div class="article-description" style="-webkit-box-orient: vertical;"> !Дорогие коллеги! Рады сообщить вам о том, что в рамках инициатив по устойчивому развитию бизнеса наша компания приобрела контрольный пакет акций АО «ГМК КАЗАХАЛТЫН» в размере 54,24%. Приобретение контрольного пакета акций АО «ГМК КАЗАХАЛТЫН» является частью бизнес-стратегии АО «АК Алтыналмас», основанной на расширении базы активов через приобретения и органический рост. «АО «ГМК КАЗАХАЛТЫН» является перспективным предприятием, производство которого нуждается в модернизации. АО «АК Алтыналмас», имея опыт строительства и эксплуатации современных предприятий, намерено привнести в развитие АО «ГМК КАЗАХАЛТЫН» эту экспертизу, создав, тем самым, для его работников более безопасные условия. </div>
+                </div>            
             </article>
             <a href="#" class="article-btn btn btn-detail"> Читать подробнее </a>
         </div>

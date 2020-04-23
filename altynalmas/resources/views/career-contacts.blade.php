@@ -9,7 +9,7 @@
             <div class="flex align-items-baseline">
             <div class="title-wrapper">
                 <div class="h1-wrap">
-                <h1 class="small"> Контакты </h1>
+                <h1 class="small"> @lang('messages.Контакты') </h1>
                 </div>
             </div>
             </div>
@@ -23,9 +23,9 @@
                 <div class="contacts__address-banner" style="background-image: url('/img/photo-img.jpg');">
                 </div>
                 <div class="contacts__address-description">
-                    <div class="contacts__address-head"> головной офис: </div>
+                    <div class="contacts__address-head"> @lang('messages.головной офис:') </div>
                     <div class="contacts__address-body">
-                    <p>Республика Казахстан, г. Алматы, Площадь Республики 15, 050013 (A15X3C7)</p>
+                    <p>@lang('messages.Республика Казахстан, г. Алматы, Площадь Республики 15, 050013 (A15X3C7)')</p>
                     <a href="tel:+77273500200">+7 (7273) 500-200</a>
                     <a href="mailto:info@altynalmas.kz">info@altynalmas.kz</a>
                     </div>
@@ -33,10 +33,10 @@
                 </div>
             </div>
             <div class="contacts__info">
-                <div class="contacts__info-title"> По всем возникшим вопросам обращайтесь по следующим контактам: </div>
+                <div class="contacts__info-title"> @lang('messages.По всем возникшим вопросам обращайтесь по следующим контактам:') </div>
                 <div class="contacts__info-description">
                 <div class="info__block">
-                    <div class="info__block-head"> По трудоустройству: </div>
+                    <div class="info__block-head"> @lang('messages.По трудоустройству:') </div>
                     <div class="info__block-body">
                     <a href="mailto:CV@altynalmas.kz">CV@altynalmas.kz</a>
                     </div>

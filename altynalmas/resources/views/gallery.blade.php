@@ -15,7 +15,7 @@
             <div class="flex align-items-baseline">
                 <div class="title-wrapper">
                 <div class="h1-wrap">
-                    <h1> Фотогалерея </h1>
+                    <h1> @lang('messages.Фотогалерея') </h1>
                 </div>
                 </div>
                 <div class="arrow-wrapper">
@@ -34,13 +34,13 @@
             <div class="photo-gallery-content">
                 <ul class="nav nav-tabs hidden" id="myTab" role="tablist">
                     <li class="nav-item">
-                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"> Фотогалерея </a>
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true"> @lang('messages.Фотогалерея') </a>
                     </li>
                 </ul>
                 <div class="tab-content" id="myTabContent">
                     @if ($categories != null)
                         @foreach ($categories as $category)
-                            @if ($category->galleries == null)
+                            @if (count($category->galleries) == 0)
                                 @continue
                             @endif
                             <h2 class="underline_bottom-offset"> {{$category->name_ru}} </h2>

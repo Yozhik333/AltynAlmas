@@ -4,12 +4,15 @@ const activeInfo = () => {
   const title = document.querySelector('.mainNewsSlider .swiper-slide-active').getAttribute('data-title');
   const dataPublic = document.querySelector('.mainNewsSlider .swiper-slide-active').getAttribute('data-publication');
   const dataDesc = document.querySelector('.mainNewsSlider .swiper-slide-active').getAttribute('data-description');
+  const dataHref = document.querySelector('.mainNewsSlider .swiper-slide-active').getAttribute('data-href');
   const activeTitle = document.querySelector('.article-title');
   const activeDataPublication = document.querySelector('.publication-date');
   const activeDesc = document.querySelector('.article-description');
+  const activeHref = document.querySelector('.article-btn');
   activeDataPublication.innerText = dataPublic;
   activeTitle.innerText = title;
   activeDesc.innerText = dataDesc;
+  activeHref.setAttribute('href', dataHref);
 }
 const mainNewsSlider = new Swiper('.mainNewsSlider .swiper-container', {
   navigation: {

@@ -16,6 +16,12 @@
 use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
 
+Route::get('locale/{locale}', function ($locale) {
+    Session::put('locale', $locale);
+    return redirect()->back();
+});
+
+
 Route::get('/', 'SiteController@showNewsOnMain')->name('newsOnMainPage');
 
 Route::get('/about', function() {
@@ -91,7 +97,7 @@ Route::get('/admin-page', function() {
 })->name('admin-page');
 
 Route::get('/investors-and-media', 'SiteController@showNewsOnNewsPage')->name('newsPage');
-Route::get('/investors-news', 'SiteController@openNews')->name('openNews');
+Route::get('/investors-news/{id}', 'SiteController@openNews')->name('openNews');
 Route::get('/history', 'SiteController@history')->name('history');
 Route::get('/governance', 'SiteController@governance')->name('governance');
 Route::get('/akbakay', 'SiteController@akbakay')->name('akbakay');

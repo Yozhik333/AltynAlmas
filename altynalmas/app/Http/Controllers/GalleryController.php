@@ -124,7 +124,7 @@ class GalleryController extends Controller
         $gallery->is_active=$request->is_active;
         $gallery->category_id = $request->category_id;
         $gallery->date = $request->date;
-        
+
         $gallery->save();
 
         Session::flash('success','Информация успешно отредактирована.');

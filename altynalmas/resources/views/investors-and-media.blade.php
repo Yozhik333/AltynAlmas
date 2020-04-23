@@ -25,8 +25,8 @@
                         <img src="/storage/{{$eachNews->img_url}}">
                     </div>
                     <p class="investors_news_data">{{$eachNews->date}}</p>
-                    <p class="investors_news_text">{{$eachNews->text_ru}}</p>
-                    <a href="#" class="btn btn-detail">Подробнее</a>
+                    <p class="investors_news_text">{{ mb_substr($eachNews->text_ru, 0, 150)}}</p>
+                    <a href="{{ route('openNews', $eachNews->id ) }}" class="btn btn-detail">Подробнее</a>
                 </div>
 
             @endif

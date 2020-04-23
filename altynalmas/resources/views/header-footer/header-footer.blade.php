@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="ru">
+<html lang="{{app()->getLocale()}}">
 
   <head>
     <meta charset="utf-8">
@@ -442,6 +442,9 @@
                         </div>
                         <div class="mobile-menu__dropdown">
                           <ul>
+                            <li class="close-dropdown">
+                              <i class="icon-left"></i> Назад
+                            </li>
                             <li>
                               <a class="mobile-menu__link" href="{{ route('about') }}"> О компании </a>
                             </li>
@@ -455,20 +458,23 @@
                               <a class="mobile-menu__link" href="{{ route('main-deposits') }}"> Основные направления деятельности </a>
                             </li>
                             <li>
-                              <a class="mobile-menu__link" href="{{ route('corporate') }}"> Корпоративное управление </a>
-                              <div class="mobile-menu__drop-content">
+                              <span class="mobile-menu__link mobile-menu__link_second"> Корпоративное управление <i class="icon-right"></i> </span>
+                              <div class="mobile-menu__dropdown">
                                 <ul>
+                                  <li class="close-dropdown_sec">
+                                    <i class="icon-left"></i> Назад
+                                </li>
                                   <li>
-                                    <a class="mobile-menu__link_small" href="{{ route('corporate') }}"> Корпоративное управление </a>
+                                    <a class="mobile-menu__link" href="{{ route('corporate') }}"> Корпоративное управление </a>
                                   </li>
                                   <li>
-                                    <a class="mobile-menu__link_small" href="{{ route('governance')}}"> Руководство компании </a>
+                                    <a class="mobile-menu__link" href="{{ route('governance')}}"> Руководство компании </a>
                                   </li>
                                   <li>
-                                    <a class="mobile-menu__link_small" href="{{ route('committee')}}"> Комитеты Совета Директоров </a>
+                                    <a class="mobile-menu__link" href="{{ route('committee')}}"> Комитеты Совета Директоров </a>
                                   </li>
                                   <li>
-                                    <a class="mobile-menu__link_small" href="https://kase.kz/ru/issuers/ALMS/"> Раскрытие информации </a>
+                                    <a class="mobile-menu__link" href="https://kase.kz/ru/issuers/ALMS/"> Раскрытие информации </a>
                                   </li>
                                 </ul>
                               </div>
@@ -483,9 +489,15 @@
                         </div>
                         <div class="mobile-menu__dropdown">
                           <ul>
+                            <li class="close-dropdown">
+                              <i class="icon-left"></i> Назад
+                            </li>
                             <li>
-                              <a class="mobile-menu__link" href="{{route('akbakay')}}"> Операционная деятельность </a>
-                              <ul class="mobile-menu__drop-content">
+                              <span class="mobile-menu__link mobile-menu__link_second"> Операционная деятельность <i class="icon-right"></i> </span>
+                              <ul class="mobile-menu__dropdown">
+                                <li class="close-dropdown_sec">
+                                  <i class="icon-left"></i> Назад
+                                </li>
                                 <li>
                                   <a class="mobile-menu__link" href="{{route('akbakay')}}"> Акбакай </a>
                                 </li>
@@ -501,8 +513,11 @@
                               <a class="mobile-menu__link" href="{{route('place-of-birth')}}"> Месторождения </a>
                             </li>
                             <li>
-                              <a class="mobile-menu__link" href="{{route('digital-mine')}}"> Проекты </a>
-                              <ul class="mobile-menu__drop-content">
+                              <span class="mobile-menu__link mobile-menu__link_second"> Проекты <i class="icon-right"></i> </span>
+                              <ul class="mobile-menu__dropdown">
+                                <li class="close-dropdown_sec">
+                                  <i class="icon-left"></i> Назад
+                                </li>
                                 <li>
                                   <a class="mobile-menu__link" href="{{route('digital-mine')}}"> Цифровой рудник </a>
                                 </li>
@@ -524,6 +539,9 @@
                         </div>
                         <div class="mobile-menu__dropdown">
                           <ul>
+                            <li class="close-dropdown">
+                              <i class="icon-left"></i> Назад
+                            </li>
                             <li>
                               <a class="mobile-menu__link" href="{{route('development-safety')}}"> Безопасность </a>
                             </li>
@@ -549,6 +567,9 @@
                         </div>
                         <div class="mobile-menu__dropdown">
                           <ul>
+                            <li class="close-dropdown">
+                              <i class="icon-left"></i> Назад
+                            </li>
                             <li>
                               <a class="mobile-menu__link" href="{{route('career')}}"> Почему мы? </a>
                             </li>
@@ -562,8 +583,11 @@
                               <a class="mobile-menu__link" href="{{route('studying-programs')}}"> Программы обучения </a>
                             </li>
                             <li>
-                              <div class="mobile-menu__link"> Корпоративная культура </div>
-                              <ul class="mobile-menu__drop-content">
+                              <span class="mobile-menu__link mobile-menu__link_second"> Корпоративная культура <i class="icon-right"></i></span>
+                              <ul class="mobile-menu__dropdown">
+                                <li class="close-dropdown">
+                                  <i class="icon-left"></i> Назад
+                                </li>
                                 <li>
                                   <a class="mobile-menu__link" href="{{route('our-values')}}"> Наши ценности </a>
                                 </li>
@@ -576,8 +600,11 @@
                               </ul>
                             </li>
                             <li>
-                              <div class="mobile-menu__link"> Команда тренеров </div>
-                              <ul class="mobile-menu__drop-content">
+                              <span class="mobile-menu__link mobile-menu__link_second"> Команда тренеров <i class="icon-right"></i> </span>
+                              <ul class="mobile-menu__dropdown">
+                                <li class="close-dropdown_sec">
+                                  <i class="icon-left"></i> Назад
+                                </li>
                                 <li>
                                   <a class="mobile-menu__link" href="{{route('team-of-trainers')}}"> Команда тренеров </a>
                                 </li>
@@ -596,6 +623,9 @@
                         </div>
                         <div class="mobile-menu__dropdown">
                           <ul>
+                            <li class="close-dropdown">
+                              <i class="icon-left"></i> Назад
+                            </li>
                             <li>
                                 <a class="mobile-menu__link" href="{{route('suppliers-form')}}"> Стать поставщиком </a>
                             </li>
@@ -624,6 +654,9 @@
                         </div>
                         <div class="mobile-menu__dropdown">
                           <ul>
+                            <li class="close-dropdown">
+                              <i class="icon-left"></i> Назад
+                            </li>
                             <li>
                               <a class="mobile-menu__link" href="{{ route('newsPage')}}"> Новости </a>
                             </li>
@@ -650,7 +683,18 @@
                 </div>
                 <div class="flex align-items-center">
                   <div class="lang-switch">
-                    <div class="lang"> RU </div>
+                    <div class="active-lang"> RU </div>
+                    <div class="lang-wrap">
+                      <a href="#">
+                        KZ
+                      </a>
+                      <a href="#">
+                        EN
+                      </a>
+                    </div>
+                    <a href="locale/kz">kz</a>
+                    <a href="locale/ru">ru</a>
+                    <a href="locale/en">en</a>
                   </div>
                   <div class="cost-wrap">
                     <div class="cost"> USD: 678,30 <i></i>

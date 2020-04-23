@@ -7,7 +7,7 @@
         <div class="flex align-items-baseline">
             <div class="title-wrapper">
             <div class="h1-wrap">
-                <h1 class="small"> Окружающая среда </h1>
+                <h1 class="small">@lang('messages.Окружающая среда') </h1>
             </div>
             </div>
         </div>
@@ -16,9 +16,9 @@
     <div class="environment">
         <div class="container-fluid">
         <div class="environment__description">
-            <p>В своей ежедневной деятельности Алтыналмас стремится минимизировать воздействие на окружающую среду.</p>
-            <p>Снижение негативного влияния на окружающую среду, рациональное использование недр и защита окружающей среды – приоритетные задачи деятельности компании.</p>
-            <p>Экологическая политика компании основывается на принципах рационального природопользования и максимального сохранения природной среды.</p>
+            <p>@lang('messages.В своей ежедневной деятельности Алтыналмас стремится минимизировать воздействие на окружающую среду.')</p>
+            <p>@lang('messages.Снижение негативного влияния на окружающую среду, рациональное использование недр и защита окружающей среды – приоритетные задачи деятельности компании.')</p>
+            <p>@lang('messages.Экологическая политика компании основывается на принципах рационального природопользования и максимального сохранения природной среды.')</p>
         </div>
         <div class="tabs-wrapper">
             <div class="tabs_head">
@@ -64,7 +64,7 @@
 
             <div class="environment__security">
                 <div class="article-title-wrap">
-                <div class="article-title">Охрана окружающей среды<span class="article-title-after"></span></div>
+                <div class="article-title">@lang('messages.Охрана окружающей среды')<span class="article-title-after"></span></div>
                 </div>
                 <div class="tabs-wrapper-environment">
                 <div class="tabs_head">
