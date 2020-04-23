@@ -1,9 +1,14 @@
 const triggerIcon = document.querySelector(".mobile-menu-icon");
 const mobileMenuWrap = document.querySelector('.mobile-menu-wrap');
+const mobileMenu = document.querySelector('.mobile-menu');
+const mobileMenuTitle = document.querySelector('.mobile-menu__title-wrap')
 const BODY = document.querySelector('body');
 triggerIcon.addEventListener('click', ()=>{
     triggerIcon.classList.toggle('active')
     mobileMenuWrap.classList.toggle('show')
+    mobileMenuTitle.classList.remove('active')
+    mobileMenu.classList.remove('second-level')
+    mobileMenu.classList.remove('third-level')
     backdrop(this)
 })
 

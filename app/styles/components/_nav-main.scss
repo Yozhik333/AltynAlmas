@@ -51,6 +51,9 @@
 
     &.show{
       transform: translate(0);
+      @include breakpoint-down(md){
+        overflow-x: hidden;
+      }
     }
 
     .nav-main{
