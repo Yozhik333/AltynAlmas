@@ -9,12 +9,17 @@
     <meta name="theme-color" content="#000000">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <title>Главная</title>
+    <title>@lang('messages.Главная')</title>
 
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.min.css') }}">
   </head>
 
   <body data-namespace="main" data-template="index">
+    <style>
+      .uppercase {
+        text-transform: uppercase;
+      }
+    </style>
     <!--[if lt IE 10]>
 		<p class="browserupgrade">
 			You are using an <strong>outdated</strong> browser.
@@ -40,7 +45,7 @@
                     <ul class="flex flex-wrap mobile-display-block">
                       <li class=" dropdownWrap">
                         <a class="link prevDev" href="{{ route('about') }}">
-                          <div class="menu-title"> О компании </div>
+                          <div class="menu-title">@lang('messages.О компании') </div>
                           <div class="menu-icon">
                             <i class=""></i>
                           </div>
@@ -48,7 +53,7 @@
                         <ul class="dropdown-menu dropdown-level-1">
                           <li class="active ">
                             <a class="link " href="{{ route('about') }}">
-                              <div class="menu-title"> О компании </div>
+                              <div class="menu-title">@lang('messages.О компании') </div>
                               <div class="menu-icon">
                                 <i class="icon-right"></i>
                               </div>
@@ -56,7 +61,7 @@
                           </li>
                           <li class="active ">
                             <a class="link " href="{{ route('about-mission') }}">
-                              <div class="menu-title"> Миссия </div>
+                              <div class="menu-title">@lang('messages.Миссия') </div>
                               <div class="menu-icon">
                                 <i class=""></i>
                               </div>
@@ -64,7 +69,7 @@
                           </li>
                           <li class=" ">
                             <a class="link " href="{{ route('history') }}">
-                              <div class="menu-title"> История </div>
+                              <div class="menu-title">@lang('messages.История') </div>
                               <div class="menu-icon">
                                 <i class=""></i>
                               </div>
@@ -72,7 +77,7 @@
                           </li>
                           <li class=" ">
                             <a class="link " href="{{ route('main-deposits') }}">
-                              <div class="menu-title"> Основные направления деятельности </div>
+                              <div class="menu-title">@lang('messages.Основные направления деятельности') </div>
                               <div class="menu-icon">
                                 <i class=""></i>
                               </div>
@@ -80,7 +85,7 @@
                           </li>
                           <li class=" dropdownWrap">
                             <a class="link " href="{{ route('corporate') }}">
-                              <div class="menu-title"> Корпоративное управление </div>
+                              <div class="menu-title">@lang('messages.Корпоративное управление') </div>
                               <div class="menu-icon">
                                 <i class=""></i>
                               </div>
@@ -88,7 +93,7 @@
                             <ul class="dropdown-menu dropdown-level-">
                               <li class=" ">
                                 <a class="link " href="{{ route('corporate') }}">
-                                  <div class="menu-title"> Корпоративное управление </div>
+                                  <div class="menu-title">@lang('messages.Корпоративное управление') </div>
                                   <div class="menu-icon">
                                     <i class=""></i>
                                   </div>
@@ -96,7 +101,7 @@
                               </li>
                               <li class=" ">
                                 <a class="link " href="{{ route('governance')}}">
-                                  <div class="menu-title"> Руководство компании </div>
+                                  <div class="menu-title">@lang('messages.Руководство компании') </div>
                                   <div class="menu-icon">
                                     <i class=""></i>
                                   </div>
@@ -104,7 +109,7 @@
                               </li>
                               <li class=" ">
                                 <a class="link " href="{{ route('committee')}}">
-                                  <div class="menu-title"> Комитеты Совета Директоров </div>
+                                  <div class="menu-title">@lang('messages.Комитеты Совета Директоров') </div>
                                   <div class="menu-icon">
                                     <i class=""></i>
                                   </div>
@@ -112,7 +117,7 @@
                               </li>
                               <li class=" ">
                                 <a class="link " href="https://kase.kz/ru/issuers/ALMS/">
-                                  <div class="menu-title"> Раскрытие информации </div>
+                                  <div class="menu-title">@lang('messages.Раскрытие информации') </div>
                                   <div class="menu-icon">
                                     <i class=""></i>
                                   </div>
@@ -124,7 +129,7 @@
                       </li>
                       <li class=" dropdownWrap">
                         <a class="link prevDev" href="{{route('akbakay')}}">
-                          <div class="menu-title"> Активы </div>
+                          <div class="menu-title">@lang('messages.Активы') </div>
                           <div class="menu-icon">
                             <i class=""></i>
                           </div>
@@ -132,7 +137,7 @@
                         <ul class="dropdown-menu dropdown-level-2">
                           <li class="active dropdownWrap">
                             <a class="link " href="{{route('akbakay')}}">
-                              <div class="menu-title"> Операционная деятельность </div>
+                              <div class="menu-title">@lang('messages.Операционная деятельность') </div>
                               <div class="menu-icon">
                                 <i class="icon-right"></i>
                               </div>
@@ -140,7 +145,7 @@
                             <ul class="dropdown-menu dropdown-level-">
                               <li class=" ">
                                 <a class="link " href="{{route('akbakay')}}">
-                                  <div class="menu-title"> Акбакай </div>
+                                  <div class="menu-title">@lang('messages.Акбакай') </div>
                                   <div class="menu-icon">
                                     <i class=""></i>
                                   </div>
@@ -148,7 +153,7 @@
                               </li>
                               <li class=" ">
                                 <a class="link " href="{{route('aktogay')}}">
-                                  <div class="menu-title"> Актогай </div>
+                                  <div class="menu-title">@lang('messages.Актогай') </div>
                                   <div class="menu-icon">
                                     <i class=""></i>
                                   </div>
@@ -158,7 +163,7 @@
                           </li>
                           <li class="active ">
                             <a class="link " href="{{route('growth-projects')}}">
-                              <div class="menu-title"> Проекты роста </div>
+                              <div class="menu-title">@lang('messages.Проекты роста') </div>
                               <div class="menu-icon">
                                 <i class=""></i>
                               </div>
@@ -166,7 +171,7 @@
                           </li>
                           <li class=" ">
                             <a class="link " href="{{route('place-of-birth')}}">
-                              <div class="menu-title"> Месторождения </div>
+                              <div class="menu-title">@lang('messages.Месторождения') </div>
                               <div class="menu-icon">
                                 <i class=""></i>
                               </div>
@@ -174,7 +179,7 @@
                           </li>
                           <li class=" dropdownWrap">
                             <a class="link " href="{{route('digital-mine')}}">
-                              <div class="menu-title"> Проекты </div>
+                              <div class="menu-title">@lang('messages.Проекты') </div>
                               <div class="menu-icon">
                                 <i class=""></i>
                               </div>
@@ -182,7 +187,7 @@
                             <ul class="dropdown-menu dropdown-level-">
                               <li class=" ">
                                 <a class="link " href="{{route('digital-mine')}}">
-                                  <div class="menu-title"> Цифровой рудник </div>
+                                  <div class="menu-title">@lang('messages.Цифровой рудник') </div>
                                   <div class="menu-icon">
                                     <i class=""></i>
                                   </div>
@@ -190,7 +195,7 @@
                               </li>
                               <li class=" ">
                                 <a class="link " href="{{route('mine-to-mill')}}">
-                                  <div class="menu-title"> Mine to mill </div>
+                                  <div class="menu-title">@lang('messages.Mine to mill') </div>
                                   <div class="menu-icon">
                                     <i class=""></i>
                                   </div>
@@ -198,7 +203,7 @@
                               </li>
                               <li class=" ">
                                 <a class="link " href="{{route('sana-safety')}}">
-                                  <div class="menu-title"> Sana Safety </div>
+                                  <div class="menu-title">@lang('messages.Sana Safety') </div>
                                   <div class="menu-icon">
                                     <i class=""></i>
                                   </div>
@@ -210,7 +215,7 @@
                       </li>
                       <li class=" dropdownWrap">
                         <a class="link prevDev" href="{{route('development-safety')}}">
-                          <div class="menu-title"> Устойчивое развитие </div>
+                          <div class="menu-title">@lang('messages.Устойчивое развитие') </div>
                           <div class="menu-icon">
                             <i class=""></i>
                           </div>
@@ -218,7 +223,7 @@
                         <ul class="dropdown-menu dropdown-level-3">
                           <li class=" ">
                             <a class="link " href="{{route('development-safety')}}">
-                              <div class="menu-title"> Безопасность </div>
+                              <div class="menu-title">@lang('messages.Безопасность') </div>
                               <div class="menu-icon">
                                 <i class="icon-right"></i>
                               </div>
@@ -226,7 +231,7 @@
                           </li>
                           <li class=" ">
                             <a class="link " href="{{route('development-ecology')}}">
-                              <div class="menu-title"> Экология </div>
+                              <div class="menu-title">@lang('messages.Экология') </div>
                               <div class="menu-icon">
                                 <i class=""></i>
                               </div>
@@ -234,7 +239,7 @@
                           </li>
                           <li class=" ">
                             <a class="link " href="{{route('development-staff')}}">
-                              <div class="menu-title"> Сотрудники </div>
+                              <div class="menu-title">@lang('messages.Сотрудники') </div>
                               <div class="menu-icon">
                                 <i class=""></i>
                               </div>
@@ -242,7 +247,7 @@
                           </li>
                           <li class=" ">
                             <a class="link " href="{{route('development-local-communities')}}">
-                              <div class="menu-title"> Местные сообщества </div>
+                              <div class="menu-title">@lang('messages.Местные сообщества') </div>
                               <div class="menu-icon">
                                 <i class=""></i>
                               </div>
@@ -250,7 +255,7 @@
                           </li>
                           <li class="active ">
                             <a class="link " href="hide">
-                              <div class="menu-title"> Отчет об устойчивом развитии </div>
+                              <div class="menu-title">@lang('messages.Отчет об устойчивом развитии') </div>
                               <div class="menu-icon">
                                 <i class=""></i>
                               </div>
@@ -260,7 +265,7 @@
                       </li>
                       <li class=" dropdownWrap">
                         <a class="link prevDev" href="{{route('career')}}">
-                          <div class="menu-title"> Карьера </div>
+                          <div class="menu-title">@lang('messages.Карьера') </div>
                           <div class="menu-icon">
                             <i class=""></i>
                           </div>
@@ -268,7 +273,7 @@
                         <ul class="dropdown-menu dropdown-level-4">
                           <li class=" ">
                             <a class="link " href="{{route('career')}}">
-                              <div class="menu-title"> Почему мы? </div>
+                              <div class="menu-title">@lang('messages.Почему мы?') </div>
                               <div class="menu-icon">
                                 <i class=""></i>
                               </div>
@@ -276,7 +281,7 @@
                           </li>
                           <li class=" ">
                             <a class="link " href="{{route('vacancies')}}">
-                              <div class="menu-title"> Вакансии </div>
+                              <div class="menu-title">@lang('messages.Вакансии') </div>
                               <div class="menu-icon">
                                 <i class=""></i>
                               </div>
@@ -284,7 +289,7 @@
                           </li>
                           <li class=" ">
                             <a class="link " href="{{route('jastar')}}">
-                              <div class="menu-title"> Молодым специалистам </div>
+                              <div class="menu-title">@lang('messages.Молодым специалистам') </div>
                               <div class="menu-icon">
                                 <i class=""></i>
                               </div>
@@ -292,7 +297,7 @@
                           </li>
                           <li class=" ">
                             <a class="link " href="{{route('studying-programs')}}">
-                              <div class="menu-title"> Программы обучения </div>
+                              <div class="menu-title">@lang('messages.Программы обучения') </div>
                               <div class="menu-icon">
                                 <i class=""></i>
                               </div>
@@ -300,7 +305,7 @@
                           </li>
                           <li class=" dropdownWrap">
                             <a class="link " href="">
-                              <div class="menu-title"> Корпоративная культура </div>
+                              <div class="menu-title">@lang('messages.Корпоративная культура') </div>
                               <div class="menu-icon">
                                 <i class=""></i>
                               </div>
@@ -308,7 +313,7 @@
                             <ul class="dropdown-menu dropdown-level-">
                               <li class=" ">
                                 <a class="link " href="{{route('our-values')}}">
-                                  <div class="menu-title"> Наши ценности </div>
+                                  <div class="menu-title">@lang('messages.Наши ценности') </div>
                                   <div class="menu-icon">
                                     <i class=""></i>
                                   </div>
@@ -316,7 +321,7 @@
                               </li>
                               <li class=" ">
                                 <a class="link " href="{{route('corporate-newspaper')}}">
-                                  <div class="menu-title"> Корпоративная газета </div>
+                                  <div class="menu-title">@lang('messages.Корпоративная газета') </div>
                                   <div class="menu-icon">
                                     <i class=""></i>
                                   </div>
@@ -325,7 +330,7 @@
                               <li class=" ">
                                 <a class="link " href="{{route('gallery')}}">
                                     {{--  --}}
-                                  <div class="menu-title"> Фотогалерея </div>
+                                  <div class="menu-title">@lang('messages.Фотогалерея') </div>
                                   <div class="menu-icon">
                                     <i class=""></i>
                                   </div>
@@ -335,7 +340,7 @@
                           </li>
                           <li class=" dropdownWrap">
                             <a class="link " href="{{route('team-of-trainers')}}">
-                              <div class="menu-title"> Команда тренеров </div>
+                              <div class="menu-title">@lang('messages.Команда тренеров') </div>
                               <div class="menu-icon">
                                 <i class=""></i>
                               </div>
@@ -343,7 +348,7 @@
                             <ul class="dropdown-menu dropdown-level-">
                               <li class=" ">
                                 <a class="link " href="{{route('career-contacts')}}">
-                                  <div class="menu-title"> Контакты для соискателей </div>
+                                  <div class="menu-title">@lang('messages.Контакты для соискателей') </div>
                                   <div class="menu-icon">
                                     <i class=""></i>
                                   </div>
@@ -355,7 +360,7 @@
                       </li>
                       <li class=" dropdownWrap">
                         <a class="link prevDev" href="{{route('suppliers-form')}}">
-                          <div class="menu-title"> Поставщикам </div>
+                          <div class="menu-title">@lang('messages.Поставщикам') </div>
                           <div class="menu-icon">
                             <i class=""></i>
                           </div>
@@ -363,7 +368,7 @@
                         <ul class="dropdown-menu dropdown-level-5">
                           <li class=" ">
                             <a class="link " href="{{route('suppliers-form')}}">
-                              <div class="menu-title"> Стать поставщиком </div>
+                              <div class="menu-title">@lang('messages.Стать поставщиком') </div>
                               <div class="menu-icon">
                                 <i class="icon-right"></i>
                               </div>
@@ -371,7 +376,7 @@
                           </li>
                           <li class=" ">
                             <a class="link " href="{{route('suppliers-principles')}}">
-                              <div class="menu-title"> Принципы закупочной политики </div>
+                              <div class="menu-title">@lang('messages.Принципы закупочной политики') </div>
                               <div class="menu-icon">
                                 <i class=""></i>
                               </div>
@@ -379,7 +384,7 @@
                           </li>
                           <li class=" ">
                             <a class="link " href="{{route('suppliers-realization')}}">
-                              <div class="menu-title"> Реализация неликвидов </div>
+                              <div class="menu-title">@lang('messages.Реализация неликвидов') </div>
                               <div class="menu-icon">
                                 <i class=""></i>
                               </div>
@@ -387,7 +392,7 @@
                           </li>
                           <li class="active ">
                             <a class="link " href="{{route('suppliers-contacts')}}">
-                              <div class="menu-title"> Электронные закупки </div>
+                              <div class="menu-title">@lang('messages.Электронные закупки') </div>
                               <div class="menu-icon">
                                 <i class="icon-right"></i>
                               </div>
@@ -395,7 +400,7 @@
                           </li>
                           <li class=" ">
                             <a class="link " href="{{route('suppliers-contacts')}}">
-                              <div class="menu-title"> Контакты для поставщиков </div>
+                              <div class="menu-title">@lang('messages.Контакты для поставщиков') </div>
                               <div class="menu-icon">
                                 <i class=""></i>
                               </div>
@@ -405,7 +410,7 @@
                       </li>
                       <li class=" dropdownWrap">
                         <a class="link prevDev" href="{{ route('newsPage')}}">
-                          <div class="menu-title"> Инвесторы и СМИ </div>
+                          <div class="menu-title">@lang('messages.Инвесторы и СМИ') </div>
                           <div class="menu-icon">
                             <i class=""></i>
                           </div>
@@ -413,7 +418,7 @@
                         <ul class="dropdown-menu dropdown-level-6">
                           <li class=" ">
                             <a class="link " href="{{ route('newsPage')}}">
-                              <div class="menu-title"> Новости </div>
+                              <div class="menu-title">@lang('messages.Новости') </div>
                               <div class="menu-icon">
                                 <i class="icon-right"></i>
                               </div>
@@ -421,7 +426,7 @@
                           </li>
                           <li class=" ">
                             <a class="link " href="{{ route('investors-contacts')}}">
-                              <div class="menu-title"> Контакты </div>
+                              <div class="menu-title">@lang('messages.Контакты') </div>
                               <div class="menu-icon">
                                 <i class=""></i>
                               </div>
@@ -437,44 +442,44 @@
                     <ul>
                       <li class="mobile-menu__drop">
                         <div class="mobile-menu__title-wrap toggle">
-                          <div class="mobile-menu__title"> О компании </div>
+                          <div class="mobile-menu__title">@lang('messages.О компании') </div>
                           <i class="icon-right"></i>
                         </div>
                         <div class="mobile-menu__dropdown">
                           <ul>
                             <li class="close-dropdown">
-                              <i class="icon-left"></i> Назад
+                              <i class="icon-left"></i>@lang('messages.Назад')
                             </li>
                             <li>
-                              <a class="mobile-menu__link" href="{{ route('about') }}"> О компании </a>
+                              <a class="mobile-menu__link" href="{{ route('about') }}">@lang('messages.О компании') </a>
                             </li>
                             <li>
-                              <a class="mobile-menu__link" href="{{ route('about-mission') }}"> Миссия </a>
+                              <a class="mobile-menu__link" href="{{ route('about-mission') }}">@lang('messages.Миссия') </a>
                             </li>
                             <li>
-                              <a class="mobile-menu__link" class="link " href="{{ route('history') }}"> История </a>
+                              <a class="mobile-menu__link" class="link " href="{{ route('history') }}">@lang('messages.История') </a>
                             </li>
                             <li>
-                              <a class="mobile-menu__link" href="{{ route('main-deposits') }}"> Основные направления деятельности </a>
+                              <a class="mobile-menu__link" href="{{ route('main-deposits') }}">@lang('messages.Основные направления деятельности') </a>
                             </li>
                             <li>
-                              <span class="mobile-menu__link mobile-menu__link_second"> Корпоративное управление <i class="icon-right"></i> </span>
+                              <span class="mobile-menu__link mobile-menu__link_second">@lang('messages.Корпоративное управление') <i class="icon-right"></i> </span>
                               <div class="mobile-menu__dropdown">
                                 <ul>
                                   <li class="close-dropdown_sec">
-                                    <i class="icon-left"></i> Назад
+                                    <i class="icon-left"></i>@lang('messages.Назад')
                                 </li>
                                   <li>
-                                    <a class="mobile-menu__link" href="{{ route('corporate') }}"> Корпоративное управление </a>
+                                    <a class="mobile-menu__link" href="{{ route('corporate') }}">@lang('messages.Корпоративное управление') </a>
                                   </li>
                                   <li>
-                                    <a class="mobile-menu__link" href="{{ route('governance')}}"> Руководство компании </a>
+                                    <a class="mobile-menu__link" href="{{ route('governance')}}">@lang('messages.Руководство компании') </a>
                                   </li>
                                   <li>
-                                    <a class="mobile-menu__link" href="{{ route('committee')}}"> Комитеты Совета Директоров </a>
+                                    <a class="mobile-menu__link" href="{{ route('committee')}}">@lang('messages.Комитеты Совета Директоров') </a>
                                   </li>
                                   <li>
-                                    <a class="mobile-menu__link" href="https://kase.kz/ru/issuers/ALMS/"> Раскрытие информации </a>
+                                    <a class="mobile-menu__link" href="https://kase.kz/ru/issuers/ALMS/">@lang('messages.Раскрытие информации') </a>
                                   </li>
                                 </ul>
                               </div>
@@ -484,48 +489,48 @@
                       </li>
                       <li class="mobile-menu__drop">
                         <div class="mobile-menu__title-wrap toggle">
-                          <div class="mobile-menu__title"> Активы </div>
+                          <div class="mobile-menu__title">@lang('messages.Активы') </div>
                           <i class="icon-right"></i>
                         </div>
                         <div class="mobile-menu__dropdown">
                           <ul>
                             <li class="close-dropdown">
-                              <i class="icon-left"></i> Назад
+                              <i class="icon-left"></i>@lang('messages.Назад')
                             </li>
                             <li>
-                              <span class="mobile-menu__link mobile-menu__link_second"> Операционная деятельность <i class="icon-right"></i> </span>
+                              <span class="mobile-menu__link mobile-menu__link_second">@lang('messages.Операционная деятельность') <i class="icon-right"></i> </span>
                               <ul class="mobile-menu__dropdown">
                                 <li class="close-dropdown_sec">
-                                  <i class="icon-left"></i> Назад
+                                  <i class="icon-left"></i>@lang('messages.Назад')
                                 </li>
                                 <li>
-                                  <a class="mobile-menu__link" href="{{route('akbakay')}}"> Акбакай </a>
+                                  <a class="mobile-menu__link" href="{{route('akbakay')}}">@lang('messages.Акбакай') </a>
                                 </li>
                                 <li>
-                                  <a class="mobile-menu__link" href="{{route('akbakay')}}"> Актогай </a>
+                                  <a class="mobile-menu__link" href="{{route('akbakay')}}">@lang('messages.Актогай') </a>
                                 </li>
                               </ul>
                             </li>
                             <li>
-                              <a class="mobile-menu__link" href="{{route('growth-projects')}}"> Проекты роста </a>
+                              <a class="mobile-menu__link" href="{{route('growth-projects')}}">@lang('messages.Проекты роста') </a>
                             </li>
                             <li>
-                              <a class="mobile-menu__link" href="{{route('place-of-birth')}}"> Месторождения </a>
+                              <a class="mobile-menu__link" href="{{route('place-of-birth')}}">@lang('messages.Месторождения') </a>
                             </li>
                             <li>
-                              <span class="mobile-menu__link mobile-menu__link_second"> Проекты <i class="icon-right"></i> </span>
+                              <span class="mobile-menu__link mobile-menu__link_second">@lang('messages.Проекты') <i class="icon-right"></i> </span>
                               <ul class="mobile-menu__dropdown">
                                 <li class="close-dropdown_sec">
-                                  <i class="icon-left"></i> Назад
+                                  <i class="icon-left"></i>@lang('messages.Назад')
                                 </li>
                                 <li>
-                                  <a class="mobile-menu__link" href="{{route('digital-mine')}}"> Цифровой рудник </a>
+                                  <a class="mobile-menu__link" href="{{route('digital-mine')}}">@lang('messages.Цифровой рудник') </a>
                                 </li>
                                 <li>
-                                  <a class="mobile-menu__link" href="{{route('mine-to-mill')}}"> Mine to mill </a>
+                                  <a class="mobile-menu__link" href="{{route('mine-to-mill')}}">@lang('messages.Mine to mill') </a>
                                 </li>
                                 <li>
-                                  <a class="mobile-menu__link" href="{{route('sana-safety')}}"> Sana Safety </a>
+                                  <a class="mobile-menu__link" href="{{route('sana-safety')}}">@lang('messages.Sana Safety') </a>
                                 </li>
                               </ul>
                             </li>
@@ -534,82 +539,82 @@
                       </li>
                       <li class="mobile-menu__drop">
                         <div class="mobile-menu__title-wrap toggle">
-                          <div class="mobile-menu__title"> Устойчивое рвзвитие </div>
+                          <div class="mobile-menu__title">@lang('messages.Устойчивое рвзвитие') </div>
                           <i class="icon-right"></i>
                         </div>
                         <div class="mobile-menu__dropdown">
                           <ul>
                             <li class="close-dropdown">
-                              <i class="icon-left"></i> Назад
+                              <i class="icon-left"></i>@lang('messages.Назад')
                             </li>
                             <li>
-                              <a class="mobile-menu__link" href="{{route('development-safety')}}"> Безопасность </a>
+                              <a class="mobile-menu__link" href="{{route('development-safety')}}">@lang('messages.Безопасность') </a>
                             </li>
                             <li>
-                              <a class="mobile-menu__link" href="{{route('development-ecology')}}"> Экология </a>
+                              <a class="mobile-menu__link" href="{{route('development-ecology')}}">@lang('messages.Экология') </a>
                             </li>
                             <li>
-                              <a class="mobile-menu__link" href="{{route('development-staff')}}"> Сотрудники </a>
+                              <a class="mobile-menu__link" href="{{route('development-staff')}}">@lang('messages.Сотрудники') </a>
                             </li>
                             <li>
-                              <a class="mobile-menu__link" href="{{route('development-local-communities')}}"> Местные сообщества </a>
+                              <a class="mobile-menu__link" href="{{route('development-local-communities')}}">@lang('messages.Местные сообщества') </a>
                             </li>
                             <li>
-                              <a class="mobile-menu__link" href="hide"> Отчет об устойчивом развитии </a>
+                              <a class="mobile-menu__link" href="hide">@lang('messages.Отчет об устойчивом развитии') </a>
                             </li>
                           </ul>
                         </div>
                       </li>
                       <li class="mobile-menu__drop">
                         <div class="mobile-menu__title-wrap toggle">
-                          <div class="mobile-menu__title"> Карьера </div>
+                          <div class="mobile-menu__title">@lang('messages.Карьера') </div>
                           <i class="icon-right"></i>
                         </div>
                         <div class="mobile-menu__dropdown">
                           <ul>
                             <li class="close-dropdown">
-                              <i class="icon-left"></i> Назад
+                              <i class="icon-left"></i>@lang('messages.Назад')
                             </li>
                             <li>
-                              <a class="mobile-menu__link" href="{{route('career')}}"> Почему мы? </a>
+                              <a class="mobile-menu__link" href="{{route('career')}}">@lang('messages.Почему мы?') </a>
                             </li>
                             <li>
-                              <a class="mobile-menu__link" href="{{route('vacancies')}}"> Вакансии </a>
+                              <a class="mobile-menu__link" href="{{route('vacancies')}}">@lang('messages.Вакансии') </a>
                             </li>
                             <li>
-                              <a class="mobile-menu__link" href="{{route('jastar')}}"> Молодым специалистам </a>
+                              <a class="mobile-menu__link" href="{{route('jastar')}}">@lang('messages.Молодым специалистам') </a>
                             </li>
                             <li>
-                              <a class="mobile-menu__link" href="{{route('studying-programs')}}"> Программы обучения </a>
+                              <a class="mobile-menu__link" href="{{route('studying-programs')}}">@lang('messages.Программы обучения') </a>
                             </li>
                             <li>
-                              <span class="mobile-menu__link mobile-menu__link_second"> Корпоративная культура <i class="icon-right"></i></span>
+                              <span class="mobile-menu__link mobile-menu__link_second">@lang('messages.Корпоративная культура') <i class="icon-right"></i></span>
                               <ul class="mobile-menu__dropdown">
                                 <li class="close-dropdown">
-                                  <i class="icon-left"></i> Назад
+                                  <i class="icon-left"></i>@lang('messages.Назад')
                                 </li>
                                 <li>
-                                  <a class="mobile-menu__link" href="{{route('our-values')}}"> Наши ценности </a>
+                                  <a class="mobile-menu__link" href="{{route('our-values')}}">@lang('messages.Наши ценности') </a>
                                 </li>
                                 <li>
-                                  <a class="mobile-menu__link" href="{{route('corporate-newspaper')}}"> Корпоративная газета </a>
+                                  <a class="mobile-menu__link" href="{{route('corporate-newspaper')}}">@lang('messages.Корпоративная газета') </a>
                                 </li>
                                 <li>
-                                  <a class="mobile-menu__link" href="{{route('gallery')}}"> Фотогалерея </a>
+                                  <a class="mobile-menu__link" href="{{route('gallery')}}">@lang('messages.Фотогалерея') </a>
                                 </li>
                               </ul>
                             </li>
                             <li>
-                              <span class="mobile-menu__link mobile-menu__link_second"> Команда тренеров <i class="icon-right"></i> </span>
+                              <span class="mobile-menu__link mobile-menu__link_second">@lang('messages.Команда тренеров') <i class="icon-right"></i> </span>
                               <ul class="mobile-menu__dropdown">
                                 <li class="close-dropdown_sec">
-                                  <i class="icon-left"></i> Назад
+                                  <i class="icon-left"></i>@lang('messages.Назад')
                                 </li>
                                 <li>
-                                  <a class="mobile-menu__link" href="{{route('team-of-trainers')}}"> Команда тренеров </a>
+                                  <a class="mobile-menu__link" href="{{route('team-of-trainers')}}">@lang('messages.Команда тренеров') </a>
                                 </li>
                                 <li>
-                                  <a class="mobile-menu__link" href="{{route('career-contacts')}}"> Контакты для соискателей </a>
+                                  <a class="mobile-menu__link" href="{{route('career-contacts')}}">@lang('messages.Контакты для соискателей') </a>
                                 </li>
                               </ul>
                             </li>
@@ -618,22 +623,22 @@
                       </li>
                       <li class="mobile-menu__drop">
                         <div class="mobile-menu__title-wrap toggle toggle">
-                          <div class="mobile-menu__title"> Поставщикам </div>
+                          <div class="mobile-menu__title">@lang('messages.Поставщикам') </div>
                           <i class="icon-right"></i>
                         </div>
                         <div class="mobile-menu__dropdown">
                           <ul>
                             <li class="close-dropdown">
-                              <i class="icon-left"></i> Назад
+                              <i class="icon-left"></i>@lang('messages.Назад')
                             </li>
                             <li>
-                                <a class="mobile-menu__link" href="{{route('suppliers-form')}}"> Стать поставщиком </a>
+                                <a class="mobile-menu__link" href="{{route('suppliers-form')}}">@lang('messages.Стать поставщиком') </a>
                             </li>
                             <li>
-                              <a class="mobile-menu__link" href="{{route('suppliers-principles')}}"> Принципы закупочной политики </a>
+                              <a class="mobile-menu__link" href="{{route('suppliers-principles')}}">@lang('messages.Принципы закупочной политики') </a>
                             </li>
                             <li>
-                              <a class="mobile-menu__link" href="{{route('suppliers-realization')}}"> Реализация неликвидов </a>
+                              <a class="mobile-menu__link" href="{{route('suppliers-realization')}}">@lang('messages.Реализация неликвидов') </a>
                             </li>
                             <!--                <li>-->
                             <!--                    <a class="mobile-menu__link"-->
@@ -642,26 +647,26 @@
                             <!--                    </a>-->
                             <!--                </li>-->
                             <li>
-                              <a class="mobile-menu__link" href="{{route('suppliers-contacts')}}"> Контакты для поставщиков </a>
+                              <a class="mobile-menu__link" href="{{route('suppliers-contacts')}}">@lang('messages.Контакты для поставщиков') </a>
                             </li>
                           </ul>
                         </div>
                       </li>
                       <li class="mobile-menu__drop">
                         <div class="mobile-menu__title-wrap toggle">
-                          <div class="mobile-menu__title"> Инвесторы и сми </div>
+                          <div class="mobile-menu__title">@lang('messages.Инвесторы и сми') </div>
                           <i class="icon-right"></i>
                         </div>
                         <div class="mobile-menu__dropdown">
                           <ul>
                             <li class="close-dropdown">
-                              <i class="icon-left"></i> Назад
+                              <i class="icon-left"></i>@lang('messages.Назад')
                             </li>
                             <li>
-                              <a class="mobile-menu__link" href="{{ route('newsPage')}}"> Новости </a>
+                              <a class="mobile-menu__link" href="{{ route('newsPage')}}">@lang('messages.Новости') </a>
                             </li>
                             <li>
-                              <a class="mobile-menu__link" href="{{ route('investors-contacts')}}"> Контакты </a>
+                              <a class="mobile-menu__link" href="{{ route('investors-contacts')}}">@lang('messages.Контакты') </a>
                             </li>
                           </ul>
                         </div>
@@ -683,18 +688,15 @@
                 </div>
                 <div class="flex align-items-center">
                   <div class="lang-switch">
-                    <div class="active-lang"> RU </div>
+                    <div class="active-lang uppercase"> {{ Config::get('app.locale')  }} </div>
                     <div class="lang-wrap">
-                      <a href="#">
-                        KZ
+                      <a href="locale/kz" class = "uppercase">
+                        {{ Config::get('app.locale') == 'kz' ? 'RU' : 'KZ'  }}
                       </a>
-                      <a href="#">
-                        EN
+                      <a href="locale/en" class = "uppercase">                        
+                        {{ Config::get('app.locale') == 'en' ? 'RU' : 'EN'  }}
                       </a>
-                    </div>
-                    <a href="locale/kz">kz</a>
-                    <a href="locale/ru">ru</a>
-                    <a href="locale/en">en</a>
+                    </div>                 
                   </div>
                   <div class="cost-wrap">
                     <div class="cost"> USD: 678,30 <i></i>
@@ -727,8 +729,8 @@
           <div class="container-fluid flex justify-content-between">
             <nav class="nav-footer">
               <ul>
-                <li><a href="{{route('glossary')}}">Глоссарий</a></li>
-                <li><a href="{{route('contacts')}}">Контакты</a></li>
+                <li><a href="{{route('glossary')}}">@lang('messages.Глоссарий')</a></li>
+                <li><a href="{{route('contacts')}}">@lang('messages.Контакты')</a></li>
               </ul>
             </nav>
             <a class="maint" href="https://maint.kz/ "><img src="{{ asset('/img/maint.png') }}" alt="Разработано Maint"></a>

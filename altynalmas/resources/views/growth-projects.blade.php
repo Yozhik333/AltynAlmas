@@ -84,7 +84,7 @@
                 </div>
                 <div class="growth-projects-item__description">@lang('messages.Геологоразведочные работы проводятся на флангах месторождения в пределах горного отвода.') </div>
                 <div class="growth-projects-item__subtitle">
-                <div> @lang('messages.Способ добычи:') </div> @lang('messages.комбинированный (открытый и подземный).')
+                <div> @lang('messages.Способ добычи:') </div> @lang('messages.подземный.')
                 </div>
                 <div class="growth-projects-item__description"> @lang('messages.Подземная добыча ведется до горизонта 790 метров от дневной поверхности.') </div>
             </div>
@@ -105,7 +105,7 @@
                     <div class="number-description"> @lang('messages.извлечение золота за 2019 год') </div>
                 </div>
                 </div>
-                <div class="growth-projects-item__description"> @lang('messages.Геологоразведочные работы проводятся на флангах месторождения в пределах горного отвода.') </div>
+                {{-- <div class="growth-projects-item__description"> @lang('messages.Геологоразведочные работы проводятся на флангах месторождения в пределах горного отвода.') </div> --}}
                 <div class="growth-projects-item__subtitle">
                 <div>@lang('messages.Способ добычи:') </div>@lang('messages.комбинированный (открытый и подземный).')
                 </div>
