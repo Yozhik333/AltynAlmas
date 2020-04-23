@@ -7,10 +7,10 @@
   left: 0;
   z-index: 6;
   background-color: #fff;
-  @include breakpoint-down(md){
+  @include breakpoint-down(md) {
     padding: 10px 0;
-    
-    &::after{
+
+    &::after {
       content: '';
       position: absolute;
       width: 140px;
@@ -25,17 +25,17 @@
       clip-path: polygon(0% 100%, 100% 100%, 100% 60.5%, 0% 60.5%);
     }
   }
-  
-  .container-fluid{
+
+  .container-fluid {
     position: relative;
   }
 }
 
-.logo{
+.logo {
   color: #002c4d;
   font-size: 76px;
-  
-  @include breakpoint-down(md){
+
+  @include breakpoint-down(md) {
     font-size: 66px;
     position: absolute;
     top: 0;
@@ -43,61 +43,68 @@
     right: auto;
     z-index: 2;
   }
-  
-  &_right-offset{
+
+  &_right-offset {
     @extend .logo;
     margin-right: 30px;
-    
-    @include breakpoint-down(md){
+
+    @include breakpoint-down(md) {
       margin: 0 auto;
     }
   }
-  
-  &:hover{
+
+  &:hover {
     color: #d0b37b;
   }
 }
 
-.search{
+.search {
   position: relative;
   z-index: 3;
-  i{
+
+  i {
     cursor: pointer;
     transition: color .3s ease-in-out;
-    &:hover{
+
+    &:hover {
       color: #d0b37b;
     }
   }
 }
 
-.icon-search{
+.icon-search {
   font-size: 28px;
 }
 
-.cost-wrap{
-  @include fluidPaddingLeft(20px,86px,1024px,1680px);
-  @include breakpoint-down(md){
+.cost-wrap {
+  @include fluidPaddingLeft(20px, 86px, 1024px, 1680px);
+  @include breakpoint-down(md) {
     display: none;
   }
-  
-  .cost{
+
+  .cost {
     font-weight: bold;
     font-size: 12px;
     line-height: 14px;
     color: #000;
     margin-bottom: 20px;
-    
-    &:last-child{
+
+    &:last-child {
       margin-bottom: 0;
     }
   }
 }
 
-.lang-switch{
+.lang-switch {
   position: relative;
   margin-left: 30px;
-  
-  &::after{
+  cursor: pointer;
+
+  &:hover .lang-wrap {
+    display: block;
+  }
+
+  &::after {
     content: '';
     position: absolute;
     background-color: #000;
@@ -106,18 +113,39 @@
     top: -10px;
     left: -15px;
   }
-  
-  .lang{
+
+  .lang {
     font-weight: normal;
     font-size: 18px;
     line-height: 21px;
     color: #000;
     cursor: pointer;
   }
+
+  .lang-wrap {
+    display: none;
+    position: absolute;
+    background-color: rgba(#fff, .7);
+    top: 100%;
+    left: -8px;
+    padding: 2px 8px;
+
+    a {
+      color: black;
+      padding: 10px 0;
+      text-decoration: none;
+      display: block;
+      transition: color .3s ease-in;
+
+      &:hover {
+        color: #d0b37b;
+      }
+    }
+  }
 }
 
-.logo-wrap{
-  @include breakpoint-down(md){
+.logo-wrap {
+  @include breakpoint-down(md) {
     position: absolute;
     left: 0;
     right: 0;
@@ -127,10 +155,14 @@
   }
 }
 
-.mobile-menu-icon{
+.lang__wrap {
+  position: absolute;
+}
+
+.mobile-menu-icon {
   display: none;
-  
-  @include breakpoint-down(md){
+
+  @include breakpoint-down(md) {
     display: block;
     position: relative;
     z-index: 3;
