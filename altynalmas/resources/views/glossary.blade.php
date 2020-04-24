@@ -6,36 +6,35 @@
         <div class="container-fluid">
         <ul class="nav nav-tabs glossary__header" id="myTab" role="tablist">
             <li class="nav-item">
-            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#one" role="tab" aria-controls="profile" aria-selected="false"> @lang('messages.A — Г') </a>
+            <a class="nav-link active" id="profile-tab" data-toggle="tab" href="#one" role="tab" aria-controls="profile" aria-selected="false"> A — Г </a>
             </li>
             <li class="nav-item">
-            <a class="nav-link" id="G-E" data-toggle="tab" href="#two" role="tab" aria-controls="profile" aria-selected="false"> @lang('messages.Д — Ж') </a>
+            <a class="nav-link" id="G-E" data-toggle="tab" href="#two" role="tab" aria-controls="profile" aria-selected="false"> Д — Ж </a>
             </li>
             <li class="nav-item">
-            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#three" role="tab" aria-controls="home" aria-selected="true"> @lang('messages.З — К') </a>
+            <a class="nav-link" id="home-tab" data-toggle="tab" href="#three" role="tab" aria-controls="home" aria-selected="true"> З — К </a>
             </li>
             <li class="nav-item">
-            <a class="nav-link active" id="km" data-toggle="tab" href="#four" role="tab" aria-controls="home" aria-selected="true"> @lang('messages.Л — О') </a>
+            <a class="nav-link" id="km" data-toggle="tab" href="#four" role="tab" aria-controls="home" aria-selected="true"> Л — О </a>
             </li>
             <li class="nav-item">
-            <a class="nav-link active" id="pn" data-toggle="tab" href="#give" role="tab" aria-controls="home" aria-selected="true"> @lang('messages.П — Т') </a>
+            <a class="nav-link" id="pn" data-toggle="tab" href="#five" role="tab" aria-controls="home" aria-selected="true"> П — Т </a>
             </li>
             <li class="nav-item">
-            <a class="nav-link active" id="fc" data-toggle="tab" href="#six" role="tab" aria-controls="home" aria-selected="true"> @lang('messages.У — Ц') </a>
+            <a class="nav-link" id="fc" data-toggle="tab" href="#six" role="tab" aria-controls="home" aria-selected="true"> У — Ц </a>
             </li>
             <li class="nav-item">
-            <a class="nav-link active" id="csh" data-toggle="tab" href="#seven" role="tab" aria-controls="home" aria-selected="true"> @lang('messages.Ч — Щ') </a>
+            <a class="nav-link" id="csh" data-toggle="tab" href="#seven" role="tab" aria-controls="home" aria-selected="true"> Ч — Щ </a>
             </li>
             <li class="nav-item">
-            <a class="nav-link active" id="y-ya" data-toggle="tab" href="#eight" role="tab" aria-controls="home" aria-selected="true"> @lang('messages.Ы — Я') </a>
+            <a class="nav-link" id="y-ya" data-toggle="tab" href="#eight" role="tab" aria-controls="home" aria-selected="true"> Ы — Я </a>
             </li>
         </ul>
         <div class="tab-content" id="myTabContent">
-            <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab"></div>
-            <div class="tab-pane fade" id="one" role="tabpanel" aria-labelledby="profile-tab">
+            <div class="tab-pane fade  active show" id="one" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="flex">
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.А') </div>
+                        <div class="glossary__item-header"> А </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -48,7 +47,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.Б') </div>
+                        <div class="glossary__item-header"> Б </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -61,7 +60,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.В') </div>
+                        <div class="glossary__item-header"> В </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -74,7 +73,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.Г') </div>
+                        <div class="glossary__item-header"> Г </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -91,7 +90,7 @@
             <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="flex">
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.Д') </div>
+                        <div class="glossary__item-header"> Д </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -104,7 +103,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.Е') </div>
+                        <div class="glossary__item-header"> Е </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -117,7 +116,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.Ё') </div>
+                        <div class="glossary__item-header"> Ё </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -130,7 +129,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.Ж') </div>
+                        <div class="glossary__item-header"> Ж </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -147,7 +146,7 @@
             <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="flex">
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.З') </div>
+                        <div class="glossary__item-header"> З </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -160,7 +159,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.И') </div>
+                        <div class="glossary__item-header"> И </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -173,7 +172,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.Й') </div>
+                        <div class="glossary__item-header"> Й </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -186,7 +185,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.К') </div>
+                        <div class="glossary__item-header"> К </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -203,7 +202,7 @@
             <div class="tab-pane fade" id="four" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="flex">
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.Л') </div>
+                        <div class="glossary__item-header"> Л </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -216,7 +215,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.М') </div>
+                        <div class="glossary__item-header"> М </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -229,7 +228,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.Н') </div>
+                        <div class="glossary__item-header"> Н </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -242,7 +241,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.О') </div>
+                        <div class="glossary__item-header"> О </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -260,7 +259,7 @@
             <div class="tab-pane fade" id="five" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="flex">
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.П') </div>
+                        <div class="glossary__item-header"> П </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -273,7 +272,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.Р') </div>
+                        <div class="glossary__item-header"> Р </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -286,7 +285,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.С') </div>
+                        <div class="glossary__item-header"> С </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -299,7 +298,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.Т') </div>
+                        <div class="glossary__item-header"> Т </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -317,7 +316,7 @@
             <div class="tab-pane fade" id="six" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="flex">
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.У') </div>
+                        <div class="glossary__item-header"> У </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -330,7 +329,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.Ф') </div>
+                        <div class="glossary__item-header"> Ф </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -343,7 +342,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.Х') </div>
+                        <div class="glossary__item-header"> Х </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -356,7 +355,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.Ц') </div>
+                        <div class="glossary__item-header"> Ц </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -374,7 +373,7 @@
             <div class="tab-pane fade" id="seven" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="flex">
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.Ч') </div>
+                        <div class="glossary__item-header"> Ч </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -387,7 +386,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.Ш') </div>
+                        <div class="glossary__item-header"> Ш </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -400,7 +399,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.Щ') </div>
+                        <div class="glossary__item-header"> Щ </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -418,7 +417,7 @@
             <div class="tab-pane fade" id="eight" role="tabpanel" aria-labelledby="profile-tab">
                 <div class="flex">
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.Ы') </div>
+                        <div class="glossary__item-header"> Ы </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -431,7 +430,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.Э') </div>
+                        <div class="glossary__item-header"> Э </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -444,7 +443,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.Ю') </div>
+                        <div class="glossary__item-header"> Ю </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
@@ -457,7 +456,7 @@
                         @endisset
                     </div>
                     <div class="glossary__item">
-                        <div class="glossary__item-header"> @lang('messages.Я') </div>
+                        <div class="glossary__item-header"> Я </div>
                         @isset($glossary)
                             @foreach ($glossary as $word)
                                 @if ($word->is_active == 1)
