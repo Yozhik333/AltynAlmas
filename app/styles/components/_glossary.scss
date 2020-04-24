@@ -3,9 +3,17 @@
     display: flex;
     padding-top: 46px;
     margin-bottom: 120px;
+    @include breakpoint-down(md){
+      flex-wrap: wrap;
+      justify-content: space-around;
+      margin-bottom: 30px;
+    }
 
     .nav-item{
       padding: 0 30px;
+      @include breakpoint-down(md){
+        padding: 10px;
+      }
     }
 
     a{
@@ -21,9 +29,20 @@
     }
   }
 
+  .tab-pane{
+    &>.flex{
+      @include breakpoint-down(md){
+        flex-direction: column;
+      }
+    }
+  }
+
   &__item{
     width: 33.333333%;
     padding: 0 30px;
+    @include breakpoint-down(md){
+      width: 100%;
+    }
   }
 
   &__item-header{
