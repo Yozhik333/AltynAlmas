@@ -17,6 +17,9 @@
 
 .nav-footer {
   line-height: 61px;
+  @include breakpoint-down(md){
+    display: none;
+  }
 
   ul {
     display: flex;

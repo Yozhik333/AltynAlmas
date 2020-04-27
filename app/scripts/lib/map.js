@@ -12,7 +12,8 @@ if (map) {
         hintContent: 'Altyn Almas'
       }, {
         iconLayout: 'default#image',
-        iconImageHref: 'images/samples/pin.svg',
+        iconImageHref:"img/pin.svg",
+        // iconImageHref: 'images/samples/pin.svg',
         iconImageSize: [60, 82],
         iconImageOffset: [-30, -90]
       });

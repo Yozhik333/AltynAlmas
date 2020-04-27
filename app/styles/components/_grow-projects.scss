@@ -16,7 +16,9 @@
     margin-bottom: 36px;
 
     & > .flex {
-      flex-direction: column;
+      @include breakpoint-down(md){
+        flex-direction: column;
+      }
     }
   }
 }
@@ -49,6 +51,7 @@
     line-height: 20px;
     color: #000;
     margin-bottom: 20px;
+    min-height: 60px;
   }
 
   &__numbers {

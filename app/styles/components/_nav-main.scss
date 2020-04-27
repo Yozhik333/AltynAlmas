@@ -18,6 +18,28 @@
         &:hover{
           color: #D0B37B;
         }
+
+        .menu-icon{
+          display: none;
+        }
+      }
+    }
+  }
+
+  .active{
+    .link{
+      color: #fff !important;
+    }
+
+    .menu-title{
+      color: #fff !important;
+    }
+
+    .menu-icon{
+      display: block !important;
+
+      i{
+        color: #fff !important;
       }
     }
   }
