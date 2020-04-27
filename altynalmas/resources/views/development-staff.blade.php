@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Сотрудники
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Қызметкерлер
+  @endif
+  @if (app()->getLocale() == 'en')
+    Employees
+  @endif
+@endsection
+
 @section('main-content')
 
     <div class="banner" style="background-image: url('/img/banner-staff.jpg');">

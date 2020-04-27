@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Sana Safety
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Sana Safety
+  @endif
+  @if (app()->getLocale() == 'en')
+    Sana Safety
+  @endif
+@endsection
+
 @section('main-content')
 
     <div class="sana-safety" data-namespace="sana-safety" data-template="sana-safety">

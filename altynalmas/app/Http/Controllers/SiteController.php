@@ -51,15 +51,15 @@ class SiteController extends Controller
 
     public function history()
     {
-        $years = Year::all()->reverse();
+        $years = Year::all();
         return view('history', compact('years'));
     }
 
     public function governance()
     {
-        $board = Board::all()->reverse();
-        $boardOfDirectors = BoardOfDirectors::all()->reverse();
-        $presidents = VicePresident::all()->reverse();
+        $board = Board::all();
+        $boardOfDirectors = BoardOfDirectors::all();
+        $presidents = VicePresident::all();
         return view('governance', compact('board', 'boardOfDirectors', 'presidents'));
     }
 
@@ -95,19 +95,19 @@ class SiteController extends Controller
 
     public function developmentSafety()
     {
-        $developmentSafety = Safety::all()->reverse();
+        $developmentSafety = Safety::all();
         return view('development-safety', compact('developmentSafety'));
     }
 
     public function developmentEcology()
     {
-        $developmentEcology = Ecology::all()->reverse();
+        $developmentEcology = Ecology::all();
         return view('development-ecology', compact('developmentEcology'));
     }
 
     public function developmentLocalCommunities()
     {
-        $developmentLocalCommunities = LocalCommunity::all()->reverse();
+        $developmentLocalCommunities = LocalCommunity::all();
         return view('development-local-communities', compact('developmentLocalCommunities'));
     }
 
@@ -143,7 +143,7 @@ class SiteController extends Controller
 
     public function teamOfTrainers()
     {
-        $trainers = Coach::all()->reverse();
+        $trainers = Coach::all();
         return view('team-of-trainers', compact('trainers'));
     }
 

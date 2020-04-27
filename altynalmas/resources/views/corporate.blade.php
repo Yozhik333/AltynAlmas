@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Корпоративное Управление
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Корпоративтік Басқару
+  @endif
+  @if (app()->getLocale() == 'en')
+    Corporate Governance
+  @endif
+@endsection
+
 @section('main-content')
 
     <div class="banner" style="background-image: url('img/corporate-banner.jpg');">

@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Mine to mill
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Mine to mill
+  @endif
+  @if (app()->getLocale() == 'en')
+    Mine to mill
+  @endif
+@endsection
+
 @section('main-content')
 
     <div class="mine-to-mill" data-namespace="mine-to-mill" data-template="mine-to-mill">

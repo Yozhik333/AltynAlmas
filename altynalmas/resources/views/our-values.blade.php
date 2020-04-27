@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Наши ценности
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Біздің құндылықтар
+  @endif
+  @if (app()->getLocale() == 'en')
+    Our value
+  @endif
+@endsection
+
 @section('main-content')
 
     <div class="our-values" data-namespace="our-values" data-template="our-values">

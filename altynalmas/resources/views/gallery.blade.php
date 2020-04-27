@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Фотогалерея
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Фотогалерея
+  @endif
+  @if (app()->getLocale() == 'en')
+    Photo gallery
+  @endif
+@endsection
+
 @section('main-content')
 
     <div class="photo-gallery" data-namespace="photo-gallery" data-template="photo-gallery">

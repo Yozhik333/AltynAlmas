@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Комитеты совета директоров
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Директорлар кеңесінің комитеттері
+  @endif
+  @if (app()->getLocale() == 'en')
+    Board of directors
+  @endif
+@endsection
+
 @section('main-content')
     <div class="banner" style="background-image: url('img/corporate-banner.jpg');">
         <div class="container-fluid">

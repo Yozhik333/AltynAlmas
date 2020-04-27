@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Программы обучения
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Оқыту бағдарламасы
+  @endif
+  @if (app()->getLocale() == 'en')
+    Training program
+  @endif
+@endsection
+
 @section('main-content')
 
     <div class="studying-programs" data-namespace="studying-programs" data-template="studying-programs">

@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Миссия
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Миссия
+  @endif
+  @if (app()->getLocale() == 'en')
+    Mission
+  @endif
+@endsection
+
 @section('main-content')
 <div class="banner" style="background-image: url('img/about-mission-banner.jpg');">
     <div class="container-fluid">

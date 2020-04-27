@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Актуальные вакансии
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Өзекті вакансиялар
+  @endif
+  @if (app()->getLocale() == 'en')
+    Current vacancies
+  @endif
+@endsection
+
 @section('main-content')
 
     <div class="banner" style="background-image: url('/img/banner-vacancy.jpg');">

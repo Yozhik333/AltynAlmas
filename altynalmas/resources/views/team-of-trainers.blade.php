@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Команда тренеров
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Тренерлер командасы
+  @endif
+  @if (app()->getLocale() == 'en')
+    Team of trainers
+  @endif
+@endsection
+
 @section('main-content')
 
 <div class="team-of-trainers" data-namespace="team-of-trainers" data-template="team-of-trainers">

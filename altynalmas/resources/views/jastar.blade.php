@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Altyn jastar
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Altyn jastar
+  @endif
+  @if (app()->getLocale() == 'en')
+    Altyn jastar
+  @endif
+@endsection
+
 @section('main-content')
 
     <div class="banner" style="background-image: url('/img/banner-vacancy.jpg');">

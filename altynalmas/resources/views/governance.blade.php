@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Руководство компании
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Компания басшылығы
+  @endif
+  @if (app()->getLocale() == 'en')
+    Company management
+  @endif
+@endsection
+
 @section('main-content')
     <div class="banner" style="background-image: url('img/governance.jpg');">
         <div class="container-fluid">

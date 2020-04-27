@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Основные направления
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Қызметтің негізгі бағыттары
+  @endif
+  @if (app()->getLocale() == 'en')
+    Operations
+  @endif
+@endsection
+
 @section('main-content')
 
     <div class="main-deposits" data-template="main-deposits" data-namespace="main-deposits">

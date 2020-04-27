@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Принципы закупочной политики
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Сатып алу саясатының қағидаттары
+  @endif
+  @if (app()->getLocale() == 'en')
+    Principles of procurement policy
+  @endif
+@endsection
+
 @section('main-content')
 
     <div class="banner" style="background-image: url('img/banner-principles.jpg');">

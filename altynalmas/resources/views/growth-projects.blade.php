@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Проекты роста
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Өсу жобалары
+  @endif
+  @if (app()->getLocale() == 'en')
+    Growth projects
+  @endif
+@endsection
+
 @section('main-content')
 
     <div class="growth-projects" data-namespace="growth-projects" data-template="growth-projects">

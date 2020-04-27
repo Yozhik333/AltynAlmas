@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Корпоративная газета
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Корпоративтік газет
+  @endif
+  @if (app()->getLocale() == 'en')
+    Corporate newspaper
+  @endif
+@endsection
+
 @section('main-content')
 
     <div class="corporate-newspaper" data-namespace="corporate-newspaper" data-template="corporate-newspaper">

@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Контакты
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Байланыс деректері
+  @endif
+  @if (app()->getLocale() == 'en')
+    Contacts
+  @endif
+@endsection
+
 @section('main-content')
 
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<26f7d149-2937-452d-a9ca-5812281b8f26>" type="text/javascript"></script>

@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Местные сообщества
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Жергілікті қоғамдастықтар
+  @endif
+  @if (app()->getLocale() == 'en')
+    Local communities
+  @endif
+@endsection
+
 @section('main-content')
 
     <div class="banner" style="background-image: url('/img/banner-estate.jpg');">

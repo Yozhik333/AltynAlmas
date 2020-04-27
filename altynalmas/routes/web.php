@@ -54,7 +54,7 @@ Route::get('/place-of-birth', function() {
     return view('place-of-birth');
 })->name('place-of-birth');
 
-Route::get('/development/staff', function() {
+Route::get('/development-staff', function() {
     return view('development-staff');
 })->name('development-staff');
 
@@ -109,9 +109,9 @@ Route::get('/aktogay', 'SiteController@aktogay')->name('aktogay');
 Route::get('/digital-mine', 'SiteController@digitalMine')->name('digital-mine');
 Route::get('/mine-to-mill', 'SiteController@mineToMill')->name('mine-to-mill');
 Route::get('/sana-safety', 'SiteController@sanaSafety')->name('sana-safety');
-Route::get('/development/safety', 'SiteController@developmentSafety')->name('development-safety');
-Route::get('/development/ecology', 'SiteController@developmentEcology')->name('development-ecology');
-Route::get('/development/local-communities', 'SiteController@developmentLocalCommunities')->name('development-local-communities');
+Route::get('/development-safety', 'SiteController@developmentSafety')->name('development-safety');
+Route::get('/development-ecology', 'SiteController@developmentEcology')->name('development-ecology');
+Route::get('/development-local-communities', 'SiteController@developmentLocalCommunities')->name('development-local-communities');
 Route::get('/vacancies', 'SiteController@vacancies')->name('vacancies');
 Route::get('/studying-programs', 'SiteController@studyingPrograms')->name('studying-programs');
 Route::get('/corporate-newspaper', 'SiteController@corporateNewspaper')->name('corporate-newspaper');

@@ -1,6 +1,18 @@
 @extends('header-footer.header-footer')
 
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    О компании
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Компания туралы
+  @endif
+  @if (app()->getLocale() == 'en')
+    About Company
+  @endif
+@endsection
+
 @section('main-content')
   <div class="banner" style="background-image: url('img/about-banner.jpg');">
     <div class="container-fluid">

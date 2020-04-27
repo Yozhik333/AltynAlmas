@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Стать поставщиком
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Жеткізуші болу
+  @endif
+  @if (app()->getLocale() == 'en')
+    Become a supplier
+  @endif
+@endsection
+
 @section('main-content')
 
     <div class="banner" style="background-image: url('/img/banner-suppliers.jpg');">

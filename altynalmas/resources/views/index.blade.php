@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Главная
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Басты бет
+  @endif
+  @if (app()->getLocale() == 'en')
+    Main Page
+  @endif
+@endsection
+
 
 @section('main-content')
     <!--style="background-image: url('img/about-banner.jpg');"-->

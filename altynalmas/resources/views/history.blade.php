@@ -1,5 +1,19 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    История
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Тарих
+  @endif
+  @if (app()->getLocale() == 'en')
+    History
+  @endif
+@endsection
+
+
+
 @section('main-content')
 
    <div data-namespace="history" data-template="history">

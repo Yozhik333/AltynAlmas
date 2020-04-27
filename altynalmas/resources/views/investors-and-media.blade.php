@@ -1,5 +1,16 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Новости
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Жаңалықтар
+  @endif
+  @if (app()->getLocale() == 'en')
+    News
+  @endif
+@endsection
 
 @section('main-content')
     <div class="banner" style="background-image: url('img/newspage1.jpg');">

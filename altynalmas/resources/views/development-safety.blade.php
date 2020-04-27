@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Безопасноть
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Қауіпсіздік
+  @endif
+  @if (app()->getLocale() == 'en')
+    Safety
+  @endif
+@endsection
+
 @section('main-content')
     <div class="banner" style="background-image: url('/img/banner-development.jpg');">
         <div class="container-fluid">

@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Акбакай
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Ақбақай
+  @endif
+  @if (app()->getLocale() == 'en')
+    Akbakai
+  @endif
+@endsection
+
 @section('main-content')
 
     <div class="activity-detail">

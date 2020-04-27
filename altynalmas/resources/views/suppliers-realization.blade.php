@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Реализация неликвидов
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Өтімсіз заттарды сату
+  @endif
+  @if (app()->getLocale() == 'en')
+    Sale of illiquid assets
+  @endif
+@endsection
+
 @section('main-content')
 
     <div class="banner" style="background-image: url('img/banner-realization.jpg');">

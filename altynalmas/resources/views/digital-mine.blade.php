@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Цифровой рудник
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Цифрлық кеніш
+  @endif
+  @if (app()->getLocale() == 'en')
+    Digital Mine
+  @endif
+@endsection
+
 @section('main-content')
     <div class="digital-mine" data-namespace="digital-mine" data-template="digital-mine">
         <div class="mainTopSlider mainDepositsSlider">

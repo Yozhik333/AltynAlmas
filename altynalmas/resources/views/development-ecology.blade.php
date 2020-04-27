@@ -1,5 +1,17 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Окружающая среда
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Қоршаған орта
+  @endif
+  @if (app()->getLocale() == 'en')
+    Environment
+  @endif
+@endsection
+
 @section('main-content')
 
     <div class="banner" style="background-image: url('/img/banner-environment.jpg');">
