@@ -42,7 +42,21 @@
                 <div class="advantages-buttons__title"> @lang('messages.Корпоративные документы')<br> @lang('messages.акционерного общества «АК Алтыналмас»') </div>
                 <div class="flex advantages-buttons__btn-wrap">
                     <p>@lang('messages.Кодекс противодействия коррупции')</p>
-                    <a href="" class="btn btn-detail"> @lang('messages.Подробнее') </a>
+                    <span id="doc1" class="btn btn-detail"> @lang('messages.Подробнее') </a>
+					<!--<script>
+						$("#doc1").on('click', function() {
+						  $.fancybox.open({
+							src  : '{{asset('img/corupcia.pdf')}}',
+							type : 'iframe',
+							opts : {
+							  afterShow : function( instance, current ) {
+								console.info( 'done!' );
+							  }
+							}
+						  });
+
+						});
+					</script>-->
                 </div>
                 <div class="flex advantages-buttons__btn-wrap">
                     <p>@lang('messages.Устав Акционерного общества')</p>

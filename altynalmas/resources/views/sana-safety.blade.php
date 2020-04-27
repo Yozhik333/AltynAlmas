@@ -2,7 +2,7 @@
 
 @section('main-content')
 
-    <div class="sana-safety">
+    <div class="sana-safety" data-namespace="sana-safety" data-template="sana-safety">
         <div class="mainTopSlider mainDepositsSlider">
         <!-- Swiper -->
         <div class="swiper-container">
@@ -35,9 +35,21 @@
             <div class="flex flex-wrap justify-content-between">
             <article>
                 <h2 class="underline_bottom-offset"> Sana Safety </h2>
-                <div class="description">
-                    {!! $sanaSafety[0]->text_ru !!}
-                </div>
+                @if (app()->getLocale() == 'ru')
+                    <div class="description">
+                        {!! $sanaSafety[0]->text_ru !!}
+                    </div>
+                @endif
+                @if (app()->getLocale() == 'kz')
+                    <div class="description">
+                        {!! $sanaSafety[0]->text_kz !!}
+                    </div>
+                @endif
+                @if (app()->getLocale() == 'en')
+                    <div class="description">
+                        {!! $sanaSafety[0]->text_en !!}
+                    </div>
+                @endif                
             </article>
             <div class="right-side">
                 <div class="advantages__banner-wrap-outside">

@@ -15,6 +15,7 @@
 
 use App\Http\Controllers\SiteController;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Session;
 
 Route::get('locale/{locale}', function ($locale) {
     Session::put('locale', $locale);
@@ -28,15 +29,16 @@ Route::get('/about', function() {
     return view('about');
 })->name('about');
 
-Route::get('/about-mission', function() {
+Route::get('/mission', function() {    
     return view('about-mission');
-})->name('about-mission');
+})->name('mission');
 
-Route::get('/main-deposits', function() {
+Route::get('/main-directions', function() {
     return view('main-deposits');
-})->name('main-deposits');
+})->name('main-directions');
 
 Route::get('/corporate', function() {
+    $onCorporate = 1;
     return view('corporate');
 })->name('corporate');
 
@@ -92,6 +94,8 @@ Route::get('/contacts', function() {
     return view('contacts');
 })->name('contacts');
 
+Route::get('/search/{search}', 'SiteController@search')->name('search');
+
 Route::get('/admin-page', function() {
     return view('admin-page');
 })->name('admin-page');
@@ -123,6 +127,7 @@ Route::resource('admin-news', 'NewsController');
 Route::resource('admin-years', 'YearController');
 Route::resource('admin-board-of-directors', 'BoardOfDirectorsController');
 Route::resource('admin-board', 'BoardController');
+Route::resource('admin-vice-presidents', 'VicePresidentController');
 Route::resource('admin-akbakay', 'AkbakayController');
 Route::resource('admin-aktogay', 'AktogayController');
 Route::resource('admin-digital-mine', 'DigitalMineController');

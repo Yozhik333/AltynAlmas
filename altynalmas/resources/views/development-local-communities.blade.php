@@ -25,28 +25,42 @@
                 @isset($developmentLocalCommunities)
                     @foreach ($developmentLocalCommunities as $localCommunity)
                         @if ($localCommunity->is_active == 1)
-                            <div class="tab">
-                                <div class="tab_point">
-                                    <div>{{ $localCommunity->title_ru }}</div>
-                                    <div class="tab_point-icon"><i class="icon-left"></i></div></i>
+                            @if (app()->getLocale() == 'ru')
+                                <div class="tab">
+                                    <div class="tab_point">
+                                        <div>{{ $localCommunity->title_ru }}</div>
+                                        <div class="tab_point-icon"><i class="icon-left"></i></div></i>
+                                    </div>
+                                    <div class="tab_item">
+                                        {!! $localCommunity->text_ru !!}
+                                    </div>
                                 </div>
-                                <div class="tab_item">
-                                    {!! $localCommunity->text_ru !!}
+                            @endif
+                            @if (app()->getLocale() == 'kz')
+                                <div class="tab">
+                                    <div class="tab_point">
+                                        <div>{{ $localCommunity->title_kz }}</div>
+                                        <div class="tab_point-icon"><i class="icon-left"></i></div></i>
+                                    </div>
+                                    <div class="tab_item">
+                                        {!! $localCommunity->text_kz !!}
+                                    </div>
                                 </div>
-                            </div>
+                            @endif
+                            @if (app()->getLocale() == 'en')
+                                <div class="tab">
+                                    <div class="tab_point">
+                                        <div>{{ $localCommunity->title_en }}</div>
+                                        <div class="tab_point-icon"><i class="icon-left"></i></div></i>
+                                    </div>
+                                    <div class="tab_item">
+                                        {!! $localCommunity->text_en !!}
+                                    </div>
+                                </div>
+                            @endif
                         @endif
                     @endforeach
                 @endisset
-                {{-- <div class="tab">
-                    <div class="tab_point">
-                        <div>@lang('messages.Социальная поддержка Актогайского района Карагандинской области')</div>
-                        <div class="tab_point-icon"><i class="icon-left"></i></div>
-                        </div>
-                        <div class="tab_item">
-                        <p>@lang('messages.По проекту «Актогай» социальная поддержка оказывается станции Акжайдак Ортадересинского сельского округа Актогайского района Карагандинской области.')<p>
-                        <p>@lang('messages.В рамках сотрудничества с местными исполнительными органами, компанией реализован ряд социальных мероприятий. Наиболее важными из них являются проведение противопаводковых работ на автомобильной дороге Балхаш-Саяк, благоустройство территории и установка детских площадок, ежегодное приобретение новогодних подарков для детей жителей станции Акжайдак и поселка Ортадересин. Также компания подключила станцию Акжайдак к сети wi-fi, который позволяет жителям неограниченно пользоваться интернетом.') </p>
-                    </div>
-                </div> --}}
             </div>
         </div>
         </div>

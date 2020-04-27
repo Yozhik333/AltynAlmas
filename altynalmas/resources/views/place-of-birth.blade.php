@@ -2,7 +2,7 @@
 
 @section('main-content')
 
-    <div class="place-of-birth">
+    <div class="place-of-birth" data-namespace="place-of-birth" data-template="place-of-birth">
         <div class="mainTopSlider mainDepositsSlider">
         <!-- Swiper -->
         <div class="swiper-container">
@@ -15,7 +15,7 @@
             <div class="flex align-items-baseline">
             <div class="title-wrapper">
                 <div class="h1-wrap">
-                <h1> Месторождения </h1>
+                <h1> @lang('messages.Месторождения') </h1>
                 </div>
             </div>
             <div class="arrow-wrapper">
@@ -40,31 +40,31 @@
             </div>
             <div class="place-of-birth__info">
                 <div class="place-of-birth__item">
-                <div class="place-of-birth__info-title"> 3 месторождения Казахалтын </div>
+                <div class="place-of-birth__info-title"> @lang('messages.3 месторождения Казахалтын') </div>
                 <div class="place-of-birth__info-description">
-                    <div> Аксу </div>
-                    <div> Бестобе </div>
-                    <div> Жолымбет </div>
+                    <div> @lang('messages.Аксу') </div>
+                    <div> @lang('messages.Бестобе') </div>
+                    <div> @lang('messages.Жолымбет') </div>
                 </div>
                 </div>
                 <div class="place-of-birth__item">
-                <div class="place-of-birth__info-title"> 15 месторождений АО «АК Алтыналмас» </div>
+                <div class="place-of-birth__info-title"> @lang('messages.15 месторождений АО «АК Алтыналмас»') </div>
                 <div class="place-of-birth__info-description">
-                    <div>Бактай</div>
-                    <div>Карьерное</div>
-                    <div>Пустынное</div>
-                    <div>Долинное</div>
-                    <div>Светинское</div>
-                    <div>Акбакай</div>
-                    <div>Кенжем</div>
-                    <div>Карьерное</div>
-                    <div>Бескемпир</div>
-                    <div>Аксакал</div>
-                    <div>Мизек</div>
-                    <div>пл.Долинное</div>
-                    <div>Иткудук</div>
-                    <div>Ортасай</div>
-                    <div>Пустынно-Бактай</div>
+                    <div>@lang('messages.Бактай')</div>
+                    <div>@lang('messages.Карьерное')</div>
+                    <div>@lang('messages.Пустынное')</div>
+                    <div>@lang('messages.Долинное')</div>
+                    <div>@lang('messages.Светинское')</div>
+                    <div>@lang('messages.Акбакай')</div>
+                    <div>@lang('messages.Кенжем')</div>
+                    <div>@lang('messages.Карьерное')</div>
+                    <div>@lang('messages.Бескемпир')</div>
+                    <div>@lang('messages.Аксакал')</div>
+                    <div>@lang('messages.Мизек')</div>
+                    <div>@lang('messages.пл.Долинное')</div>
+                    <div>@lang('messages.Иткудук')</div>
+                    <div>@lang('messages.Ортасай')</div>
+                    <div>@lang('messages.Пустынно-Бактай')</div>
                 </div>
                 </div>
             </div>

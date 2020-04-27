@@ -2,7 +2,7 @@
 
 @section('main-content')
 
-    <div class="photo-gallery">
+    <div class="photo-gallery" data-namespace="photo-gallery" data-template="photo-gallery">
         <div class="mainTopSlider mainDepositsSlider">
             <!-- Swiper -->
             <div class="swiper-container">
@@ -43,24 +43,67 @@
                             @if (count($category->galleries) == 0)
                                 @continue
                             @endif
-                            <h2 class="underline_bottom-offset"> {{$category->name_ru}} </h2>
-                            <div class="tab-pane fade show active flex-tab flex-wrap" id="{{$category->name_ru}}" role="tabpanel" aria-labelledby="home-tab">                        
-                                @foreach ($category->galleries as $gallery)
-                                    <div class="photo-item-wrap">
-                                        <div class="photo-item">
-                                        <div class="img-wrap">
-                                            <a href="{{asset('storage/').'/'.$gallery->images}}" class="img ratio link-block" data-fancybox="gallery" data-caption="{{$category->name_ru}} - {{$gallery->text_ru}}">
-                                                <img src="{{asset('storage/').'/'.$gallery->images}}">
-                                            </a>
-                                        </div>
-                                        <div class="info">
-                                            <div class="date"> {{ date("d.m.Y", strtotime($gallery->date)) }}</div>
-                                            <div class="title"> {{$gallery->text_ru}} </div>
-                                        </div>
-                                        </div>
+                                @if (app()->getLocale() == 'ru')
+                                    <h2 class="underline_bottom-offset"> {{$category->name_ru}} </h2>
+                                    <div class="tab-pane fade show active flex-tab flex-wrap" id="{{$category->name_ru}}" role="tabpanel" aria-labelledby="home-tab">                        
+                                        @foreach ($category->galleries as $gallery)
+                                            <div class="photo-item-wrap">
+                                                <div class="photo-item">
+                                                <div class="img-wrap">
+                                                    <a href="{{asset('storage/').'/app/public/'.$gallery->images}}" class="img ratio link-block" data-fancybox="gallery" data-caption="{{$category->name_ru}} - {{$gallery->text_ru}}">
+                                                        <img src="{{asset('storage/').'/app/public/'.$gallery->images}}">
+                                                    </a>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="date"> {{ date("d.m.Y", strtotime($gallery->date)) }}</div>
+                                                    <div class="title"> {{$gallery->text_ru}} </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        @endforeach
                                     </div>
-                                @endforeach
-                            </div>
+                                @endif
+                                @if (app()->getLocale() == 'kz')
+                                    <h2 class="underline_bottom-offset"> {{$category->name_kz}} </h2>
+                                    <div class="tab-pane fade show active flex-tab flex-wrap" id="{{$category->name_kz}}" role="tabpanel" aria-labelledby="home-tab">                        
+                                        @foreach ($category->galleries as $gallery)
+                                            <div class="photo-item-wrap">
+                                                <div class="photo-item">
+                                                <div class="img-wrap">
+                                                    <a href="{{asset('storage/').'/app/public/'.$gallery->images}}" class="img ratio link-block" data-fancybox="gallery" data-caption="{{$category->name_kz}} - {{$gallery->text_kz}}">
+                                                        <img src="{{asset('storage/').'/app/public/'.$gallery->images}}">
+                                                    </a>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="date"> {{ date("d.m.Y", strtotime($gallery->date)) }}</div>
+                                                    <div class="title"> {{$gallery->text_kz}} </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        @endforeach
+                                    </div>
+
+                                @endif
+                                @if (app()->getLocale() == 'en')
+                                    <h2 class="underline_bottom-offset"> {{$category->name_en}} </h2>
+                                    <div class="tab-pane fade show active flex-tab flex-wrap" id="{{$category->name_en}}" role="tabpanel" aria-labelledby="home-tab">                        
+                                        @foreach ($category->galleries as $gallery)
+                                            <div class="photo-item-wrap">
+                                                <div class="photo-item">
+                                                <div class="img-wrap">
+                                                    <a href="{{asset('storage/').'/app/public/'.$gallery->images}}" class="img ratio link-block" data-fancybox="gallery" data-caption="{{$category->name_en}} - {{$gallery->text_en}}">
+                                                        <img src="{{asset('storage/').'/app/public/'.$gallery->images}}">
+                                                    </a>
+                                                </div>
+                                                <div class="info">
+                                                    <div class="date"> {{ date("d.m.Y", strtotime($gallery->date)) }}</div>
+                                                    <div class="title"> {{$gallery->text_en}} </div>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        @endforeach
+                                    </div>
+                                @endif
                         @endforeach
                     @endif                
                 </div>

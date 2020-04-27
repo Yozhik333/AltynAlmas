@@ -2,7 +2,8 @@
 
 @section('main-content')
 
-    <div class="history">
+   <div data-namespace="history" data-template="history">
+<div class="history">
         <div class="mainTopSlider">
         <!-- Swiper -->
         <div class="swiper-container">
@@ -45,7 +46,15 @@
                                 <div class="historySlider__slide-title">
                                     <div class="historySlider__slide-title-underline"> {{ $year->year }} @lang('messages.год') </div>
                                 </div>
-                                <div class="historySlider__slide-description"> {{ $year->text_ru }} </div>
+                                @if (app()->getLocale() == 'ru')
+                                    <div class="historySlider__slide-description"> {{ $year->text_ru }} </div>
+                                @endif
+                                @if (app()->getLocale() == 'kz')
+                                    <div class="historySlider__slide-description"> {{ $year->text_kz }} </div>
+                                @endif
+                                @if (app()->getLocale() == 'en')
+                                    <div class="historySlider__slide-description"> {{ $year->text_en }} </div>
+                                @endif                                
                                 </div>
                             </div>
                         @endif
@@ -76,4 +85,5 @@
         </div>
     </div>
 
+</div>
 @endsection

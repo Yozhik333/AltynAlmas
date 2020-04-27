@@ -1,7 +1,7 @@
 @extends('header-footer.header-footer')
 
 @section('main-content')
-    <div class="digital-mine">
+    <div class="digital-mine" data-namespace="digital-mine" data-template="digital-mine">
         <div class="mainTopSlider mainDepositsSlider">
         <!-- Swiper -->
         <div class="swiper-container">
@@ -35,7 +35,15 @@
             <article>
                 <h2 class="underline_bottom-offset"> @lang('messages.Программа «Цифровой рудник»') </h2>
                 <div class="description">
-                    {!! $digitalMine[0]->text_ru !!}
+                    @if (app()->getLocale() == 'ru')
+                        {!! $digitalMine[0]->text_ru !!}
+                    @endif
+                    @if (app()->getLocale() == 'kz')
+                        {!! $digitalMine[0]->text_kz !!}
+                    @endif
+                    @if (app()->getLocale() == 'en')
+                        {!! $digitalMine[0]->text_en !!}
+                    @endif
                 </div>
             </article>
             <div class="flex video-block">

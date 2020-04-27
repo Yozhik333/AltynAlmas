@@ -7,14 +7,14 @@
         <div class="flex align-items-baseline">
         <div class="title-wrapper">
             <div class="h1-wrap">
-            <h1 class="small"> Новости </h1>
+            <h1 class="small"> @lang('messages.Новости') </h1>
             </div>
         </div>
         </div>
     </div>
     </div>
     <div class="container-fluid">
-    <div class="mailto"> Напишите нам: <a href="mailto:info@altynalmas.kz">info@altynalmas.kz</a>
+    <div class="mailto"> @lang('messages.Напишите нам:') <a href="mailto:info@altynalmas.kz">info@altynalmas.kz</a>
     </div>
     <div class="flex flex-wrap justify-content-between">
 
@@ -25,69 +25,22 @@
                         <img src="/storage/{{$eachNews->img_url}}">
                     </div>
                     <p class="investors_news_data">{{$eachNews->date}}</p>
-                    <p class="investors_news_text">{{ mb_substr($eachNews->text_ru, 0, 150)}}</p>
-                    <a href="{{ route('openNews', $eachNews->id ) }}" class="btn btn-detail">Подробнее</a>
+                    @if (app()->getLocale() == 'ru')
+                        <p class="investors_news_text">{{ mb_substr($eachNews->text_ru, 0, 150)}}</p>
+                    @endif
+                    @if (app()->getLocale() == 'kz')
+                        <p class="investors_news_text">{{ mb_substr($eachNews->text_kz, 0, 150)}}</p>
+                    @endif
+                    @if (app()->getLocale() == 'en')
+                        <p class="investors_news_text">{{ mb_substr($eachNews->text_en, 0, 150)}}</p>
+                    @endif
+                    <a href="{{ route('openNews', $eachNews->id ) }}" class="btn btn-detail">@lang('messages.Подробнее')</a>
                 </div>
 
             @endif
 
         @endforeach
-        {{-- <div class="investors_news">
-        <div class="investors_news-img">
-            <img src="{{ asset('img/investors-item.jpg') }}">
-        </div>
-        <p class="investors_news_data">03.12.2019</p>
-        <p class="investors_news_text">ВТБ профинансировал группу компаний золотодобывающего сектора Казахстана на сумму до 470,0 млн евро</p>
-        <a href="investors-news.html" class="btn btn-detail">Подробнее</a>
-        </div>
-        <div class="investors_news">
-        <div class="investors_news-img">
-            <img src="{{ asset('img/investors-item.jpg') }}">
-        </div>
-        <p class="investors_news_data">03.12.2019</p>
-        <p class="investors_news_text">ВТБ профинансировал группу компаний золотодобывающего сектора Казахстана на сумму до 470,0 млн евро</p>
-        <a href="investors-news.html" class="btn btn-detail">Подробнее</a>
-        </div>
-        <div class="investors_news">
-        <div class="investors_news-img">
-            <img src="{{ asset('img/investors-item.jpg') }}">
-        </div>
-        <p class="investors_news_data">03.12.2019</p>
-        <p class="investors_news_text">ВТБ профинансировал группу компаний золотодобывающего сектора Казахстана на сумму до 470,0 млн евро</p>
-        <a href="investors-news.html" class="btn btn-detail">Подробнее</a>
-        </div>
-        <div class="investors_news">
-        <div class="investors_news-img">
-            <img src="{{ asset('img/investors-item.jpg') }}">
-        </div>
-        <p class="investors_news_data">03.12.2019</p>
-        <p class="investors_news_text">ВТБ профинансировал группу компаний золотодобывающего сектора Казахстана на сумму до 470,0 млн евро</p>
-        <a href="investors-news.html" class="btn btn-detail">Подробнее</a>
-        </div>
-        <div class="investors_news">
-        <div class="investors_news-img">
-            <img src="{{ asset('img/investors-item.jpg') }}">
-        </div>
-        <p class="investors_news_data">03.12.2019</p>
-        <p class="investors_news_text">ВТБ профинансировал группу компаний золотодобывающего сектора Казахстана на сумму до 470,0 млн евро</p>
-        <a href="investors-news.html" class="btn btn-detail">Подробнее</a>
-        </div>
-        <div class="investors_news">
-        <div class="investors_news-img">
-            <img src="{{ asset('img/investors-item.jpg') }}">
-        </div>
-        <p class="investors_news_data">03.12.2019</p>
-        <p class="investors_news_text">ВТБ профинансировал группу компаний золотодобывающего сектора Казахстана на сумму до 470,0 млн евро</p>
-        <a href="investors-news.html" class="btn btn-detail">Подробнее</a>
-        </div>
-        <div class="investors_news">
-        <div class="investors_news-img">
-            <img src="{{ asset('img/investors-item.jpg') }}">
-        </div>
-        <p class="investors_news_data">03.12.2019</p>
-        <p class="investors_news_text">ВТБ профинансировал группу компаний золотодобывающего сектора Казахстана на сумму до 470,0 млн евро</p>
-        <a href="investors-news.html" class="btn btn-detail">Подробнее</a>
-        </div> --}}
+        
     </div>
     </div>
     <!-- /.container-fluid -->

@@ -2,7 +2,7 @@
 
 @section('main-content')
 
-    <div class="studying-programs">
+    <div class="studying-programs" data-namespace="studying-programs" data-template="studying-programs">
         <div class="mainTopSlider mainDepositsSlider">
         <!-- Swiper -->
         <div class="swiper-container">
@@ -15,7 +15,7 @@
             <div class="flex align-items-baseline">
             <div class="title-wrapper">
                 <div class="h1-wrap">
-                <h1> Программы обучения </h1>
+                <h1> @lang('messages.Программы обучения') </h1>
                 </div>
             </div>
             <div class="arrow-wrapper">
@@ -34,25 +34,61 @@
         <div class="studying-programs-content">
             <div class="flex flex-wrap justify-content-between studying-programs__items">
             <div class="studying-programs__item">
-                <div class="title"> Обязательное обучение </div>
+                <div class="title"> @lang('messages.Обязательное обучение') </div>
                 <div class="img" style="background-image: url('/storage/{{$education[0]->compulsory_ed_img}}')"></div>
-                <div class="description">
-                    {!! $education[0]->compulsory_ed_text_ru !!}
-                </div>
+                    @if (app()->getLocale() == 'ru')
+                        <div class="description">
+                            {!! $education[0]->compulsory_ed_text_ru !!}
+                        </div>         
+                    @endif
+                    @if (app()->getLocale() == 'kz')
+                        <div class="description">
+                            {!! $education[0]->compulsory_ed_text_kz !!}
+                        </div>                 
+                    @endif
+                    @if (app()->getLocale() == 'en')
+                        <div class="description">
+                            {!! $education[0]->compulsory_ed_text_en !!}
+                        </div>               
+                    @endif
             </div>
             <div class="studying-programs__item">
-                <div class="title"> Повышение квалификации </div>
+                <div class="title"> @lang('messages.Повышение квалификации') </div>
                 <div class="img" style="background-image: url('/storage/{{$education[0]->advanced_ed_img}}')"></div>
-                <div class="description">
-                    {!! $education[0]->advanced_ed_text_ru !!}
-                </div>
+                    @if (app()->getLocale() == 'ru')
+                        <div class="description">
+                            {!! $education[0]->advanced_ed_text_ru !!}
+                        </div>
+                    @endif
+                    @if (app()->getLocale() == 'kz')
+                        <div class="description">
+                            {!! $education[0]->advanced_ed_text_kz !!}
+                        </div>
+                    @endif
+                    @if (app()->getLocale() == 'en')
+                        <div class="description">
+                            {!! $education[0]->advanced_ed_text_en !!}
+                        </div>
+                    @endif
             </div>
             <div class="studying-programs__item">
-                <div class="title"> Обязательное обучение </div>
+                <div class="title"> @lang('messages.Обязательное обучение') </div>
                 <div class="img" style="background-image: url('/storage/{{$education[0]->special_ed_img}}')"></div>
-                <div class="description">
-                    {!! $education[0]->special_ed_text_ru !!}
-                </div>
+                    @if (app()->getLocale() == 'ru')
+                        <div class="description">
+                            {!! $education[0]->special_ed_text_ru !!}
+                        </div>
+                    @endif
+                    @if (app()->getLocale() == 'kz')
+                        <div class="description">
+                            {!! $education[0]->special_ed_text_kz !!}
+                        </div>
+                    @endif
+                    @if (app()->getLocale() == 'en')
+                        <div class="description">
+                            {!! $education[0]->special_ed_text_en !!}
+                        </div>
+                    @endif
             </div>
             </div>
         </div>

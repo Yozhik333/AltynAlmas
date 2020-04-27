@@ -62,6 +62,7 @@
                 <a class="admin-menu_item_dropdown_link" href="{{ route('admin-years.index') }}">История</a>
                 <a class="admin-menu_item_dropdown_link" href="{{ route('admin-board-of-directors.index') }}">Руководство компании. Совет директоров</a>
                 <a class="admin-menu_item_dropdown_link" href="{{ route('admin-board.index') }}">Руководство компании. Правление</a>
+                <a class="admin-menu_item_dropdown_link" href="{{ route('admin-vice-presidents.index') }}">Руководство компании. Вицепрезиденты</a>
             </div>
         </div>
         <div class="admin-menu_item">

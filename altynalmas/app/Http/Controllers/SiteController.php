@@ -6,6 +6,7 @@ use App\Akbakay;
 use App\Aktogay;
 use App\Board;
 use App\BoardOfDirectors;
+use App\VicePresident;
 use App\Coach;
 use App\DigitalMine;
 use App\Ecology;
@@ -24,6 +25,8 @@ use App\Category;
 use App\Gallery;
 
 use Illuminate\Http\Request;
+
+use Config;
 
 class SiteController extends Controller
 {
@@ -56,7 +59,8 @@ class SiteController extends Controller
     {
         $board = Board::all()->reverse();
         $boardOfDirectors = BoardOfDirectors::all()->reverse();
-        return view('governance', compact('board', 'boardOfDirectors'));
+        $presidents = VicePresident::all()->reverse();
+        return view('governance', compact('board', 'boardOfDirectors', 'presidents'));
     }
 
     public function akbakay()
@@ -153,5 +157,22 @@ class SiteController extends Controller
     {
         $glossary = Glossary::all();
         return view('glossary', compact('glossary'));
+    }
+	
+	public function search($search)
+    {
+        $lang = Config::get('app.locale');
+        if ($lang == 'en') {
+            $news = News::select('title_en as name','id')->where('title_en', 'LIKE', "%$search%")->get();
+            // $years = Year::select()->where('name', 'LIKE', "%$search%")->get();
+        }
+        else if ($lang == 'kz') {
+            $news = News::select('title_kz as name', 'id')->where('title_kz', 'LIKE', "%$search%")->get();
+        }
+        else {
+            $news = News::select('title_ru as name','id')->where('title_ru', 'LIKE', "%$search%")->get();
+        }
+        
+        return response()->json($news, 200);        
     }
 }

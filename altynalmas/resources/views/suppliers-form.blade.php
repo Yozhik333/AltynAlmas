@@ -7,7 +7,7 @@
         <div class="flex align-items-baseline">
             <div class="title-wrapper">
             <div class="h1-wrap">
-                <h1 class="small"> Стать поставщиком </h1>
+                <h1 class="small"> @lang('messages.Стать поставщиком') </h1>
             </div>
             </div>
         </div>
@@ -18,35 +18,43 @@
         <div class="flex flex-wrap">
             <div class="to-suppliers">
             <div class="article-title-wrap">
-                <div class="article-title">Сотрудничество с поставщиками<span class="article-title-after"></span></div>
+                <div class="article-title">@lang('messages.Сотрудничество с поставщиками')<span class="article-title-after"></span></div>
             </div>
             <div class="to-suppliers__description">
-                <p>АО «АК Алтыналмас» при взаимодействии с поставщиками стремится развивать долгосрочные и взаимовыгодные отношения.</p>
-                <p>При выборе поставщиков товаров/работ/услуг основными критериями являются: </p>
+                <p>@lang('messages.АО «АК Алтыналмас» при взаимодействии с поставщиками стремится развивать долгосрочные и взаимовыгодные отношения.')</p>
+                <p>@lang('messages.При выборе поставщиков товаров/работ/услуг основными критериями являются:') </p>
                 <ul>
-                <li>соотношение цена/качество; </li>
-                <li>сроки поставки;</li>
-                <li>репутация; </li>
-                <li>наличие производственных мощностей;</li>
-                <li>опыт работы с добывающими компаниями.</li>
+                <li>@lang('messages.соотношение цена/качество;') </li>
+                <li>@lang('messages.сроки поставки;') </li>
+                <li>@lang('messages.репутация;') </li>
+                <li>@lang('messages.наличие производственных мощностей;') </li>
+                <li>@lang('messages.опыт работы с добывающими компаниями.') </li>
                 </ul>
             </div>
             </div>
             <div class="suppliers__form">
-            <div class="suppliers__form-headline"> Регистрационная форма </div>
+            <div class="suppliers__form-headline"> @lang('messages.Регистрационная форма') </div>
             <div class="suppliers__form-body">
                 <div class="suppliers__block">
-                <div class="suppliers__block-head"> 1 шаг </div>
-                <div class="suppliers__block-body"> Для регистрации в базе поставщиков компании необходимо скачать и заполнить следующую форму: </div>
+                <div class="suppliers__block-head"> @lang('messages.1 шаг') </div>
+                <div class="suppliers__block-body"> @lang('messages.Для регистрации в базе поставщиков компании необходимо скачать и заполнить следующую форму:') </div>
                 <div class="suppliers__block-footer">
-                    <a class="btn btn-detail" href="/storage/{{$suppliersForm[0]->supplier_form_ru}}">Регистрационная анкета</a>
+                    @if (app()->getLocale() == 'ru')
+                        <a class="btn btn-detail" href="/storage/{{$suppliersForm[0]->supplier_form_ru}}">Регистрационная анкета</a>
+                    @endif
+                    @if (app()->getLocale() == 'kz')
+                        <a class="btn btn-detail" href="/storage/{{$suppliersForm[0]->supplier_form_kz}}">Тіркеу сауалнамасы</a>
+                    @endif
+                    @if (app()->getLocale() == 'en')
+                        <a class="btn btn-detail" href="/storage/{{$suppliersForm[0]->supplier_form_en}}">Registration form</a>
+                    @endif
                 </div>
                 </div>
                 <div class="suppliers__block">
-                <div class="suppliers__block-head"> 2 шаг </div>
-                <div class="suppliers__block-body"> Заполненную форму необходимо отправить с пакетом документов на электронный адрес: <a href="mailto:regform@altynalmas.kz">regform@altynalmas.kz</a>
+                <div class="suppliers__block-head"> @lang('messages.2 шаг') </div>
+                <div class="suppliers__block-body"> @lang('messages.Заполненную форму необходимо отправить с пакетом документов на электронный адрес:') <a href="mailto:regform@altynalmas.kz">regform@altynalmas.kz</a>
                 </div>
-                <div class="suppliers__block-footer"> *С коммерческим предложением обращайтесь на: <a href="mailto:tender@altynalmas.kz">regform@altynalmas.kz</a>
+                <div class="suppliers__block-footer"> @lang('messages.*С коммерческим предложением обращайтесь на:') <a href="mailto:tender@altynalmas.kz">regform@altynalmas.kz</a>
                 </div>
                 </div>
             </div>

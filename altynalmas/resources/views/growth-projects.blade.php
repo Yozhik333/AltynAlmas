@@ -2,7 +2,7 @@
 
 @section('main-content')
 
-    <div class="growth-projects">
+    <div class="growth-projects" data-namespace="growth-projects" data-template="growth-projects">
         <div class="mainTopSlider mainDepositsSlider">
         <!-- Swiper -->
         <div class="swiper-container">
@@ -46,7 +46,7 @@
                 <div class="growth-projects-item__description">@lang('messages.Расположен в Акмолинской области, 200 км к северу от города Нур-Султан и в 20 км от города Степногорск, работает с 1930-х годов.') </div>
                 <div class="blue-fon growth-projects-item__numbers">
                 <div class="flex-wrap flex align-items-center growth-projects-item__bottom-offset">
-                    <div class="number">@lang('messages.1,76 г/т') 1,76 г/т </div>
+                    <div class="number">@lang('messages.1,76 г/т')</div>
                     <div class="number-description">@lang('messages.среднее содержание золота') </div>
                 </div>
                 <div class="flex-wrap flex align-items-center growth-projects-item__bottom-offset">
@@ -84,7 +84,7 @@
                 </div>
                 <div class="growth-projects-item__description">@lang('messages.Геологоразведочные работы проводятся на флангах месторождения в пределах горного отвода.') </div>
                 <div class="growth-projects-item__subtitle">
-                <div> @lang('messages.Способ добычи:') </div> @lang('messages.подземный.')
+                <div> @lang('messages.Способ добычи:') </div> @lang('messages.комбинированный (открытый и подземный).')
                 </div>
                 <div class="growth-projects-item__description"> @lang('messages.Подземная добыча ведется до горизонта 790 метров от дневной поверхности.') </div>
             </div>
@@ -105,7 +105,7 @@
                     <div class="number-description"> @lang('messages.извлечение золота за 2019 год') </div>
                 </div>
                 </div>
-                {{-- <div class="growth-projects-item__description"> @lang('messages.Геологоразведочные работы проводятся на флангах месторождения в пределах горного отвода.') </div> --}}
+                <div class="growth-projects-item__description"> @lang('messages.Геологоразведочные работы проводятся на флангах месторождения в пределах горного отвода.') </div>
                 <div class="growth-projects-item__subtitle">
                 <div>@lang('messages.Способ добычи:') </div>@lang('messages.комбинированный (открытый и подземный).')
                 </div>

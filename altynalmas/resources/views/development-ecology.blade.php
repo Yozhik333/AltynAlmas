@@ -24,31 +24,82 @@
             <div class="tabs_head">
                 @isset($developmentEcology)
 
-                    @if ($developmentEcology[0])
+                    @if (count($developmentEcology) > 0)
                         @if ($developmentEcology[0]->is_active == 1)
-                            <div class="tab">
-                                <div class="tab_point">
-                                <div>{{$developmentEcology[0]->title_ru}}</div>
-                                <div class="tab_point-icon"><i class="icon-left"></i></div></i>
+                            @if (app()->getLocale() == 'ru')
+                                <div class="tab">
+                                    <div class="tab_point">
+                                    <div>{{$developmentEcology[0]->title_ru}}</div>
+                                    <div class="tab_point-icon"><i class="icon-left"></i></div></i>
+                                    </div>
+                                    <div class="tab_item">
+                                        {!! $developmentEcology[0]->text_ru !!}
+                                    </div>
                                 </div>
-                                <div class="tab_item">
-                                    {!! $developmentEcology[0]->text_ru !!}
-                                </div>
-                            </div>
+                            @endif
+                            @if (app()->getLocale() == 'kz')
+                                <div class="tab">
+                                    <div class="tab_point">
+                                    <div>{{$developmentEcology[0]->title_kz}}</div>
+                                    <div class="tab_point-icon"><i class="icon-left"></i></div></i>
+                                    </div>
+                                    <div class="tab_item">
+                                        {!! $developmentEcology[0]->text_kz !!}
+                                    </div>
+                                </div>                            
+                            @endif
+                            @if (app()->getLocale() == 'en')
+                                <div class="tab">
+                                    <div class="tab_point">
+                                    <div>{{$developmentEcology[0]->title_en}}</div>
+                                    <div class="tab_point-icon"><i class="icon-left"></i></div></i>
+                                    </div>
+                                    <div class="tab_item">
+                                        {!! $developmentEcology[0]->text_en !!}
+                                    </div>
+                                </div>                            
+                            @endif                            
                         @endif
                     @endif
 
-                    @if ($developmentEcology[1])
+                    @if (count($developmentEcology) > 1)
                         @if ($developmentEcology[1]->is_active == 1)
-                            <div class="tab">
-                                <div class="tab_point">
-                                <div>{{$developmentEcology[1]->title_ru}}</div>
-                                <div class="tab_point-icon"><i class="icon-left"></i></div></i>
+                            @if (app()->getLocale() == 'ru')
+                                <div class="tab">
+                                    <div class="tab_point">
+                                    <div>{{$developmentEcology[1]->title_ru}}</div>
+                                    <div class="tab_point-icon"><i class="icon-left"></i></div></i>
+                                    </div>
+                                    <div class="tab_item">
+                                        {!! $developmentEcology[1]->text_ru !!}
+                                    </div>
                                 </div>
-                                <div class="tab_item">
-                                    {!! $developmentEcology[1]->text_ru !!}
+
+                            @endif
+                            @if (app()->getLocale() == 'kz')
+                                <div class="tab">
+                                    <div class="tab_point">
+                                    <div>{{$developmentEcology[1]->title_kz}}</div>
+                                    <div class="tab_point-icon"><i class="icon-left"></i></div></i>
+                                    </div>
+                                    <div class="tab_item">
+                                        {!! $developmentEcology[1]->text_kz !!}
+                                    </div>
                                 </div>
-                            </div>
+                            
+                            @endif
+                            @if (app()->getLocale() == 'en')
+                                <div class="tab">
+                                    <div class="tab_point">
+                                    <div>{{$developmentEcology[1]->title_en}}</div>
+                                    <div class="tab_point-icon"><i class="icon-left"></i></div></i>
+                                    </div>
+                                    <div class="tab_item">
+                                        {!! $developmentEcology[1]->text_en !!}
+                                    </div>
+                                </div>
+                            
+                            @endif                            
                         @endif
                     @endif
 
@@ -60,7 +111,7 @@
 
 
         @isset($developmentEcology)
-            @if (count($developmentEcology) >= 2)
+            @if (count($developmentEcology) > 2)
 
             <div class="environment__security">
                 <div class="article-title-wrap">
@@ -71,15 +122,39 @@
 
                 @for ($i = 2; $i < count($developmentEcology); $i++)
                     @if ($developmentEcology[$i]->is_active == 1)
-                        <div class="tab-security">
-                            <div class="tab_point">
-                                <div>{{ $developmentEcology[$i]->title_ru }}</div>
-                                <div class="tab_point-icon"><i class="icon-left"></i></div>
+                        @if (app()->getLocale() == 'ru')
+                            <div class="tab-security">
+                                <div class="tab_point">
+                                    <div>{{ $developmentEcology[$i]->title_ru }}</div>
+                                    <div class="tab_point-icon"><i class="icon-left"></i></div>
+                                </div>
+                                <div class="tab_item-security">
+                                    {!! $developmentEcology[$i]->text_ru !!}
+                                </div>
                             </div>
-                            <div class="tab_item-security">
-                                {!! $developmentEcology[$i]->text_ru !!}
+                        @endif
+                        @if (app()->getLocale() == 'kz')
+                            <div class="tab-security">
+                                <div class="tab_point">
+                                    <div>{{ $developmentEcology[$i]->title_ru }}</div>
+                                    <div class="tab_point-icon"><i class="icon-left"></i></div>
+                                </div>
+                                <div class="tab_item-security">
+                                    {!! $developmentEcology[$i]->text_ru !!}
+                                </div>
                             </div>
-                        </div>
+                        @endif
+                        @if (app()->getLocale() == 'en')
+                            <div class="tab-security">
+                                <div class="tab_point">
+                                    <div>{{ $developmentEcology[$i]->title_en }}</div>
+                                    <div class="tab_point-icon"><i class="icon-left"></i></div>
+                                </div>
+                                <div class="tab_item-security">
+                                    {!! $developmentEcology[$i]->text_en !!}
+                                </div>
+                            </div>
+                        @endif                        
                     @endif
                 @endfor
             @endif
