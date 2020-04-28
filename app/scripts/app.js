@@ -46,7 +46,7 @@ $(".tabs-wrapper-environment .tab-security").click(function () {
     $(".tab_item-security").hide().eq($(this).index()).fadeIn()
 }).eq(0).addClass("tabs-active");
 
-let desc = document.querySelector('.activity-detail__description')
+let desc = document.querySelector('.non-style')
 if(desc){
     let removeP = desc.querySelectorAll('p')
     let removeDiv = desc.querySelectorAll('div')

@@ -37,7 +37,7 @@
                                     <div>{{ $developmentSafety[0]->title_ru }}</div>
                                     <div class="tab_point-icon"><i class="icon-left"></i></div>
                                     </div>
-                                    <div class="tab_item">
+                                    <div class="tab_item non-style">
                                         {!! $developmentSafety[0]->text_ru !!}
                                     </div>
                                 </div>
@@ -48,7 +48,7 @@
                                     <div>{{ $developmentSafety[0]->title_en }}</div>
                                     <div class="tab_point-icon"><i class="icon-left"></i></div>
                                     </div>
-                                    <div class="tab_item">
+                                    <div class="tab_item non-style">
                                         {!! $developmentSafety[0]->text_en !!}
                                     </div>
                                 </div>
@@ -59,7 +59,7 @@
                                     <div>{{ $developmentSafety[0]->title_en }}</div>
                                     <div class="tab_point-icon"><i class="icon-left"></i></div>
                                     </div>
-                                    <div class="tab_item">
+                                    <div class="tab_item non-style">
                                         {!! $developmentSafety[0]->text_en !!}
                                     </div>
                                 </div>
@@ -79,7 +79,7 @@
                                         <div>{{ $developmentSafety[$i]->title_ru }}</div>
                                         <div class="tab_point-icon"><i class="icon-left"></i></div>
                                     </div>
-                                    <div class="tab_item">
+                                    <div class="tab_item non-style">
                                         {!! $developmentSafety[$i]->text_ru !!}
                                     </div>
                                 </div>
@@ -90,7 +90,7 @@
                                         <div>{{ $developmentSafety[$i]->title_kz }}</div>
                                         <div class="tab_point-icon"><i class="icon-left"></i></div>
                                     </div>
-                                    <div class="tab_item">
+                                    <div class="tab_item non-style">
                                         {!! $developmentSafety[$i]->text_kz !!}
                                     </div>
                                 </div>
@@ -101,7 +101,7 @@
                                         <div>{{ $developmentSafety[$i]->title_en }}</div>
                                         <div class="tab_point-icon"><i class="icon-left"></i></div>
                                     </div>
-                                    <div class="tab_item">
+                                    <div class="tab_item non-style">
                                         {!! $developmentSafety[$i]->text_en !!}
                                     </div>
                                 </div>

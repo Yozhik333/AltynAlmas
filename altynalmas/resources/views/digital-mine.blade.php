@@ -46,7 +46,7 @@
             <div class="flex bottom-offset">
             <article>
                 <h2 class="underline_bottom-offset"> @lang('messages.Программа «Цифровой рудник»') </h2>
-                <div class="description">
+                <div class="description non-style">
                     @if (app()->getLocale() == 'ru')
                         {!! $digitalMine[0]->text_ru !!}
                     @endif
