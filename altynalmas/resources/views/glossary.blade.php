@@ -1,5 +1,16 @@
 @extends('header-footer.header-footer')
 
+@section('title')
+  @if (app()->getLocale() == 'ru')
+    Глоссарий
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Сүзгі
+  @endif
+  @if (app()->getLocale() == 'en')
+    Glossary
+  @endif
+@endsection
 
 @section('main-content')
     <section class="glossary">
@@ -160,32 +171,50 @@
                                     @endforeach
                                 @endisset
                             </div>
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Е </div>
-                                @isset($glossary)
+                            @isset($glossary)
                                     @foreach ($glossary as $word)
                                         @if ($word->is_active == 1)
                                             @if ($word->letter_ru == 'Е' || $word->letter_ru == 'е' )
-                                            <div class="glossary__item-header-title"> {{$word->word_ru}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_ru}} </div>
+                                                <div class="glossary__item">
+                                                    <div class="glossary__item-header"> Е </div>
+                                                    @isset($glossary)
+                                                        @foreach ($glossary as $word)
+                                                            @if ($word->is_active == 1)
+                                                                @if ($word->letter_ru == 'Е' || $word->letter_ru == 'е' )
+                                                                <div class="glossary__item-header-title"> {{$word->word_ru}} </div>
+                                                                <div class="glossary__item-description"> {{$word->text_ru}} </div>
+                                                                @endif
+                                                            @endif
+                                                        @endforeach
+                                                    @endisset
+                                                </div>
                                             @endif
                                         @endif
+                                        @break
                                     @endforeach
                                 @endisset
-                            </div>
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Ё </div>
                                 @isset($glossary)
                                     @foreach ($glossary as $word)
                                         @if ($word->is_active == 1)
                                             @if ($word->letter_ru == 'Ё' || $word->letter_ru == 'ё' )
-                                            <div class="glossary__item-header-title"> {{$word->word_ru}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_ru}} </div>
+                                                <div class="glossary__item">
+                                                    <div class="glossary__item-header"> Ё </div>
+                                                    @isset($glossary)
+                                                        @foreach ($glossary as $word)
+                                                            @if ($word->is_active == 1)
+                                                                @if ($word->letter_ru == 'Ё' || $word->letter_ru == 'ё' )
+                                                                <div class="glossary__item-header-title"> {{$word->word_ru}} </div>
+                                                                <div class="glossary__item-description"> {{$word->text_ru}} </div>
+                                                                @endif
+                                                            @endif
+                                                        @endforeach
+                                                    @endisset
+                                                </div>
                                             @endif
                                         @endif
+                                        @break
                                     @endforeach
                                 @endisset
-                            </div>
                             <div class="glossary__item">
                                 <div class="glossary__item-header"> Ж </div>
                                 @isset($glossary)
@@ -229,19 +258,28 @@
                                     @endforeach
                                 @endisset
                             </div>
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Й </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_ru == 'Й' || $word->letter_ru == 'й' )
-                                            <div class="glossary__item-header-title"> {{$word->word_ru}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_ru}} </div>
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_ru == 'Й' || $word->letter_ru == 'й' )
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> Й </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_ru == 'Й' || $word->letter_ru == 'й' )
+                                                            <div class="glossary__item-header-title"> {{$word->word_ru}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_ru}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                             @endif
                                         @endif
+                                        @break
                                     @endforeach
                                 @endisset
-                            </div>
                             <div class="glossary__item">
                                 <div class="glossary__item-header"> К </div>
                                 @isset($glossary)
@@ -430,19 +468,28 @@
         
                     <div class="tab-pane fade" id="seven" role="tabpanel" aria-labelledby="profile-tab">
                         <div class="flex">
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Ч </div>
-                                @isset($glossary)
+                            @isset($glossary)
                                     @foreach ($glossary as $word)
                                         @if ($word->is_active == 1)
                                             @if ($word->letter_ru == 'Ч' || $word->letter_ru == 'ч' )
-                                            <div class="glossary__item-header-title"> {{$word->word_ru}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_ru}} </div>
+                                                <div class="glossary__item">
+                                                    <div class="glossary__item-header"> Ч </div>
+                                                    @isset($glossary)
+                                                        @foreach ($glossary as $word)
+                                                            @if ($word->is_active == 1)
+                                                                @if ($word->letter_ru == 'Ч' || $word->letter_ru == 'ч' )
+                                                                <div class="glossary__item-header-title"> {{$word->word_ru}} </div>
+                                                                <div class="glossary__item-description"> {{$word->text_ru}} </div>
+                                                                @endif
+                                                            @endif
+                                                        @endforeach
+                                                    @endisset
+                                                </div>
                                             @endif
                                         @endif
+                                        @break
                                     @endforeach
                                 @endisset
-                            </div>
                             <div class="glossary__item">
                                 <div class="glossary__item-header"> Ш </div>
                                 @isset($glossary)
@@ -456,37 +503,55 @@
                                     @endforeach
                                 @endisset
                             </div>
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Щ </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_ru == 'Щ' || $word->letter_ru == 'щ' )
-                                            <div class="glossary__item-header-title"> {{$word->word_ru}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_ru}} </div>
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_ru == 'Щ' || $word->letter_ru == 'щ' )
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> Щ </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_ru == 'Щ' || $word->letter_ru == 'щ' )
+                                                            <div class="glossary__item-header-title"> {{$word->word_ru}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_ru}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                             @endif
                                         @endif
+                                        @break
                                     @endforeach
                                 @endisset
-                            </div>
                         </div>
                     </div>
         
                     <div class="tab-pane fade" id="eight" role="tabpanel" aria-labelledby="profile-tab">
                         <div class="flex">
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Ы </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_ru == 'Ы' || $word->letter_ru == 'ы' )
-                                            <div class="glossary__item-header-title"> {{$word->word_ru}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_ru}} </div>
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_ru == 'Ы' || $word->letter_ru == 'ы' )
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> Ы </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_ru == 'Ы' || $word->letter_ru == 'ы' )
+                                                            <div class="glossary__item-header-title"> {{$word->word_ru}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_ru}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                             @endif
                                         @endif
+                                        @break
                                     @endforeach
                                 @endisset
-                            </div>
                             <div class="glossary__item">
                                 <div class="glossary__item-header"> Э </div>
                                 @isset($glossary)
@@ -500,32 +565,50 @@
                                     @endforeach
                                 @endisset
                             </div>
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Ю </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_ru == 'Ю' || $word->letter_ru == 'ю' )
-                                            <div class="glossary__item-header-title"> {{$word->word_ru}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_ru}} </div>
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_ru == 'Ю' || $word->letter_ru == 'ю' )
+                                                <div class="glossary__item">
+                                                    <div class="glossary__item-header"> Ю </div>
+                                                    @isset($glossary)
+                                                        @foreach ($glossary as $word)
+                                                            @if ($word->is_active == 1)
+                                                                @if ($word->letter_ru == 'Ю' || $word->letter_ru == 'ю' )
+                                                                <div class="glossary__item-header-title"> {{$word->word_ru}} </div>
+                                                                <div class="glossary__item-description"> {{$word->text_ru}} </div>
+                                                                @endif
+                                                            @endif
+                                                        @endforeach
+                                                    @endisset
+                                                </div>
                                             @endif
                                         @endif
+                                        @break
                                     @endforeach
                                 @endisset
-                            </div>
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Я </div>
                                 @isset($glossary)
                                     @foreach ($glossary as $word)
                                         @if ($word->is_active == 1)
                                             @if ($word->letter_ru == 'Я' || $word->letter_ru == 'я' )
-                                            <div class="glossary__item-header-title"> {{$word->word_ru}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_ru}} </div>
+                                                <div class="glossary__item">
+                                                    <div class="glossary__item-header"> Я </div>
+                                                    @isset($glossary)
+                                                        @foreach ($glossary as $word)
+                                                            @if ($word->is_active == 1)
+                                                                @if ($word->letter_ru == 'Я' || $word->letter_ru == 'я' )
+                                                                <div class="glossary__item-header-title"> {{$word->word_ru}} </div>
+                                                                <div class="glossary__item-description"> {{$word->text_ru}} </div>
+                                                                @endif
+                                                            @endif
+                                                        @endforeach
+                                                    @endisset
+                                                </div>
                                             @endif
                                         @endif
+                                        @break
                                     @endforeach
                                 @endisset
-                            </div>
                         </div>
                     </div>
                 </div>
@@ -552,19 +635,28 @@
                                     @endforeach
                                 @endisset
                             </div>
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Ә </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_kz == 'Ә' || $word->letter_kz == 'ә' )
-                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
-                                            @endif
+                            @isset($glossary)
+                            @foreach ($glossary as $word)
+                                @if ($word->is_active == 1)
+                                    @if ($word->letter_kz == 'Ә' || $word->letter_kz == 'ә' )
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> Ә </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_kz == 'Ә' || $word->letter_kz == 'ә' )
+                                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                         @endif
-                                    @endforeach
-                                @endisset
-                            </div>
+                                    @endif
+                                    @break
+                                @endforeach
+                            @endisset
                             <div class="glossary__item">
                                 <div class="glossary__item-header"> Б </div>
                                 @isset($glossary)
@@ -578,19 +670,28 @@
                                     @endforeach
                                 @endisset
                             </div>
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> В </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_kz == 'В' || $word->letter_kz == 'в' )
-                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
-                                            @endif
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_kz == 'В' || $word->letter_kz == 'в' )
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> В </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_kz == 'В' || $word->letter_kz == 'в' )
+                                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                         @endif
-                                    @endforeach
-                                @endisset
-                            </div>
+                                    @endif
+                                    @break
+                                @endforeach
+                            @endisset
                             <div class="glossary__item">
                                 <div class="glossary__item-header"> Г </div>
                                 @isset($glossary)
@@ -604,19 +705,28 @@
                                     @endforeach
                                 @endisset
                             </div>
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Ғ </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_kz == 'Ғ' || $word->letter_kz == 'ғ' )
-                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
-                                            @endif
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_kz == 'Ғ' || $word->letter_kz == 'ғ' )
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> Ғ </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_kz == 'Ғ' || $word->letter_kz == 'ғ' )
+                                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                         @endif
-                                    @endforeach
-                                @endisset
-                            </div>
+                                    @endif
+                                    @break
+                                @endforeach
+                            @endisset
                         </div>
                     </div>
                     <div class="tab-pane fade" id="two" role="tabpanel" aria-labelledby="profile-tab">
@@ -634,19 +744,28 @@
                                     @endforeach
                                 @endisset
                             </div>
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Е </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_kz == 'Е' || $word->letter_kz == 'е' || $word->letter_kz == 'Ё' || $word->letter_kz == 'ё'  )
-                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
-                                            @endif
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_kz == 'Е' || $word->letter_kz == 'е' || $word->letter_kz == 'Ё' || $word->letter_kz == 'ё'  )
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> Е </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_kz == 'Е' || $word->letter_kz == 'е' || $word->letter_kz == 'Ё' || $word->letter_kz == 'ё'  )
+                                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                         @endif
-                                    @endforeach
-                                @endisset
-                            </div>
+                                    @endif
+                                    @break
+                                @endforeach
+                            @endisset
                             
                             <div class="glossary__item">
                                 <div class="glossary__item-header"> Ж </div>
@@ -661,19 +780,28 @@
                                     @endforeach
                                 @endisset
                             </div>
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> З </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_kz == 'З' || $word->letter_kz == 'з' )
-                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
-                                            @endif
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_kz == 'З' || $word->letter_kz == 'з' )
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> З </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_kz == 'З' || $word->letter_kz == 'з' )
+                                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                         @endif
-                                    @endforeach
-                                @endisset
-                            </div>
+                                    @endif
+                                    @break
+                                @endforeach
+                            @endisset
                             <div class="glossary__item">
                                 <div class="glossary__item-header"> И </div>
                                 @isset($glossary)
@@ -691,19 +819,28 @@
                     </div>
                     <div class="tab-pane fade" id="three" role="tabpanel" aria-labelledby="profile-tab">
                         <div class="flex">
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Й </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_kz == 'Й' || $word->letter_kz == 'й' )
-                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
-                                            @endif
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_kz == 'Й' || $word->letter_kz == 'й' )
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> Й </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_kz == 'Й' || $word->letter_kz == 'й' )
+                                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                         @endif
-                                    @endforeach
-                                @endisset
-                            </div>
+                                    @endif
+                                    @break
+                                @endforeach
+                            @endisset
                             <div class="glossary__item">
                                 <div class="glossary__item-header"> К </div>
                                 @isset($glossary)
@@ -730,19 +867,28 @@
                                     @endforeach
                                 @endisset
                             </div>
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Л </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_kz == 'Л' || $word->letter_kz == 'л' )
-                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
-                                            @endif
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_kz == 'Л' || $word->letter_kz == 'л' )
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> Л </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_kz == 'Л' || $word->letter_kz == 'л' )
+                                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                         @endif
-                                    @endforeach
-                                @endisset
-                            </div>
+                                    @endif
+                                    @break
+                                @endforeach
+                            @endisset
                             <div class="glossary__item">
                                 <div class="glossary__item-header"> М </div>
                                 @isset($glossary)
@@ -759,33 +905,51 @@
                         </div>
                     </div>
                     <div class="tab-pane fade" id="four" role="tabpanel" aria-labelledby="profile-tab">
-                        <div class="flex">                            
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Н </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_kz == 'Н' || $word->letter_kz == 'н' )
-                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
-                                            @endif
+                        <div class="flex">
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_kz == 'Н' || $word->letter_kz == 'н' )                           
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> Н </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_kz == 'Н' || $word->letter_kz == 'н' )
+                                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                         @endif
-                                    @endforeach
-                                @endisset
-                            </div>
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Ң </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_kz == 'Ң' || $word->letter_kz == 'ң' )
-                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
-                                            @endif
+                                    @endif
+                                    @break
+                                @endforeach
+                            @endisset
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_kz == 'Ң' || $word->letter_kz == 'ң' )
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> Ң </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_kz == 'Ң' || $word->letter_kz == 'ң' )
+                                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                         @endif
-                                    @endforeach
-                                @endisset
-                            </div>
+                                    @endif
+                                    @break
+                                @endforeach
+                            @endisset
                             <div class="glossary__item">
                                 <div class="glossary__item-header"> О </div>
                                 @isset($glossary)
@@ -869,19 +1033,28 @@
                                     @endforeach
                                 @endisset
                             </div>
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> У </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_kz == 'У' || $word->letter_kz == 'у' )
-                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
-                                            @endif
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_kz == 'У' || $word->letter_kz == 'у' )
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> У </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_kz == 'У' || $word->letter_kz == 'у' )
+                                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                         @endif
-                                    @endforeach
-                                @endisset
-                            </div>
+                                    @endif
+                                    @break
+                                @endforeach
+                            @endisset
                             <div class="glossary__item">
                                 <div class="glossary__item-header"> Ү </div>
                                 @isset($glossary)
@@ -928,32 +1101,50 @@
                                     @endforeach
                                 @endisset
                             </div>
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Х </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_kz == 'Х' || $word->letter_kz == 'х' )
-                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
-                                            @endif
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_kz == 'Х' || $word->letter_kz == 'х' )
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> Х </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_kz == 'Х' || $word->letter_kz == 'х' )
+                                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                         @endif
-                                    @endforeach
-                                @endisset
-                            </div>
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Һ </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_kz == 'Һ' || $word->letter_kz == 'һ' )
-                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
-                                            @endif
+                                    @endif
+                                    @break
+                                @endforeach
+                            @endisset
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_kz == 'Һ' || $word->letter_kz == 'һ' )
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> Һ </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_kz == 'Һ' || $word->letter_kz == 'һ' )
+                                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                         @endif
-                                    @endforeach
-                                @endisset
-                            </div>
+                                    @endif
+                                    @break
+                                @endforeach
+                            @endisset
                             <div class="glossary__item">
                                 <div class="glossary__item-header"> Ц </div>
                                 @isset($glossary)
@@ -972,19 +1163,28 @@
         
                     <div class="tab-pane fade" id="seven" role="tabpanel" aria-labelledby="profile-tab">
                         <div class="flex">
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Ч </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_kz == 'Ч' || $word->letter_kz == 'ч' )
-                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
-                                            @endif
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_kz == 'Ч' || $word->letter_kz == 'ч' )
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> Ч </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_kz == 'Ч' || $word->letter_kz == 'ч' )
+                                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                         @endif
-                                    @endforeach
-                                @endisset
-                            </div>
+                                    @endif
+                                    @break
+                                @endforeach
+                            @endisset
                             <div class="glossary__item">
                                 <div class="glossary__item-header"> Ш </div>
                                 @isset($glossary)
@@ -998,19 +1198,28 @@
                                     @endforeach
                                 @endisset
                             </div>
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Щ </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_kz == 'Щ' || $word->letter_kz == 'щ' )
-                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
-                                            @endif
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_kz == 'Щ' || $word->letter_kz == 'щ' )
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> Щ </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_kz == 'Щ' || $word->letter_kz == 'щ' )
+                                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                         @endif
-                                    @endforeach
-                                @endisset
-                            </div>
+                                    @endif
+                                    @break
+                                @endforeach
+                            @endisset
                             <div class="glossary__item">
                                 <div class="glossary__item-header"> Ы </div>
                                 @isset($glossary)
@@ -1055,32 +1264,50 @@
                                     @endforeach
                                 @endisset
                             </div>
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Ю </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_kz == 'Ю' || $word->letter_kz == 'ю' )
-                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
-                                            @endif
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_kz == 'Ю' || $word->letter_kz == 'ю' )
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> Ю </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_kz == 'Ю' || $word->letter_kz == 'ю' )
+                                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                         @endif
-                                    @endforeach
-                                @endisset
-                            </div>
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Я </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_kz == 'Я' || $word->letter_kz == 'я' )
-                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
-                                            @endif
+                                    @endif
+                                    @break
+                                @endforeach
+                            @endisset
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_kz == 'Я' || $word->letter_kz == 'я' )
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> Я </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_kz == 'Я' || $word->letter_kz == 'я' )
+                                                            <div class="glossary__item-header-title"> {{$word->word_kz}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_kz}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                         @endif
-                                    @endforeach
-                                @endisset
-                            </div>
+                                    @endif
+                                    @break
+                                @endforeach
+                            @endisset
                         </div>
                     </div>
                 </div>            
@@ -1318,19 +1545,28 @@
         
                     <div class="tab-pane fade" id="five" role="tabpanel" aria-labelledby="profile-tab">
                         <div class="flex">
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Q </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_en == 'Q' || $word->letter_en == 'q' )
-                                            <div class="glossary__item-header-title"> {{$word->word_en}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_en}} </div>
-                                            @endif
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_en == 'Q' || $word->letter_en == 'q' )
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> Q </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_en == 'Q' || $word->letter_en == 'q' )
+                                                            <div class="glossary__item-header-title"> {{$word->word_en}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_en}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                         @endif
-                                    @endforeach
-                                @endisset
-                            </div>
+                                    @endif
+                                    @break
+                                @endforeach
+                            @endisset
                             <div class="glossary__item">
                                 <div class="glossary__item-header"> R </div>
                                 @isset($glossary)
@@ -1432,32 +1668,50 @@
                                     @endforeach
                                 @endisset
                             </div>
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Y </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_en == 'Y' || $word->letter_en == 'y' )
-                                            <div class="glossary__item-header-title"> {{$word->word_en}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_en}} </div>
-                                            @endif
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_en == 'Y' || $word->letter_en == 'y' )
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> Y </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_en == 'Y' || $word->letter_en == 'y' )
+                                                            <div class="glossary__item-header-title"> {{$word->word_en}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_en}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                         @endif
-                                    @endforeach
-                                @endisset
-                            </div>
-                            <div class="glossary__item">
-                                <div class="glossary__item-header"> Z </div>
-                                @isset($glossary)
-                                    @foreach ($glossary as $word)
-                                        @if ($word->is_active == 1)
-                                            @if ($word->letter_en == 'Z' || $word->letter_en == 'z' )
-                                            <div class="glossary__item-header-title"> {{$word->word_en}} </div>
-                                            <div class="glossary__item-description"> {{$word->text_en}} </div>
-                                            @endif
+                                    @endif
+                                    @break
+                                @endforeach
+                            @endisset
+                            @isset($glossary)
+                                @foreach ($glossary as $word)
+                                    @if ($word->is_active == 1)
+                                        @if ($word->letter_en == 'Z' || $word->letter_en == 'z' )
+                                            <div class="glossary__item">
+                                                <div class="glossary__item-header"> Z </div>
+                                                @isset($glossary)
+                                                    @foreach ($glossary as $word)
+                                                        @if ($word->is_active == 1)
+                                                            @if ($word->letter_en == 'Z' || $word->letter_en == 'z' )
+                                                            <div class="glossary__item-header-title"> {{$word->word_en}} </div>
+                                                            <div class="glossary__item-description"> {{$word->text_en}} </div>
+                                                            @endif
+                                                        @endif
+                                                    @endforeach
+                                                @endisset
+                                            </div>
                                         @endif
-                                    @endforeach
-                                @endisset
-                            </div>
+                                    @endif
+                                    @break
+                                @endforeach
+                            @endisset
                         </div>
                     </div>
                 </div>
