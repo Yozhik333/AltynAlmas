@@ -76,9 +76,8 @@ if(desc){
 }
 
 $("#doc1").on('click', function() {
-console.log(123)
     $.fancybox.open({
-        src  : '{{asset(\'img/corupcia.pdf\')}}',
+        src  : 'img/corupcia.pdf',
         type : 'iframe',
         opts : {
             afterShow : function( instance, current ) {
@@ -86,5 +85,17 @@ console.log(123)
             }
         }
     });
+});
 
+$("#doc2").on('click', function() {
+    $.fancybox.open({
+        // src  : 'images/samples/Ustav.pdf',
+        src  : 'img/Ustav.pdf',
+        type : 'iframe',
+        opts : {
+            afterShow : function( instance, current ) {
+                console.info( 'done!' );
+            }
+        }
+    });
 });
