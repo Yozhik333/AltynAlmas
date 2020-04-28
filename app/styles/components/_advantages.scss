@@ -199,3 +199,19 @@
     }
   }
 }
+
+.vice-presidents{
+  .advantages__banner-wrap-outside--persons{
+    width: 33.3333%;
+    margin: 0;
+    padding: 30px;
+    @include breakpoint-down(md){
+      width: 100%;
+      padding: 10px 0;
+    }
+  }
+
+  .rule-persons-wrap{
+    flex-wrap: wrap;
+  }
+}
