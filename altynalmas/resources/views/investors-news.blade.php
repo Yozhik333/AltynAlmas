@@ -32,13 +32,13 @@
     </div>
     <div class="flex investors_news_main1">
         @if (app()->getLocale() == 'ru')
-            <div class="investors_news_main">{{$news->text_ru}}</div>        
+            <div class="investors_news_main">{!! nl2br($news->text_ru) !!}</div>        
         @endif
         @if (app()->getLocale() == 'kz')
-            <div class="investors_news_main">{{$news->text_kz}}</div>        
+            <div class="investors_news_main">{!! nl2br($news->text_kz) !!}</div>        
         @endif
         @if (app()->getLocale() == 'en')
-            <div class="investors_news_main">{{$news->text_en}}</div>        
+            <div class="investors_news_main">{!! nl2br($news->text_en) !!}</div>        
         @endif
         
     </div>

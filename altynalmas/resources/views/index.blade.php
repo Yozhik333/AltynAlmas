@@ -63,69 +63,72 @@
                             </div>
                         </div>
                     </div>
-                    <div class="number-day">
-                        <!-- Swiper -->
-                        <div class="swiper-container">
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div class="number-day__number"> @lang('messages.1160 тыс.') </div>
-                                    <div class="number-day__description"> @lang('messages.Унций золота за 27 лет выпущено компанией Алтыналмас.') </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="number-day__number"> 2 </div>
-                                    <div class="number-day__description"> @lang('messages.Карьер Пустынное второй в РК по объему добываемой горной массы') </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="number-day__number"> @lang('messages.1-ый в РК') </div>
-                                    <div class="number-day__description"> @lang('messages.По переработке золотосодержащего минерального сырья (совокупно с производительностью АО «ГМК Казахалтын» и «Казахалтын Technology»)') </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="number-day__number"> @lang('messages.2-й в РК') </div>
-                                    <div class="number-day__description"> @lang('messages.Производитель золота в слитках качества Доре (совокупно с производительностью «Казахалтын Technology»)') </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="number-day__number"> @lang('messages.130 млн тенге') </div>
-                                    <div class="number-day__description"> @lang('messages.Направлено на социальную поддержку регионов с 2011 года') </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="number-day__number"> 70% </div>
-                                    <div class="number-day__description"> @lang('messages.Работников удовлетворены условиями труда') </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="number-day__number"> @lang('messages.130 км') </div>
-                                    <div class="number-day__description"> @lang('messages.Собственной ВОЛС (проложено на проекте Акбакай для обеспечения высокоскоростным интернетом поселковой школы и местных жителей)') </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="number-day__number"> 2 </div>
-                                    <div class="number-day__description"> @lang('messages.Профсоюза «Кәсіпқорған» и «Байтерек»') </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="number-day__number"> 14 </div>
-                                    <div class="number-day__description"> @lang('messages.Контрактов на недропользование') </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="number-day__number"> @lang('messages.54,24% акций') </div>
-                                    <div class="number-day__description"> @lang('messages.АО «ГМК КАЗАХАЛТЫН» приобретено компанией в 2019 г.') </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="number-day__number"> 3 </div>
-                                    <div class="number-day__description"> @lang('messages.Собственных ЗИФ: «Акбакай», «Актогай» и «Алтыналмас Technology»') </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="number-day__number"> @lang('messages.120 единиц') </div>
-                                    <div class="number-day__description"> @lang('messages.Горной техники задействовано в производственном процессе') </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="number-day__number"> @lang('messages.4 региона РК') </div>
-                                    <div class="number-day__description"> @lang('messages.Регионы присутствия активов Алтыналмас') </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <div class="number-day__number"> @lang('messages.4 премии') </div>
-                                    <div class="number-day__description"> @lang('messages.За проект «Цифровой рудник»') </div>
+                    @if (app()->getLocale() == 'ru')
+                        <div class="number-day">
+                            <!-- Swiper -->
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <div class="number-day__number"> @lang('messages.1160 тыс.') </div>
+                                        <div class="number-day__description"> @lang('messages.Унций золота за 27 лет выпущено компанией Алтыналмас.') </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="number-day__number"> @lang('messages.2') </div>
+                                        <div class="number-day__description"> @lang('messages.Карьер Пустынное второй в РК по объему добываемой горной массы') </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="number-day__number"> @lang('messages.1-ый в РК') </div>
+                                        <div class="number-day__description"> @lang('messages.По переработке золотосодержащего минерального сырья (совокупно с производительностью АО «ГМК Казахалтын» и «Казахалтын Technology»)') </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="number-day__number"> @lang('messages.2-й в РК') </div>
+                                        <div class="number-day__description"> @lang('messages.Производитель золота в слитках качества Доре (совокупно с производительностью «Казахалтын Technology»)') </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="number-day__number"> @lang('messages.130 млн тенге') </div>
+                                        <div class="number-day__description"> @lang('messages.Направлено на социальную поддержку регионов с 2011 года') </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="number-day__number"> @lang('messages.70%') </div>
+                                        <div class="number-day__description"> @lang('messages.Работников удовлетворены условиями труда') </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="number-day__number"> @lang('messages.130 км') </div>
+                                        <div class="number-day__description"> @lang('messages.Собственной ВОЛС (проложено на проекте Акбакай для обеспечения высокоскоростным интернетом поселковой школы и местных жителей)') </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="number-day__number"> 2 </div>
+                                        <div class="number-day__description"> @lang('messages.Профсоюза «Кәсіпқорған» и «Байтерек»') </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="number-day__number"> 14 </div>
+                                        <div class="number-day__description"> @lang('messages.Контрактов на недропользование') </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="number-day__number"> @lang('messages.54,24% акций') </div>
+                                        <div class="number-day__description"> @lang('messages.АО «ГМК КАЗАХАЛТЫН» приобретено компанией в 2019 г.') </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="number-day__number"> 3 </div>
+                                        <div class="number-day__description"> @lang('messages.Собственных ЗИФ: «Акбакай», «Актогай» и «Алтыналмас Technology»') </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="number-day__number"> @lang('messages.120 единиц') </div>
+                                        <div class="number-day__description"> @lang('messages.Горной техники задействовано в производственном процессе') </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="number-day__number"> @lang('messages.4 региона РК') </div>
+                                        <div class="number-day__description"> @lang('messages.Регионы присутствия активов Алтыналмас') </div>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <div class="number-day__number"> @lang('messages.4 премии') </div>
+                                        <div class="number-day__description"> @lang('messages.За проект «Цифровой рудник»') </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    @endif
+                    
                 </div>
                 <div class="advantages__article">
                     <article class="flex article">

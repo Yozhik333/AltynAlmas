@@ -93,7 +93,6 @@
 
                                         <div class="tab_links">
                                             <a href="{{$vacancy->hh_url}}" class="btn btn-detail"> @lang('messages.Откликнуться') </a>
-                                            <a class="headhunter" target="_blank" href=" https://hh.kz/search/vacancy?area=160&st=searchVacancy&text=%D0%B0%D0%BB%D1%82%D1%8B%D0%BD%D0%B0%D0%BB%D0%BC%D0%B0%D1%81">Ссылка на Head Hunter</a>
                                         </div>
                                     </div>
                                 </div>

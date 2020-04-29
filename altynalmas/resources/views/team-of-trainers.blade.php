@@ -59,7 +59,7 @@
                             </div>
                           @endif
                           @if (app()->getLocale() == 'kz')
-                            <div class="swiper-slide" data-trainer-post="{{$trainer->position_en}}" data-trainer-info="{{$trainer->text_en}}" data-trainer-name="{{$trainer->name_en}}">
+                            <div class="swiper-slide" data-trainer-post="{{$trainer->position_kz}}" data-trainer-info="{{$trainer->text_kz}}" data-trainer-name="{{$trainer->name_kz}}">
                               <div class="trainer__img">
                                   <img src="/storage/{{$trainer->img_url}}">
                               </div>
