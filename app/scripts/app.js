@@ -46,34 +46,34 @@ $(".tabs-wrapper-environment .tab-security").click(function () {
     $(".tab_item-security").hide().eq($(this).index()).fadeIn()
 }).eq(0).addClass("tabs-active");
 
-let desc = document.querySelector('.non-style')
-if(desc){
-    let removeP = desc.querySelectorAll('p')
-    let removeDiv = desc.querySelectorAll('div')
-    let removeUl = desc.querySelectorAll('ul')
-    let removeSpan = desc.querySelectorAll('span')
-    let removeLi = desc.querySelectorAll('li')
-
-    Array.from(removeDiv).forEach(item => {
-        item.removeAttribute('style')
-    })
-
-    Array.from(removeP).forEach(item => {
-        item.removeAttribute('style')
-    })
-
-    Array.from(removeUl).forEach(item => {
-        item.removeAttribute('style')
-    })
-
-    Array.from(removeSpan).forEach(item => {
-        item.removeAttribute('style')
-    })
-
-    Array.from(removeLi).forEach(item => {
-        item.removeAttribute('style')
-    })
-}
+// let desc = document.querySelector('.non-style')
+// if(desc){
+//     let removeP = desc.querySelectorAll('p')
+//     let removeDiv = desc.querySelectorAll('div')
+//     let removeUl = desc.querySelectorAll('ul')
+//     let removeSpan = desc.querySelectorAll('span')
+//     let removeLi = desc.querySelectorAll('li')
+//
+//     Array.from(removeDiv).forEach(item => {
+//         item.removeAttribute('style')
+//     })
+//
+//     Array.from(removeP).forEach(item => {
+//         item.removeAttribute('style')
+//     })
+//
+//     Array.from(removeUl).forEach(item => {
+//         item.removeAttribute('style')
+//     })
+//
+//     Array.from(removeSpan).forEach(item => {
+//         item.removeAttribute('style')
+//     })
+//
+//     Array.from(removeLi).forEach(item => {
+//         item.removeAttribute('style')
+//     })
+// }
 
 $("#doc1").on('click', function() {
     $.fancybox.open({
