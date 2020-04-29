@@ -27,19 +27,19 @@
   }
 
   .active{
-    .link{
+    & > .link{
       color: #fff !important;
-    }
 
-    .menu-title{
-      color: #fff !important;
-    }
-
-    .menu-icon{
-      display: block !important;
-
-      i{
+      .menu-title{
         color: #fff !important;
+      }
+
+      .menu-icon{
+        display: block !important;
+
+        i{
+          color: #fff !important;
+        }
       }
     }
   }
