@@ -50,26 +50,26 @@
                         @if ($newspaper->is_active == 1)
                             @if (app()->getLocale() == 'ru')
                                 <div class="corporate-newspaper__item">
-                                    <div class="img ratio">
-                                    <img src="/storage/{{$newspaper->img_ru}}">
-                                    </div>
-                                    <a href="/storage/{{$newspaper->file_ru}}" class="btn btn-detail"> @lang('messages.Смотреть') </a>
+                                    <a href="/storage/{{$newspaper->file_ru}}" data-fancybox class="link-block img ratio">
+                                        <img src="/storage/{{$newspaper->img_ru}}">
+                                    </a>
+                                    <a href="/storage/{{$newspaper->file_ru}}" data-fancybox class="btn btn-detail"> @lang('messages.Смотреть') </a>
                                 </div>
                             @endif
                             @if (app()->getLocale() == 'kz')
                                 <div class="corporate-newspaper__item">
-                                    <div class="img ratio">
-                                    <img src="/storage/{{$newspaper->img_kz}}">
-                                    </div>
+                                    <a href="/storage/{{$newspaper->file_kz}}" data-fancybox class="link-block img ratio">
+                                        <img src="/storage/{{$newspaper->img_kz}}">
+                                    </a>
                                     <a href="/storage/{{$newspaper->file_kz}}" class="btn btn-detail"> @lang('messages.Смотреть') </a>
-                                </div>                            
+                                </div>
                             @endif
                             @if (app()->getLocale() == 'en')
                                 <div class="corporate-newspaper__item">
-                                    <div class="img ratio">
-                                    <img src="/storage/{{$newspaper->img_en}}">
-                                    </div>
-                                    <a href="/storage/{{$newspaper->file_en}}" class="btn btn-detail"> @lang('messages.Смотреть') </a>
+                                    <a href="/storage/{{$newspaper->file_en}}" data-fancybox class="link-block img ratio">
+                                        <img src="/storage/{{$newspaper->img_en}}">
+                                    </a>
+                                    <a href="/storage/{{$newspaper->file_en}}" data-fancybox class="btn btn-detail"> @lang('messages.Смотреть') </a>
                                 </div>                            
                             @endif                            
                         @endif
