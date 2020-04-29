@@ -60,21 +60,21 @@
                     @if (app()->getLocale() == 'ru')
                         <h2 class="underline_bottom-offset"> {{$akbakay[0]->title_ru}} </h2>
                         <div class="description activity-detail__description non-style">
-                            {!!$akbakay[0]->text_ru!!}
+                            {!!nl2br($akbakay[0]->text_ru)!!}
                         </div>
 
                     @endif
                     @if (app()->getLocale() == 'kz')
                         <h2 class="underline_bottom-offset"> {{$akbakay[0]->title_kz}} </h2>
                         <div class="description activity-detail__description non-style">
-                            {!!$akbakay[0]->text_kz!!}
+                            {!!nl2br($akbakay[0]->text_kz)!!}
                         </div>
 
                     @endif
                     @if (app()->getLocale() == 'en')
                         <h2 class="underline_bottom-offset activity-detail__description non-style"> {{$akbakay[0]->title_en}} </h2>
                         <div class="description">
-                            {!!$akbakay[0]->text_en!!}
+                            {!!nl2br($akbakay[0]->text_en)!!}
                         </div>
 
                     @endif
