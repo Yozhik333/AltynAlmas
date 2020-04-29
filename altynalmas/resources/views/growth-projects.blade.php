@@ -126,6 +126,45 @@
             </div>
             </div>
         </div>
+            <div class="place-of-birth-content">
+                <div class="flex">
+                    <div class="place-of-birth__mapImg">
+                        <div class="ratio">
+                            <img src="img/mapPlace.svg" alt="">
+                        </div>
+                    </div>
+                    <div class="place-of-birth__info">
+                        <div class="place-of-birth__item">
+                            <div class="place-of-birth__info-title"> @lang('messages.3 месторождения Казахалтын') </div>
+                            <div class="place-of-birth__info-description">
+                                <div> @lang('messages.Аксу') </div>
+                                <div> @lang('messages.Бестобе') </div>
+                                <div> @lang('messages.Жолымбет') </div>
+                            </div>
+                        </div>
+                        <div class="place-of-birth__item">
+                            <div class="place-of-birth__info-title"> @lang('messages.15 месторождений АО «АК Алтыналмас»') </div>
+                            <div class="place-of-birth__info-description">
+                                <div>@lang('messages.Бактай')</div>
+                                <div>@lang('messages.Карьерное')</div>
+                                <div>@lang('messages.Пустынное')</div>
+                                <div>@lang('messages.Долинное')</div>
+                                <div>@lang('messages.Светинское')</div>
+                                <div>@lang('messages.Акбакай')</div>
+                                <div>@lang('messages.Кенжем')</div>
+                                <div>@lang('messages.Карьерное')</div>
+                                <div>@lang('messages.Бескемпир')</div>
+                                <div>@lang('messages.Аксакал')</div>
+                                <div>@lang('messages.Мизек')</div>
+                                <div>@lang('messages.пл.Долинное')</div>
+                                <div>@lang('messages.Иткудук')</div>
+                                <div>@lang('messages.Ортасай')</div>
+                                <div>@lang('messages.Пустынно-Бактай')</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
