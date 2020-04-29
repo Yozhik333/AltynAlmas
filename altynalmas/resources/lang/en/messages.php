@@ -190,7 +190,7 @@ The effective corporate management structure implies the respect for rights and 
   'тенге.' => 'tenge',
 
   // Development-safety
-  'Безопасноть' => 'Safety',
+  'Безопасность' => 'Safety',
 
   // Development-staff
   'Сотрудники' => 'Employees',

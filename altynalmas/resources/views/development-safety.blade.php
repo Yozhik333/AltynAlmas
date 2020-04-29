@@ -18,7 +18,7 @@
         <div class="flex align-items-baseline">
             <div class="title-wrapper">
             <div class="h1-wrap">
-                <h1 class="small">@lang('messages.Безопасноть') </h1>
+                <h1 class="small">@lang('messages.Безопасность') </h1>
             </div>
             </div>
         </div>
