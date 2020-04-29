@@ -152,6 +152,8 @@ class NewspaperController extends Controller
             $file_en = Storage::putFileAs('', $request->file('file_en'), $file_en_name);
             $newspaper->file_en=$file_en;
         }
+        
+        $newspaper->is_active=$request->is_active;
 
         $newspaper->save();
 

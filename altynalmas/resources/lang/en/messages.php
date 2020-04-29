@@ -445,6 +445,7 @@ The effective corporate management structure implies the respect for rights and 
   'Программы обучения' => 'Studying programs',
   'Обязательное обучение' => 'COMPULSORY TRAINING ',
   'Повышение квалификации' => 'ADVANCED TRAINING ',
+  'Академическое обучение' => 'ACADEMIC STUDY',
 
   //suppliers-contacts поставщикам
   'Аккредитация поставщиков:' => 'Supplier Accreditation:',

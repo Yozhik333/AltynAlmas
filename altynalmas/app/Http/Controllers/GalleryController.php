@@ -86,7 +86,7 @@ class GalleryController extends Controller
      * @param  \App\Gallery  $gallery
      * @return \Illuminate\Http\Response
      */
-    public function edit(Gallery $gallery, $id)
+    public function edit($id)
     {
         $gallery = Gallery::find($id);
         $category = Category::all();
@@ -100,7 +100,7 @@ class GalleryController extends Controller
      * @param  \App\Gallery  $gallery
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Gallery $gallery)
+    public function update(Request $request, $id)
     {
         $this->validate($request,[
             'image' => 'nullable|image|max:50000',
@@ -115,6 +115,7 @@ class GalleryController extends Controller
         if ($request->file('image')) {
             $photo = $request->file('image')->hashName();
             Storage::disk('public')->put('', $request->file('image'));
+            Storage::disk('public')->delete($gallery->images);
             $gallery->images = $photo;
         }
 
@@ -137,9 +138,10 @@ class GalleryController extends Controller
      * @param  \App\Gallery  $gallery
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Gallery $gallery)
+    public function destroy($id)
     {
         $deleteGallery = Gallery::find($id);
+        Storage::disk('public')->delete($deleteGallery->images);
         $deleteGallery->delete();
 
         Session::flash('success','Информация удалена успешно.');

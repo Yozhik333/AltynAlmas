@@ -49,17 +49,17 @@
                 <h2 class="underline_bottom-offset"> Mine to Mill </h2>
                 @if (app()->getLocale() == 'ru')
                     <div class="description non-style">
-                        {!! $mineToMill[0]->text_ru !!}
+                        {!! nl2br($mineToMill[0]->text_ru) !!}
                     </div>
                 @endif
                 @if (app()->getLocale() == 'kz')
                     <div class="description non-style">
-                        {!! $mineToMill[0]->text_kz !!}
+                        {!! nl2br($mineToMill[0]->text_kz) !!}
                     </div>
                 @endif
                 @if (app()->getLocale() == 'en')
                     <div class="description non-style">
-                        {!! $mineToMill[0]->text_en !!}
+                        {!! nl2br($mineToMill[0]->text_en) !!}
                     </div>
                 @endif
             </article>

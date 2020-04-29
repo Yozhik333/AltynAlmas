@@ -73,6 +73,16 @@
                 </div>
 
                 <div class="form-group">
+                    <label class="col-sm-12" for="is_active">Показывать на сайте?</label>
+                    <div class="col-sm-12">
+                        <select class="form-control" id="is_active" name="is_active" size="1">
+                            <option value="1">Показывать</option>
+                            <option value="0">Не показывать</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="form-group">
                     <div class="col-sm-12">
                         <button class="btn btn-sm btn-success" type="submit">Отредактировать</button>
                     </div>

@@ -48,13 +48,13 @@
                 <h2 class="underline_bottom-offset"> @lang('messages.Программа «Цифровой рудник»') </h2>
                 <div class="description non-style">
                     @if (app()->getLocale() == 'ru')
-                        {!! $digitalMine[0]->text_ru !!}
+                        {!! nl2br($digitalMine[0]->text_ru) !!}
                     @endif
                     @if (app()->getLocale() == 'kz')
-                        {!! $digitalMine[0]->text_kz !!}
+                        {!! nl2br($digitalMine[0]->text_kz) !!}
                     @endif
                     @if (app()->getLocale() == 'en')
-                        {!! $digitalMine[0]->text_en !!}
+                        {!! nl2br($digitalMine[0]->text_en) !!}
                     @endif
                 </div>
             </article>

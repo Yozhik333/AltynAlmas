@@ -58,15 +58,9 @@ class NewsController extends Controller
             'text_ru'=>'required|string|max:60000|min:1',
             'text_en'=>'required|string|max:60000|min:1',
         ]);
-        //$path = $request->file('img_url')->getClientOriginalName();
-        //$path = $request->file('img_url')->getClientOriginalName();
-        //Storage::disk('public')->put('', $request->file('img_url'));
-        //Storage::putFileAs('news', $request->file('img_url'), $request->file('img_url')->getClientOriginalName());
-        //Storage::putFile('news', $request->file('img_url')->getClientOriginalName());
+        
         $img_url = $request->file('img_url')->store('');
-        //$correct_img_url = str_replace('public/', '', $img_url);
-        //dd($correct_img_url);
-
+        
         $news = new News;
         $news->img_url=$img_url;
         $news->date=$request->date;

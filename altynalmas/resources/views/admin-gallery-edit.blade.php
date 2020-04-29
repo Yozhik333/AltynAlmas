@@ -10,6 +10,10 @@
         Редактирование информации
     </div>
 
+    <div class="block admin-news-img">
+        <img src="/storage/{{$gallery->images}}">
+    </div>
+
     <div class="block">
         <div class="block-content block-content-narrow">
             <form class="form-horizontal" action="{{ route('admin-gallery.update', $gallery->id)}}" method="POST" enctype="multipart/form-data">

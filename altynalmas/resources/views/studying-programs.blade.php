@@ -50,17 +50,17 @@
                 <div class="img" style="background-image: url('/storage/{{$education[0]->compulsory_ed_img}}')"></div>
                     @if (app()->getLocale() == 'ru')
                         <div class="description">
-                            {!! $education[0]->compulsory_ed_text_ru !!}
+                            {!! nl2br($education[0]->compulsory_ed_text_ru) !!}
                         </div>         
                     @endif
                     @if (app()->getLocale() == 'kz')
                         <div class="description">
-                            {!! $education[0]->compulsory_ed_text_kz !!}
+                            {!! nl2br($education[0]->compulsory_ed_text_kz) !!}
                         </div>                 
                     @endif
                     @if (app()->getLocale() == 'en')
                         <div class="description">
-                            {!! $education[0]->compulsory_ed_text_en !!}
+                            {!! nl2br($education[0]->compulsory_ed_text_en) !!}
                         </div>               
                     @endif
             </div>
@@ -69,36 +69,36 @@
                 <div class="img" style="background-image: url('/storage/{{$education[0]->advanced_ed_img}}')"></div>
                     @if (app()->getLocale() == 'ru')
                         <div class="description">
-                            {!! $education[0]->advanced_ed_text_ru !!}
+                            {!! nl2br($education[0]->advanced_ed_text_ru) !!}
                         </div>
                     @endif
                     @if (app()->getLocale() == 'kz')
                         <div class="description">
-                            {!! $education[0]->advanced_ed_text_kz !!}
+                            {!! nl2br($education[0]->advanced_ed_text_kz) !!}
                         </div>
                     @endif
                     @if (app()->getLocale() == 'en')
                         <div class="description">
-                            {!! $education[0]->advanced_ed_text_en !!}
+                            {!! nl2br($education[0]->advanced_ed_text_en) !!}
                         </div>
                     @endif
             </div>
             <div class="studying-programs__item">
-                <div class="title"> @lang('messages.Обязательное обучение') </div>
+                <div class="title"> @lang('messages.Академическое обучение') </div>
                 <div class="img" style="background-image: url('/storage/{{$education[0]->special_ed_img}}')"></div>
                     @if (app()->getLocale() == 'ru')
                         <div class="description">
-                            {!! $education[0]->special_ed_text_ru !!}
+                            {!! nl2br($education[0]->special_ed_text_ru) !!}
                         </div>
                     @endif
                     @if (app()->getLocale() == 'kz')
                         <div class="description">
-                            {!! $education[0]->special_ed_text_kz !!}
+                            {!! nl2br($education[0]->special_ed_text_kz) !!}
                         </div>
                     @endif
                     @if (app()->getLocale() == 'en')
                         <div class="description">
-                            {!! $education[0]->special_ed_text_en !!}
+                            {!! nl2br($education[0]->special_ed_text_en) !!}
                         </div>
                     @endif
             </div>

@@ -27,7 +27,7 @@
                                 <h3 class="block-title">Описание на казахском языке</h3>
                             </div>
                             <div class="block">
-                                <textarea name="text_kz" class="js-summernote"></textarea>
+                                <textarea name="text_kz" class="col-sm-12"></textarea>
                             </div>
                         </div>
 
@@ -36,7 +36,7 @@
                                 <h3 class="block-title">Описание на русском языке</h3>
                             </div>
                             <div class="block">
-                                <textarea name="text_ru" class="js-summernote"></textarea>
+                                <textarea name="text_ru" class="col-sm-12"></textarea>
                             </div>
                         </div>
 
@@ -45,7 +45,7 @@
                                 <h3 class="block-title">Описание на английском языке</h3>
                             </div>
                             <div class="block">
-                                <textarea name="text_en" class="js-summernote"></textarea>
+                                <textarea name="text_en" class="col-sm-12"></textarea>
                             </div>
                         </div>
 
@@ -86,7 +86,7 @@
                                 <h3 class="block-title">Описание на казахском языке</h3>
                             </div>
                             <div class="block">
-                                <textarea name="text_kz" class="js-summernote">{{$sanaSafety[0]->text_kz}}</textarea>
+                                <textarea name="text_kz" class="col-sm-12">{{$sanaSafety[0]->text_kz}}</textarea>
                             </div>
                         </div>
 
@@ -95,7 +95,7 @@
                                 <h3 class="block-title">Описание на русском языке</h3>
                             </div>
                             <div class="block">
-                                <textarea name="text_ru" class="js-summernote">{{$sanaSafety[0]->text_ru}}</textarea>
+                                <textarea name="text_ru" class="col-sm-12">{{$sanaSafety[0]->text_ru}}</textarea>
                             </div>
                         </div>
 
@@ -104,7 +104,7 @@
                                 <h3 class="block-title">Описание на английском языке</h3>
                             </div>
                             <div class="block">
-                                <textarea name="text_en" class="js-summernote">{{$sanaSafety[0]->text_en}}</textarea>
+                                <textarea name="text_en" class="col-sm-12">{{$sanaSafety[0]->text_en}}</textarea>
                             </div>
                         </div>
 

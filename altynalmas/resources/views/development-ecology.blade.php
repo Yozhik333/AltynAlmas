@@ -148,11 +148,11 @@
                         @if (app()->getLocale() == 'kz')
                             <div class="tab-security">
                                 <div class="tab_point">
-                                    <div>{{ $developmentEcology[$i]->title_ru }}</div>
+                                    <div>{{ $developmentEcology[$i]->title_kz }}</div>
                                     <div class="tab_point-icon"><i class="icon-left"></i></div>
                                 </div>
                                 <div class="tab_item-security">
-                                    {!! $developmentEcology[$i]->text_ru !!}
+                                    {!! $developmentEcology[$i]->text_kz !!}
                                 </div>
                             </div>
                         @endif

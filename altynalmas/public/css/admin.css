@@ -11,6 +11,7 @@
 }
 textarea{
     margin-bottom: 1.5em;
+    min-height: 10em !important;
 }
 .admin-menu{
     display: flex;

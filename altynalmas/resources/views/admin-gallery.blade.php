@@ -99,6 +99,9 @@
                             <b>Заголовок</b>
                         </td>
                         <td>
+                            <b>Изображение</b>
+                        </td>
+                        <td>
                             <b>Отображение на сайте</b>
                         </td>
                         <td>
@@ -112,6 +115,9 @@
                         <tr>
                             <td>
                                 {{ $gall->text_ru }}
+                            </td>
+                            <td>
+                                <div class = "admin-img-in-table"><img src="/storage/{{$gall->images}}"></div>
                             </td>
                             <td>
                                 @if ($gall->is_active == 1)
