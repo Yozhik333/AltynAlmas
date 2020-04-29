@@ -15,7 +15,7 @@
     <link rel="stylesheet" type="text/css" href="{{ asset('css/app.min.css') }}">
 </head>
 
-<body data-namespace="main" data-template="index">
+<body>
 <!--[if lt IE 10]>
 <p class="browserupgrade">
     You are using an <strong>outdated</strong> browser.

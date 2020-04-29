@@ -1,8 +1,9 @@
 .place-of-birth {
 
   &-content {
-    margin-bottom: 40px;
+    margin-bottom: 64px;
     @include breakpoint-down(md) {
+      margin-bottom: 45px;
       & > .flex {
         flex-direction: column;
       }
@@ -71,7 +72,7 @@
     }
 
     &:nth-child(2) {
-      @include fluidMarginTop(105px, 250px, 1024px, 1680px);
+      @include fluidMarginTop(35px, 205px, 1024px, 1680px);
       @include breakpoint-down(md){
         margin-top: 30px;
       }
