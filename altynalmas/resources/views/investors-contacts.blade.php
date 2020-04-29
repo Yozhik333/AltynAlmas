@@ -25,7 +25,7 @@
           <div class="contacts__address-description">
             <div class="contacts__address-head"> @lang('messages.головной офис:') </div>
             <div class="contacts__address-body">
-              <p>@lang('messages.Республика Казахстан, г. Алматы, Площадь Республики 15, 050013 (A15X3C7)')</p>
+              <p>@lang('messages.Республика Казахстан, <br> г. Алматы, Площадь Республики 15, 050013 (A15X3C7)')</p>
               <a href="tel:+77273500200">+7 (7273) 500-200</a>
               <a href="mailto:info@altynalmas.kz">info@altynalmas.kz</a>
             </div>

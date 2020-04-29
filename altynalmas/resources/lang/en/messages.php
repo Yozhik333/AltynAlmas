@@ -80,7 +80,7 @@ return[
   // Career - contacts page
   'Контакты' => 'Contacts',
   'головной офис:' => 'HEAD OFFICE:',
-  'Республика Казахстан, г. Алматы, Площадь Республики 15, 050013 (A15X3C7)' => '15 Republic Square, 050013 (A15X3C7)
+  'Республика Казахстан, <br> г. Алматы, Площадь Республики 15, 050013 (A15X3C7)' => '15 Republic Square, 050013 (A15X3C7)
 Almaty, Republic of Kazakhstan',
   'По всем возникшим вопросам обращайтесь по следующим контактам:' => 'Should you have any questions, please, contact as follows:',
   'По трудоустройству:' => 'Employment:',
@@ -142,7 +142,7 @@ Almaty, Republic of Kazakhstan',
   // Cantacts page
   'Контакты' => 'Contacts',
   'головной офис:' => 'HEAD OFFICE:',
-  'Республика Казахстан, г. Алматы, Площадь Республики 15, 050013 (A15X3C7)' => '15 Republic Square, 050013 (A15X3C7)
+  'Республика Казахстан, <br> г. Алматы, Площадь Республики 15, 050013 (A15X3C7)' => '15 Republic Square, 050013 (A15X3C7)
 Almaty, Republic of Kazakhstan',
   'По всем возникшим вопросам обращайтесь по следующим контактам:' => 'Should you have any questions, please, contact as follows:',
   'СМИ:' => 'Mass media:',
@@ -348,7 +348,7 @@ The effective corporate management structure implies the respect for rights and 
   //investors-contacts инвесторы и сми
   'Контакты' => 'Contacts',
   'головной офис:' => 'HEAD OFFICE:',
-  'Республика Казахстан, г. Алматы, Площадь Республики 15, 050013 (A15X3C7)' => '15 Republic Square, 050013 (A15X3C7) Almaty, Republic of Kazakhstan,',
+  'Республика Казахстан, <br> г. Алматы, Площадь Республики 15, 050013 (A15X3C7)' => '15 Republic Square, 050013 (A15X3C7) Almaty, Republic of Kazakhstan,',
   'По всем возникшим вопросам обращайтесь по следующим контактам:' => 'Should you have any questions, please, contact as follows:',
   'СМИ:' => 'Mass media:',
   'Инвесторам:' => 'Investors ',
