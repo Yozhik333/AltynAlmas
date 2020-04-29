@@ -80,6 +80,7 @@
                     @endif
                 </article>
                 <a href="/storage/{{$akbakay[0]->img_url}}" data-fancybox class="btn btn-detail"> @lang('messages.Посмотреть схему работы') </a>
+                <a href="{{route('gallery')}}" class="btn btn-detail" >@lang('messages.Фотогалерея')</a>
             </div>
             <div class="activity-detail__info-wrap">
                 <div class="activity-detail__info">
