@@ -132,13 +132,14 @@
                 <li>@lang('messages.Деятельность исполнительного органа строится на основе принципа максимального соблюдения интересов акционеров, полностью подотчетна решениям Общего собрания акционеров Общества и Совета директоров.')</li>
             </ul>
             </div>-->
-                    <div class="flex rule-persons-wrap">
+
+                    <div class="flex persons-wrap">
                         @isset($presidents)
                             @foreach ($presidents as $president)
+
                                 <div class="advantages__banner-wrap-outside advantages__banner-wrap-outside--persons">
                                     <div class="advantages__banner-wrap advantages__banner-wrap--margin">
-                                        <div class="advantages__banner  advantages__banner--photo"
-                                             style="background-image:url('/storage/{{$president->img_url}}') ">
+                                        <div class="advantages__banner  advantages__banner--photo" style="background-image:url('/storage/{{$president->img_url}}');">
                                         </div>
                                         <div class="advantages-description">
                                             @if (app()->getLocale() == 'ru')
@@ -153,12 +154,44 @@
                                                 <div class="under-title-dark"> {{$president->name_en}} </div>
                                                 <div class="under-text"> {{$president->position_en}} </div>
                                             @endif
+
                                         </div>
                                     </div>
                                 </div>
                             @endforeach
                         @endisset
+
+
                     </div>
+
+
+{{--                    <div class="flex rule-persons-wrap">--}}
+{{--                        @isset($presidents)--}}
+{{--                            @foreach ($presidents as $president)--}}
+{{--                                <div class="advantages__banner-wrap-outside advantages__banner-wrap-outside--persons">--}}
+{{--                                    <div class="advantages__banner-wrap advantages__banner-wrap--margin">--}}
+{{--                                        <div class="advantages__banner  advantages__banner--photo"--}}
+{{--                                             style="background-image:url('/storage/{{$president->img_url}}') ">--}}
+{{--                                        </div>--}}
+{{--                                        <div class="advantages-description">--}}
+{{--                                            @if (app()->getLocale() == 'ru')--}}
+{{--                                                <div class="under-title-dark"> {{$president->name_ru}} </div>--}}
+{{--                                                <div class="under-text"> {{$president->position_ru}} </div>--}}
+{{--                                            @endif--}}
+{{--                                            @if (app()->getLocale() == 'kz')--}}
+{{--                                                <div class="under-title-dark"> {{$president->name_kz}} </div>--}}
+{{--                                                <div class="under-text"> {{$president->position_kz}} </div>--}}
+{{--                                            @endif--}}
+{{--                                            @if (app()->getLocale() == 'en')--}}
+{{--                                                <div class="under-title-dark"> {{$president->name_en}} </div>--}}
+{{--                                                <div class="under-text"> {{$president->position_en}} </div>--}}
+{{--                                            @endif--}}
+{{--                                        </div>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            @endforeach--}}
+{{--                        @endisset--}}
+{{--                    </div>--}}
                 </div>
             </div>
         </div>
