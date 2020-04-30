@@ -41,6 +41,14 @@ Array.from(closeDropdown).forEach(itemClose => {
     )
 })
 
+let prevDev = document.querySelectorAll('.prevDev')
+Array.from(prevDev).forEach(item =>{
+    item.addEventListener('click', () => {
+        event.preventDefault()
+        }
+    )
+})
+
 Array.from(closeDropdownSecond).forEach(item => {
     item.addEventListener('click', () => {
         if (mobileMenu.classList.contains('third-level')) {

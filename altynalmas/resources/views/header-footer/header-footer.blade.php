@@ -125,7 +125,7 @@
                                         </a>
                                         <ul class="dropdown-menu dropdown-level-2">
                                             <li class="dropdownWrap {{ request()->is('akbakay') ? 'active' : null }}">
-                                                <a class="link " href="{{route('akbakay')}}">
+                                                <a class="link prevDev" href="{{route('akbakay')}}">
                                                     <div class="menu-title"> @lang('messages.Операционная деятельность') </div>
                                                     <div class="menu-icon">
                                                         <i class="icon-right"></i>
@@ -167,7 +167,7 @@
                                                 </a>
                                             </li>
                                             <li class="dropdownWrap {{ request()->is('digital-mine') ? 'active' : null }}">
-                                                <a class="link " href="{{route('digital-mine')}}">
+                                                <a class="link prevDev" href="{{route('digital-mine')}}">
                                                     <div class="menu-title"> @lang('messages.Проекты') </div>
                                                     <div class="menu-icon">
                                                         <i class="icon-right"></i>
@@ -293,7 +293,7 @@
                                                 </a>
                                             </li>
                                             <li class="dropdownWrap">
-                                                <a class="link " href="">
+                                                <a class="link prevDev" href="">
                                                     <div class="menu-title"> @lang('messages.Корпоративная культура') </div>
                                                     <div class="menu-icon">
                                                         <i class="icon-right"></i>
@@ -380,7 +380,7 @@
                                                 </a>
                                             </li>
                                             <li class="{{ request()->is('suppliers-contacts') ? 'active' : null }}">
-                                                <a class="link " href="{{route('suppliers-contacts')}}">
+                                                <a class="link prevDev" href="{{route('suppliers-contacts')}}">
                                                     <div class="menu-title"> @lang('messages.Электронные закупки') </div>
                                                     <div class="menu-icon">
                                                         <i class="icon-right"></i>
