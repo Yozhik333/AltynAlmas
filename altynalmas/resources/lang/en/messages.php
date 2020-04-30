@@ -466,7 +466,7 @@ The effective corporate management structure implies the respect for rights and 
     'Для регистрации в базе поставщиков компании необходимо скачать и заполнить следующую форму:' => 'For registration in the company’s supplier base, it is necessary to download and fill in the following form: ',
     '2 шаг' => '2 STEP ',
     'Заполненную форму необходимо отправить с пакетом документов на электронный адрес:' => 'Filled-in form shall be sent with documents package to e-mail address:',
-    '*С коммерческим предложением обращайтесь на:' => '*Please, send commercial offers to: ',
+    '*Коммерческие предложения просим отправлять по адресу:' => '*Please, send commercial offers to: ',
 
     //suppliers-principles поставщикам
     'Принципы закупочной политики' => 'Principles of procurement policy ',
