@@ -44,7 +44,7 @@ class SiteController extends Controller
 
     public function openNews($id)
     {
-        $news = News::find($id);
+        $news = News::findOrFail($id);
         return view('investors-news', compact('news'));
 
     }
