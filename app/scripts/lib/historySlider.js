@@ -7,7 +7,7 @@ if (historySliderActive) {
     const years = temp.map((item, index) => `<div data-index="${index}" class="year-item" onclick="renderYears('${index}')">${item}</div>`).join('')
     yearsDate.innerHTML = years
     const historySlider = new Swiper('.historySlider .swiper-container', {
-        spaceBetween: 35,
+        spaceBetween: 15,
         slidesPerView: 1,
         breakpoints: {
             640: {
@@ -19,8 +19,8 @@ if (historySliderActive) {
                 spaceBetween: 40,
             },
             1024: {
-                slidesPerView: 3,
-                spaceBetween: 50,
+                slidesPerView: 'auto',
+                spaceBetween: 15,
             },
         },
         pagination: {

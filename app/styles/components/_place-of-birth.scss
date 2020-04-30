@@ -14,10 +14,7 @@
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100%;
-    width: 75%;
-    @include breakpoint-down(md){
-      width: 100%;
-    }
+    width: 100%;
 
     .ratio {
       padding-top: ratio(683px, 1114);
