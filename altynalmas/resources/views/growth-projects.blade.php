@@ -133,7 +133,7 @@
                             <img src="img/mapPlace.svg" alt="">
                         </div>
                     </div>
-                    <div class="place-of-birth__info">
+                    <div class="place-of-birth__info hidden">
                         <div class="place-of-birth__item">
                             <div class="place-of-birth__info-title"> @lang('messages.3 месторождения Казахалтын') </div>
                             <div class="place-of-birth__info-description">
