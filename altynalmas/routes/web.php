@@ -100,6 +100,7 @@ Route::get('/admin-page', function() {
     return view('admin-page');
 })->name('admin-page');
 
+
 Route::get('/investors-and-media', 'SiteController@showNewsOnNewsPage')->name('newsPage');
 Route::get('/investors-news/{id}', 'SiteController@openNews')->name('openNews');
 Route::get('/history', 'SiteController@history')->name('history');

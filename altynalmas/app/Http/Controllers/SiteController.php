@@ -30,6 +30,7 @@ use Config;
 
 class SiteController extends Controller
 {
+    
     public function showNewsOnMain()
     {
         $news = News::all()->reverse();
