@@ -33,28 +33,27 @@ class SiteController extends Controller
     
     public function showNewsOnMain()
     {
-        $news = News::all()->reverse();
+        $newses = News::all();
+        $news = $newses->sortByDesc('date');
+
+        $news->values()->all();
         return view('index', compact('news'));
     }
 
     public function showNewsOnNewsPage()
     {
-        $news = News::all()->reverse();
-        // $dateArray = [];
+        $newses = News::all();
+        $news = $newses->sortByDesc('date');
 
-        // foreach($news as $key=>$arr){
-        //     $dateArray[$key]=$arr['date'];
-        // }
+        $news->values()->all();
 
-        // array_multisort($dateArray, SORT_STRING, $news);
-
-        // dd($news);
         return view('investors-and-media', compact('news'));
     }
 
     public function openNews($id)
     {
-        $news = News::findOrFail($id);
+
+        $news = News::all();
         return view('investors-news', compact('news'));
 
     }
