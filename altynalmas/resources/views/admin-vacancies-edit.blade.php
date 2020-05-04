@@ -41,7 +41,7 @@
                         <h3 class="block-title">Отредактируйте требования на казахском языке</h3>
                     </div>
                     <div class="block">
-                        <textarea name="requirements_kz" class="js-summernote">{{$vacancy->requirements_kz}}</textarea>
+                        <textarea name="requirements_kz" class="col-sm-12">{{$vacancy->requirements_kz}}</textarea>
                     </div>
                 </div>
 
@@ -50,7 +50,7 @@
                         <h3 class="block-title">Отредактируйте требования на русском языке</h3>
                     </div>
                     <div class="block">
-                        <textarea name="requirements_ru" class="js-summernote">{{$vacancy->requirements_ru}}</textarea>
+                        <textarea name="requirements_ru" class="col-sm-12">{{$vacancy->requirements_ru}}</textarea>
                     </div>
                 </div>
 
@@ -59,7 +59,7 @@
                         <h3 class="block-title">Отредактируйте требования на английском языке</h3>
                     </div>
                     <div class="block">
-                        <textarea name="requirements_en" class="js-summernote">{{$vacancy->requirements_en}}</textarea>
+                        <textarea name="requirements_en" class="col-sm-12">{{$vacancy->requirements_en}}</textarea>
                     </div>
                 </div>
 
@@ -68,7 +68,7 @@
                         <h3 class="block-title">Отредактируйте условия на казахском языке</h3>
                     </div>
                     <div class="block">
-                        <textarea name="conditions_kz" class="js-summernote">{{$vacancy->conditions_kz}}</textarea>
+                        <textarea name="conditions_kz" class="col-sm-12">{{$vacancy->conditions_kz}}</textarea>
                     </div>
                 </div>
 
@@ -77,7 +77,7 @@
                         <h3 class="block-title">Отредактируйте условия на русском языке</h3>
                     </div>
                     <div class="block">
-                        <textarea name="conditions_ru" class="js-summernote">{{$vacancy->conditions_ru}}</textarea>
+                        <textarea name="conditions_ru" class="col-sm-12">{{$vacancy->conditions_ru}}</textarea>
                     </div>
                 </div>
 
@@ -86,7 +86,7 @@
                         <h3 class="block-title">Отредактируйте условия на английском языке</h3>
                     </div>
                     <div class="block">
-                        <textarea name="conditions_en" class="js-summernote">{{$vacancy->conditions_en}}</textarea>
+                        <textarea name="conditions_en" class="col-sm-12">{{$vacancy->conditions_en}}</textarea>
                     </div>
                 </div>
 
@@ -96,7 +96,7 @@
                         <h3 class="block-title">Отредактируйте обязанности на казахском языке</h3>
                     </div>
                     <div class="block">
-                        <textarea name="duties_kz" class="js-summernote">{{$vacancy->duties_kz}}</textarea>
+                        <textarea name="duties_kz" class="col-sm-12">{{$vacancy->duties_kz}}</textarea>
                     </div>
                 </div>
 
@@ -105,7 +105,7 @@
                         <h3 class="block-title">Отредактируйте обязанности на русском языке</h3>
                     </div>
                     <div class="block">
-                        <textarea name="duties_ru" class="js-summernote">{{$vacancy->duties_ru}}</textarea>
+                        <textarea name="duties_ru" class="col-sm-12">{{$vacancy->duties_ru}}</textarea>
                     </div>
                 </div>
 
@@ -114,7 +114,7 @@
                         <h3 class="block-title">Отредактируйте обязанности на английском языке</h3>
                     </div>
                     <div class="block">
-                        <textarea name="duties_en" class="js-summernote">{{$vacancy->duties_en}}</textarea>
+                        <textarea name="duties_en" class="col-sm-12">{{$vacancy->duties_en}}</textarea>
                     </div>
                 </div>
 

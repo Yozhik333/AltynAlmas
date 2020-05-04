@@ -158,14 +158,14 @@
                                                     </div>
                                                 </a>
                                             </li>
-                                            <li class="{{ request()->is('place-of-birth') ? 'active' : null }} hidden">
+                                            {{-- <li class="{{ request()->is('place-of-birth') ? 'active' : null }} hidden">
                                                 <a class="link " href="{{route('place-of-birth')}}">
                                                     <div class="menu-title"> @lang('messages.Месторождения') </div>
                                                     <div class="menu-icon">
                                                         <i class="icon-right"></i>
                                                     </div>
                                                 </a>
-                                            </li>
+                                            </li> --}}
                                             <li class="dropdownWrap {{ request()->is('digital-mine') ? 'active' : null }}">
                                                 <a class="link prevDev" href="{{route('digital-mine')}}">
                                                     <div class="menu-title"> @lang('messages.Проекты') </div>
@@ -242,14 +242,14 @@
                                                     </div>
                                                 </a>
                                             </li>
-                                            <li class="">
+                                            {{-- <li class="">
                                                 <a class="link " href="hide">
                                                     <div class="menu-title"> @lang('messages.Отчет об устойчивом развитии') </div>
                                                     <div class="menu-icon">
                                                         <i class="icon-right"></i>
                                                     </div>
                                                 </a>
-                                            </li>
+                                            </li> --}}
                                         </ul>
                                     </li>
                                     <li class="dropdownWrap">
@@ -537,10 +537,10 @@
                                                     <a class="mobile-menu__link"
                                                        href="{{route('growth-projects')}}"> @lang('messages.Проекты роста') </a>
                                                 </li>
-                                                <li class="{{ request()->is('place-of-birth') ? 'active' : null }}">
+                                                {{-- <li class="{{ request()->is('place-of-birth') ? 'active' : null }}">
                                                     <a class="mobile-menu__link"
                                                        href="{{route('place-of-birth')}}"> @lang('messages.Месторождения') </a>
-                                                </li>
+                                                </li> --}}
                                                 <li class="{{ request()->is('digital-mine') ? 'active' : null }}">
                                                     <span class="mobile-menu__link mobile-menu__link_second"> @lang('messages.Проекты') <i
                                                                 class="icon-right"></i> </span>
@@ -591,10 +591,10 @@
                                                     <a class="mobile-menu__link"
                                                        href="{{route('development-local-communities')}}"> @lang('messages.Местные сообщества') </a>
                                                 </li>
-                                                <li>
+                                                {{-- <li>
                                                     <a class="mobile-menu__link"
                                                        href="hide"> @lang('messages.Отчет об устойчивом развитии') </a>
-                                                </li>
+                                                </li> --}}
                                             </ul>
                                         </div>
                                     </li>

@@ -56,7 +56,7 @@
                 </ul>
             </div>
             <div class="our-values__item">
-                <div class="title"> @lang('messages.Одна команда') </div>
+                <div class="title"> @lang('messages.Мы одна команда') </div>
                 <div class="subtitle"> @lang('messages.Мы помогаем друг другу и берем на себя ответственность за командный результат.') </div>
                 <ul class="list">
                 <li> @lang('messages.Разделяем Миссию, Видение и Ценности Компании.') </li>

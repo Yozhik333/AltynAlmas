@@ -41,15 +41,15 @@
                                         <div class="tab_item">
                                             <div class="tabs-lists tabs-lists-vacancy">
                                                 <div class="tabs-lists-title">@lang('messages.Требования:')</div>
-                                                {!! $vacancy->requirements_ru !!}
+                                                {!! nl2br($vacancy->requirements_ru) !!}
                                             </div>
                                             <div class="tabs-lists tabs-lists-vacancy">
                                                 <div class="tabs-lists-title">@lang('messages.Условия:')</div>
-                                                {!! $vacancy->conditions_ru !!}
+                                                {!! nl2br($vacancy->conditions_ru) !!}
                                             </div>
                                             <div class="tabs-lists tabs-lists-vacancy">
                                                 <div class="tabs-lists-title">@lang('messages.Обязанности:')</div>
-                                                {!! $vacancy->duties_ru !!}
+                                                {!! nl2br($vacancy->duties_ru) !!}
                                             </div>
                                     @endif
                                     @if (app()->getLocale() == 'kz')
@@ -60,15 +60,15 @@
                                         <div class="tab_item">
                                             <div class="tabs-lists tabs-lists-vacancy">
                                                 <div class="tabs-lists-title">@lang('messages.Требования:')</div>
-                                                {!! $vacancy->requirements_kz !!}
+                                                {!! nl2br($vacancy->requirements_kz) !!}
                                             </div>
                                             <div class="tabs-lists tabs-lists-vacancy">
                                                 <div class="tabs-lists-title">@lang('messages.Условия:')</div>
-                                                {!! $vacancy->conditions_kz !!}
+                                                {!! nl2br($vacancy->conditions_kz) !!}
                                             </div>
                                             <div class="tabs-lists tabs-lists-vacancy">
                                                 <div class="tabs-lists-title">@lang('messages.Обязанности:')</div>
-                                                {!! $vacancy->duties_kz !!}
+                                                {!! nl2br($vacancy->duties_kz) !!}
                                             </div>
                                     @endif
                                     @if (app()->getLocale() == 'en')
@@ -79,15 +79,15 @@
                                         <div class="tab_item">
                                             <div class="tabs-lists tabs-lists-vacancy">
                                                 <div class="tabs-lists-title">@lang('messages.Требования:')</div>
-                                                {!! $vacancy->requirements_en !!}
+                                                {!! nl2br($vacancy->requirements_en) !!}
                                             </div>
                                             <div class="tabs-lists tabs-lists-vacancy">
                                                 <div class="tabs-lists-title">@lang('messages.Условия:')</div>
-                                                {!! $vacancy->conditions_en !!}
+                                                {!! nl2br($vacancy->conditions_en) !!}
                                             </div>
                                             <div class="tabs-lists tabs-lists-vacancy">
                                                 <div class="tabs-lists-title">@lang('messages.Обязанности:')</div>
-                                                {!! $vacancy->duties_en !!}
+                                                {!! nl2br($vacancy->duties_en) !!}
                                             </div>
                                     @endif
 

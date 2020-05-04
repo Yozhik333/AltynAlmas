@@ -40,7 +40,7 @@
                         <h3 class="block-title">Требования на казахском языке</h3>
                     </div>
                     <div class="block">
-                        <textarea name="requirements_kz" class="js-summernote"></textarea>
+                        <textarea name="requirements_kz" class="col-sm-12"></textarea>
                     </div>
                 </div>
 
@@ -49,7 +49,7 @@
                         <h3 class="block-title">Требования на русском языке</h3>
                     </div>
                     <div class="block">
-                        <textarea name="requirements_ru" class="js-summernote"></textarea>
+                        <textarea name="requirements_ru" class="col-sm-12"></textarea>
                     </div>
                 </div>
 
@@ -58,7 +58,7 @@
                         <h3 class="block-title">Требования на английском языке</h3>
                     </div>
                     <div class="block">
-                        <textarea name="requirements_en" class="js-summernote"></textarea>
+                        <textarea name="requirements_en" class="col-sm-12"></textarea>
                     </div>
                 </div>
 
@@ -67,7 +67,7 @@
                         <h3 class="block-title">Условия на казахском языке</h3>
                     </div>
                     <div class="block">
-                        <textarea name="conditions_kz" class="js-summernote"></textarea>
+                        <textarea name="conditions_kz" class="col-sm-12"></textarea>
                     </div>
                 </div>
 
@@ -76,7 +76,7 @@
                         <h3 class="block-title">Условия на русском языке</h3>
                     </div>
                     <div class="block">
-                        <textarea name="conditions_ru" class="js-summernote"></textarea>
+                        <textarea name="conditions_ru" class="col-sm-12"></textarea>
                     </div>
                 </div>
 
@@ -85,7 +85,7 @@
                         <h3 class="block-title">Условия на английском языке</h3>
                     </div>
                     <div class="block">
-                        <textarea name="conditions_en" class="js-summernote"></textarea>
+                        <textarea name="conditions_en" class="col-sm-12"></textarea>
                     </div>
                 </div>
 
@@ -94,7 +94,7 @@
                         <h3 class="block-title">Обязанности на казахском языке</h3>
                     </div>
                     <div class="block">
-                        <textarea name="duties_kz" class="js-summernote"></textarea>
+                        <textarea name="duties_kz" class="col-sm-12"></textarea>
                     </div>
                 </div>
 
@@ -103,7 +103,7 @@
                         <h3 class="block-title">Обязанности на русском языке</h3>
                     </div>
                     <div class="block">
-                        <textarea name="duties_ru" class="js-summernote"></textarea>
+                        <textarea name="duties_ru" class="col-sm-12"></textarea>
                     </div>
                 </div>
 
@@ -112,7 +112,7 @@
                         <h3 class="block-title">Обязанности на английском языке</h3>
                     </div>
                     <div class="block">
-                        <textarea name="duties_en" class="js-summernote"></textarea>
+                        <textarea name="duties_en" class="col-sm-12"></textarea>
                     </div>
                 </div>
 

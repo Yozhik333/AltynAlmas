@@ -40,6 +40,15 @@ class SiteController extends Controller
     public function showNewsOnNewsPage()
     {
         $news = News::all()->reverse();
+        // $dateArray = [];
+
+        // foreach($news as $key=>$arr){
+        //     $dateArray[$key]=$arr['date'];
+        // }
+
+        // array_multisort($dateArray, SORT_STRING, $news);
+
+        // dd($news);
         return view('investors-and-media', compact('news'));
     }
 
