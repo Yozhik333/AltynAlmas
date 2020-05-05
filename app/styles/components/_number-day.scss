@@ -25,6 +25,11 @@
     line-height: 56px;
     color: #000;
     margin-bottom: 14px;
+    @include breakpoint-down(md){
+      font-size: 27.2px;
+      line-height: 36.8px;
+      margin-bottom: 11.2px;
+    }
   }
   
   &__description{

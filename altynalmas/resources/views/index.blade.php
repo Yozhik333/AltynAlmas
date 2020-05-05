@@ -34,7 +34,7 @@
                 <div class="title-wrapper">
                     <div class="h1-wrap">
                         <h1 class="small">
-                            <div class="text-normal"> @lang('messages.Золотодобывающая компания') </div> @lang('messages.АО') <span class="big-font">@lang('messages.«АК Алтыналмас»')</span>
+                            <div class="text-normal"> @lang('messages.Золотодобывающая компания') </div> <span class="big-font">@lang('messages.АО') @lang('messages.«АК Алтыналмас»')</span>
                         </h1>
                         <div class="slide-title"> @lang('messages.Инвестиции в вечные ценности...') </div>
                     </div>

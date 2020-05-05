@@ -130,7 +130,7 @@
                 <div class="flex">
                     <div class="place-of-birth__mapImg">
                         <div class="ratio">
-                            <img src="img/mapPlace.svg" alt="">
+                            <img src="@lang('messages.img/mapPlace.svg')" alt="">
                         </div>
                     </div>
                     <div class="place-of-birth__info hidden">

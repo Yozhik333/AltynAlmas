@@ -606,6 +606,6 @@ The effective corporate management structure implies the respect for rights and 
   '166 169 унций золота в год' => '166,169 oz. annual gold production',
   'Инвестиции в вечные ценности...' => 'Investments in timeless values...',
 
-
+  'img/mapPlace.svg' => 'img/en_map.svg',
 
 ];
