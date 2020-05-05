@@ -433,3 +433,7 @@
 .committee {
   padding: 30px 0;
 }
+.unique_text{
+  font-size: 31px;
+  @include fluidFontSize(20px,31px,1020px,1920px);
+}

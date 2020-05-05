@@ -58,8 +58,8 @@
                     <div class="advantages__banner-wrap">
                         <div class="advantages__banner" style="background-image:url('img/advantages.jpg') ">
                             <div class="title">
-                                <div class="text-uppercase"> @lang('messages.Уникальные преимущества') </div>
-                                <div class="title-small"> @lang('messages.АО «АК Алтыналмас»') </div>
+                                <div class="text-uppercase unique_text"> @lang('messages.Уникальные <br> преимущества') </div>
+                                <!-- <div class="title-small"> @lang('messages.АО «АК Алтыналмас»') </div> -->
                             </div>
                         </div>
                     </div>
