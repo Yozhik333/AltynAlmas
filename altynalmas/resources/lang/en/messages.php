@@ -597,7 +597,7 @@ The effective corporate management structure implies the respect for rights and 
   '70%' => '70%',
   //
   //'АО «АК Алтыналмас»' => 'AK Altynalmas JSC',
-  'Уникальные преимущества' => 'Unique benefits',
+  'Уникальные <br> преимущества' => 'Unique <br> benefits',
   'Золотодобывающая компания' => 'Gold mining company',
   'АО' => '',
   '«АК Алтыналмас»' => 'AK Altynalmas JSC',
