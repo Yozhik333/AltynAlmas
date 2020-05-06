@@ -94,7 +94,7 @@ Route::get('/contacts', function() {
     return view('contacts');
 })->name('contacts');
 
-Route::get('/search/{search}', 'SiteController@search')->name('search');
+Route::get('/search', 'SiteController@search')->name('search');
 
 Route::get('/admin-page', function() {
     return view('admin-page');
