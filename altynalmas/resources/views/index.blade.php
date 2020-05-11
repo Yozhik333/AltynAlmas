@@ -23,7 +23,7 @@
                 </div>
                 <div class="swiper-slide" data-title="@lang('messages.166 169 унций золота в год')" style="background-image: url('img/slide3.jpg');">
                 </div>
-                <div class="swiper-slide" data-title="@lang('messages.2055 сотрудников в штате')" style="background-image: url('img/slide4.jpeg');">
+                <div class="swiper-slide" data-title="@lang('messages.Более 2000 сотрудников в штате')" style="background-image: url('img/slide4.jpeg');">
                 </div>
                 <div class="swiper-slide" data-title="@lang('messages.Создаем золотые возможности для общества с 1993 года')" style="background-image: url('img/slide5.jpg');">
                 </div>

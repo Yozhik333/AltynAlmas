@@ -45,7 +45,7 @@ return[
     'Полезные ископаемые перерабатываются на собственных золотоизвлекательных фабриках «Акбакай», «Актогай» и «Алтыналмас Technology»' => 'Minerals are processed on the Company’s own gold recovery plants: Akbakai, Aktogai and Altynalmas Technology.',
     'В штате компании трудятся более 2000 высококвалифицированных сотрудников.' => 'The company employs more than 2,000 highly qualified employees.',
     'В производственном процессе задействовано более 120 единиц горной техники.' => 'More than 120 units of mining equipment are deployed in the production process.',
-    'Компания подтвердила соответствие международным' => 'TThe Company has been certified in accordance with quality standards, ',
+    'Компания подтвердила соответствие международным' => 'The Company has been certified in accordance with quality standards, ',
     'стандартам качества, получив сертификаты:' => 'receiving certificates as follows:',
     'ISO 9001 Системы менеджмента качества' => 'ISO 9001 Quality Management Systems;',
     'ISO 14001 Системы экологического менеджмента' => 'ISO 14001 Environment Management Systems;',
@@ -602,7 +602,7 @@ The effective corporate management structure implies the respect for rights and 
   'АО' => '',
   '«АК Алтыналмас»' => 'AK Altynalmas JSC',
   'Создаем золотые возможности для общества с 1993 года' => 'We have been establishing golden opportunities for community since 1993 ',
-  '2055 сотрудников в штате' => '2,055 employees',
+  'Более 2000 сотрудников в штате' => 'More than 2000 employees',
   '166 169 унций золота в год' => '166,169 oz. annual gold production',
   'Инвестиции в вечные ценности...' => 'Investments in timeless values...',
 
