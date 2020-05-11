@@ -168,20 +168,45 @@ class SiteController extends Controller
         return view('glossary', compact('glossary'));
     }
 	
-	public function search($search)
+	public function search()
     {
         $lang = Config::get('app.locale');
         if ($lang == 'en') {
-            $news = News::select('title_en as name','id')->where('title_en', 'LIKE', "%$search%")->get();
-            // $years = Year::select()->where('name', 'LIKE', "%$search%")->get();
+            $news = News::select('title_en as name','id')->get();
+            $years = Year::select('text_en as name', 'id')->get();
+            $akbakay = Akbakay::select('title_en as name', 'id')->get();
+            $aktogay = Aktogay::select('title_en as name', 'id')->get();
         }
         else if ($lang == 'kz') {
-            $news = News::select('title_kz as name', 'id')->where('title_kz', 'LIKE', "%$search%")->get();
+            $news = News::select('title_kz as name', 'id')->get();
+            $years = Year::select('text_kz as name', 'id')->get();
+            $akbakay = Akbakay::select('title_en as name', 'id')->get();
+            $aktogay = Aktogay::select('title_en as name', 'id')->get();
         }
         else {
-            $news = News::select('title_ru as name','id')->where('title_ru', 'LIKE', "%$search%")->get();
+            $news = News::select('title_ru as name','id')->get();
+            $years = Year::select('text_ru as name', 'id')->get();
+            $akbakay = Akbakay::select('title_en as name', 'id')->get();
+            $aktogay = Aktogay::select('title_en as name', 'id')->get();
+        }
+
+        $content = '';
+        foreach ($news as $itemNews) {
+            $content .= '<option data-value="/investors-news/'.$itemNews->id.'" value="'.$itemNews->name.'"></option>';
+        }
+
+        foreach ($years as $year) {
+            $content .= '<option data-value="/history" value="'.$year->name.'"></option>';
+        }
+
+        foreach ($akbakay as $itemAkbakay) {
+            $content .= '<option data-value="/akbakay" value="'.$itemAkbakay->name.'"></option>';
+        }
+
+        foreach ($aktogay as $itemAktogay) {
+            $content .= '<option data-value="/aktogay" value="'.$itemAktogay->name.'"></option>';
         }
         
-        return response()->json($news, 200);        
+        return $content;        
     }
 }
