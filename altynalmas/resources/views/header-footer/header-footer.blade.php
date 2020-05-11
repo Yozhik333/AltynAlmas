@@ -269,12 +269,24 @@
                                                 </a>
                                             </li>
                                             <li class="{{ request()->is('vacancies') ? 'active' : null }}">
-                                                <a class="link " href="{{route('vacancies')}}">
+                                                <a class="link prevDev" href="{{route('vacancies')}}">
                                                     <div class="menu-title"> @lang('messages.Вакансии') </div>
                                                     <div class="menu-icon">
                                                         <i class="icon-right"></i>
                                                     </div>
                                                 </a>
+                                                <ul class="dropdown-menu dropdown-level-">
+                                                    <li>
+                                                        <a class="link "
+                                                           href="https://hh.kz/search/vacancy?area=160&st=searchVacancy&text=алтыналмас"
+                                                           target="_blank">
+                                                            <div class="menu-title">Head Hunter</div>
+                                                            <div class="menu-icon">
+                                                                <i class="icon-right"></i>
+                                                            </div>
+                                                        </a>
+                                                    </li>
+                                                </ul>
                                             </li>
                                             <li class="{{ request()->is('jastar') ? 'active' : null }}">
                                                 <a class="link " href="{{route('jastar')}}">
@@ -615,6 +627,20 @@
                                                 <li class="{{ request()->is('vacancies') ? 'active' : null }}">
                                                     <a class="mobile-menu__link"
                                                        href="{{route('vacancies')}}"> @lang('messages.Вакансии') </a>
+                                                       <div class="mobile-menu__dropdown">
+                                                        <ul>
+                                                            <li class="close-dropdown_sec">
+                                                                <i class="icon-left"></i> @lang('messages.Назад')
+                                                            </li>
+                                                            <li>
+                                                                <a class="mobile-menu__link"
+                                                                   href="https://hh.kz/search/vacancy?area=160&st=searchVacancy&text=алтыналмас"
+                                                                   target="_blank">
+                                                                    <div class="menu-title">Head Hunter</div>
+                                                                </a>
+                                                            </li>
+                                                        </ul>
+                                                    </div>
                                                 </li>
                                                 <li class="{{ request()->is('jastar') ? 'active' : null }}">
                                                     <a class="mobile-menu__link"
