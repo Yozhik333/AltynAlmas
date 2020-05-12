@@ -47,7 +47,7 @@
             <div class="flex our-values__items">
             <div class="our-values__item">
                 <div class="title"> @lang('messages.Наши люди') </div>
-                <div class="subtitle"> @lang('messages.Ценим, развиваем и заботимся о сотрудниках.') </div>
+                <div class="subtitle"> @lang('messages.Ценим, развиваем и заботимся о работниках.') </div>
                 <ul class="list">
                 <li> @lang('messages.Создаем равные возможности для профессионального развития и роста.') </li>
                 <li> @lang('messages.Поддерживаем дружественную рабочую атмосферу.') </li>
@@ -84,7 +84,7 @@
             </div>
             <div class="our-values__item">
                 <div class="title"> @lang('messages.Безопасность труда') </div>
-                <div class="subtitle"> @lang('messages.Безопасность и здоровье сотрудников является нашим приоритетом.') </div>
+                <div class="subtitle"> @lang('messages.Безопасность и здоровье работников является нашим приоритетом.') </div>
                 <ul class="list">
                 <li> @lang('messages.Стремимся к нулевому уровню травматизма и проф. заболеваний.') </li>
                 <li> @lang('messages.Создаем безопасные условия труда и развиваем культуру безопасного поведения.') </li>
