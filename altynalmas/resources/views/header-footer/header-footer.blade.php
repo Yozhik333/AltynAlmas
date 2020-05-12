@@ -228,7 +228,7 @@
                                             </li>
                                             <li class="{{ request()->is('development-staff') ? 'active' : null }}">
                                                 <a class="link " href="{{route('development-staff')}}">
-                                                    <div class="menu-title"> @lang('messages.Сотрудники') </div>
+                                                    <div class="menu-title"> @lang('messages.Работники') </div>
                                                     <div class="menu-icon">
                                                         <i class="icon-right"></i>
                                                     </div>
@@ -269,13 +269,13 @@
                                                 </a>
                                             </li>
                                             <li class="{{ request()->is('vacancies') ? 'active' : null }}">
-                                                <a class="link prevDev" href="{{route('vacancies')}}">
+                                                <a class="link " href="{{route('vacancies')}}">
                                                     <div class="menu-title"> @lang('messages.Вакансии') </div>
                                                     <div class="menu-icon">
                                                         <i class="icon-right"></i>
                                                     </div>
                                                 </a>
-                                                <ul class="dropdown-menu dropdown-level-">
+												<ul class="dropdown-menu dropdown-level-">
                                                     <li>
                                                         <a class="link "
                                                            href="https://hh.kz/search/vacancy?area=160&st=searchVacancy&text=алтыналмас"
@@ -597,7 +597,7 @@
                                                 </li>
                                                 <li class="{{ request()->is('development-staff') ? 'active' : null }}">
                                                     <a class="mobile-menu__link"
-                                                       href="{{route('development-staff')}}"> @lang('messages.Сотрудники') </a>
+                                                       href="{{route('development-staff')}}"> @lang('messages.Работники') </a>
                                                 </li>
                                                 <li class="{{ request()->is('development-local-communities') ? 'active' : null }}">
                                                     <a class="mobile-menu__link"
@@ -625,22 +625,21 @@
                                                        href="{{route('career')}}"> @lang('messages.Почему мы?') </a>
                                                 </li>
                                                 <li class="{{ request()->is('vacancies') ? 'active' : null }}">
-                                                    <a class="mobile-menu__link"
-                                                       href="{{route('vacancies')}}"> @lang('messages.Вакансии') </a>
-                                                       <div class="mobile-menu__dropdown">
-                                                        <ul>
-                                                            <li class="close-dropdown_sec">
-                                                                <i class="icon-left"></i> @lang('messages.Назад')
-                                                            </li>
-                                                            <li>
-                                                                <a class="mobile-menu__link"
-                                                                   href="https://hh.kz/search/vacancy?area=160&st=searchVacancy&text=алтыналмас"
-                                                                   target="_blank">
-                                                                    <div class="menu-title">Head Hunter</div>
-                                                                </a>
-                                                            </li>
-                                                        </ul>
-                                                    </div>
+                                                    <span class="mobile-menu__link mobile-menu__link_second"> @lang('messages.Вакансии') <i
+                                                                class="icon-right"></i></span>
+                                                    <ul class="mobile-menu__dropdown">
+                                                        <li class="close-dropdown">
+                                                            <i class="icon-left"></i> @lang('messages.Назад')
+                                                        </li>
+                                                        <li class="{{ request()->is('vacancies') ? 'active' : null }}">
+                                                            <a class="mobile-menu__link"
+                                                               href="{{route('vacancies')}}"> @lang('messages.Актуальные вакансии') </a>
+                                                        </li>
+                                                        <li class="">
+                                                            <a class="mobile-menu__link"
+                                                               href="https://hh.kz/search/vacancy?area=160&st=searchVacancy&text=алтыналмас"> Head Hunter </a>
+                                                        </li>
+                                                    </ul>
                                                 </li>
                                                 <li class="{{ request()->is('jastar') ? 'active' : null }}">
                                                     <a class="mobile-menu__link"
@@ -822,9 +821,9 @@
 
                             </div>
                             <div class="cost-wrap">
-                                <div class="cost"> USD: {{ $usd }} <i></i>
+                                <div class="cost"> USD: {{$usd}} <i></i>
                                 </div>
-                                <div class="cost"> GOLD: $ 1715.30 -14.20</div>
+                                <div class="cost"> GOLD: $ 1698.10 -4.80</div>
                             </div>
                         </div>
                     </div>
