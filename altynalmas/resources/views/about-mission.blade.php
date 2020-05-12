@@ -31,8 +31,8 @@
           <div class="advantages__banner-wrap">
             <div class="advantages__banner" style="background-image:url('img/advantages2.jpg') ">
               <div class="title">
-                <div class="text-uppercase"> @lang('messages.Принципы Акционерного общества') </div>
-                <div class="title-small"> @lang('messages.«АК Алтыналмас»') </div>
+                {{--<div class="text-uppercase"> @lang('messages.Миссия, Видение, Ценности') </div>--}}
+                <div class="title-small"> @lang('messages.Миссия, Видение, Ценности') </div>
               </div>
             </div>
             <div class="advantages-description">
@@ -73,7 +73,7 @@
             <article class="values-article">
               <div class="values__body-title"> @lang('messages.Безопасность труда') </div>
               <div class="values__body-points">
-                <p>@lang('messages.Безопасность и здоровье сотрудников является нашим приоритетом.')</p>
+                <p>@lang('messages.Безопасность и здоровье работников является нашим приоритетом.')</p>
                 <ul>
                   <li>@lang('messages.Стремимся к нулевому уровню травматизма и проф. заболеваний.')</li>
                   <li>@lang('messages.Создаем безопасные условия труда и развиваем культуру безопасного поведения.')</li>
@@ -82,7 +82,7 @@
               </div>
             </article>
             <article class="values-article">
-              <div class="values__body-title"> @lang('messages.Одна команда') </div>
+              <div class="values__body-title"> @lang('messages.Мы одна команда') </div>
               <div class="values__body-points">
                 <p>@lang('messages.Мы помогаем друг другу и берем на себя ответственность за командный результат.')</p>
                 <ul>
@@ -95,7 +95,7 @@
             <article class="values-article">
               <div class="values__body-title">@lang('messages.Наши люди') </div>
               <div class="values__body-points">
-                <p> @lang('messages.Ценим, развиваем и заботимся о сотрудниках.')</p>
+                <p> @lang('messages.Ценим, развиваем и заботимся о работниках.')</p>
                 <ul>
                   <li> @lang('messages.Создаем равные возможности для профессионального развития и роста.')</li>
                   <li> @lang('messages.Поддерживаем дружественную рабочую атмосферу.')</li>

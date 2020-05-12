@@ -1,6 +1,5 @@
 @extends('header-footer.header-footer')
 
-
 @section('title')
   @if (app()->getLocale() == 'ru')
     О компании
@@ -44,7 +43,7 @@
           </div>
           <div class="about-gold__description-block">
             <div class="about-gold__words">
-              <p> @lang('messages.В штате компании трудятся более 2000 высококвалифицированных сотрудников.')</p>
+              <p> @lang('messages.В штате компании трудятся более 2000 высококвалифицированных работников.')</p>
               <p> @lang('messages.В производственном процессе задействовано более 120 единиц горной техники.')</p>
             </div>
             <div class="about-gold__img">

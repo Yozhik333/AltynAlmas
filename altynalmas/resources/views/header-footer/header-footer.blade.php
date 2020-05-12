@@ -67,7 +67,7 @@
                                                 <a class="link " href="{{ route('history') }}">
                                                     <div class="menu-title"> @lang('messages.История') </div>
                                                     <div class="menu-icon">
-                                                        <i class=icon-right""></i>
+                                                        <i class="icon-right"></i>
                                                     </div>
                                                 </a>
                                             </li>
