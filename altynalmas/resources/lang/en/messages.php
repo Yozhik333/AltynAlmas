@@ -112,11 +112,11 @@ Almaty, Republic of Kazakhstan',
   // Committe page
   'Комитеты Совета Директоров' => 'Board Directors Committee',
   'Аудиторский комитет' => 'Audit Committee',
-  'Председателем Аудиторского комитета является Независимы директор Совета директоров Общества. Аудиторский комитет собирается не менее 4 раз в год или чаще при необходимости.' => 'The Chairman of the Audit Committee is an Independent Director of the Board Committees of the Company. The Audit Committee holds meetings at least 4 times a year or more if required.',
+  'Председателем Аудиторского комитета является Независимый директор Совета директоров Общества. Аудиторский комитет собирается не менее 4 раз в год или чаще при необходимости.' => 'The Chairman of the Audit Committee is an Independent Director of the Board Committees of the Company. The Audit Committee holds meetings at least 4 times a year or more if required.',
   'Цель Аудиторского комитета - обеспечить структурное и системное курирование работы в области корпоративного управления и внутреннего контроля. Аудиторский комитет оказывает содействие Совету директоров путем консультаций и разработки рекомендаций по:' => 'The aim of the Audit Committee is to execute structural and systematic supervision of activities performed in the field of corporate governance and internal control. The Audit Committee provides assistance to the Board Committees by consulting and issuing recommendations on:',
   'установлению эффективной системы контроля за финансово-хозяйственной деятельностью (в том числе за полнотой и достоверностью финансовой отчетности);' => 'financial and economic activity monitoring system (including completeness and credibility of financial reports);',
   'контролю за надежностью и эффективностью системы внутреннего контроля, а также за исполнением требований корпоративного управления;' => 'maintaining control over the credibility and effectiveness of internal control system, as well as fulfillment of the corporate management requirements;',
-  'контролю за независимостью внешнего и внутреннего аудита, а также обеспечение соблюдения законодательства Республики Казахстан;' => 'maintaining control over the independence of external and internal audits, as well ensuring compliance with the applicable legislation of the Republic of Kazakhstan.',
+  'контролю за независимостью внешнего и внутреннего аудита, а также обеспечение соблюдения законодательства Республики Казахстан.' => 'maintaining control over the independence of external and internal audits, as well ensuring compliance with the applicable legislation of the Republic of Kazakhstan.',
 
 
   'Комитет по риск-менеджменту' => 'Risk Management Committee',
