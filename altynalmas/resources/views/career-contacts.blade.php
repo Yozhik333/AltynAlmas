@@ -32,7 +32,7 @@
             <div class="flex flex-wrap">
             <div class="contacts__address">
                 <div class="contacts__address-frame">
-                <div class="contacts__address-banner" style="background-image: url('/img/photo-img.jpg');">
+                <div class="contacts__address-banner" style="background-image: url('img/contacts-item.jpg');">
                 </div>
                 <div class="contacts__address-description">
                     <div class="contacts__address-head"> @lang('messages.головной офис:') </div>
