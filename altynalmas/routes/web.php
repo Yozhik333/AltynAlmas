@@ -78,6 +78,10 @@ Route::get('/suppliers-principles', function() {
     return view('suppliers-principles');
 })->name('suppliers-principles');
 
+Route::get('/suppliers-inside-doc', function() {
+    return view('suppliers-inside-doc');
+})->name('suppliers-inside-doc');
+
 Route::get('/suppliers-realization', function() {
     return view('suppliers-realization');
 })->name('suppliers-realization');
