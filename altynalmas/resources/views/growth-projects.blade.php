@@ -135,7 +135,7 @@
                     </div>
 
                     <div class="map-info__block-title">
-                        Способ добычи:
+                        @lang('messages.Способ добычи:')
                     </div>
 
                     <div class="map-info__wrap">
@@ -144,7 +144,7 @@
                             </div>
 
                             <div class="map-info__title">
-                                комбинированный
+                                @lang('messages.Комбинированный')
                             </div>
                         </div>
 
@@ -153,7 +153,7 @@
                             </div>
 
                             <div class="map-info__title">
-                                подземный
+                                @lang('messages.Подземный')
                             </div>
                         </div>
 
@@ -162,7 +162,7 @@
                             </div>
 
                             <div class="map-info__title">
-                                открытый
+                                @lang('messages.Открытый')
                             </div>
                         </div>
 
@@ -171,7 +171,7 @@
                             </div>
 
                             <div class="map-info__title">
-                                Горные работы не ведутся
+                                @lang('messages.Горные работы не ведутся')
                             </div>
                         </div>
                     </div>
