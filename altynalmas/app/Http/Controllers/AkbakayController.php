@@ -46,9 +46,10 @@ class AkbakayController extends Controller
      */
     public function store(Request $request)
     {
-        // var_dump($request); die;
         $this->validate($request,[
             'img_url' => 'required|file|max:50000',
+            'img_url_kz' => 'required|file|max:50000',
+            'img_url_en' => 'required|file|max:50000',
             'title_kz'=>'required|string|max:191|min:1',
             'title_ru'=>'required|string|max:191|min:1',
             'title_en'=>'required|string|max:191|min:1',
@@ -58,9 +59,13 @@ class AkbakayController extends Controller
         ]);
 
         $img_url = $request->file('img_url')->store('');
+        $img_url_kz = $request->file('img_url_kz')->store('');
+        $img_url_en = $request->file('img_url_en')->store('');
 
         $akbakay = new Akbakay;
         $akbakay->img_url=$img_url;
+        $akbakay->img_url_kz=$img_url_kz;
+        $akbakay->img_url_en=$img_url_en;
         $akbakay->title_kz=$request->title_kz;
         $akbakay->title_ru=$request->title_ru;
         $akbakay->title_en=$request->title_en;
@@ -107,53 +112,56 @@ class AkbakayController extends Controller
     {
         $akbakay = Akbakay::find($id);
 
-        // var_dump($request); die;
+        $this->validate($request,[
+            'title_kz'=>'required|string|max:191|min:1',
+            'title_ru'=>'required|string|max:191|min:1',
+            'title_en'=>'required|string|max:191|min:1',
+            'text_kz'=>'required|string|max:60000|min:1',
+            'text_ru'=>'required|string|max:60000|min:1',
+            'text_en'=>'required|string|max:60000|min:1',
+        ]);
+
+        $akbakay->title_kz=$request->title_kz;
+        $akbakay->title_ru=$request->title_ru;
+        $akbakay->title_en=$request->title_en;
+        $akbakay->text_kz=$request->text_kz;
+        $akbakay->text_ru=$request->text_ru;
+        $akbakay->text_en=$request->text_en;
+
         if($request->file('img_url')){
             $this->validate($request,[
                 'img_url' => 'required|file|max:50000',
-                'title_kz'=>'required|string|max:191|min:1',
-                'title_ru'=>'required|string|max:191|min:1',
-                'title_en'=>'required|string|max:191|min:1',
-                'text_kz'=>'required|string|max:60000|min:1',
-                'text_ru'=>'required|string|max:60000|min:1',
-                'text_en'=>'required|string|max:60000|min:1',
             ]);
             $img_url = $request->file('img_url')->store('');
             Storage::disk('public')->delete($akbakay->img_url);
 
             $akbakay->img_url=$img_url;
-            $akbakay->title_kz=$request->title_kz;
-            $akbakay->title_ru=$request->title_ru;
-            $akbakay->title_en=$request->title_en;
-            $akbakay->text_kz=$request->text_kz;
-            $akbakay->text_ru=$request->text_ru;
-            $akbakay->text_en=$request->text_en;
-
-            $akbakay->save();
-
-            Session::flash('success','Информация успешно отредактирована.');
-            return redirect()->route('admin-akbakay.index');
-        } else {
-            $this->validate($request,[
-                'title_kz'=>'required|string|max:191|min:1',
-                'title_ru'=>'required|string|max:191|min:1',
-                'title_en'=>'required|string|max:191|min:1',
-                'text_kz'=>'required|string|max:60000|min:1',
-                'text_ru'=>'required|string|max:60000|min:1',
-                'text_en'=>'required|string|max:60000|min:1',
-            ]);
-            $akbakay->title_kz=$request->title_kz;
-            $akbakay->title_ru=$request->title_ru;
-            $akbakay->title_en=$request->title_en;
-            $akbakay->text_kz=$request->text_kz;
-            $akbakay->text_ru=$request->text_ru;
-            $akbakay->text_en=$request->text_en;
-
-            $akbakay->save();
-
-            Session::flash('success','Информация успешно отредактирована.');
-            return redirect()->route('admin-akbakay.index');
         }
+
+        if($request->file('img_url_kz')){
+            $this->validate($request,[
+                'img_url_kz' => 'required|file|max:50000',
+            ]);
+            $img_url_kz = $request->file('img_url_kz')->store('');
+            Storage::disk('public')->delete($akbakay->img_url_kz);
+
+            $akbakay->img_url_kz=$img_url_kz;
+        }
+
+        if($request->file('img_url_en')){
+            $this->validate($request,[
+                'img_url_en' => 'required|file|max:50000',
+            ]);
+            $img_url_en = $request->file('img_url_en')->store('');
+            Storage::disk('public')->delete($akbakay->img_url_en);
+
+            $akbakay->img_url_en=$img_url_en;
+        } 
+
+        $akbakay->save();
+
+        Session::flash('success','Информация успешно отредактирована.');
+        return redirect()->route('admin-akbakay.index');
     }
 
     /**
@@ -166,6 +174,8 @@ class AkbakayController extends Controller
     {
         $akbakay = Akbakay::find($id);
         Storage::disk('public')->delete($akbakay->img_url);
+        Storage::disk('public')->delete($akbakay->img_url_kz);
+        Storage::disk('public')->delete($akbakay->img_url_en);
 
         $akbakay->delete();
 

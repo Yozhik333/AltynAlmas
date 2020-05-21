@@ -16,9 +16,23 @@
                         @csrf
 
                         <div class="form-group">
-                            <label class="col-sm-12" for="img_url">Добавьте фотографию схемы работы</label>
+                            <label class="col-sm-12" for="img_url_kz">Добавьте фотографию схемы работы на казахском языке</label>
+                            <div class="col-sm-12">
+                                <input type="file" id="img_url_kz" name="img_url_kz">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-12" for="img_url">Добавьте фотографию схемы работы на русском языке</label>
                             <div class="col-sm-12">
                                 <input type="file" id="img_url" name="img_url">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-12" for="img_url_en">Добавьте фотографию схемы работы на английском языке</label>
+                            <div class="col-sm-12">
+                                <input type="file" id="img_url_en" name="img_url_en">
                             </div>
                         </div>
 
@@ -81,7 +95,24 @@
             </div>
 
             <div class="block admin-news-img">
+                <div class="block">
+                    <h3 class="block-title">Уже загруженное фото схемы работы на казахском языке</h3>
+                </div>
+                <img src="/storage/{{$akbakay[0]->img_url_kz}}">
+            </div>
+
+            <div class="block admin-news-img">
+                <div class="block">
+                    <h3 class="block-title">Уже загруженное фото схемы работы на русском языке</h3>
+                </div>
                 <img src="/storage/{{$akbakay[0]->img_url}}">
+            </div>
+
+            <div class="block admin-news-img">
+                <div class="block">
+                    <h3 class="block-title">Уже загруженное фото схемы работы на английском языке</h3>
+                </div>
+                <img src="/storage/{{$akbakay[0]->img_url_en}}">
             </div>
 
             <div class="block">
@@ -92,9 +123,23 @@
                         {{ method_field('PUT') }}
 
                         <div class="form-group">
-                            <label class="col-sm-12" for="img_url">Добавьте новую фотографию схемы работы или оставьте это поле пустым</label>
+                            <label class="col-sm-12" for="img_url_kz">Добавьте новую фотографию схемы работы для казахского языка или оставьте это поле пустым</label>
+                            <div class="col-sm-12">
+                                <input type="file" id="img_url_kz" name="img_url_kz">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-12" for="img_url">Добавьте новую фотографию схемы работы для русского языка или оставьте это поле пустым</label>
                             <div class="col-sm-12">
                                 <input type="file" id="img_url" name="img_url">
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label class="col-sm-12" for="img_url_en">Добавьте новую фотографию схемы работы для английского языка или оставьте это поле пустым</label>
+                            <div class="col-sm-12">
+                                <input type="file" id="img_url_en" name="img_url_en">
                             </div>
                         </div>
 
