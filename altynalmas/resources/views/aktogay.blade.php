@@ -76,7 +76,15 @@
                         </div>
                     @endif                
                 </article>
-                <a href="/storage/{{$aktogay[0]->img_url}}" data-fancybox class="btn btn-detail"> @lang('messages.Посмотреть схему работы') </a>
+                @if (app()->getLocale() == 'ru')
+                    <a href="/storage/{{$aktogay[0]->img_url}}" data-fancybox class="btn btn-detail"> @lang('messages.Посмотреть схему работы') </a>
+                @endif
+                @if (app()->getLocale() == 'kz')
+                    <a href="/storage/{{$aktogay[0]->img_url_kz}}" data-fancybox class="btn btn-detail"> @lang('messages.Посмотреть схему работы') </a>
+                @endif
+                @if (app()->getLocale() == 'en')
+                    <a href="/storage/{{$aktogay[0]->img_url_en}}" data-fancybox class="btn btn-detail"> @lang('messages.Посмотреть схему работы') </a>
+                @endif
                 <a href="{{route('gallery')}}" class="btn btn-detail" >@lang('messages.Фотогалерея')</a>
             </div>
             <div class="activity-detail__info-wrap">

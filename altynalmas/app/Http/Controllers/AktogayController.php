@@ -49,6 +49,8 @@ class AktogayController extends Controller
         // var_dump($request); die;
         $this->validate($request,[
             'img_url' => 'required|file|max:50000',
+            'img_url_kz' => 'required|file|max:50000',
+            'img_url_en' => 'required|file|max:50000',
             'title_kz'=>'required|string|max:191|min:1',
             'title_ru'=>'required|string|max:191|min:1',
             'title_en'=>'required|string|max:191|min:1',
@@ -58,9 +60,13 @@ class AktogayController extends Controller
         ]);
 
         $img_url = $request->file('img_url')->store('');
+        $img_url_kz = $request->file('img_url_kz')->store('');
+        $img_url_en = $request->file('img_url_en')->store('');
 
         $aktogay = new Aktogay;
         $aktogay->img_url=$img_url;
+        $aktogay->img_url_kz=$img_url_kz;
+        $aktogay->img_url_en=$img_url_en;
         $aktogay->title_kz=$request->title_kz;
         $aktogay->title_ru=$request->title_ru;
         $aktogay->title_en=$request->title_en;
@@ -106,54 +112,57 @@ class AktogayController extends Controller
     public function update(Request $request, $id)
     {
         $aktogay = Aktogay::find($id);
+        $this->validate($request,[
+            'title_kz'=>'required|string|max:191|min:1',
+            'title_ru'=>'required|string|max:191|min:1',
+            'title_en'=>'required|string|max:191|min:1',
+            'text_kz'=>'required|string|max:60000|min:1',
+            'text_ru'=>'required|string|max:60000|min:1',
+            'text_en'=>'required|string|max:60000|min:1',
+        ]);
 
-        // var_dump($request); die;
+        $aktogay->title_kz=$request->title_kz;
+        $aktogay->title_ru=$request->title_ru;
+        $aktogay->title_en=$request->title_en;
+        $aktogay->text_kz=$request->text_kz;
+        $aktogay->text_ru=$request->text_ru;
+        $aktogay->text_en=$request->text_en;
+
         if($request->file('img_url')){
             $this->validate($request,[
                 'img_url' => 'required|file|max:50000',
-                'title_kz'=>'required|string|max:191|min:1',
-                'title_ru'=>'required|string|max:191|min:1',
-                'title_en'=>'required|string|max:191|min:1',
-                'text_kz'=>'required|string|max:60000|min:1',
-                'text_ru'=>'required|string|max:60000|min:1',
-                'text_en'=>'required|string|max:60000|min:1',
             ]);
             $img_url = $request->file('img_url')->store('');
             Storage::disk('public')->delete($aktogay->img_url);
 
             $aktogay->img_url=$img_url;
-            $aktogay->title_kz=$request->title_kz;
-            $aktogay->title_ru=$request->title_ru;
-            $aktogay->title_en=$request->title_en;
-            $aktogay->text_kz=$request->text_kz;
-            $aktogay->text_ru=$request->text_ru;
-            $aktogay->text_en=$request->text_en;
-
-            $aktogay->save();
-
-            Session::flash('success','Информация успешно отредактирована.');
-            return redirect()->route('admin-aktogay.index');
-        } else {
-            $this->validate($request,[
-                'title_kz'=>'required|string|max:191|min:1',
-                'title_ru'=>'required|string|max:191|min:1',
-                'title_en'=>'required|string|max:191|min:1',
-                'text_kz'=>'required|string|max:60000|min:1',
-                'text_ru'=>'required|string|max:60000|min:1',
-                'text_en'=>'required|string|max:60000|min:1',
-            ]);
-            $aktogay->title_kz=$request->title_kz;
-            $aktogay->title_ru=$request->title_ru;
-            $aktogay->title_en=$request->title_en;
-            $aktogay->text_kz=$request->text_kz;
-            $aktogay->text_ru=$request->text_ru;
-            $aktogay->text_en=$request->text_en;
-
-            $aktogay->save();
-
-            Session::flash('success','Информация успешно отредактирована.');
-            return redirect()->route('admin-aktogay.index');
         }
+
+        if($request->file('img_url_kz')){
+            $this->validate($request,[
+                'img_url_kz' => 'required|file|max:50000',
+            ]);
+            $img_url_kz = $request->file('img_url_kz')->store('');
+            Storage::disk('public')->delete($aktogay->img_url_kz);
+
+            $aktogay->img_url_kz=$img_url_kz;
+        }
+
+        if($request->file('img_url_en')){
+            $this->validate($request,[
+                'img_url_en' => 'required|file|max:50000',
+            ]);
+            $img_url_en = $request->file('img_url_en')->store('');
+            Storage::disk('public')->delete($aktogay->img_url_en);
+
+            $aktogay->img_url_en=$img_url_en;
+        }
+
+        $aktogay->save();
+
+        Session::flash('success','Информация успешно отредактирована.');
+        return redirect()->route('admin-aktogay.index');
+        
     }
 
     /**
@@ -166,6 +175,8 @@ class AktogayController extends Controller
     {
         $aktogay = Aktogay::find($id);
         Storage::disk('public')->delete($aktogay->img_url);
+        Storage::disk('public')->delete($aktogay->img_url_kz);
+        Storage::disk('public')->delete($aktogay->img_url_en);
 
         $aktogay->delete();
 

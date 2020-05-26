@@ -93,7 +93,7 @@ Almaty, Republic of Kazakhstan',
   'корпоративные ценности и способных решать текущие и будущие задачи.' => 'In our employees we appreciate the striving for continuous development and invest in development of staff competences.',
   'Работники имеют возможность получать высшее и средне-специальное образование. В 2019 году обучение более 30 РАБОТНИКОВ было профинансировано за счет средств работодателя' => 'Employees have an opportunity to get a higher and secondary professional education. In 2019 the employer provided a sponsorship for education of more than 30 employees',
   'Более 80% РАБОТНИКОВ проходят обучение и курсы повышения квалификации' => 'Over 80% of the employees take training and advanced training courses',
-  'Ежегодно работники принимают участие в более 100 РАЗЛИЧНЫХ ОБУЧАЮЩИХ МЕРОПРИЯТИЯХ ' => 'Every year employees take part in more than 100 various training events',
+  'Ежегодно работники принимают участие в более 100 РАЗЛИЧНЫХ ОБУЧАЮЩИХ МЕРОПРИЯТИЯХ' => 'Every year employees take part in more than 100 various training events',
   'Кадровая политика Компании основана на следующих принципах:' => 'The Company’s HR policy principles include:',
   'создание возможностей для профессионального и личного роста работников;' => 'opportunities for employees’ professional and personal development;',
   'побуждение всех работников к полному раскрытию своего потенциала;' => 'motivation of the employees to realize one’s fullest potential;',
@@ -480,6 +480,17 @@ The effective corporate management structure implies the respect for rights and 
   'Эффективность' => 'Efficiency ',
   'Решения по закупкам принимаются, исходя из соотношения требуемого качества закупаемых ТРУ к их стоимости.' => 'Decisions on procurement are made based on ratio of required quality of purchased GWS and their cost.',
 
+  
+  // suppliers-inside-doc поставщикам
+
+  'Внутренние нормативные документы' => '',
+  'Положение по охране труда, технике безопасности и охране окружающей среды для подрядных организаций АО «АК Алтыналмас»' => 'Code of Conduct of JSC AK Altynalmas',
+  'Кодекс корпоративной этики АО «АК Алтыналмас»' => '',
+  'Политика по урегулированию конфликта интересов у работников и должностных лиц АО «АК Алтыналмас»' => '',
+  'Положение по оповещению о нарушении этических норм, законодательства и внутренних правил АО «АК Алтыналмас»' => '',
+  'Скачать документ' => '',
+
+  
   //suppliers-realization поставщикам
   'Реализация неликвидов' => 'Sale of illiquid assets ',
   'По вопросу продажи обращаться:' => 'For sales, please contact with:',
@@ -584,7 +595,7 @@ The effective corporate management structure implies the respect for rights and 
   '130 млн тенге' => 'KZT130 million',
   'Производитель золота в слитках качества Доре (совокупно с производительностью «Казахалтын Technology»)' => 'Producer of Doré gold bars (including Kazakhaltyn Technology production)',
   '2-й в РК' => '2nd in the Republic of Kazakhstan',
-  'По переработке золотосодержащего минерального сырья (совокупно с производительностью АО «ГМК Казахалтын» и «Казахалтын Technology»)' => 'In gold ore processing (including MMC Kazakhaltyn JSC and Kazakhaltyn Technology production)',
+  'По переработке золотосодержащего минерального сырья (совокупно с производительностью АО «ГМК КАЗАХАЛТЫН» и «Казахалтын Technology»)' => 'In gold ore processing (including MMC KAZAKHALTYN JSC and Kazakhaltyn Technology production)',
   '1-ый в РК' => '1st in the Republic of Kazakhstan',
   'Карьер Пустынное второй в РК по объему добываемой горной массы' => 'Pustynnoye open-pit mine is the second largest in the Republic of Kazakhstan for the rock mass volume',
   'Унций золота за 27 лет выпущено компанией Алтыналмас.' => 'Ounces of gold produced by Altynalmas for 27 years',
@@ -597,6 +608,11 @@ The effective corporate management structure implies the respect for rights and 
   'АО «АК Алтыналмас»' => 'AK Altynalmas JSC',
   'Уникальные <br> преимущества' => 'Unique <br> benefits',
   'Золотодобывающая компания' => 'Gold mining company',
+  'Способ добычи:' => 'Mining method:',
+    'Открытый' => 'Open-pit ',
+    'Подземный' => 'Underground',
+    'Комбинированный' => 'Combined',
+    'Горные работы не ведутся' => 'No mining',
   'АО' => ' ',
   '«АК Алтыналмас»' => 'AK Altynalmas JSC',
   'Создаем золотые возможности для общества с 1993 года' => 'We have been establishing golden opportunities for community since 1993 ',

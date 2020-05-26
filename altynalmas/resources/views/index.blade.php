@@ -78,7 +78,7 @@
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="number-day__number"> @lang('messages.1-ый в РК') </div>
-                                        <div class="number-day__description"> @lang('messages.По переработке золотосодержащего минерального сырья (совокупно с производительностью АО «ГМК Казахалтын» и «Казахалтын Technology»)') </div>
+                                        <div class="number-day__description"> @lang('messages.По переработке золотосодержащего минерального сырья (совокупно с производительностью АО «ГМК КАЗАХАЛТЫН» и «Казахалтын Technology»)') </div>
                                     </div>
                                     <div class="swiper-slide">
                                         <div class="number-day__number"> @lang('messages.2-й в РК') </div>

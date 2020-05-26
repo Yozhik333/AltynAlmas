@@ -133,6 +133,49 @@
                             <img src="@lang('messages.img/mapPlace.svg')" alt="">
                         </div>
                     </div>
+
+                    <div class="map-info__block-title">
+                        @lang('messages.Способ добычи:')
+                    </div>
+
+                    <div class="map-info__wrap">
+                        <div class="flex align-items-end">
+                            <div class="map-info__triangle">
+                            </div>
+
+                            <div class="map-info__title">
+                                @lang('messages.Комбинированный')
+                            </div>
+                        </div>
+
+                        <div class="flex align-items-end">
+                            <div class="map-info__square">
+                            </div>
+
+                            <div class="map-info__title">
+                                @lang('messages.Подземный')
+                            </div>
+                        </div>
+
+                        <div class="flex align-items-end">
+                            <div class="map-info__circle">
+                            </div>
+
+                            <div class="map-info__title">
+                                @lang('messages.Открытый')
+                            </div>
+                        </div>
+
+                        <div class="flex align-items-end">
+                            <div class="map-info__circle_white">
+                            </div>
+
+                            <div class="map-info__title">
+                                @lang('messages.Горные работы не ведутся')
+                            </div>
+                        </div>
+                    </div>
+
                     <div class="place-of-birth__info hidden">
                         <div class="place-of-birth__item">
                             <div class="place-of-birth__info-title"> @lang('messages.3 месторождения Казахалтын') </div>
