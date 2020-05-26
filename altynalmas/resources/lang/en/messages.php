@@ -42,7 +42,7 @@ return[
   'Производитель золота' => 'Gold producer',
   'Акционерное общество «АК Алтыналмас» - компания полного геологического, горнодобывающего и золотоперерабатывающего цикла. Добыча золотосодержащей руды ведется на 5 из 15 месторождений Казахстана, которые принадлежат компании.' => 'AK Altynalmas JSC is a company with a complete geological, mining and gold processing cycle. We operate 5 owned by the Company gold mines which are among15 mines across Kazakhstan.',
   'Активы компании присутствует в 4-х регионах Казахстана: Жамбылской, Карагандинской, Восточно-Казахстанской и Акмолинской областях.' => 'Our assets span 4 regions in Kazakhstan: Zhambyl, Karaganda, East-Kazakhstan and Akmola oblasts',
-  'Полезные ископаемые перерабатываются на собственных золотоизвлекательных фабриках «Акбакай», «Актогай» и «Алтыналмас Technology»' => 'Minerals are processed on the Company’s own gold recovery plants: Akbakai, Aktogai and Altynalmas Technology.',
+  'Полезные ископаемые перерабатываются на собственных золотоизвлекательных фабриках «Акбакай», «Долинное», обогатительной фабрике «Пустынное» и заводе по извлечению драгоценных металлов «Алтыналмас Technology».' => 'Minerals are processed on the Company’s own gold recovery plants: Akbakai, Dolinnoe, processing plant Pustynnoe and precious metals recovery plant Altynalmas Technology.',
   'В штате компании трудятся более 2000 высококвалифицированных работников.' => 'The company employs more than 2,000 highly qualified employees.',
   'В производственном процессе задействовано более 120 единиц горной техники.' => 'More than 120 units of mining equipment are deployed in the production process.',
   'Компания подтвердила соответствие международным' => 'The Company has been certified in accordance with quality standards, ',
@@ -64,8 +64,8 @@ return[
   'интенсивное цианидное выщелачивание и прямое выщелачивание' => 'Intensive cyanide leaching and direct leaching ',
   'Конечный продукт' => 'END PRODUCT ',
   'золотосодержащий насыщенный раствор гравиоконцентрата, насыщенный активированный уголь cip, сплав доре' => 'Gravity gold concentrate, CIP loaded carbon, Dore gold',
-  
-  'Актогай' => 'Aktogai',  
+
+  'Актогай' => 'Aktogai',
   'СПОСОБ РАЗРАБОТКИ МЕСТОРОЖДЕНИЯ' => 'Mine development method',
   'Открытый способ' => 'Open-pit',
   'ТЕХНОЛОГИЯ ОБОГАЩЕНИЯ РУД' => 'Ore concentration technology',
@@ -89,7 +89,7 @@ Almaty, Republic of Kazakhstan',
   'Почему мы?' => 'Why us',
   'ЛЮДИ — решающий фактор успеха бизнеса.' => 'People are the key to the business success.',
   'Масштабы компании и сложность реализуемых проектов дают прекрасные возможности для профессионального и карьерного роста.' => 'Our projects scale and complexity offer splendid opportunities for professional and career development.',
-  'Кадровая политика компании направлена на привлечение и развитие талантливых и мотивированных работников, разделяющих наши' => 'It is the Company’s strategic priority to develop the human asset.',  
+  'Кадровая политика компании направлена на привлечение и развитие талантливых и мотивированных работников, разделяющих наши' => 'It is the Company’s strategic priority to develop the human asset.',
   'корпоративные ценности и способных решать текущие и будущие задачи.' => 'In our employees we appreciate the striving for continuous development and invest in development of staff competences.',
   'Работники имеют возможность получать высшее и средне-специальное образование. В 2019 году обучение более 30 РАБОТНИКОВ было профинансировано за счет средств работодателя' => 'Employees have an opportunity to get a higher and secondary professional education. In 2019 the employer provided a sponsorship for education of more than 30 employees',
   'Более 80% РАБОТНИКОВ проходят обучение и курсы повышения квалификации' => 'Over 80% of the employees take training and advanced training courses',
@@ -129,7 +129,7 @@ Almaty, Republic of Kazakhstan',
   'Рассмотрение и согласование планов работы по управлению рисками Общества;' => 'Review and approval of the Company’s Action Plans for risk management;',
   'Рассмотрение рекомендаций внешних и внутренних аудиторов, консультантов по вопросам управления рисками;' => 'Review of recommendation provided by external and internal risk management auditors and consultants;',
   'Представление Совету Директоров отчета о результатах деятельности Комитета.' => 'Submission of the report on the results of the Committee`s activities to the Board Committees.',
-  
+
   'Комитет по назначениям и вознаграждениям' => 'Remuneration and Nomination Committee',
   'Председателем Комитета является Независимый директор. Совет директоров назначает членов Комитета. Комитет собирается не менее 4 раз в год или чаще при необходимости. Временные рамки между заседаниями Комитета не должны превышать четырех месяцев.' => 'The Chairman of the Committee is an Independent Director. The Board Committees appoints the Committee members. The Committee holds meetings not less than 4 times a year or more often if required. Intervals between the meetings should not exceed four months.',
   'Целью деятельности Комитета является предварительное рассмотрение, анализ и выработка рекомендаций по вопросам, относящимся к его компетенции для оказания содействия Совету директоров при принятии решений по вопросам назначений и вознаграждений.' => 'The aim of the Committee’s activity is to conduct preliminary review, assessment and issuance of recommendations on matters within the Committee`s competence in order to assist the Board Committees in taking decisions related to remuneration and nomination.',
@@ -138,7 +138,7 @@ Almaty, Republic of Kazakhstan',
   'Комитет создается на основании решения Совета директоров Общества и состоит из членов Совета директоров и экспертов. Члены Комитета должны в совокупности обладать достаточными знаниями о системе управления в области ПБ, ОТ и ООС, передовых практиках, рисках и контроле в области ПБ, ОТ и ООС.' => 'The Committee is formed by the decision of the Board Committees of the Company and consists of members of the Board Committees and experts. Member of the Committee must collectively possess sufficient knowledge related to the occupational health, industrial safety and environmental protection, best practices, risks and control in the field of occupational health, industrial safety and environmental protection.',
   'Комитет собирается не менее 4 раз в год или чаще, если Комитет посчитает это необходимым. Период между заседаниями Комитета не должен превышать четырех месяцев.' => 'The Committee holds meetings at least 4 times a year or more, if required by the Committee. Intervals between the meetings shall not exceed four months.',
   'Целью деятельности Комитета является предварительное рассмотрение, анализ и выработка рекомендаций по вопросам, относящимся к его компетенции для оказания содействия Совету директоров при принятии решений по вопросам промышленной безопасности, охране труда и охране окружающей среды.' => 'The aim of the Committee`s activity is to conduct preliminary review, assessment and to issue of recommendations on matters within the Committee`s competence in order to assist the Board Committees in taking decisions in the field of occupational health, industrial safety and environmental protection.',
-  
+
   // Cantacts page
   'Контакты' => 'Contacts',
   'головной офис:' => 'HEAD OFFICE:',
@@ -151,7 +151,7 @@ Almaty, Republic of Kazakhstan',
   'Аккредитация поставщиков:' => 'Suppliers accreditation:',
   'Инвесторам:' => 'Investors:',
 	'Комплаенс-контроль:' => 'Compliance control:',
-  
+
   // Corporate newspaper
   'Корпоративная газета' => 'Corporate newspaper',
   'Смотреть' => 'View',
@@ -159,7 +159,7 @@ Almaty, Republic of Kazakhstan',
   // Corporate page
   'Корпоративное управление' => 'Corporate Governance',
   'Кодекс корпоративного управления' => 'The Company’s Corporate Governance Code',
-  'Кодекс корпоративного управления компании (далее - Кодекс) был утвержден внеочередным общим собранием акционеров 20 декабря 2005 года. Компания неукоснительно следует положениям Кодекса, который строится на принципах справедливости, честности, ответственности, прозрачности, профессионализма и компетентности. Эффективная структура корпоративного управления предполагает уважение прав и интересов всех заинтересованных в деятельности компании лиц и способствует успешной деятельности компании, в том числе росту его ценности, поддержанию финансовой стабильности и прибыльности. Основополагающими принципами Кодекса являются:' => 'The Company’s Corporate Governance Code was approved by an Extraordinary General Shareholders’ Meeting on December 20, 2005. The Company rigorously abides by the provisions of the Code, which is based on the principles of fairness, honesty, responsibility, transparency, professionalism and competence. 
+  'Кодекс корпоративного управления компании (далее - Кодекс) был утвержден внеочередным общим собранием акционеров 20 декабря 2005 года. Компания неукоснительно следует положениям Кодекса, который строится на принципах справедливости, честности, ответственности, прозрачности, профессионализма и компетентности. Эффективная структура корпоративного управления предполагает уважение прав и интересов всех заинтересованных в деятельности компании лиц и способствует успешной деятельности компании, в том числе росту его ценности, поддержанию финансовой стабильности и прибыльности. Основополагающими принципами Кодекса являются:' => 'The Company’s Corporate Governance Code was approved by an Extraordinary General Shareholders’ Meeting on December 20, 2005. The Company rigorously abides by the provisions of the Code, which is based on the principles of fairness, honesty, responsibility, transparency, professionalism and competence.
 The effective corporate management structure implies the respect for rights and interests of all shareholders of the Company and contributes to the success operation of the Company, increase of the Company`s value and maintenance of it financial stability and profitability. Fundamental principles of the Code are:',
   'принцип защиты прав и интересов акционеров' => 'principle of protection of shareholder rights and interests',
   'принцип эффективного управления компанией Советом Директоров и исполнительным органом' => 'principle of effective management of the Company by its Board Committees and executive body.',
@@ -222,7 +222,7 @@ The effective corporate management structure implies the respect for rights and 
   'Автоматический сбор и отображение в режиме онлайн информации по выполнению плана горных работ' => 'Automatic collection and display of mining progress information in online mode',
 
   // Gallery page
-  'Фотогалерея' => 'Photo gallery',  
+  'Фотогалерея' => 'Photo gallery',
 
   // Governance
   'Руководство компании' => 'Company Management',
@@ -238,7 +238,7 @@ The effective corporate management structure implies the respect for rights and 
   'Совет Директоров осуществляет контроль над деятельностью исполнительного органа.' => 'The Board Committees oversees the activities of the Company executive body.',
   'Правление' => 'MANAGEMENT BOARD',
 	'Вице-президенты' => 'Vice-presidents',
-  
+
   'Принципы деятельности исполнительного органа' => 'Operating principles of the executive body (Management Board)',
   'Исполнительный орган осуществляет руководство ежедневной работой Общества и ее соответствие утвержденным планам.' => 'The Management Board performs management of the daily activities of the Company and their compliance with the approved plans.',
   'Деятельность исполнительного органа строится на основе принципа максимального соблюдения интересов акционеров, полностью подотчетна решениям Общего собрания акционеров Общества и Совета директоров.' => 'The activity of the Management Board is based on the principle of best interests of shareholders, fully controlled by the decisions adopted by the General Meeting of Company Shareholders and the Board Committees.',
@@ -291,7 +291,7 @@ The effective corporate management structure implies the respect for rights and 
   'Компания приобрела права на разработку месторождения Светинское.' => 'the Company acquired subsurface use right for exploration of gold ores on Svetinskoye field.',
 
   // Glossary
-  
+
 
   // Header-Footer page
   'Главная' => 'Main',
@@ -341,7 +341,7 @@ The effective corporate management structure implies the respect for rights and 
   'Контакты' => 'Contacts',
   'О компании' => 'About Company',
   'Назад' => 'Back',
-	
+
 	//investors-and-media инвесторы и сми
   'Новости' => 'News',
   'Напишите нам:' => 'Text us ',
@@ -359,17 +359,15 @@ The effective corporate management structure implies the respect for rights and 
 
   //jastar карьера->молодым специалистам
   'Наставничество – это инвестиция в устойчивое<br> развитие компании.' => 'Mentoring is the investment in company’s <br> sustainable development.',
-  'Программа наставничества Аltyn jastar в компании разработана с целью адаптации и вовлечения молодых специалистов в профессиональную деятельность,<br> повышения эффективности мероприятий по технике безопасности и охране труда, развития корпоративной культуры, а также обеспечения ценностного диалога и<br> партнёрства поколений.' => 'The company has formed the Аltyn Jastar Mentoring Program with a focus to adapt and motivate young specialists into professional activities,<br>increase health and safety measures efficiency, develop corporate culture, as well as to ensure a value-based communication and partnership between generations.',
-  'Цель программы – обучение специалистов непосредственно на рабочих местах и обеспечение оптимального использования времени и ресурсов для скорейшего<br> достижения стажерами необходимых производственных показателей, снижение текучести персонала и мотивация молодежи к установлению длительных трудовых<br> отношений в компании.' => 'The purpose of the program is to provide a direct workplace-based training, ensure optimal time and resources use necessary for a rapid performance<br>achievement by interns, decrease staff turnover and encourage the youth for a long-term employment with the company. ',
-  'В настоящее время более 50% работников имеют стаж работы более 3-х лет в компании и потенциально могут быть наставниками для молодого поколения<br> работников.' => 'At the moment over 50% of employees have a minimum of 3 years of experience in the company, thus have a mentoring potential for a younger generation of<br> employees.',
+  'Целями наставничества являются практическое обучение и подготовка молодых специалистов к самостоятельной работе на производстве на основе единой системы передачи опыта, навыков, умений и знаний.' => 'The purpose of the mentorship is practical training and preparation of the young specialists for independent work at production site based on a unified system of sharing experience, skills and knowledge.',
   'Структура персонала' => 'Personnel structure ',
   'поколение Y<br> (21–35 лет)' => '43% generation Y<br>(21–35 years old) ',
   'поколение X<br> (36–55 лет)' => '48% generation X <br>(36–55 years old) ',
   'бэйби-бум<br> (56 лет и старше)' => '9% baby boom<br>(56 years old and older)',
-  'Дорожная карта программы наставничества включает в себя:' => 'Mentoring Program road map includes: ',
-  'отбор и обучение наставников' => 'selection and training of mentors',
-  'совместную работу наставников и стажеров' => 'team-work of mentors and interns',
-  'мониторинг эффективности программы' => 'monitoring of program efficiency',
+  'Преимущества проекта наставничества для молодых специалистов:' => 'Advantages of the mentorship program for young specialists:',
+  'повышение уровня профессиональной компетентности' => 'enhancement of professional competence',
+  'получение профессионального опыта, знаний, умений и навыков от лучших специалистов отрасли' => 'acquiring professional experience, skills and knowledge from the best experts in the industry',
+  'прохождение стажировки по индивидуальной программе обучения' => 'internship based on individual training program',
   'Продолжительность программы – 3 месяца.' => 'Program duration - 3 months. ',
 
   //main-deposits о компании
@@ -552,7 +550,7 @@ The effective corporate management structure implies the respect for rights and 
   'Контакты' => 'Contacts',
   'Назад' => 'Back',
   'Глоссарий' => 'Glossary',
-	
+
 	 // index page главная
   'Читать подробнее' => 'Read more',
   'Дорогие коллеги! Рады сообщить вам о том, что в рамках инициатив по устойчивому развитию бизнеса наша компания приобрела контрольный пакет акций АО «ГМК КАЗАХАЛТЫН» в размере 54,24%. Приобретение контрольного пакета акций АО «ГМК КАЗАХАЛТЫН» является частью бизнес-стратегии АО «АК Алтыналмас», основанной на расширении базы активов через приобретения и органический рост. «АО «ГМК КАЗАХАЛТЫН» является перспективным предприятием, производство которого нуждается в модернизации. АО «АК Алтыналмас», имея опыт строительства и эксплуатации современных предприятий, намерено привнести в развитие АО «ГМК КАЗАХАЛТЫН» эту экспертизу, создав, тем самым, для его работников более безопасные условия.' => 'Дорогие коллеги! Рады сообщить вам о том, что в рамках инициатив по устойчивому развитию бизнеса наша компания приобрела контрольный пакет акций АО «ГМК КАЗАХАЛТЫН» в размере 54,24%. Приобретение контрольного пакета акций АО «ГМК КАЗАХАЛТЫН» является частью бизнес-стратегии АО «АК Алтыналмас», основанной на расширении базы активов через приобретения и органический рост. «АО «ГМК КАЗАХАЛТЫН» является перспективным предприятием, производство которого нуждается в модернизации. АО «АК Алтыналмас», имея опыт строительства и эксплуатации современных предприятий, намерено привнести в развитие АО «ГМК КАЗАХАЛТЫН» эту экспертизу, создав, тем самым, для его работников более безопасные условия.',
