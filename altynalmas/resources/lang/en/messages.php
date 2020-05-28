@@ -480,7 +480,7 @@ The effective corporate management structure implies the respect for rights and 
   'Эффективность' => 'Efficiency ',
   'Решения по закупкам принимаются, исходя из соотношения требуемого качества закупаемых ТРУ к их стоимости.' => 'Decisions on procurement are made based on ratio of required quality of purchased GWS and their cost.',
 
-  
+
   // suppliers-inside-doc поставщикам
 
   'Внутренние нормативные документы' => '',
@@ -490,7 +490,7 @@ The effective corporate management structure implies the respect for rights and 
   'Положение по оповещению о нарушении этических норм, законодательства и внутренних правил АО «АК Алтыналмас»' => '',
   'Скачать документ' => '',
 
-  
+
   //suppliers-realization поставщикам
   'Реализация неликвидов' => 'Sale of illiquid assets ',
   'По вопросу продажи обращаться:' => 'For sales, please contact with:',
