@@ -139,11 +139,16 @@ Almaty, Republic of Kazakhstan',
   'Комитет собирается не менее 4 раз в год или чаще, если Комитет посчитает это необходимым. Период между заседаниями Комитета не должен превышать четырех месяцев.' => 'The Committee holds meetings at least 4 times a year or more, if required by the Committee. Intervals between the meetings shall not exceed four months.',
   'Целью деятельности Комитета является предварительное рассмотрение, анализ и выработка рекомендаций по вопросам, относящимся к его компетенции для оказания содействия Совету директоров при принятии решений по вопросам промышленной безопасности, охране труда и охране окружающей среды.' => 'The aim of the Committee`s activity is to conduct preliminary review, assessment and to issue of recommendations on matters within the Committee`s competence in order to assist the Board Committees in taking decisions in the field of occupational health, industrial safety and environmental protection.',
 
-  // Cantacts page
+  // Contacts page
   'Контакты' => 'Contacts',
   'головной офис:' => 'HEAD OFFICE:',
-  'Республика Казахстан, <br> г. Алматы, Площадь Республики 15, 050013 (A15X3C7)' => '15 Republic Square, 050013 (A15X3C7)
-Almaty, Republic of Kazakhstan',
+  'Республика Казахстан, <br> г. Алматы, Площадь Республики 15, 050013 (A15X3C7)' => '15 Republic Square, 050013 (A15X3C7) Almaty, Republic of Kazakhstan',
+	'Проект Акбакай:' => 'Akbakay project:',
+	'080601 , Жамбылская область, Мойынкумский район, село Акбакай, ул. Куанышбаева 1' => 'Kazakhstan, Zhambyl region, Moyynkumsky district, Akbakay village, st. Kuanyshbaeva 1, 080601',
+	'+7 727 350 200 (вн. 4004)' => '+7 727 350 200 (ext. 4004)',
+	'Проект Актогай:' => 'Aktogay project:',
+	'100200, Карагандинская область, Актогайский район, учетный квартал 040, строение 601' => '100200, Karaganda region, Aktogai district, quarter 040, building 601',
+	'+7 727 350 200 (вн. 5007)' => '+7 727 350 200 (ext. 5007)',
   'По всем возникшим вопросам обращайтесь по следующим контактам:' => 'Should you have any questions, please, contact as follows:',
   'СМИ:' => 'Mass media:',
   'По закупу:' => 'Procurement:',

@@ -14,12 +14,12 @@
 
   &__address-frame {
     border: 5px solid #000000;
-    padding: 60px 75px;
+    padding: 40px 55px;
     @include fluidPaddingLeft(280px, 380px, 1024px, 1680px);
-    @include fluidPaddingRight(10px, 75px, 1024px, 1680px);
+    @include fluidPaddingRight(10px, 55px, 1024px, 1680px);
     display: flex;
     position: relative;
-    height: 320px;
+    min-height: 320px;
   }
 
   &__address-banner {
@@ -38,7 +38,7 @@
   &__address-head {
     @include fluidFontSize(20px, 30px, 1024px, 1680px);
     text-transform: uppercase;
-    margin: 0 0 32px;
+    margin: 0 0 16px;
   }
 
   &__address-body {

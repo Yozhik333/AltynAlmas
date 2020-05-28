@@ -40,7 +40,26 @@
                 <p>@lang('messages.Республика Казахстан, <br> г. Алматы, Площадь Республики 15, 050013 (A15X3C7)')</p>
                 <a href="tel:+77273500200">+7 (7273) 500-200</a>
                 <a href="mailto:info@altynalmas.kz">info@altynalmas.kz</a>
-              </div>
+							</div>
+
+							<div class="contacts__address-head">
+								@lang('messages.Проект Акбакай:')
+							</div>
+							<div class="contacts__address-body">
+								<p>@lang('messages.080601 , Жамбылская область, Мойынкумский район, село Акбакай, ул. Куанышбаева 1')</p>
+								<a href="tel:+7727350200">@lang('messages.+7 727 350 200 (вн. 4004)')</a>
+								<a href="mailto:akbakai@altynalmas.kz">akbakai@altynalmas.kz</a>
+							</div>
+
+							<div class="contacts__address-head">
+								@lang('messages.Проект Актогай:')
+							</div>
+							<div class="contacts__address-body">
+								<p>@lang('messages.100200, Карагандинская область, Актогайский район, учетный квартал 040, строение 601')</p>
+								<a href="tel:+7727350200">@lang('messages.+7 727 350 200 (вн. 5007)')</a>
+								<a href="mailto:aktogai@altynalmas.kz">aktogai@altynalmas.kz</a>
+							</div>
+
             </div>
           </div>
         </div>
