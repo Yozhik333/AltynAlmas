@@ -383,6 +383,7 @@
                                                     </div>
                                                 </a>
                                             </li>
+																						<!--
                                             <li class="{{ request()->is('suppliers-inside-doc') ? 'active' : null }}">
                                                 <a class="link " href="{{route('suppliers-inside-doc')}}">
                                                     <div class="menu-title"> @lang('messages.Внутренние нормативные документы') </div>
@@ -391,6 +392,7 @@
                                                     </div>
                                                 </a>
                                             </li>
+																						 -->
                                             <li class="{{ request()->is('suppliers-realization') ? 'active' : null }}">
                                                 <a class="link " href="{{route('suppliers-realization')}}">
                                                     <div class="menu-title"> @lang('messages.Реализация неликвидов') </div>
