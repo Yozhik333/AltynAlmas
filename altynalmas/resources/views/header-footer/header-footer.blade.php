@@ -831,9 +831,9 @@
 
                             </div>
                             <div class="cost-wrap">
-                                <div class="cost"> USD: {{$usd}} <i></i>
+                                <div class="cost"> USD: 411.54 <i></i>
                                 </div>
-                                <div class="cost"> GOLD: $ 1698.10 -4.80</div>
+                                <div class="cost"> GOLD: $ 1743.50 +14.80▲</div>
                             </div>
                         </div>
                     </div>
