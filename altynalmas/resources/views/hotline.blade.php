@@ -1,14 +1,20 @@
-<!-- Устойчивое развитие -->
-{% set title = "Горячая линия" %}
-{% set namespace = "hotline" %}
-{% set page = "hotline" %}
+@extends('header-footer.header-footer')
 
-{% extends "layouts/default.html" %}
-<!-- ********************************************************************* -->
-{% block content %}
+@section('title')
+  @if (app()->getLocale() == 'ru')
+		Горячая линия
+  @endif
+  @if (app()->getLocale() == 'kz')
+    Қызметтің негізгі бағыттары
+  @endif
+  @if (app()->getLocale() == 'en')
+    Operations
+  @endif
+@endsection
 
+@section('main-content')
 
-<div class="banner" style="background-image: url('images/samples/main-deposits-slide.jpg');">
+<div class="banner" style="background-image: url('img/main-deposits-slide.jpg');">
 	<div class="container-fluid">
 		<div class="flex align-items-baseline">
 			<div class="title-wrapper">
@@ -29,7 +35,7 @@
 
 		<div class="hotline__president">
 			<div class="hotline__president-img">
-				<img src="images/samples/president.jpg" alt="Ельбаси">
+				<img src="img/president.jpg" alt="Ельбаси">
 				<h3>Дияр Канашев,
 					Президент – Председатель Правления</h3>
 			</div>
@@ -90,7 +96,7 @@
 						выбираемого работодателя страны.</p>
 				</div>
 				<div class="hotline__president-download">
-					<a href="/images/samples/pamyatka-kz-ru-en.pdf" class="btn btn-detail" download>Скачать инструкции</a>
+					<a href="/img/pamyatka-kz-ru-en.pdf" class="btn btn-detail" download>Скачать инструкции</a>
 				</div>
 			</div>
 		</div>
@@ -295,4 +301,4 @@
 	<!-- /.committee -->
 
 
-	{% endblock %}
+@endsection

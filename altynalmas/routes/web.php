@@ -29,7 +29,7 @@ Route::get('/about', function() {
     return view('about');
 })->name('about');
 
-Route::get('/mission', function() {    
+Route::get('/mission', function() {
     return view('about-mission');
 })->name('mission');
 
@@ -57,6 +57,10 @@ Route::get('/place-of-birth', function() {
 Route::get('/development-staff', function() {
     return view('development-staff');
 })->name('development-staff');
+
+Route::get('/hotline', function() {
+	return view('hotline');
+})->name('hotline');
 
 Route::get('/career', function() {
     return view('career');

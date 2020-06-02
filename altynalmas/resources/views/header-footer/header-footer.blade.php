@@ -241,6 +241,14 @@
                                                         <i class="icon-right"></i>
                                                     </div>
                                                 </a>
+																						</li>
+																						<li class="{{ request()->is('development-local-communities') ? 'active' : null }}">
+                                                <a class="link " href="{{route('development-local-communities')}}">
+                                                    <div class="menu-title"> @lang('messages.Горячая линия') </div>
+                                                    <div class="menu-icon">
+                                                        <i class="icon-right"></i>
+                                                    </div>
+                                                </a>
                                             </li>
                                             {{-- <li class="">
                                                 <a class="link " href="hide">
