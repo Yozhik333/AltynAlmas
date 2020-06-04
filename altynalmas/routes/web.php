@@ -126,6 +126,7 @@ Route::get('/studying-programs', 'SiteController@studyingPrograms')->name('study
 Route::get('/corporate-newspaper', 'SiteController@corporateNewspaper')->name('corporate-newspaper');
 Route::get('/gallery', 'SiteController@gallery')->name('gallery');
 Route::get('/team-of-trainers', 'SiteController@teamOfTrainers')->name('team-of-trainers');
+Route::get('/suppliers-inside-doc', 'SiteController@insideDocs')->name('suppliers-inside-doc');
 Route::get('/suppliers-form', 'SiteController@suppliers')->name('suppliers-form');
 Route::get('/glossary', 'SiteController@glossary')->name('glossary');
 
@@ -150,6 +151,7 @@ Route::resource('admin-coaches', 'CoachController');
 Route::resource('admin-safety', 'SafetyController');
 Route::resource('admin-ecology', 'EcologyController');
 Route::resource('admin-local-communities', 'LocalCommunityController');
+Route::resource('admin-inside-docs', 'InsideDocController');
 Route::resource('admin-supplier-form', 'SupplierFormController');
 Route::resource('admin-glossary', 'GlossaryController');
 

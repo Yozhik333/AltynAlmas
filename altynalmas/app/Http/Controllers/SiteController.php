@@ -17,6 +17,7 @@ use App\News;
 use App\Newspaper;
 use App\Safety;
 use App\SanaSafety;
+use App\InsideDoc;
 use App\SupplierForm;
 use App\Vacancy;
 use App\Year;
@@ -154,6 +155,12 @@ class SiteController extends Controller
     {
         $trainers = Coach::all();
         return view('team-of-trainers', compact('trainers'));
+    }
+
+    public function insideDocs()
+    {
+        $insideDocs = InsideDoc::all();
+        return view('suppliers-inside-doc', compact('insideDocs'));
     }
 
     public function suppliers()

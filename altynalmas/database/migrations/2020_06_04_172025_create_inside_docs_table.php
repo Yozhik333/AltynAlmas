@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateYearsTable extends Migration
+class CreateInsideDocsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,14 @@ class CreateYearsTable extends Migration
      */
     public function up()
     {
-        Schema::create('years', function (Blueprint $table) {
+        Schema::create('inside_docs', function (Blueprint $table) {
             $table->increments('id');
-            $table->string('year');
-            $table->text('text_kz');
-            $table->text('text_ru');
-            $table->text('text_en');
+            $table->string('title_kz');
+            $table->string('title_ru');
+            $table->string('title_en');
+            $table->string('file_kz');
+            $table->string('file_ru');
+            $table->string('file_en');
             $table->boolean('is_active');
             $table->timestamp('created_at')->nullable();
             $table->timestamp('updated_at')->nullable();
@@ -32,6 +34,6 @@ class CreateYearsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('years');
+        Schema::dropIfExists('inside_docs');
     }
 }

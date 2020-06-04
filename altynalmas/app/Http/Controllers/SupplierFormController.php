@@ -108,13 +108,7 @@ class SupplierFormController extends Controller
     public function update(Request $request, $id)
     {
         $supplierForm = SupplierForm::find($id);
-
-        // var_dump($request); die;
-
-
-
-
-
+        
         if($request->file('supplier_form_kz')){
             Storage::disk('public')->delete($supplierForm->supplier_form_kz);
             $supplier_form_kz_name = $request->file('supplier_form_kz')->getClientOriginalName();

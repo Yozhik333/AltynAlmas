@@ -94,12 +94,18 @@
                 <a class="admin-menu_item_dropdown_link" href="{{ route('admin-vacancies.index') }}">Вакансии</a>
                 <a class="admin-menu_item_dropdown_link" href="{{ route('admin-education.index') }}">Программы обучения</a>
                 <a class="admin-menu_item_dropdown_link" href="{{ route('admin-newspaper.index') }}">Корпоративная газета</a>
-            <a class="admin-menu_item_dropdown_link" href="{{route('admin-gallery.index')}}">Фотогалерея</a>
+                <a class="admin-menu_item_dropdown_link" href="{{route('admin-gallery.index')}}">Фотогалерея</a>
                 <a class="admin-menu_item_dropdown_link" href="{{ route('admin-coaches.index') }}">Команда тренеров</a>
             </div>
         </div>
 
-        <div class="admin-menu_item"><a class="admin-menu_item_link" href="{{ route('admin-supplier-form.index') }}"> Поставщикам. Анкета</a></div>
+        <div class="admin-menu_item">
+            <a class="admin-menu_item_link" href="#"> Поставщикам</a>
+            <div class="admin-menu_item_dropdown">
+                <a class="admin-menu_item_dropdown_link" href="{{ route('admin-inside-docs.index') }}">Внутренние документы</a>
+                <a class="admin-menu_item_dropdown_link" href="{{ route('admin-supplier-form.index') }}">Анкета</a>
+            </div>
+        </div>
         <div class="admin-menu_item"><a class="admin-menu_item_link" href="{{route('admin-glossary.index')}}"> Глоссарий</a></div>
     </div>
 
