@@ -19,7 +19,7 @@
         <!-- Swiper -->
         <div class="swiper-container">
             <div class="swiper-wrapper">
-            <div class="swiper-slide" style="background-image: url('img/main-deposits-slide.jpg');">
+            <div class="swiper-slide" style="background-image: url('img/hotline-banner.jpg');">
             </div>
             </div>
         </div>

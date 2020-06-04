@@ -241,6 +241,14 @@
                                                         <i class="icon-right"></i>
                                                     </div>
                                                 </a>
+																						</li>
+																						<li class="{{ request()->is('development-local-communities') ? 'active' : null }}">
+                                                <a class="link " href="{{route('development-local-communities')}}">
+                                                    <div class="menu-title"> @lang('messages.Горячая линия') </div>
+                                                    <div class="menu-icon">
+                                                        <i class="icon-right"></i>
+                                                    </div>
+                                                </a>
                                             </li>
                                             {{-- <li class="">
                                                 <a class="link " href="hide">
@@ -383,6 +391,7 @@
                                                     </div>
                                                 </a>
                                             </li>
+																						<!--
                                             <li class="{{ request()->is('suppliers-inside-doc') ? 'active' : null }}">
                                                 <a class="link " href="{{route('suppliers-inside-doc')}}">
                                                     <div class="menu-title"> @lang('messages.Внутренние нормативные документы') </div>
@@ -391,6 +400,7 @@
                                                     </div>
                                                 </a>
                                             </li>
+																						 -->
                                             <li class="{{ request()->is('suppliers-realization') ? 'active' : null }}">
                                                 <a class="link " href="{{route('suppliers-realization')}}">
                                                     <div class="menu-title"> @lang('messages.Реализация неликвидов') </div>

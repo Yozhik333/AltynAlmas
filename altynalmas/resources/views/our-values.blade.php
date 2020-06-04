@@ -84,7 +84,7 @@
             </div>
             <div class="our-values__item">
                 <div class="title"> @lang('messages.Безопасность труда') </div>
-                <div class="subtitle"> @lang('messages.Безопасность и здоровье работников является нашим приоритетом.') </div>
+                <div class="subtitle"> @lang('messages.Безопасность и здоровье сотрудников является нашим приоритетом.') </div>
                 <ul class="list">
                 <li> @lang('messages.Стремимся к нулевому уровню травматизма и проф. заболеваний.') </li>
                 <li> @lang('messages.Создаем безопасные условия труда и развиваем культуру безопасного поведения.') </li>

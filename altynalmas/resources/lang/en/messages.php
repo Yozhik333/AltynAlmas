@@ -42,7 +42,7 @@ return[
   'Производитель золота' => 'Gold producer',
   'Акционерное общество «АК Алтыналмас» - компания полного геологического, горнодобывающего и золотоперерабатывающего цикла. Добыча золотосодержащей руды ведется на 5 из 15 месторождений Казахстана, которые принадлежат компании.' => 'AK Altynalmas JSC is a company with a complete geological, mining and gold processing cycle. We operate 5 owned by the Company gold mines which are among15 mines across Kazakhstan.',
   'Активы компании присутствует в 4-х регионах Казахстана: Жамбылской, Карагандинской, Восточно-Казахстанской и Акмолинской областях.' => 'Our assets span 4 regions in Kazakhstan: Zhambyl, Karaganda, East-Kazakhstan and Akmola oblasts',
-  'Полезные ископаемые перерабатываются на собственных золотоизвлекательных фабриках «Акбакай», «Долинное», обогатительной фабрике «Пустынное» и заводе по извлечению драгоценных металлов «Алтыналмас Technology».' => 'Minerals are processed on the Company’s own gold recovery plants: Akbakai, Dolinnoe, processing plant Pustynnoe and precious metals recovery plant Altynalmas Technology.',
+  'Полезные ископаемые перерабатываются на собственных золотоизвлекательных фабриках «Акбакай», «Актогай» и «Алтыналмас Technology»' => 'Minerals are processed on the Company’s own gold recovery plants: Akbakai, Dolinnoe, processing plant Pustynnoe and precious metals recovery plant Altynalmas Technology.',
   'В штате компании трудятся более 2000 высококвалифицированных работников.' => 'The company employs more than 2,000 highly qualified employees.',
   'В производственном процессе задействовано более 120 единиц горной техники.' => 'More than 120 units of mining equipment are deployed in the production process.',
   'Компания подтвердила соответствие международным' => 'The Company has been certified in accordance with quality standards, ',
@@ -80,8 +80,7 @@ return[
   // Career - contacts page
   'Контакты' => 'Contacts',
   'головной офис:' => 'HEAD OFFICE:',
-  'Республика Казахстан, <br> г. Алматы, Площадь Республики 15, 050013 (A15X3C7)' => '15 Republic Square, 050013 (A15X3C7)
-Almaty, Republic of Kazakhstan',
+  'Республика Казахстан, <br> г. Алматы, Площадь Республики 15, 050013 (A15X3C7)' => '15 Republic Square, <br> 050013 (A15X3C7) Almaty, Republic of Kazakhstan',
   'По всем возникшим вопросам обращайтесь по следующим контактам:' => 'Should you have any questions, please, contact as follows:',
   'По трудоустройству:' => 'Employment:',
 
@@ -417,7 +416,7 @@ The effective corporate management structure implies the respect for rights and 
   'Постоянно повышаем операционную эффективность.' => 'We constantly improve operational efficiency.',
   'Инвестируем в человеческий капитал, как важный фактор устойчивого развития.' => 'We invest in human capital assets as an important factor in the sustainable development.',
   'Безопасность труда' => 'Occupational Safety',
-  'Безопасность и здоровье работников является нашим приоритетом.' => 'Health and safety of our employees is our priority.',
+  'Безопасность и здоровье сотрудников является нашим приоритетом.' => 'Health and safety of our employees is our priority.',
   'Стремимся к нулевому уровню травматизма и проф. заболеваний.' => 'We strive for “0” (zero) level of injuries and occupational diseases',
   'Создаем безопасные условия труда и развиваем культуру безопасного поведения.' => 'We create safe working environment and develop the incident and injury free culture.',
   'Выявляем и управляем рисками по промышленной безопасности и охране труда.' => 'We identify and manage risks in industrial safety and labor protection.',
