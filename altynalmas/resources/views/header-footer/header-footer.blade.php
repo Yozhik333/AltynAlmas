@@ -242,8 +242,8 @@
                                                     </div>
                                                 </a>
 																						</li>
-																						<li class="{{ request()->is('development-local-communities') ? 'active' : null }}">
-                                                <a class="link " href="{{route('development-local-communities')}}">
+																						<li class="{{ request()->is('hotline') ? 'active' : null }}">
+                                                <a class="link " href="{{route('hotline')}}">
                                                     <div class="menu-title"> @lang('messages.Горячая линия') </div>
                                                     <div class="menu-icon">
                                                         <i class="icon-right"></i>

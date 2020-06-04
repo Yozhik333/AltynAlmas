@@ -37,6 +37,33 @@
 			<div class="hotline__president-img">
 				<img src="img/president.jpg" alt="Ельбаси">
 				<h3>@lang('messages.Дияр Канашев,<br> Президент – Председатель Правления')</h3>
+
+				<div class="hotline__president-btns">
+					<div class="hotline__president-download">
+						<p>Политика по урегулированию конфликта интересов</p>
+						@if (app()->getLocale() == 'ru')
+							<a href="{{ asset('/files/«Алтыналмас_АК»_АҚ_Жұмыскерлер_мен_лауазымды_тұлғалардың_мүдделер_қақтығысын_реттеу_жөніндегі_саясаты.pdf') }}" download class="btn btn-detail">@lang('messages.Скачать документ')</a>
+						@endif
+						@if (app()->getLocale() == 'kz')
+							<a href="{{ asset('/files/«Алтыналмас_АК»_АҚ_Жұмыскерлер_мен_лауазымды_тұлғалардың_мүдделер_қақтығысын_реттеу_жөніндегі_саясаты.pdf') }}" download class="btn btn-detail">@lang('messages.Скачать документ')</a>
+						@endif
+						@if (app()->getLocale() == 'en')
+							<a href="{{ asset('/files/Employees_and_Officials_Conflict_of_interest_management_policy.pdf') }}" download class="btn btn-detail">@lang('messages.Скачать документ')</a>
+						@endif
+					</div>
+					<div class="hotline__president-download">
+						<p>Положение по оповещению о нарушении этических норм законодательства и внутренних правил</p>
+						@if (app()->getLocale() == 'ru')
+							<a href="{{ asset('/files/«Алтыналмас_АК»_АҚ_этикалық_нормалардын,_заңнаманың_және_ішкі_ережелердің_бұзылуы_туралы_хабарлау_жөніндегі_ережесі.pdf') }}" download class="btn btn-detail">@lang('messages.Скачать документ')</a>
+						@endif
+						@if (app()->getLocale() == 'kz')
+							<a href="{{ asset('/files/«Алтыналмас_АК»_АҚ_этикалық_нормалардын,_заңнаманың_және_ішкі_ережелердің_бұзылуы_туралы_хабарлау_жөніндегі_ережесі.pdf') }}" download class="btn btn-detail">@lang('messages.Скачать документ')</a>
+						@endif
+						@if (app()->getLocale() == 'en')
+							<a href="{{ asset('/files/Regulations_for_reporting_violation_of_ethical_standarts,_laws_and_corporate_policies.pdf') }}" download class="btn btn-detail">@lang('messages.Скачать документ')</a>
+						@endif
+					</div>
+				</div>
 			</div>
 			<div class="hotline__president-description">
 				<div class="hotline__president-headline">
