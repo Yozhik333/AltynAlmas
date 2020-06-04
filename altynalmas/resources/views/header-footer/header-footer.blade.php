@@ -726,6 +726,10 @@
                                                     <a class="mobile-menu__link"
                                                        href="{{route('suppliers-principles')}}"> @lang('messages.Принципы закупочной политики') </a>
                                                 </li>
+                                                <li class="{{ request()->is('suppliers-inside-doc') ? 'active' : null }}">
+                                                    <a class="mobile-menu__link"
+                                                       href="{{route('suppliers-inside-doc')}}"> @lang('messages.Внутренние нормативные документы') </a>
+                                                </li>
                                                 <li class="{{ request()->is('suppliers-realization') ? 'active' : null }}">
                                                     <a class="mobile-menu__link"
                                                        href="{{route('suppliers-realization')}}"> @lang('messages.Реализация неликвидов') </a>
