@@ -21,7 +21,8 @@
   
   &__number{
     font-weight: 300;
-    font-size: 48px;
+    //font-size: 48px;
+    @include fluidFontSize(28px, 40px, 1024px, 1680px);
     line-height: 56px;
     color: #000;
     margin-bottom: 14px;

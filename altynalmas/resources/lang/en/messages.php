@@ -704,7 +704,7 @@ The effective corporate management structure implies the respect for rights and 
   'АО' => ' ',
   '«АК Алтыналмас»' => 'AK Altynalmas JSC',
   'Создаем золотые возможности для общества с 1993 года' => 'We have been establishing golden opportunities for community since 1993 ',
-  'Более 2000 работников в штате' => 'More than 2000 employees',
+  'Более 2000 сотрудников в штате' => 'More than 2000 employees',
   '166 169 унций золота в год' => '166,169 oz. annual gold production',
   'Инвестиции в вечные ценности...' => 'Investments in timeless values...',
 	'img/mapPlace.svg' => 'img/en_map.svg',
