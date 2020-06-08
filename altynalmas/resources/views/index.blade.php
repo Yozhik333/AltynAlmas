@@ -63,7 +63,7 @@
                             </div>
                         </div>
                     </div>
-                    @if (app()->getLocale() == 'ru')
+{{--                    @if (app()->getLocale() == 'ru')--}}
                         <div class="number-day">
                             <!-- Swiper -->
                             <div class="swiper-container">
@@ -127,7 +127,7 @@
                                 </div>
                             </div>
                         </div>
-                    @endif
+{{--                    @endif--}}
                     
                 </div>
                 <div class="advantages__article">
