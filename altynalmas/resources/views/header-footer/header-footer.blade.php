@@ -244,7 +244,7 @@
 																						</li>
 																						<li class="{{ request()->is('hotline') ? 'active' : null }}">
                                                 <a class="link " href="{{route('hotline')}}">
-                                                    <div class="menu-title"> @lang('messages.Горячая линия') </div>
+                                                    <div class="menu-title"> @lang('messages.Корпоративная этика и комплаенс') </div>
                                                     <div class="menu-icon">
                                                         <i class="icon-right"></i>
                                                     </div>
