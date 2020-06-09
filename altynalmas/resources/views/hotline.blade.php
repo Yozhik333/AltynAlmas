@@ -41,8 +41,22 @@
 				<div class="hotline__president-btns">
 					<div class="hotline__president-download">
 						@if (app()->getLocale() == 'ru')
+							<p>Кодекс корпоративной этики АО "АК Алтыналмас"</p>
+							<a href="{{ asset('/files/Кодекс_корпоративной_этики_АО_АК_Алтыналмаc.pdf') }}" download class="btn btn-detail">@lang('messages.Скачать документ')</a>
+						@endif
+						@if (app()->getLocale() == 'kz')
+							<p>«АК Алтыналмас» АҚ Корпоративтік әдеп кодексі</p>
+							<a href="{{ asset('/files/«АК_Алтыналмас»_АҚ_Корпоративтік_әдеп_кодексі.pdf') }}" download class="btn btn-detail">@lang('messages.Скачать документ')</a>
+						@endif
+						@if (app()->getLocale() == 'en')
+							<p>Code of Conduct of JSC AK Altynalmas</p>
+							<a href="{{ asset('/files/Code_of_Conduct_of_JSC_AK_Altynalmas.pdf') }}" download class="btn btn-detail">@lang('messages.Скачать документ')</a>
+						@endif
+					</div>
+					<div class="hotline__president-download">
+						@if (app()->getLocale() == 'ru')
 							<p>Политика по урегулированию конфликта интересов</p>
-							<a href="{{ asset('/files/«Алтыналмас_АК»_АҚ_Жұмыскерлер_мен_лауазымды_тұлғалардың_мүдделер_қақтығысын_реттеу_жөніндегі_саясаты.pdf') }}" download class="btn btn-detail">@lang('messages.Скачать документ')</a>
+							<a href="{{ asset('/files/Политика_по_урегулированию_конфликта_интересов_АО_АК_Алтыналмас.pdf') }}" download class="btn btn-detail">@lang('messages.Скачать документ')</a>
 						@endif
 						@if (app()->getLocale() == 'kz')
 							<p>«Алтыналмас АК» АҚ Жұмыскерлер мен лауазымды тұлғалардың мүдделер қақтығысын реттеу жөніндегі саясаты</p>
@@ -56,7 +70,7 @@
 					<div class="hotline__president-download">
 						@if (app()->getLocale() == 'ru')
 							<p>Положение по оповещению о нарушении этических норм законодательства и внутренних правил</p>
-							<a href="{{ asset('/files/«Алтыналмас_АК»_АҚ_этикалық_нормалардын,_заңнаманың_және_ішкі_ережелердің_бұзылуы_туралы_хабарлау_жөніндегі_ережесі.pdf') }}" download class="btn btn-detail">@lang('messages.Скачать документ')</a>
+							<a href="{{ asset('/files/Положение_по_оповещению_о_нарушении_этических_норм_АО_АК_Алтыналмас.pdf') }}" download class="btn btn-detail">@lang('messages.Скачать документ')</a>
 						@endif
 						@if (app()->getLocale() == 'kz')
 							<p>«Алтыналмас АК» АҚ этикалық нормалардын, заңнаманың және ішкі ережелердің бұзылуы туралы хабарлау жөніндегі ережесі</p>
@@ -99,7 +113,7 @@
 					<p>@lang('messages.Честное и добросовестное отношение к компании, коллегам, партнерам и бизнес-сообществу – один из важнейшихприоритетов АО «АК Алтыналмас» в ведении бизнеса. Мы не толерантны к любого рода противоправным действиям и ожидаем такого же поведения от каждого работника компании и наших дочерних предприятий. Только неуклонноследуя принципу честностого и открытого бизнеса мы будем сохранять репутацию надежного бизнес-партнера ивыбираемого работодателя страны.')</p>
 				</div>
 				<div class="hotline__president-download">
-					<a href="/img/pamyatka-kz-ru-en.pdf" class="btn btn-detail" download>Скачать инструкции</a>
+					<a href="/img/pamyatka-kz-ru-en.pdf" class="btn btn-detail" download>@lang('messages.Скачать инструкции')</a>
 				</div>
 			</div>
 		</div>

@@ -843,9 +843,8 @@
 
                             </div>
                             <div class="cost-wrap">
-                                <div class="cost"> USD: 411.54 <i></i>
-                                </div>
-                                <div class="cost"> GOLD: $ 1743.50 +14.80▲</div>
+                                <div class="cost"> USD: 397.31 <i></i></div>
+                                <div class="cost"> GOLD: $ Gold: 1717.90 +19.30▲</div>
                             </div>
                         </div>
                     </div>

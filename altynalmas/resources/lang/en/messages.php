@@ -199,6 +199,11 @@ The effective corporate management structure implies the respect for rights and 
 	'Дияр Канашев,<br> Президент – Председатель Правления' => 'Diyar Kanashev, President - CEO',
   'Скачать документ' => 'Download document',
   'Корпоративная этика и комплаенс' => 'Corporate Ethics and Compliance',
+  'Положение по охране труда, технике безопасности и охране окружающей среды для подрядных организаций АО «АК Алтыналмас»' => 'Regulation on Health, Safety and Environment  for Contractors of JSC “AK Altynalmas”',
+  'Кодекс корпоративной этики АО «АК Алтыналмас»' => 'Code of Conduct of JSC AK Altynalmas',
+  'Политика по урегулированию конфликта интересов у работников и должностных лиц АО «АК Алтыналмас»' => 'JSC “AK Altynalmas” Employees and Officials Conflict of Interest Management Policy',
+  'Положение по оповещению о нарушении этических норм, законодательства и внутренних правил АО «АК Алтыналмас»' => 'Regulations for reporting violation of ethical standards, laws, and corporate policies of JSC “AK Altynalmas”',
+  'Скачать инструкции'=>'Download instruction',
 
 	'Запуск "горячей линии"' => 'THE HOTLINE LAUNCH',
 	'АО «АК Алтыналмас» придерживается высочайших стандартов честности, открытости, ответственности и дорожит своей репутацией, и мы ожидаем от сотрудников и партнеров компании соблюдения высочайших стандартов этики и добросовестности.' => 'JSC “AK Altynalmas” adheres to the highest standards of honesty, openness, and responsibility. We value our reputation and we expect our employees and partners to meet the highest standards of ethics and good faith.',
