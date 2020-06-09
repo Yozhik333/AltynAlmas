@@ -197,7 +197,8 @@ The effective corporate management structure implies the respect for rights and 
 	// Hotline(Горячая линия)
 	'Горячая линия' => 'Hotline',
 	'Дияр Канашев,<br> Президент – Председатель Правления' => 'Diyar Kanashev, President - CEO',
-	'Скачать документ' => 'Download document',
+  'Скачать документ' => 'Download document',
+  'Корпоративная этика и комплаенс' => 'Corporate Ethics and Compliance',
 
 	'Запуск "горячей линии"' => 'THE HOTLINE LAUNCH',
 	'АО «АК Алтыналмас» придерживается высочайших стандартов честности, открытости, ответственности и дорожит своей репутацией, и мы ожидаем от сотрудников и партнеров компании соблюдения высочайших стандартов этики и добросовестности.' => 'JSC “AK Altynalmas” adheres to the highest standards of honesty, openness, and responsibility. We value our reputation and we expect our employees and partners to meet the highest standards of ethics and good faith.',

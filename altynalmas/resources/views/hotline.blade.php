@@ -2,13 +2,13 @@
 
 @section('title')
   @if (app()->getLocale() == 'ru')
-		Горячая линия
+	Корпоративная этика и комплаенс
   @endif
   @if (app()->getLocale() == 'kz')
-    Қызметтің негізгі бағыттары
+	Корпоративті этика және комплаенс
   @endif
   @if (app()->getLocale() == 'en')
-    Operations
+	Corporate Ethics and Compliance
   @endif
 @endsection
 
@@ -20,7 +20,7 @@
 			<div class="title-wrapper">
 				<div class="h1-wrap">
 					<h1 class="small">
-						@lang('messages.Горячая линия')
+						@lang('messages.Корпоративная этика и комплаенс')
 					</h1>
 				</div>
 			</div>
@@ -40,26 +40,30 @@
 
 				<div class="hotline__president-btns">
 					<div class="hotline__president-download">
-						<p>Политика по урегулированию конфликта интересов</p>
 						@if (app()->getLocale() == 'ru')
+							<p>Политика по урегулированию конфликта интересов</p>
 							<a href="{{ asset('/files/«Алтыналмас_АК»_АҚ_Жұмыскерлер_мен_лауазымды_тұлғалардың_мүдделер_қақтығысын_реттеу_жөніндегі_саясаты.pdf') }}" download class="btn btn-detail">@lang('messages.Скачать документ')</a>
 						@endif
 						@if (app()->getLocale() == 'kz')
+							<p>«Алтыналмас АК» АҚ Жұмыскерлер мен лауазымды тұлғалардың мүдделер қақтығысын реттеу жөніндегі саясаты</p>
 							<a href="{{ asset('/files/«Алтыналмас_АК»_АҚ_Жұмыскерлер_мен_лауазымды_тұлғалардың_мүдделер_қақтығысын_реттеу_жөніндегі_саясаты.pdf') }}" download class="btn btn-detail">@lang('messages.Скачать документ')</a>
 						@endif
 						@if (app()->getLocale() == 'en')
+							<p>JSC “AK Altynalmas” Employees and Officials Conflict of Interest Management Policy</p>
 							<a href="{{ asset('/files/Employees_and_Officials_Conflict_of_interest_management_policy.pdf') }}" download class="btn btn-detail">@lang('messages.Скачать документ')</a>
 						@endif
 					</div>
 					<div class="hotline__president-download">
-						<p>Положение по оповещению о нарушении этических норм законодательства и внутренних правил</p>
 						@if (app()->getLocale() == 'ru')
+							<p>Положение по оповещению о нарушении этических норм законодательства и внутренних правил</p>
 							<a href="{{ asset('/files/«Алтыналмас_АК»_АҚ_этикалық_нормалардын,_заңнаманың_және_ішкі_ережелердің_бұзылуы_туралы_хабарлау_жөніндегі_ережесі.pdf') }}" download class="btn btn-detail">@lang('messages.Скачать документ')</a>
 						@endif
 						@if (app()->getLocale() == 'kz')
+							<p>«Алтыналмас АК» АҚ этикалық нормалардын, заңнаманың және ішкі ережелердің бұзылуы туралы хабарлау жөніндегі ережесі</p>
 							<a href="{{ asset('/files/«Алтыналмас_АК»_АҚ_этикалық_нормалардын,_заңнаманың_және_ішкі_ережелердің_бұзылуы_туралы_хабарлау_жөніндегі_ережесі.pdf') }}" download class="btn btn-detail">@lang('messages.Скачать документ')</a>
 						@endif
 						@if (app()->getLocale() == 'en')
+							<p>Regulations for reporting violation of ethical standards, laws, and corporate policies of JSC “AK Altynalmas”</p>
 							<a href="{{ asset('/files/Regulations_for_reporting_violation_of_ethical_standarts,_laws_and_corporate_policies.pdf') }}" download class="btn btn-detail">@lang('messages.Скачать документ')</a>
 						@endif
 					</div>
