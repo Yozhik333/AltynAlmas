@@ -38,7 +38,7 @@
           <div class="info__block">
             <div class="info__block-head"> @lang('messages.СМИ:') </div>
             <div class="info__block-body">
-              <a href="mailto:Azhar.Nurmukhanbet@altynalmas.kz">Azhar.Nurmukhanbet@altynalmas.kz</a>
+              <a href="mailto:Madina.Tolebayeva@altynalmas.kz">Madina.Tolebayeva@altynalmas.kz</a>
             </div>
           </div>
           <div class="info__block">
