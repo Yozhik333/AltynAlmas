@@ -24,6 +24,7 @@ use App\Year;
 use App\Glossary;
 use App\Category;
 use App\Gallery;
+use App\Partner;
 
 use Illuminate\Http\Request;
 
@@ -173,6 +174,12 @@ class SiteController extends Controller
     {
         $glossary = Glossary::all();
         return view('glossary', compact('glossary'));
+    }
+
+    public function partners()
+    {
+        $partners = Partner::all();
+        return view('our-partners', compact('partners'));
     }
 	
 	public function search()

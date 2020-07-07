@@ -114,6 +114,24 @@
                                                     </li>
                                                 </ul>
                                             </li>
+                                            <li class="{{ request()->is('our-partners') ? 'active' : null }}">
+                                                <a class="link " href="{{ route('partners') }}">
+                                                    <div class="menu-title"> 
+                                                        @if (app()->getLocale() == 'ru')
+                                                            Наши партнеры
+                                                        @endif
+                                                        @if (app()->getLocale() == 'kz')
+                                                            Бiздiң серiктестер
+                                                        @endif
+                                                        @if (app()->getLocale() == 'en')
+                                                            Our partners
+                                                        @endif
+                                                    </div>
+                                                    <div class="menu-icon">
+                                                        <i class="icon-right"></i>
+                                                    </div>
+                                                </a>
+                                            </li>
                                         </ul>
                                     </li>
                                     <li class="dropdownWrap">
@@ -532,6 +550,20 @@
                                                             </li>
                                                         </ul>
                                                     </div>
+                                                </li>
+                                                <li class="{{ request()->is('our-partners') ? 'active' : null }}">
+                                                    <a class="mobile-menu__link"
+                                                       href="{{ route('partners') }}"> 
+                                                        @if (app()->getLocale() == 'ru')
+                                                            Наши партнеры
+                                                        @endif
+                                                        @if (app()->getLocale() == 'kz')
+                                                            Бiздiң серiктестер
+                                                        @endif
+                                                        @if (app()->getLocale() == 'en')
+                                                            Our partners
+                                                        @endif
+                                                    </a>
                                                 </li>
                                             </ul>
                                         </div>

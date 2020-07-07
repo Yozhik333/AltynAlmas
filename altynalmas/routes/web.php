@@ -129,6 +129,7 @@ Route::get('/team-of-trainers', 'SiteController@teamOfTrainers')->name('team-of-
 Route::get('/suppliers-inside-doc', 'SiteController@insideDocs')->name('suppliers-inside-doc');
 Route::get('/suppliers-form', 'SiteController@suppliers')->name('suppliers-form');
 Route::get('/glossary', 'SiteController@glossary')->name('glossary');
+Route::get('/our-partners', 'SiteController@partners')->name('partners');
 
 Auth::routes();
 
@@ -154,4 +155,5 @@ Route::resource('admin-local-communities', 'LocalCommunityController');
 Route::resource('admin-inside-docs', 'InsideDocController');
 Route::resource('admin-supplier-form', 'SupplierFormController');
 Route::resource('admin-glossary', 'GlossaryController');
+Route::resource('admin-partners', 'PartnerController');
 
