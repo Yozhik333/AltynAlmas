@@ -59,7 +59,9 @@
                 <a href="{{$partner->url}}" target="_blank" class="main-deposits__item link-block">
                     <div class="wrap-inside">
                         <div class="main-deposits__item-title"> {{$partner->title_en}} </div>
-                        <div class="main-deposits__item-photo" style="background-image: url('storage/{{$partner->img}}')"></div>
+                        <div class="main-deposits__item-photo">
+                            <img src="storage/{{$partner->img}}" alt="">
+                        </div>
                     </div>
                 </a>
             @endforeach              
