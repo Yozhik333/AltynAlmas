@@ -875,8 +875,8 @@
 
                             </div>
                             <div class="cost-wrap">
-                                <div class="cost"> USD: {{ $usd }} <i></i></div>
-                                <div class="cost"> GOLD: $ {{ $gold}} &nbsp; {{ $gold_change_percent }}%</div>
+                                <div class="cost"> USD:  -  411.66<i></i></div>
+                                <div class="cost"> GOLD: $  -  &nbsp; 1809.3</div>
                             </div>
                         </div>
                     </div>

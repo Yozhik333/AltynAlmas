@@ -23,15 +23,15 @@ class ViewServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-        if($subject = file_get_contents('https://nationalbank.kz/rss/get_rates.cfm')){
-            $subject = file_get_contents('https://nationalbank.kz/rss/get_rates.cfm');
-            $pattern = '/<title>USD<\/title><description>(.+?)<\/description>/u';
-            $result = [];
-            preg_match_all($pattern, $subject, $result);
-            $usd = $result[1][0];
-        }else{
-            $usd = '-';
-        }
+//        if($subject = file_get_contents('https://nationalbank.kz/rss/get_rates.cfm')){
+//            $subject = file_get_contents('https://nationalbank.kz/rss/get_rates.cfm');
+//            $pattern = '/<title>USD<\/title><description>(.+?)<\/description>/u';
+//            $result = [];
+//            preg_match_all($pattern, $subject, $result);
+//            $usd = $result[1][0];
+//        }else{
+//            $usd = '-';
+//        }
         
         // if($subject = file_get_contents('https://www.kitco.com/')){
         //     $subject = file_get_contents('https://www.kitco.com/');
@@ -56,10 +56,10 @@ class ViewServiceProvider extends ServiceProvider
         //     $gold_change_percent = '-';
         // }
 
-        $gold = '-';
-        $gold_change_percent = '-';
-        view()->share('usd', $usd );
-        view()->share('gold', $gold );
-        view()->share('gold_change_percent', $gold_change_percent );
+//        $gold = '-';
+//        $gold_change_percent = '-';
+//        view()->share('usd', $usd );
+//        view()->share('gold', $gold );
+//        view()->share('gold_change_percent', $gold_change_percent );
     }
 }
