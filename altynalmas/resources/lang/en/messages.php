@@ -40,7 +40,7 @@ return[
 
   'О компании' => 'About Company',
   'Производитель золота' => 'Gold producer',
-  'Акционерное общество «АК Алтыналмас» - компания полного геологического, горнодобывающего и золотоперерабатывающего цикла. Добыча золотосодержащей руды ведется на 5 из 15 месторождений Казахстана, которые принадлежат компании.' => 'AK Altynalmas JSC is a company with a complete geological, mining and gold processing cycle. We operate 5 owned by the Company gold mines which are among15 mines across Kazakhstan.',
+  'Акционерное общество «АК Алтыналмас» - компания полного геологического, горнодобывающего и золотоперерабатывающего цикла. Добыча золотосодержащей руды ведется на 5 из 15 месторождений Казахстана, которые принадлежат компании.' => 'JSC AK Altynalmas is a company with a complete geological, mining and gold processing cycle. We operate 5 owned by the Company gold mines which are among15 mines across Kazakhstan.',
   'Активы компании присутствует в 4-х регионах Казахстана: Жамбылской, Карагандинской, Восточно-Казахстанской и Акмолинской областях.' => 'Our assets span 4 regions in Kazakhstan: Zhambyl, Karaganda, East-Kazakhstan and Akmola oblasts',
   'Полезные ископаемые перерабатываются на собственных золотоизвлекательных фабриках «Акбакай», «Актогай» и «Алтыналмас Technology»' => 'Minerals are processed on the Company’s own gold recovery plants: Akbakai, Dolinnoe, processing plant Pustynnoe and precious metals recovery plant Altynalmas Technology.',
   'В штате компании трудятся более 2000 высококвалифицированных работников.' => 'The company employs more than 2,000 highly qualified employees.',
@@ -102,7 +102,7 @@ return[
   'отношения между работодателем и работниками, основанное на принципах социального партнерства и взаимной ответственности;' => 'employer and employees relations based on the principles of social partnership and mutual responsibility;',
   'создание на рабочих местах культуры, стимулирующей высокие достижения.' => 'workplace culture boosting to high achievements.',
   'ПРЕИМУЩЕСТВА' => 'advantages',
-  'работы в АО «АК Алтыналмас»' => 'AK Altynalmas JSC employment',
+  'работы в АО «АК Алтыналмас»' => 'JSC AK Altynalmas employment',
   'Конкурентоспособная оплата труда' => 'Competitive remuneration',
   'Развитие и обучение' => 'Training and development',
   'Возможности карьерного роста' => 'Career development opportunities',
@@ -174,7 +174,7 @@ The effective corporate management structure implies the respect for rights and 
   'охрана окружающей среды' => 'environment protection',
   'политика регулирования корпоративных конфликтов' => 'corporate conflict settlement policy',
   'Корпоративные документы' => 'Corporate documents',
-  'акционерного общества «АК Алтыналмас»' => 'of AK Altynalmas JSC',
+  'акционерного общества «АК Алтыналмас»' => 'of JSC AK Altynalmas',
   'Кодекс противодействия коррупции' => 'Anti-corruption Code',
   'Подробнее' => 'More',
   'Устав Акционерного общества' => 'Charter of JSC',
@@ -550,7 +550,7 @@ The effective corporate management structure implies the respect for rights and 
   //suppliers-form поставщикам
   'Стать поставщиком' => 'Become a supplier ',
   'Сотрудничество с поставщиками' => 'COOPERATION with suppliers',
-  'АО «АК Алтыналмас» при взаимодействии с поставщиками стремится развивать долгосрочные и взаимовыгодные отношения.' => 'AK Altynalmas JSC in coordination with suppliers strives to develop long-term and mutually profitable relations.',
+  'АО «АК Алтыналмас» при взаимодействии с поставщиками стремится развивать долгосрочные и взаимовыгодные отношения.' => 'JSC AK Altynalmas in coordination with suppliers strives to develop long-term and mutually profitable relations.',
   'При выборе поставщиков товаров/работ/услуг основными критериями являются:' => 'Suppliers of goods /works /services are selected based on the main criteria:',
   'соотношение цена/качество;' => 'price/quality ratio;',
   'сроки поставки;' => 'delivery period;',
@@ -602,7 +602,7 @@ The effective corporate management structure implies the respect for rights and 
   'Команда тренеров' => 'TEAM of Altynalmas trainers',
   'Менеджер по стратегическому развитию' => 'Strategical Development Manager ',
   'Ерден Акашев' => 'Erden Akashev',
-  'Ерден Уалиевич специализируется на внутреннем контроле, оценке рисков и корпоративном управлении в ресурсных и производственных компаниях. Он занимает позицию менеджера по стратегическому развитию АО «АК Алтыналмас». Ерден участвовал в разработке анализа и дизайна коммерческого направления в проекте внедрения ERP, оптимизировал внутренние контроли и создал информационно-аналитическую инфраструктуру для коммерческого направления компании. До «Алтыналмас» Ерден почти 6 лет проработал в ТОО «Казцинк» (актив Glencore) - компании, которая занимается добычей, обогащением и плавкой цветных металлов. Начав с бюджетного управления Ерден перешел главным специалистом в управление внутреннего аудита и корпоративного развития, где в составе группы аудиторов Glencore принимал участие в аудите управления ремонтами, запасами и контрактования. В «Казцинке» он запустил систему оценки и мониторинга эффективности подрядчиков, а также участвовал в проекте автоматизации тендерного процесса, в результате чего, компания получила внешнюю электронную тендерную платформу для взаимодействия с контрагентами. Ерден получил диплом бакалавра Учета и Аудита и окончил магистратуру в Казахстанско-Британском Техническим Университете по направлению «Менеджмент». Находится на финальном этапе получения CIA сертификата. Описание Программы тренинга (** в первом интервью идут вопросы о программе тренингов, во втором вопросы личного характера)' => 'Erden Ualiyevich specializes in internal control, risk assessment and corporate management in resource-based and production companies. He holds the position of strategic development manager in AK Altynalmas JSC. Erden took part in development of analysis and design of the commercial aspect of the ERP deployment project, he optimized the internal control process and established the informational and analytical infrastructure of the Company’s commercial aspect. Before joining Altynalmas, Erden has worked for almost 6 years in Kazzinc LLP (Glencore Asset) – a company specialized in mining, benefication and smelting of non-ferrous metals. Starting from the budgeting department, Erden was transferred as a chief specialist to the internal audit and corporate development department, where, as a member of Glencore group of auditors, he took part in auditing the repair, reserves and contracting department. He launched contractor efficiency assessment and monitoring system in “Kazzinc”, and took part in tender/bidding automation project. As a result the Company got an outsource electronic tendering platform for liaising with counter-agents.Erden holds a bachelor’s diploma in Accounting and Audit and Master’s degree from Kazakh-British Technical University under the “Management”. He is at the final stage of receiving the CIA certificate.Training topic: “Conflict of interests – theory and practical aspects”.',
+  'Ерден Уалиевич специализируется на внутреннем контроле, оценке рисков и корпоративном управлении в ресурсных и производственных компаниях. Он занимает позицию менеджера по стратегическому развитию АО «АК Алтыналмас». Ерден участвовал в разработке анализа и дизайна коммерческого направления в проекте внедрения ERP, оптимизировал внутренние контроли и создал информационно-аналитическую инфраструктуру для коммерческого направления компании. До «Алтыналмас» Ерден почти 6 лет проработал в ТОО «Казцинк» (актив Glencore) - компании, которая занимается добычей, обогащением и плавкой цветных металлов. Начав с бюджетного управления Ерден перешел главным специалистом в управление внутреннего аудита и корпоративного развития, где в составе группы аудиторов Glencore принимал участие в аудите управления ремонтами, запасами и контрактования. В «Казцинке» он запустил систему оценки и мониторинга эффективности подрядчиков, а также участвовал в проекте автоматизации тендерного процесса, в результате чего, компания получила внешнюю электронную тендерную платформу для взаимодействия с контрагентами. Ерден получил диплом бакалавра Учета и Аудита и окончил магистратуру в Казахстанско-Британском Техническим Университете по направлению «Менеджмент». Находится на финальном этапе получения CIA сертификата. Описание Программы тренинга (** в первом интервью идут вопросы о программе тренингов, во втором вопросы личного характера)' => 'Erden Ualiyevich specializes in internal control, risk assessment and corporate management in resource-based and production companies. He holds the position of strategic development manager in JSC AK Altynalmas. Erden took part in development of analysis and design of the commercial aspect of the ERP deployment project, he optimized the internal control process and established the informational and analytical infrastructure of the Company’s commercial aspect. Before joining Altynalmas, Erden has worked for almost 6 years in Kazzinc LLP (Glencore Asset) – a company specialized in mining, benefication and smelting of non-ferrous metals. Starting from the budgeting department, Erden was transferred as a chief specialist to the internal audit and corporate development department, where, as a member of Glencore group of auditors, he took part in auditing the repair, reserves and contracting department. He launched contractor efficiency assessment and monitoring system in “Kazzinc”, and took part in tender/bidding automation project. As a result the Company got an outsource electronic tendering platform for liaising with counter-agents.Erden holds a bachelor’s diploma in Accounting and Audit and Master’s degree from Kazakh-British Technical University under the “Management”. He is at the final stage of receiving the CIA certificate.Training topic: “Conflict of interests – theory and practical aspects”.',
 
   //vacancies карьера
   'Актуальные вакансии' => 'Current vacancies ',
@@ -699,7 +699,7 @@ The effective corporate management structure implies the respect for rights and 
   '14' => '14',
   '70%' => '70%',
   //
-  'АО «АК Алтыналмас»' => 'AK Altynalmas JSC',
+  'АО «АК Алтыналмас»' => 'JSC AK Altynalmas',
   'Уникальные <br> преимущества' => 'Unique <br> benefits',
   'Золотодобывающая компания' => 'Gold mining company',
   'Способ добычи:' => 'Mining method:',
@@ -708,7 +708,7 @@ The effective corporate management structure implies the respect for rights and 
     'Комбинированный' => 'Combined',
     'Горные работы не ведутся' => 'No mining',
   'АО' => ' ',
-  '«АК Алтыналмас»' => 'AK Altynalmas JSC',
+  '«АК Алтыналмас»' => 'JSC AK Altynalmas',
   'Создаем золотые возможности для общества с 1993 года' => 'We have been establishing golden opportunities for community since 1993 ',
   'Более 2000 сотрудников в штате' => 'More than 2000 employees',
   '166 169 унций золота в год' => '166,169 oz. annual gold production',
