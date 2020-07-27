@@ -77,7 +77,7 @@
 }
 
 .cost-wrap {
-  @include fluidPaddingLeft(20px, 86px, 1024px, 1680px);
+  @include fluidPaddingLeft(10px, 56px, 1024px, 1680px);
   @include breakpoint-down(md) {
     display: none;
   }
@@ -155,6 +155,18 @@
   }
 }
 
+.youtube-link {
+  color: #000;
+  display: flex;
+  font-size: 20px;
+  //margin-left: 10px;
+  @include fluidPaddingLeft(10px, 20px, 1024px, 1688px);
+
+  &:hover {
+    color: #FF0015;
+  }
+}
+
 .lang__wrap {
   position: absolute;
 }
@@ -168,5 +180,26 @@
     z-index: 3;
     margin-right: 20px;
     font-size: 22px;
+  }
+}
+
+.link-wrap {
+  display: flex;
+  align-items: center;
+  margin-top: 1.125rem;
+
+  .youtube-link {
+    font-size: 24px;
+    display: flex;
+    align-items: center;
+
+    i {
+      margin-left: 10px;
+      font-size: 30px;
+    }
+  }
+
+  .btn-detail{
+    margin-top: 0;
   }
 }
